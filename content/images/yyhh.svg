@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="77.529205"
+   height="67.680222"
+   viewBox="0 0 20.512935 17.90706"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="yyhh.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient4520"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4518" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.1212028"
+     inkscape:cx="28.633407"
+     inkscape:cy="7.5574408"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="755"
+     inkscape:window-x="0"
+     inkscape:window-y="580"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.4621317,-279.82791)">
+    <rect
+       id="rect3699"
+       width="20.512936"
+       height="17.907059"
+       x="-1.4621317"
+       y="279.82791"
+       style="fill:#fc7c0f;fill-opacity:0;stroke-width:0.26458332" />
+    <rect
+       style="fill:#fc7c0f;fill-opacity:1;stroke-width:0.26995227"
+       id="rect4506"
+       width="17.105249"
+       height="16.370258"
+       x="-0.049720429"
+       y="280.8511" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.17899609px;line-height:125%;font-family:Zapfino;-inkscape-font-specification:'Zapfino, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.10447583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="5.0388899"
+       y="236.38737"
+       id="text4552"
+       transform="scale(0.81244937,1.2308459)"><tspan
+         sodipodi:role="line"
+         id="tspan4550"
+         x="5.0388899"
+         y="236.38737"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.17899609px;font-family:Zapfino;-inkscape-font-specification:'Zapfino, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.10447583px;stroke-opacity:1">yyhh</tspan></text>
+  </g>
+</svg>

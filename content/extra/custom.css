@@ -1,0 +1,70 @@
+#tipue_search_input {
+  margin: 14px 25px 12px 25px;
+  width: 90%;
+  height: 42px;
+}
+
+.intro {
+  margin-top: 20px;
+  width: 100%;
+  clear: both;
+}
+
+.intro .left {
+  width: 45%; 
+  float: left;
+}
+
+.intro .right {
+  width: 45%; 
+  margin-left: 50%;
+}
+
+.intro img {
+  float: left;
+  width: 198px;
+  height: 198px;
+  margin: 4px 10px 0px 0px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  font-style: italic; 
+  font-weight: bold;
+}
+
+.post-info .label {
+  display: none;
+}
+
+.post-info a {
+  margin: 0 5px;
+}
+
+#sidebar {
+  margin-top: 15px;
+}
+
+#sidebar .fa-lg {
+  margin-right: 5px;
+}
+
+blockquote {
+  font-size: 16px;
+}
+
+.highlight pre .err {
+  border: none;
+}
