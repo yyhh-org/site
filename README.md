@@ -4,6 +4,12 @@ This is the source for https://yyhh.org. The site is built with [pelican](https:
 
 ## Setup
 
+First pull the submodules
+
+```bash
+git submodule update --init
+```
+
 Make sure you have python on your system. It is safer to use the same version of python as we do. 
 
 ```bash
@@ -15,7 +21,7 @@ pyenv global 3.6.6
 Now install needed software:
 
 ```bash
-pip install pelican pelican-alias invoke livereload
+pip install pelican pelican-alias invoke livereload markdown beautifulsoup4
 ```
 
 ## Test
@@ -45,6 +51,6 @@ invoke publish
 Just append --upgrade to the install command, eg. 
 
 ```bash
-pip install pelican pelican-alias invoke livereload --upgrade
+pip install pelican pelican-alias invoke livereload markdown beautifulsoup4 --upgrade
 ```
 
