@@ -11,7 +11,7 @@ Lang: en
 
 The old cat tree of Mayori and Tom were bought nearly 4 years ago and has started to show its age. I have been shopping for a new cat tree for a while now. I need something that is nicer than the typical carpet covered cat tree and goes well with the rest of the house. At the same time, I want to get something that Mayori and Tom can really enjoy. Unfortunately, there is very limited number of such choices on the market. One of them is Refined Feline Lotus Cat Tower
 
-[![](http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL160_&ASIN=B004BA6LSU&MarketPlace=US&ID=AsinImage&WS=1&tag=yunyaoshome-20&ServiceVersion=20070822)](http://www.amazon.com/gp/product/B004BA6LSU/ref=as_li_tf_il?ie=UTF8&tag=yunyaoshome-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B004BA6LSU)<img src="http://www.assoc-amazon.com/e/ir?t=yunyaoshome-20&amp;l=as2&amp;o=1&amp;a=B004BA6LSU&amp;camp=217145&amp;creative=399373" width="1" height="1" />
+[![product](http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL160_&ASIN=B004BA6LSU&MarketPlace=US&ID=AsinImage&WS=1&tag=yunyaoshome-20&ServiceVersion=20070822)](http://www.amazon.com/gp/product/B004BA6LSU/ref=as_li_tf_il?ie=UTF8&tag=yunyaoshome-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B004BA6LSU)<img src="http://www.assoc-amazon.com/e/ir?t=yunyaoshome-20&amp;l=as2&amp;o=1&amp;a=B004BA6LSU&amp;camp=217145&amp;creative=399373" width="1" height="1" />
 
 According to the online reviews, most of the cats and the cat owners like this product. So we brought one for the cats to try out.
 

@@ -15,9 +15,9 @@ The first problem is to find the unique id for the email message. Although there
 
 The answer is I don't know, kmail does not reveal that information. At least I don't know the filename when the email is first saved in my email folder. But, the good news is, I don't need to know the filename when the email is in my inbox. Because, as GTD methodology decrees, stuff in inbox should not be permanent, but is to be moved into either projects/next-action list or reference collection. Now, when I process my inbox, and move a message into my GTD email folder, I can figure out what name it is saved in. No, I am not suggesting using kmail's "save-as" method. That's still too much work, because I then have to open a file browser, choose a filename for the email to save as, and manually put a link to that file in my list. Besides, kmail can only "save-as" mbox format, and it sucks.
 
-What I now end up with is a neat solution. Basically, all I need to do, is to drag a message into my local GTD mail folder in kmail. And a link to the saved message will be automatically inserted into my plain-text project/next-action list or my reference file, depending on a dialog selection. This screen shot shows an email being dragged into GTD folder in kmail: ![](http://i274.photobucket.com/albums/jj251/huahaiy/kmail-drag-gtd.png)
+What I now end up with is a neat solution. Basically, all I need to do, is to drag a message into my local GTD mail folder in kmail. And a link to the saved message will be automatically inserted into my plain-text project/next-action list or my reference file, depending on a dialog selection. This screen shot shows an email being dragged into GTD folder in kmail: ![kmail](http://i274.photobucket.com/albums/jj251/huahaiy/kmail-drag-gtd.png)
 
-A dialog then shows up:![](http://i274.photobucket.com/albums/jj251/huahaiy/kmail-drag-gtd-dialog.png).
+A dialog then shows up:![dialog](http://i274.photobucket.com/albums/jj251/huahaiy/kmail-drag-gtd-dialog.png).
 
 After making a selection, a reference to the email message is inserted in vim, which looks like this:  
 

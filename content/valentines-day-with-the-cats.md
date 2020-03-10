@@ -22,7 +22,7 @@ Another lonely Valentine's day for me. Fortunately, the cats are with me.
 
 娇娇：哼，有什么好的。又不能吃，还有刺。不好玩。
 
-![](http://farm3.static.flickr.com/2272/2269334881_2b8cc6790b.jpg?v=0)<img src="http://farm3.static.flickr.com/2017/2269334567_6f9c1e2d73.jpg?v=0" width="333" height="500" />
+![jiaojiao](http://farm3.static.flickr.com/2272/2269334881_2b8cc6790b.jpg?v=0)<img src="http://farm3.static.flickr.com/2017/2269334567_6f9c1e2d73.jpg?v=0" width="333" height="500" />
 
  
 

@@ -23,7 +23,7 @@ Since all the female members of my family look like normal Han people, Yunyao be
 O3\*, O3d and O3e all belong to the group [O3](http://en.wikipedia.org/wiki/Haplogroup_O3_%28Y-DNA%29). It is interesting to see that O3 takes up about 55 percentage of the Han populations. 
 
 Since people always talk about the differences between southern and northern Chinese, a chart (using the same data set) comparing the two follows:  
-![](http://farm8.staticflickr.com/7145/6590358575_7450cf0f53.jpg)Clearly, Northern and Southern Han Chinese males have similar genetic distributions, so the alleaged north-south difference is not that significant, at least in term of male lineage.
+![chart](http://farm8.staticflickr.com/7145/6590358575_7450cf0f53.jpg)Clearly, Northern and Southern Han Chinese males have similar genetic distributions, so the alleaged north-south difference is not that significant, at least in term of male lineage.
 
 Now, the big question, what haplogroup do I belong to? To find out, one has to take out the wallet 😛. Luckily, Yunyao bought this [FamilyTreeDNA](http://www.familytreedna.com/) test for me as a birthday gift. Here is the package I just received in the mail:
 

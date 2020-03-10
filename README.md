@@ -18,7 +18,7 @@ pyenv install 3.6.6
 pyenv global 3.6.6
 ```
 
-Also need node.js for Web editor
+Also need node.js for Web based editor
 
 ```bash
 brew install node
@@ -30,27 +30,23 @@ Now install needed libary:
 pip install pelican pelican-alias invoke livereload markdown beautifulsoup4
 ```
 
-## Test
+## Write and Test Locally
 
-After you edit the documents, you can test the site by starting a dev-server:
+Run or click on `write-blog` command
 
-```bash
-invoke livereload
+Then point browser to http://localhost:8000/admin to start writing the blog using a Web UI.
 
-```
-And point browser to http://localhost:8000
+After finish writing and hit publish button, the blog is published locally,  point browser to http://localhost:8000 to view the blog live locally. 
 
-The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything changes.
+The dev-server supports auto-reloading, and will rebuild your documentation whenever anything changes. It's a bit slow, need to wait for 30 seconds or so for the build to finish.
 
+## Publish to yyhh.org
 
-## Deploy
+After the ssh key to the host server has been set, just run or click on `publish-blog`
 
-After the ssh key to our host server has been set, just do
+## Stop Writing without Publish
 
-```bash
-invoke publish
-
-```
+If you want to stop the local Web server without publishing the changes, run or click on `stop-blog`
 
 ## Upgrade software
 

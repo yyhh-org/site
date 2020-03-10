@@ -9,7 +9,7 @@ Alias: /blog/2008/03/interesting-birthday-gift
 Lang: en
 ---
 
-![](http://farm4.static.flickr.com/3269/2305955534_80d0caf8e5.jpg?v=0)
+![gift](http://farm4.static.flickr.com/3269/2305955534_80d0caf8e5.jpg?v=0)
 
 Huahai has received his birthday gift from Yunyao, a few days early.
 

@@ -14,4 +14,4 @@ Lang: en
 
 The most environment friendly SUV - human powered!
 
-![](http://farm3.static.flickr.com/2342/1806569403_a3951d73dd.jpg)
+![suv](http://farm3.static.flickr.com/2342/1806569403_a3951d73dd.jpg)
