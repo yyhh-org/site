@@ -15,7 +15,10 @@ SITEURL = 'https://yyhh.org'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+# CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+MENUITEMS = [
+    ['RSS', "feeds/all.atom.xml"]
+]
 
 DELETE_OUTPUT_DIRECTORY = True
 
