@@ -112,7 +112,7 @@ def publish(c):
     """Publish to production via rsync"""
     c.run('pelican -s {settings_publish}'.format(**CONFIG))
     c.run(
-        'rsync --delete --exclude ".DS_Store" -pthrvz -c '
+        'rsync --delete --exclude ".DS_Store" --exclude ".!*-e" -pthrvz -c '
         '-e "ssh -p {ssh_port}" '
         '{} {ssh_user}@{ssh_host}:{ssh_path}'.format(
             CONFIG['deploy_path'].rstrip('/') + '/',
