@@ -114,6 +114,7 @@ cd -- "$(dirname "$0")"
 kill -9 `cat npx.pid`
 kill -9 `cat invoke.pid`
 
+git add -A
 git commit -am "publish blog"
 git push
 
