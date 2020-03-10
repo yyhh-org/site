@@ -1,3 +1,4 @@
+---
 Title: 从变量说开来
 Date: 2015-02-25 22:07
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Psychology, ComputerScience, Philosophy
 Slug: cong-bian-liang-shuo-kai-lai
 Alias: /blog/2015/02/%E4%BB%8E%E5%8F%98%E9%87%8F%E8%AF%B4%E5%BC%80%E6%9D%A5
 Lang: zh
+---
 
 数学的变量与计算机语言的变量不同。数学的变量更抽象，是真的变量。而计算机语言的变量是假的，其实还是属性，是某个内存地址或者寄存器的属性。
 

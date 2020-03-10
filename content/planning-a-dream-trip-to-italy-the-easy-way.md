@@ -1,3 +1,4 @@
+---
 Title: Planning a Dream Trip to Italy the Easy Way
 Date: 2011-10-16 22:13
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Travel
 Slug: planning-a-dream-trip-to-italy-the-easy-way
 Alias: /blog/2011/10/planning-dream-trip-italy-easy-way
 Lang: en
+---
 
 Huahai and I have just returned from our first trip together to Italy. The trip itself was wonderful and unforgeable. However, it usually took a lot of planning for such an extensive trip, unless you hire someone else to do it for you or join a tour group.
 

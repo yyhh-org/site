@@ -1,3 +1,4 @@
+---
 Title: Samba Cat Dancer
 Date: 2011-07-04 07:35
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: samba-cat-dancer
 Alias: /blog/2011/07/samba-cat-dancer
 Lang: en
+---
 
 Tom shows off his Samba dance skill.
 

@@ -1,3 +1,4 @@
+---
 Title: Winking Tom & Superman
 Date: 2008-06-15 06:37
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: winking-tom-superman
 Alias: /blog/2008/06/winking-tom-superman
 Lang: en
+---
 
 <img src="http://farm4.static.flickr.com/3003/2579895048_acecea6edc.jpg?v=0" width="500" height="333" />
 

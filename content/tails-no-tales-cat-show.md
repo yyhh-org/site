@@ -1,3 +1,4 @@
+---
 Title: Tails & No Tales Cat Show
 Date: 2009-01-04 07:37
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets, Events
 Slug: tails-no-tales-cat-show
 Alias: /blog/2009/01/tails-no-tales-cat-show
 Lang: en
+---
 
 This is the first time we have even been to a cat show. We have enjoyed it a lot!
 

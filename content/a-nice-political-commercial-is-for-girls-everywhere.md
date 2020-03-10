@@ -1,3 +1,4 @@
+---
 Title: A nice political commercial is for girls everywhere.
 Date: 2008-02-17 23:22
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Politics
 Slug: a-nice-political-commercial-is-for-girls-everywhere
 Alias: /blog/2008/02/nice-political-commercial-girls-everywhere
 Lang: en
+---
 
 <http://www.youtube.com/watch?v=l9z-Aatd0wA>
 

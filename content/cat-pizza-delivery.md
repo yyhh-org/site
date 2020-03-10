@@ -1,3 +1,4 @@
+---
 Title: Cat Pizza Delivery
 Date: 2011-07-04 06:31
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: cat-pizza-delivery
 Alias: /blog/2011/07/cat-pizza-delivery
 Lang: en
+---
 
 Cat in a pizza box?
 

@@ -1,3 +1,4 @@
+---
 Title: Java time resolution
 Date: 2008-02-09 20:21
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Programming, Java, Vim
 Slug: java-time-resolution
 Alias: /blog/2008/02/java-time-resolution
 Lang: en
+---
 
 I am writing a Java program to run psychology experiments. Since this is a generic program that may be configured for running some reaction time (RT) experiments, I am worried about the time resolution of Java. It turns out that I don't need to worry too much, except on Windows. 
 

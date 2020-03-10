@@ -1,3 +1,4 @@
+---
 Title: Posting blog entry to Drupal from within Vim
 Date: 2007-10-27 21:52
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Vim, Python, Drupal
 Slug: posting-blog-entry-to-drupal-from-within-vim
 Alias: /blog/2007/10/posting-blog-entry-drupal-within-vim
 Lang: en
+---
 
 Some people may wonder why would anyone want to do this? Well, there are at least two benefits. 
 

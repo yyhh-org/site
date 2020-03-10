@@ -1,3 +1,4 @@
+---
 Title: Configure Jenkins to use FreeIPA LDAP Security Realm
 Date: 2017-12-08 00:02
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: SysAdmin, Jenkins, LDAP, FreeIPA
 Slug: configure-jenkins-to-use-freeipa-ldap-security-realm
 Alias: /blog/2017/12/configure-jenkins-use-freeipa-ldap-security-realm
 Lang: en
+---
 
 The point of setting up freeIPA for an intranet is to enable single-sign-on (SSO) for all the internal services that requires authentication and authorization. [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol), originated from my *alma mater* University of Michigan, is one of the most widely accepted solutions to the problem. freeIPA can serve as a LDAP authentication and authorization provider to integrate with most of today's reputable server software. Jenkins is no exception.
 

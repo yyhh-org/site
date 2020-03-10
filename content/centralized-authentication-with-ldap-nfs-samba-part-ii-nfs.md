@@ -1,4 +1,5 @@
-Title: Centralized authentication with LDAP + NFS + Samba (Part II: NFS)
+---
+Title: "Centralized authentication with LDAP + NFS + Samba (Part II: NFS)"
 Date: 2005-01-17 05:00
 Author: Huahai
 Category: notebook
@@ -7,6 +8,7 @@ Slug: centralized-authentication-with-ldap-nfs-samba-part-ii-nfs
 Alias: /blog/2005/01/centralized-authentication-ldap-nfs-samba-part-ii-nfs
 Sereis: ldap-nfs-samba
 Lang: en
+---
 
 NFS (Network File System) is an old Unix technology that enables a machine to mount a remote file system. This is desirable for centralized authentication, as the user can access the same home directory no matter which machine he uses.
 

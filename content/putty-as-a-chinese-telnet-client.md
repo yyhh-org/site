@@ -1,3 +1,4 @@
+---
 Title: Putty as a Chinese Telnet client
 Date: 2005-11-02 00:42
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Software
 Slug: putty-as-a-chinese-telnet-client
 Alias: /blog/2005/11/putty-chinese-telnet-client
 Lang: en
+---
 
 How to display Chinese characters correctly on a Telnet client running on a non-Chinese version of Windows machine? Web browsers today support whatever character encodings, this is not so with Telnet client. If you make a Telnet connection to a Chinese server with Windows telnet client, you will most likely see strange characters on screen.
 

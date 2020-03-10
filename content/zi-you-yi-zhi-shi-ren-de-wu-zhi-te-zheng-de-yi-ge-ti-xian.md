@@ -1,3 +1,4 @@
+---
 Title: 自由意志是人的物质特征的一个体现
 Date: 2007-09-01 04:00
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Psychology, Religion
 Slug: zi-you-yi-zhi-shi-ren-de-wu-zhi-te-zheng-de-yi-ge-ti-xian
 Alias: /blog/2007/08/%E8%87%AA%E7%94%B1%E6%84%8F%E5%BF%97%E6%98%AF%E4%BA%BA%E7%9A%84%E7%89%A9%E8%B4%A8%E7%89%B9%E5%BE%81%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BD%93%E7%8E%B0
 Lang: zh
+---
 
 当代无神论首席发言人道金斯在一个辩论\[1\]中说他不关心自由意志，自然就让人觉得落了下风。其实，这个问题的回答可以很简单：所谓自由意志，无非是人作为物质的一个必然表现。
 

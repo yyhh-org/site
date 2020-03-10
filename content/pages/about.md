@@ -1,3 +1,4 @@
+---
 Title: About
 Date: 2005-03-10 15:15
 Author: Huahai
@@ -6,6 +7,7 @@ Tags:
 Slug: about
 Alias: /about-us-0
 Lang: en
+---
 
 <!--![Photo of Yunyao and Huahai together](images/slide-image-3.jpg)-->
 

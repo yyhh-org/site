@@ -1,3 +1,4 @@
+---
 Title: Dual head with xrandr 1.2 revisited
 Date: 2007-11-16 04:04
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Linux, Xorg
 Slug: dual-head-with-xrandr-12-revisited
 Alias: /blog/2007/11/dual-head-xrandr-1-2-revisited
 Lang: en
+---
 
 In [this post](/blog/2007/10/use-xrandr-1-2-swtich-external-display-thinkpad-laptop), I discussed "clone" mode of dual head with xrandr 1.2. Now I got an extra monitor, and would like to use "xinerama" mode, wherein the built-in laptop LCD and the external monitor share a single virtual screen. 
 

@@ -1,3 +1,4 @@
+---
 Title: 猫猫时装秀 (Pet Fashion Show)
 Date: 2008-02-10 01:20
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: mao-mao-shi-zhuang-xiu-pet-fashion-show
 Alias: /blog/2008/02/%E7%8C%AB%E7%8C%AB%E6%97%B6%E8%A3%85%E7%A7%80-pet-fashion-show
 Lang: zh
+---
 
 主要模特： 娇娇小朋友  
 配角： 唐唐小朋友

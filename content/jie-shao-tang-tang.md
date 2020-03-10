@@ -1,3 +1,4 @@
+---
 Title: 介绍唐唐
 Date: 2007-10-31 04:30
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: jie-shao-tang-tang
 Alias: /blog/2007/10/%E4%BB%8B%E7%BB%8D%E5%94%90%E5%94%90
 Lang: zh
+---
 
 ![](http://farm3.static.flickr.com/2194/1971652917_be14af92b9.jpg)
 

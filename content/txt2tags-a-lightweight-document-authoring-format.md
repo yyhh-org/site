@@ -1,4 +1,5 @@
-Title: txt2tags: a Lightweight Document Authoring Format
+---
+Title: "txt2tags: a Lightweight Document Authoring Format"
 Date: 2008-01-04 00:07
 Author: Huahai
 Category: notebook
@@ -6,6 +7,7 @@ Tags: GTD, Editor
 Slug: txt2tags-a-lightweight-document-authoring-format
 Alias: /blog/2008/01/txt2tags-lightweight-document-authoring-format
 Lang: en
+---
 
 ![txt2tags](http://txt2tags.sourceforge.net/img/t2tgems.png)
 

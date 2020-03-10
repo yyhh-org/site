@@ -1,3 +1,4 @@
+---
 Title: 与两个小朋友的对话
 Date: 2007-10-02 01:19
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Religion
 Slug: yu-liang-ge-xiao-peng-you-de-dui-hua
 Alias: /blog/2007/10/%E4%B8%8E%E4%B8%A4%E4%B8%AA%E5%B0%8F%E6%9C%8B%E5%8F%8B%E7%9A%84%E5%AF%B9%E8%AF%9D
 Lang: zh
+---
 
 有一天，海螺子在路上碰到了小爱和小刚。海螺子经常回答这两个小朋友的问题，和他们比较熟。
 

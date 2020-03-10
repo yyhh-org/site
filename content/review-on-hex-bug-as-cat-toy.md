@@ -1,3 +1,4 @@
+---
 Title: Review on Hex Bug as Cat Toy
 Date: 2011-07-10 06:04
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Shopping, Pets
 Slug: review-on-hex-bug-as-cat-toy
 Alias: /blog/2011/07/review-hex-bug-cat-toy
 Lang: en
+---
 
 I am consistantly looking for new ways to entertain the cats, as they get bored with their toys very quickly. One new toy I have recently bought for them is [Hex Ant](https://www.amazon.com/HEXBUG-Fire-Ant-Colors-vary/dp/B00TV0S746).
 

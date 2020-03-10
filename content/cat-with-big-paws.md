@@ -1,3 +1,4 @@
+---
 Title: Cat with Big Paws
 Date: 2011-07-04 06:56
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: cat-with-big-paws
 Alias: /blog/2011/07/cat-big-paws
 Lang: en
+---
 
 Tom shows off his catch and his big paws.
 

@@ -1,3 +1,4 @@
+---
 Title: Museum and Cultural Tour of Bulgaria in 9 Days - Day 1 (More)
 Date: 2013-09-21 18:22
 Author: Yunyao
@@ -7,6 +8,7 @@ Slug: museum-and-cultural-tour-of-bulgaria-in-9-days-day-1-more
 Alias: /blog/2013/09/museum-and-cultural-tour-bulgaria-9-days-day-1-more
 Series: bulgaria-tour-2013
 Lang: en
+---
 
 We were quite amazed by the National Archaeological Museum, especially the Thracian treasures. 
 

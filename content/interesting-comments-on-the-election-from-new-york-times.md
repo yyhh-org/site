@@ -1,3 +1,4 @@
+---
 Title: Interesting Comments on The Election From New York Times
 Date: 2008-02-07 19:03
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Politics
 Slug: interesting-comments-on-the-election-from-new-york-times
 Alias: /blog/2008/02/interesting-comments-election-new-york-times
 Lang: en
+---
 
 I found that comments on the news for the election are often much more entertaining than the news acticles themslves. For the next few months, I will keep on updating this blog entry with comments that I found interesting, regardless whether I agree with the comments themselves or not.
 

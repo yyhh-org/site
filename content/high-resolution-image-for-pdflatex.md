@@ -1,3 +1,4 @@
+---
 Title: High Resolution Image for Pdflatex
 Date: 2012-08-09 20:31
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: LaTeX
 Slug: high-resolution-image-for-pdflatex
 Alias: /blog/2012/08/high-resolution-image-pdflatex
 Lang: en
+---
 
 While preparing the camera-ready version for our CIKM demo, my colleagues and I found that the screenshot included in our paper appeared to be fairly blurry in the pdf version, even though the original .jpg file looks fine.
 

@@ -1,3 +1,4 @@
+---
 Title: Living Alarm Clock
 Date: 2007-11-02 19:04
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: living-alarm-clock
 Alias: /blog/2007/11/living-alarm-clock
 Lang: en
+---
 
 <span style="background-color: #edf5fa">[Video ](http://www.youtube.com/watch?v=3S4hNMqDhoo)</span>
 

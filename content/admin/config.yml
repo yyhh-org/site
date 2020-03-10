@@ -1,26 +1,26 @@
 backend:
-  name: github
-  repo: yyhh-org/site
-  branch: master
+  name: git-gateway
+
+local_backend: true
     
-media_folder: "images/uploads" # Folder where user uploaded files should go
+media_folder: "content/images/uploads" # Folder where user uploaded files should go
 public_folder: "/images/uploads"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
+    identifier_field: "Title"
     label: "Article" # Used in the UI, ie.: "New Post"
     folder: "content" # The path to the folder where the documents are stored
     extension: md
     format: frontmatter
-    sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{slug}}" # Filename template, e.g., YYYY-MM-title.md
+    slug: "{{slug}}" # Filename template, e.g., title.md
     fields: # The fields each document in this collection have
       - {label: "Title", name: "Title", widget: "string"}
       - {label: "Date", name: "Date", widget: "datetime"}
       - {label: "Author", name: "Author", widget: "select", options: ["Yunyao", "Huahai"]}
       - {label: "Category", name: "Category", widget: "select", options: ["experience", "notebook", "opinion"]}
-      - {label: "Tags", name: "Tags", widget: "list", default: [], hint: "Enter comma-separated tags"}
+      - {label: "Tags", name: "Tags", widget: "string", hint: "Enter comma-separated tags"}
       - {label: "Series", name: "Series", widget: "string", required: false, hint: "Give multiple articles a series name"}
       - {label: "Language", name: "Lang", widget: "select", options: ["en", "zh"], hint: "Select en for English, zh for 中文"}
       - {label: "Status", name: "Status", widget: "select", options: ["draft", "published"], hint: "Draft articles appear under /drafts"}

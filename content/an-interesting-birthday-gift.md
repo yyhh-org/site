@@ -1,3 +1,4 @@
+---
 Title: an interesting birthday gift
 Date: 2008-03-02 22:34
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Extraordinary, Family
 Slug: an-interesting-birthday-gift
 Alias: /blog/2008/03/interesting-birthday-gift
 Lang: en
+---
 
 ![](http://farm4.static.flickr.com/3269/2305955534_80d0caf8e5.jpg?v=0)
 

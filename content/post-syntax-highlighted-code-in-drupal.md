@@ -1,3 +1,4 @@
+---
 Title: Post syntax highlighted code in Drupal
 Date: 2007-11-17 10:45
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Editor, Vim, Drupal
 Slug: post-syntax-highlighted-code-in-drupal
 Alias: /blog/2007/11/post-syntax-highlighted-code-drupal
 Lang: en
+---
 
 You may have seen that I sometimes post code here. Wouldn't it be nice if all the code are syntax highlighted, like what we see in a text editor? Well, with the help of Vim, it's easy. Vim is bundled with a "2html" script, that can turn whatever shown in Vim into a HTML file, with all it's color and format. To invoke this command, simply issue ":so \\$VIMRUNTIME/syntax/2html.vim" command in Vim to run the script, or more simply ":TOhtml". No, you don't have to type this many characters, autocompletion should do most of the typing for you. Vim will then open up a window that contains the newly converted HTML file.
 

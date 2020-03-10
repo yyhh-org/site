@@ -35,9 +35,12 @@ BANNER_SUBTITLE = "Yunyao and Huahai's Online Home"
 
 CUSTOM_CSS = 'static/css/custom.css'
 
+TEMPLATE_PAGES = {'admin/index.html': 'admin/index.html'}
+
 STATIC_PATHS = [
     'images',
     'extra',
+    'admin',
 ]
 
 EXTRA_PATH_METADATA = {

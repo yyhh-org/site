@@ -1,3 +1,4 @@
+---
 Title: I love Waffle
 Date: 2007-11-02 18:15
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: i-love-waffle
 Alias: /blog/2007/11/i-love-waffle
 Lang: en
+---
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kMvDKiIYc58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

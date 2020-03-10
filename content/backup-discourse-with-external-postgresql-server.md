@@ -1,3 +1,4 @@
+---
 Title: Backup Discourse with External PostgreSQL Server
 Date: 2018-01-21 05:58
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: SysAdmin, Discourse, PostgreSQL
 Slug: backup-discourse-with-external-postgresql-server
 Alias: /blog/2018/01/backup-discourse-external-postgresql-server
 Lang: en
+---
 
 [Discourse](https://www.discourse.org/) is a modern forum software that is quite popular in the technology circle. One can install a Discourse server easily with the recommended method of using docker. All the services needed by the Discourse server, e.g. Postgresql and Redis, will be running inside a docker container, which is fine for a small installation. However, if one has already an external Postgresql server running, e.g. on AWS RDS, and would like to use that instead, Discourse may have trouble doing backups, and you may receive an email from Discourse:
 

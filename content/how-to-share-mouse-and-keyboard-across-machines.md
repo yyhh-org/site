@@ -1,3 +1,4 @@
+---
 Title: How to Share Mouse and Keyboard across Machines
 Date: 2011-07-11 00:45
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Software
 Slug: how-to-share-mouse-and-keyboard-across-machines
 Alias: /blog/2011/07/how-share-mouse-and-keyboard-across-machines
 Lang: en
+---
 
 If you have multiple machines but only one set of mouse and keyboard, then you must check out this neat little tool called [Synergy](http://synergy-foss.org). It allows you to seamlessly share mouse and keyboard across machines. It even allows you to copy and paste text across machines.
 

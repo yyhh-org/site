@@ -1,4 +1,5 @@
-Title: Finding happiness: a cat's story
+---
+Title: "Finding happiness: a cat's story"
 Date: 2008-06-06 20:56
 Author: Yunyao
 Category: experience
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: finding-happiness-a-cats-story
 Alias: /blog/2008/06/finding-happiness-cats-story
 Lang: en
+---
 
 Long long time ago, there's a prince named Thomas. He's a handsome boy, but often sad, because he's parents passed away when he's very young.
 

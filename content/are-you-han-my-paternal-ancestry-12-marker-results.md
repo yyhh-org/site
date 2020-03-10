@@ -1,3 +1,4 @@
+---
 Title: Are you Han? My paternal ancestry - 12 Marker Results
 Date: 2012-03-03 01:04
 Author: Huahai
@@ -7,6 +8,7 @@ Slug: are-you-han-my-paternal-ancestry-12-marker-results
 Alias: /blog/2012/03/are-you-han-my-paternal-ancestry-12-marker-results
 Series: are-you-han
 Lang: en
+---
 
 As [mentioned previously](http://yyhh.org/blog/2011/12/are-you-han-my-paternal-ancestry-hypothesis), I swabbed my cheeks and mailed my Y-DNA test specimen to [FamilyTreeDNA](http://www.familytreedna.com/) a few months ago. Now the first part of the results, consists of twelve markers, are known. These are standard Y-STR results. Before showing the actual numbers, let me briefly explain.
 

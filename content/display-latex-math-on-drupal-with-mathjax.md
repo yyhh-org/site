@@ -1,3 +1,4 @@
+---
 Title: Display LaTeX Math on Drupal with MathJax
 Date: 2011-07-18 20:19
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: SysAdmin, Drupal, Math, LaTeX
 Slug: display-latex-math-on-drupal-with-mathjax
 Alias: /blog/2011/07/display-latex-math-drupal-mathjax
 Lang: en
+---
 
 [MathJax](http://www.mathjax.org/) seems to be the emerging standard for displaying math on the Web at this moment. It is supported by American Mathematical Society and American Physical Society, and has already been adopted by major math related discussion venues such as Physics Forums and Stack Exchange. MathJax displays math using CSS and Web fonts instead of images, so the quality is very high and is resize-friendly. Below are some examples:
 

@@ -1,3 +1,4 @@
+---
 Title: Juji Personality Profile for Mayor Stubbs
 Date: 2015-03-19 04:53
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets, Juji
 Slug: juji-personality-profile-for-mayor-stubbs
 Alias: /blog/2015/03/juji-personality-profile-mayor-stubbs
 Lang: en
+---
 
 What makes Mayor Stubbs special?
 

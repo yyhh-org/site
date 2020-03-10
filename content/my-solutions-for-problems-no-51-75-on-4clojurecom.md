@@ -1,3 +1,4 @@
+---
 Title: My solutions for problems No. 51-75 on 4clojure.com
 Date: 2011-05-25 01:59
 Author: Huahai
@@ -7,6 +8,7 @@ Slug: my-solutions-for-problems-no-51-75-on-4clojurecom
 Alias: /blog/2011/05/my-solutions-problems-no-51-75-4clojure-com
 Series: 4clojure-solutions
 Lang: en
+---
 
 This post continues the [previous one](http://yyhh.org/blog/2011/05/my-solutions-first-50-problems-4clojure-com), on my solutions for small clojure programming problems on [4clojure.com](http://www.4clojure.com). Doing these problems seems to be addictive as I could not seem to stop myself. The site recently added a golf league feature, so one can see how short one's own solution compared with others. If a lot of people got a much shorter solution than yours, you know you are not thinking in the right way. This little competition makes the site even more attractive. Anyhow, the code is here:
 

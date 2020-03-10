@@ -1,3 +1,4 @@
+---
 Title: Regular Web sites coexist with Drupal sites
 Date: 2007-11-16 01:31
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Drupal
 Slug: regular-web-sites-coexist-with-drupal-sites
 Alias: /blog/2007/11/regular-web-sites-coexist-drupal-sites
 Lang: en
+---
 
 This site is primarily powered by Drupal, i.e. it is a PHP site. However, we have a few Web directories that serves regular HTML pages. Since I installed Drupal in document root, access to these directories becomes an issue. 
 

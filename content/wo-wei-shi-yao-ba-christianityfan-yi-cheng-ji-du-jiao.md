@@ -1,3 +1,4 @@
+---
 Title: 我为什么把Christianity翻译成嫉妒教
 Date: 2007-09-02 01:24
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: China, Politics, Religion
 Slug: wo-wei-shi-yao-ba-christianityfan-yi-cheng-ji-du-jiao
 Alias: /blog/2007/09/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8A%8Achristianity%E7%BF%BB%E8%AF%91%E6%88%90%E5%AB%89%E5%A6%92%E6%95%99
 Lang: zh
+---
 
 主要有３个原因。
 

@@ -1,3 +1,4 @@
+---
 Title: Machine Learning That Matters
 Date: 2012-07-26 21:20
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Research, MachineLearning
 Slug: machine-learning-that-matters
 Alias: /blog/2012/07/machine-learning-matters
 Lang: en
+---
 
 I happen to come across this excellent article from this year's ICML on [Machine Learning that Matters](http://www.wkiri.com/research/papers/wagstaff-MLmatters-12.pdf). I encourage everyone, especially computer science Ph.D students, to read it.
 

@@ -1,4 +1,5 @@
-Title: "Women Are Never Front-Runners" - From NY Times
+---
+Title: "Women Are Never Front-Runners - From NY Times"
 Date: 2008-01-08 21:36
 Author: Yunyao
 Category: opinion
@@ -6,6 +7,7 @@ Tags: Politics
 Slug: women-are-never-front-runners-from-ny-times
 Alias: /blog/2008/01/women-are-never-front-runners-ny-times
 Lang: en
+---
 
 With only basic cable subscription, I am so sick of all the political news by now. But I found this article very interesting.
 

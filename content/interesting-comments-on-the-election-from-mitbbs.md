@@ -1,3 +1,4 @@
+---
 Title: Interesting Comments on The Election From MITBBS
 Date: 2008-03-06 02:41
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Politics
 Slug: interesting-comments-on-the-election-from-mitbbs
 Alias: /blog/2008/03/interesting-comments-election-mitbbs
 Lang: zh
+---
 
 So funny!
 

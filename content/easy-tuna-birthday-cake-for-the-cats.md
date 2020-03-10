@@ -1,3 +1,4 @@
+---
 Title: Easy Tuna Birthday Cake for the Cats
 Date: 2011-09-18 23:25
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets, Cooking
 Slug: easy-tuna-birthday-cake-for-the-cats
 Alias: /blog/2011/09/easy-tuna-birthday-cake-cats
 Lang: en
+---
 
 I was looking for buying birthday cakes for the cats' birthday. Surprisingly, although it is very easy to find dog bakeries, there seems no existence of a single cat bakery. Luckily, a single Google search online brought up many birthday cake recipes for the cats. I picked one simple recipe with my cats' favorite food --- tuna.
 

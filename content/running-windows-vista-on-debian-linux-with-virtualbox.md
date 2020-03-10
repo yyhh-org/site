@@ -1,3 +1,4 @@
+---
 Title: Running Windows Vista on Debian Linux with VirtualBox
 Date: 2007-11-04 00:26
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Linux, Windows
 Slug: running-windows-vista-on-debian-linux-with-virtualbox
 Alias: /blog/2007/11/running-windows-vista-debian-linux-virtualbox
 Lang: en
+---
 
 All of my laptops are now running Debian based Linux. It works great. Linux handles all my daily works well. However, there are occasions where I need a Windows machine. For example, I recently need to deliver a lecture on a system that runs only on Windows. Also, in the past, we developed a system that works only on Windows, and I still need to demonstrate it from time to time. Of course, the solution is to run Windows on a virtual machine on top of Linux. In the last couple of years, I have been using VMware for this purpose. However, I was not very impressed by its performance. I remember last year during a presentation, the virtual machine was so slow that my demonstration was negatively impacted by it.
 

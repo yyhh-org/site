@@ -1,3 +1,4 @@
+---
 Title: Tips for Traveling with a Baby in Japan - Diaper Bag for Air Travel
 Date: 2017-01-11 01:09
 Author: Yunyao
@@ -7,6 +8,7 @@ Slug: tips-for-traveling-with-a-baby-in-japan-diaper-bag-for-air-travel
 Alias: /blog/2017/01/tips-traveling-baby-japan-diaper-bag-air-travel
 Series: travel-with-baby-japan
 Lang: en
+---
 
 The list of items contained in our diaper bag for air travel, annotated with how essential each item was based on our experience as follows:
 
@@ -16,7 +18,7 @@ The list of items contained in our diaper bag for air travel, annotated with how
 
 \*     Not needed
 
-For travel gear that may not fit in your diaper bag, please visit [this page](http://yyhh.org/blog/2017/01/tips-traveling-baby-japan-travel-gears).
+For travel gear that may not fit in your diaper bag, please visit [this page](https://yyhh.org/blog/2017/01/tips-traveling-baby-japan-travel-gears).
 
 -   Portable changing pad (\*\*\*)<span style="font-family: Arial;"></span>
 

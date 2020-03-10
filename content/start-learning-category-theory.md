@@ -1,3 +1,4 @@
+---
 Title: Start learning category theory
 Date: 2012-04-30 07:48
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Math, CategoryTheory
 Slug: start-learning-category-theory
 Alias: /blog/2012/04/start-learning-category-theory
 Lang: en
+---
 
 Perhaps due to my rather small brain (literally), I dislike remembering tedious details. When in elementary school, I hated reciting classic Chinese poems, but liked composing my own :-).  In high school, I hated chemistry but loved physics, because one could do everything based on a few principles in physics, whereas chemistry was all about memorization. Last year, I was chatting with a colleage of mine who had a Ph.D. degree in chemistry from Harvard. He said he's good at it because he could find patterns in all the tedious details and summerized them in his own head, so he didn't have to remember them all. So I said why not write those patterns down so others can benefit, and he didn't seem to like that idea. Anyway, let's go back to the main topic.
 

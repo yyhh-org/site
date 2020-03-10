@@ -1,3 +1,4 @@
+---
 Title: Resources to Get Rid of Lawn the Frugal Way (Phrase I)
 Date: 2011-09-05 01:39
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: House
 Slug: resources-to-get-rid-of-lawn-the-frugal-way-phrase-i
 Alias: /blog/2011/09/resources-get-rid-lawn-frugal-way-phrase-i
 Lang: en
+---
 
 <span style="font-size: small;"></span><span style="font-size: small;">We are getting rid of our front lawn --- to save water and money!</span>
 

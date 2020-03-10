@@ -1,3 +1,4 @@
+---
 Title: Thanksgiving Dinner
 Date: 2008-12-06 18:02
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Cooking
 Slug: thanksgiving-dinner
 Alias: /blog/2008/12/thanksgiving-dinner
 Lang: en
+---
 
 I have been waiting to try the Tofurkey for a few weeks ever since I saw the ad from Trader Joe about it. So I finally tried out on Thanksgiving.
 

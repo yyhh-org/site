@@ -1,3 +1,4 @@
+---
 Title: Review for Canine Cat Scratcher
 Date: 2012-01-02 06:18
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Shopping, Pets
 Slug: review-for-canine-cat-scratcher
 Alias: /blog/2012/01/review-canine-cat-scratcher
 Lang: en
+---
 
 **Updated on 09/10/2013**: It's [now only 295 USD](http://thecompanyofpets.com/), with 100 USD discount!
 

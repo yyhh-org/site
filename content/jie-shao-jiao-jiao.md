@@ -1,3 +1,4 @@
+---
 Title: 介绍娇娇
 Date: 2007-10-31 04:31
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: jie-shao-jiao-jiao
 Alias: /blog/2007/10/%E4%BB%8B%E7%BB%8D%E5%A8%87%E5%A8%87
 Lang: zh
+---
 
 ![](http://farm3.static.flickr.com/2296/2253399526_058f95350d.jpg)
 

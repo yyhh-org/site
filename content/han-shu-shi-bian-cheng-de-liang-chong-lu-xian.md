@@ -1,3 +1,4 @@
+---
 Title: 函数式编程的两种路线
 Date: 2018-08-26 06:30
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Programming, Clojure, Philosophy
 Slug: han-shu-shi-bian-cheng-de-liang-chong-lu-xian
 Alias: /blog/2018/08/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%A4%E7%A7%8D%E8%B7%AF%E7%BA%BF
 Lang: zh
+---
 
 可能很多人没有意识到，函数式编程（FP）有两种非常不同的路线。
 

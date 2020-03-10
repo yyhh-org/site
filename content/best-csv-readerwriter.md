@@ -1,3 +1,4 @@
+---
 Title: Best CSV Reader/Writer?
 Date: 2011-10-11 21:36
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Programming
 Slug: best-csv-readerwriter
 Alias: /blog/2011/10/best-csv-reader-writer
 Lang: en
+---
 
 My colleague has highly recommended to me the following CSV reader/writer: <http://supercsv.sourceforge.net/>
 

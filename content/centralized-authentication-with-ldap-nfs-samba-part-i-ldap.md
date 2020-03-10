@@ -1,12 +1,14 @@
-Title: Centralized authentication with LDAP + NFS + Samba (Part I: LDAP)
+---
+Title: "Centralized authentication with LDAP + NFS + Samba (Part I: LDAP)"
 Date: 2005-01-17 05:00
 Author: Huahai
 Category: notebook
 Tags: SysAdmin, Linux
 Slug: centralized-authentication-with-ldap-nfs-samba-part-i-ldap
 Alias: /blog/2005/01/centralized-authentication-ldap-nfs-samba-part-i-ldap
-Sereis: ldap-nfs-samba
+Series: ldap-nfs-samba
 Lang: en
+---
 
 Ok, what is centralized authentication? Why bother? Well, if each person in your home or organization uses her/his own computer only, no need for this. However, if you or your organization have a bunch of machines and people need to login to different machines at different times, you've got a problem. Do you want to setup an account for each person on each machine? What about people's files? People would like to have access to their files no matter where they login. For this kind of environment, centralized authentication is the way to go.
 

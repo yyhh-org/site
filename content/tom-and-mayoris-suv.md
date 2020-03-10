@@ -1,3 +1,4 @@
+---
 Title: Tom and Mayori's SUV
 Date: 2007-10-31 04:28
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: tom-and-mayoris-suv
 Alias: /blog/2007/10/tom-and-mayoris-suv
 Lang: en
+---
 
 <span style="font-size: 0.9em; margin-top: 0px;">[  
 ](http://www.flickr.com/people/yyhh/) </span>

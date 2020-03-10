@@ -1,3 +1,4 @@
+---
 Title: Migrate DokuWiki to another server
 Date: 2018-10-20 04:46
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: SysAdmin, DokuWiki
 Slug: migrate-dokuwiki-to-another-server
 Alias: /blog/2018/10/migrate-dokuwiki-another-server
 Lang: en
+---
 
 [DokuWiki](https://www.dokuwiki.org/dokuwiki) is one of the most easy-to-use open source Wiki software. It is a very good internal documentation tool for small or medium sized organizations.
 

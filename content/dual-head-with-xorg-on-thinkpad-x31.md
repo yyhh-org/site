@@ -1,3 +1,4 @@
+---
 Title: Dual Head with Xorg on Thinkpad X31
 Date: 2005-10-15 04:00
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Linux, Xorg
 Slug: dual-head-with-xorg-on-thinkpad-x31
 Alias: /blog/2005/10/dual-head-xorg-thinkpad-x31
 Lang: en
+---
 
 My Thinkpad X31 got a small 12.1 inch screen, so I decide to increase the screen real estate by adding an extra monitor. The idea is that the LCD and the CRT monitor will display different part of the same desktop. This dual head solution is sometimes called 'Xinerama' in X terminology.  
 

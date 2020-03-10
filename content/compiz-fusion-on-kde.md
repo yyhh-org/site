@@ -1,4 +1,5 @@
-Title: Compiz-Fusion on KDE:
+---
+Title: "Compiz-Fusion on KDE"
 Date: 2007-10-29 00:39
 Author: Huahai
 Category: notebook
@@ -6,6 +7,7 @@ Tags: Linux, Xorg
 Slug: compiz-fusion-on-kde
 Alias: /blog/2007/10/compiz-fusion-kde
 Lang: en
+---
 
 **Introduction**  
 Nowadays, it is not uncommon to see people multi-tasking with a dozen of windows open. With an 12 inch small screen, Thinkpad X61 really needs an efficient window manager for me to get serious work done. I have been struggling to find a good choice. Of course, 3D desktop seemed to be a reasonable candidate. However, I was quite hesitated to jump on the 3d desktop bandwagon before. One of the reasons is that I did some scientific research work on 3D virtual environment as a PhD student several years ago, and I knew the technology was quite limited in term of mimicking human interaction with the real world. And the benefit of 3D vs 2D wasn't really well established, even in theory. But now almost every vendor is having a 3D desktop project going on right now, I think I should probably give them a try.

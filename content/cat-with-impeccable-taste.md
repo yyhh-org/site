@@ -1,3 +1,4 @@
+---
 Title: Cat with Impeccable Taste
 Date: 2011-07-04 07:17
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: cat-with-impeccable-taste
 Alias: /blog/2011/07/cat-impeccable-taste
 Lang: en
+---
 
 As a cat, Mayori has impeccable taste, as represented by her favorite furniture in the house --- a Bertoia Diamond Lounge chair.
 

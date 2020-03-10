@@ -1,3 +1,4 @@
+---
 Title: Review for "Virtual Cat Toys HD Catnip Collection"
 Date: 2011-11-06 19:46
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets, Shopping, Technology
 Slug: review-for-virtual-cat-toys-hd-catnip-collection
 Alias: /blog/2011/11/review-virtual-cat-toys-hd-catnip-collection
 Lang: en
+---
 
 As many of friends, I recently acquired a HP Touchpad largely due to its low price. I don't really need a tablet, as I am sitting in front of computes almost all the time. My original plan was to turn it into an interactive cat toy, at least sometimes, so I can keep the two cats entertained while I am working.
 

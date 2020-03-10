@@ -1,4 +1,5 @@
-Title: Backup Linux Laptop with USB Hard-disk Enclosure: a Lightweight Solution
+---
+Title: "Backup Linux Laptop with USB Hard-disk Enclosure: a Lightweight Solution"
 Date: 2007-11-12 00:00
 Author: Huahai
 Category: notebook
@@ -6,6 +7,7 @@ Tags: Linux
 Slug: backup-linux-laptop-with-usb-hard-disk-enclosure-a-lightweight-solution
 Alias: /blog/2007/11/backup-linux-laptop-usb-hard-disk-enclosure-lightweight-solution
 Lang: en
+---
 
 Most of Linux laptop users have done some customizations on the system so it works the way we wanted. Now we want to save the fruit of our hard labor in case bad things happen. We want to backup not just the */home* directory, but the whole */* directory, minus some runtime generated files. In the past I have used some heavy-weight applications such as [unison](http://www.cis.upenn.edu/~bcpierce/unison/) and [backuppc](http://backuppc.sourceforge.net/). These worked well, but they required setting up servers that run all the time. For my Thinkpad laptop, I decided to use a simple and lightweight solution, but still keeping the nice features such as data compression, exclude files, and incremental backup. A script called [rdiff-backup](http://www.nongnu.org/rdiff-backup/) seems to do the trick, and KDE has a GUI front end called [keep](http://www.kde-apps.org/content/show.php?content=32984) for it.
 

@@ -1,3 +1,4 @@
+---
 Title: Are you Han? My paternal ancestry - Hypothesis
 Date: 2011-12-28 07:02
 Author: Huahai
@@ -7,6 +8,7 @@ Slug: are-you-han-my-paternal-ancestry-hypothesis
 Alias: /blog/2011/12/are-you-han-my-paternal-ancestry-hypothesis
 Series: are-you-han
 Lang: en
+---
 
 I was brought up as a [Han Chinese](http://en.wikipedia.org/wiki/Han_Chinese) and I myself have never doubted that identity.  However, I do know that I look slightly different from people around me when I grew up. Darker skin, slightly curly hairs, deeper set eyes and other distinctive facial features. Put it simply, my face does not look like an [average Han male face](http://pmsol3.files.wordpress.com/2009/08/chineseaverageman.jpg?w=490). However, nobody really said anything about my appearance except that my old brother occasionally joked about it (he looks like a normal Han Chinese by the way). After all, I look just like my father. Besides, there are plenty of male relatives in my father's native village (near Chongqing) who look just like me.
 

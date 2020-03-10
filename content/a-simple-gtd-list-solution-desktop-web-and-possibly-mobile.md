@@ -1,4 +1,5 @@
-Title: A Simple GTD List Solution: Desktop, Web and Possibly Mobile
+---
+Title: "A Simple GTD List Solution: Desktop, Web and Possibly Mobile"
 Date: 2007-12-10 04:25
 Author: Huahai
 Category: notebook
@@ -6,6 +7,7 @@ Tags: GTD, Editor, Vim
 Slug: a-simple-gtd-list-solution-desktop-web-and-possibly-mobile
 Alias: /blog/2007/12/simple-gtd-list-solution-desktop-web-and-possibly-mobile
 Lang: en
+---
 
 I have been searching for a lightweight list solution since I started trying out the [Getting Things Done (GTD)](http://en.wikipedia.org/wiki/Getting_Things_Done) approach a few days ago. Unlike calendar events, list items (projects and actions) do not associate with a particular time and date, therefore, using a calender for them is not appropriate. According to [David Allen](http://www.davidco.com/), for lists, we should "just go for simplicity, speed, and fun". Here I operationalize that into these properties:
 

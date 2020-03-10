@@ -1,3 +1,4 @@
+---
 Title: 一个女性友好的家防霰弹枪的配置
 Date: 2013-09-02 05:46
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: House
 Slug: yi-ge-nu-xing-you-hao-de-jia-fang-xian-dan-qiang-de-pei-zhi
 Alias: /blog/2013/09/%E4%B8%80%E4%B8%AA%E5%A5%B3%E6%80%A7%E5%8F%8B%E5%A5%BD%E7%9A%84%E5%AE%B6%E9%98%B2%E9%9C%B0%E5%BC%B9%E6%9E%AA%E7%9A%84%E9%85%8D%E7%BD%AE
 Lang: zh
+---
 
 响应[拜登副总统的“Buy a shotgun”的号召](http://www.usatoday.com/story/news/politics/2013/02/19/biden-double-barrel-shotgun/1931223/)，我家买了一支泵动霰弹枪用于家防。这儿介绍一下这个枪的配置，配置的目标是让身材比较娇小的女性也可以比较容易地使用12GA的家防弹药。要不然，[这个录像](http://www.youtube.com/watch?v=A0IVSGctQIg)上的这些状况发生在Yunyao身上就不妙了。
 

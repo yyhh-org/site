@@ -1,3 +1,4 @@
+---
 Title: Set mailto handler in Firefox
 Date: 2007-11-16 22:25
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Firefox, Linux
 Slug: set-mailto-handler-in-firefox
 Alias: /blog/2007/11/set-mailto-handler-firefox
 Lang: en
+---
 
 In order to click "mailto:" links on Web pages to launch an email program, Firefox (or Iceweasel on Debian) needs to be told which email program to use. 
 

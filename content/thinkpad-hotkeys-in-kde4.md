@@ -1,3 +1,4 @@
+---
 Title: Thinkpad Hotkeys in KDE4
 Date: 2010-12-01 22:00
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Linux
 Slug: thinkpad-hotkeys-in-kde4
 Alias: /blog/2010/12/thinkpad-hotkeys-kde4
 Lang: en
+---
 
 I have kept my Thinkpad X61 laptop up to date with Debian sid for a few years. The KDE4 in Debian sid is at version **4.4.5** at this moment, and I think it is mature enough for me to switch the laptop power management from [my own hacked up solution](/blog/2007/10/thinkpad-x61-hotkeys-solution-debian-linux) to a KDE integrated one. My old solution still works for the most part, but there are some glitches after repeated supsend-resume cycles. As the system keeps evolving, I suspect more things would break.
 

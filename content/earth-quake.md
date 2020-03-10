@@ -1,3 +1,4 @@
+---
 Title: Earth Quake
 Date: 2007-10-31 06:45
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Extraordinary, Family, Pets
 Slug: earth-quake
 Alias: /blog/2007/10/earth-quake
 Lang: en
+---
 
 At 8:03pm, the kittens were feed with their main course (dry food) and dessert (can food and egg). I just finished cooking my own dinner, put the serving tray with my dinner to the coffee table, and was about to enjoy my meal while chatting with Huahai on my cell. It just seem to be a normal weekday night for me these days. 
 

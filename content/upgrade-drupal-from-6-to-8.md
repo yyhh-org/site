@@ -1,3 +1,4 @@
+---
 Title: Upgrade Drupal from 6 to 8
 Date: 2017-11-21 23:46
 Author: Huahai
@@ -6,12 +7,13 @@ Tags: SysAdmin, Drupal
 Slug: upgrade-drupal-from-6-to-8
 Alias: /blog/2017/11/upgrade-drupal-6-8
 Lang: en
+---
 
 Since [Drupal 6 is no longer supported](https://www.drupal.org/forum/general/news-and-announcements/2015-11-09/drupal-6-end-of-life-announcement), I upgraded this site to the lasted version of Drupal 8.4.2 by following [the guide](https://www.drupal.org/docs/8/upgrade/upgrading-from-drupal-6-or-7-to-drupal-8). As you can see, the upgrade mostly worked. However, there are a few points of caution as well as some unresolved problems.
 
-As [before](http://test.yyhh.org/blog/2011/07/upgrade-drupal-almost-zero-down-time), I setup a test site in a sub-directory (h/drupal) of the main site (/h) and assigned a domain name to the test site. The test site use a new empty database. The idea is to keep the old site running, and migrate the data from the old to the new. 
+As [before](https://yyhh.org/blog/2011/07/upgrade-drupal-almost-zero-down-time), I setup a test site in a sub-directory (h/drupal) of the main site (/h) and assigned a domain name to the test site. The test site use a new empty database. The idea is to keep the old site running, and migrate the data from the old to the new. 
 
-This blog is on a hosted service that allows direct SSH access, so it made things a lot easier.** **[Drush](http://www.drush.org/en/master/) helped a lot. To get drush to work, I had to modify the drush bootstrap script to use php7.1-cli, because the hosting server had many versions of PHP installed, and the default one is not even a command line interpreter.  I then created a bash alias in ~/.bash\_profile for the drush script, so that I could run drush anywhere. 
+This blog is on a hosted service that allows direct SSH access, so it made things a lot easier.** **[Drush](https://www.drush.org/en/master/) helped a lot. To get drush to work, I had to modify the drush bootstrap script to use php7.1-cli, because the hosting server had many versions of PHP installed, and the default one is not even a command line interpreter.  I then created a bash alias in ~/.bash\_profile for the drush script, so that I could run drush anywhere. 
     
     :::bash
     alias drush='/h/drupal/vendor/bin/drush --root=/h/drupal'
@@ -33,7 +35,7 @@ Not all the old modules exist in Drupal 8 any more. Some of them are folded into
 First created the migrate configurations.
 
     :::bash
-    drush migrate-upgrade --legacy-db-url=mysql://username:password@old.mysql.server/olddb --legacy-root=http://yyhh.org --configure-only
+    drush migrate-upgrade --legacy-db-url=mysql://username:password@old.mysql.server/olddb --legacy-root=https://yyhh.org --configure-only
 
 At this point, one could run individual migration one by one, or one could run them all, which I did:
 

@@ -1,3 +1,4 @@
+---
 Title: My solutions for problems No. 76-100 on 4clojure.com
 Date: 2011-06-05 05:36
 Author: Huahai
@@ -7,6 +8,7 @@ Slug: my-solutions-for-problems-no-76-100-on-4clojurecom
 Alias: /blog/2011/06/my-solutions-problems-no-76-100-4clojure-com
 Series: 4clojure-solutions
 Lang: en
+---
 
 Finally done with all the 100 problems listed on 4clojure.com so far :-). When new problems appears there, I will probably do them when I have some time to kill, but I will not post my solutions here any more. If I found interesting programming exercises, I may submit to 4clojure as well.
 

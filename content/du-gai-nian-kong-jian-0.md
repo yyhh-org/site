@@ -1,3 +1,4 @@
+---
 Title: 读《概念空间》 － 0
 Date: 2011-02-03 23:28
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Psychology, Science, Book
 Slug: du-gai-nian-kong-jian-0
 Alias: /blog/2011/02/%E8%AF%BB%E3%80%8A%E6%A6%82%E5%BF%B5%E7%A9%BA%E9%97%B4%E3%80%8B-%EF%BC%8D-0
 Lang: zh
+---
 
 Peter Gardenfors, Conceptual Space: The Geometry of Thought, MIT Press, 2004
 

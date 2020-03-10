@@ -1,3 +1,4 @@
+---
 Title: Baby Cloth Shoe - First Attempt
 Date: 2012-06-01 00:50
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Childcare, Craft
 Slug: baby-cloth-shoe-first-attempt
 Alias: /blog/2012/05/baby-cloth-shoe-first-attempt
 Lang: en
+---
 
 As a busy computer scientist, I don't really get to exercise my inner Martha too much. But I did somehow manage to make my first ever attempt on sewing projects --- baby cloth shoes (as gift for my niece).
 

@@ -1,4 +1,5 @@
-Title: Count Number of Maps: First Exercises of Conceptual Mathematics in Clojure
+---
+Title: "Count Number of Maps: First Exercises of Conceptual Mathematics in Clojure"
 Date: 2012-05-16 20:33
 Author: Huahai
 Category: notebook
@@ -6,6 +7,7 @@ Tags: Math, CategoryTheory, Programming, Clojure
 Slug: count-number-of-maps-first-exercises-of-conceptual-mathematics-in-clojure
 Alias: /blog/2012/05/count-number-maps-first-exercises-conceptual-mathematics-clojure
 Lang: en
+---
 
 As [previously mentioned](http://yyhh.org/blog/2012/04/start-learning-category-theory), I am learning category theory, beginning with [Lawvere](http://en.wikipedia.org/wiki/William_Lawvere)'s [Conceptual Mathematics](http://www.amazon.com/Conceptual-Mathematics-First-Introduction-Categories/dp/052171916X) book. This is a very elementry book that assumes almost nothing as a background. However, it is still a math book, which requires doing some exercises. Since the book provides no answer to exercises, I decide to make my own and post them here as I did them. Hopefully someone will find them useful.
 

@@ -1,3 +1,4 @@
+---
 Title: 三藩Wipro首马报告 --- My First Marathon (San Francisco Wipro Marathon 06/17/2013)
 Date: 2013-07-27 01:40
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Extraordinary
 Slug: san-fan-wiproshou-ma-bao-gao-my-first-marathon-san-francisco-wipro-marathon-06172013
 Alias: /blog/2013/07/%E4%B8%89%E8%97%A9wipro%E9%A6%96%E9%A9%AC%E6%8A%A5%E5%91%8A-my-first-marathon-san-francisco-wipro-marathon-06-17-2013
 Lang: zh
+---
 
 \[前序\]  
 我的同事中有不少人跑马的，他们也曾经鼓动我参加跑步运动，但是我一直觉得跑步很  

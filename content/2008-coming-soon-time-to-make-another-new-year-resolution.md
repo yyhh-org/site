@@ -1,3 +1,4 @@
+---
 Title: 2008 coming soon - Time to make another new year resolution
 Date: 2007-12-31 20:17
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Extraordinary
 Slug: 2008-coming-soon-time-to-make-another-new-year-resolution
 Alias: /blog/2007/12/2008-coming-soon-time-make-another-new-year-resolution
 Lang: en
+---
 
 Year 2008 is less than 12 hours away for me. In fact, it is already 2008 in most part of the world. For many people, it is time to make their new year resolution. It is true for me as well.
 

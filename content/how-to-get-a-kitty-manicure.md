@@ -1,3 +1,4 @@
+---
 Title: How to get a kitty manicure
 Date: 2013-09-04 05:34
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: how-to-get-a-kitty-manicure
 Alias: /blog/2013/09/how-get-kitty-manicure
 Lang: en
+---
 
 Speaker: Tom
 

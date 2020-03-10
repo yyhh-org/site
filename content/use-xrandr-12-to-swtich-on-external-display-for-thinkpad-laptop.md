@@ -1,3 +1,4 @@
+---
 Title: Use XRandR 1.2 to Swtich on External Display for Thinkpad Laptop
 Date: 2007-10-28 15:00
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Linux, Xorg
 Slug: use-xrandr-12-to-swtich-on-external-display-for-thinkpad-laptop
 Alias: /blog/2007/10/use-xrandr-1-2-swtich-external-display-thinkpad-laptop
 Lang: en
+---
 
 Thinkpad X61 has an VGA output port, so it supports dual-head display. However, with the Intel GMA965 graphics chipset in X61, the thinkpad\_acpi (used to be called ibm\_acpi) kernel module does not seem to support switching on or off this VGA port any more. The traditionally used commands, such as "echo crt\_enable &gt; /proc/acpi/ibm/video", no longer work.  
 Fortunately, the xserver-xorg-video-intel display driver supports xrandr 1.2. extension in recent versions of Xorg X server. So we can use xrandr to dynamically switch on or off the external VGA display, and much more.

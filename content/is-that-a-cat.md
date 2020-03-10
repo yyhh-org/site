@@ -1,3 +1,4 @@
+---
 Title: Is that a cat?
 Date: 2009-08-08 04:39
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets
 Slug: is-that-a-cat
 Alias: /blog/2009/08/cat
 Lang: zh
+---
 
 1\. 用过晚饭后，唐唐又迫不及待的要麻麻带着到外面进行巡视领地的每日一游的活动。正当他迈着小步在sidewalk上走的时候，一辆SUV从住在我们这片小区里面开了过来。然后在不远处停了下来。接着车窗摇了下来，然后一位女子探出头来问到＂Is that a cat?＂当麻麻确认唐唐的猫身以后，便被唐唐又拖着继续巡视领地。只听见身后车里的几位不约而同的感叹到＂Wow. Cat on a leash!＂
 

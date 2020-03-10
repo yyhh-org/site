@@ -1,4 +1,5 @@
-Title: Quick Fix: Windows XP Crashes with Blue Screen with Video Content
+---
+Title: "Quick Fix: Windows XP Crashes with Blue Screen with Video Content"
 Date: 2011-09-22 00:06
 Author: Yunyao
 Category: notebook
@@ -6,6 +7,7 @@ Tags: Software, Windows
 Slug: quick-fix-windows-xp-crashes-with-blue-screen-with-video-content
 Alias: /blog/2011/09/quick-fix-windows-xp-crashes-blue-screen-video-content
 Lang: en
+---
 
 For some reason, my main working machine, a Windows XP desktop, recently  started to crash a lot followed by the blue screen of death. The error message output at the blue screen does not seem to be helpful.  
 

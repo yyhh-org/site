@@ -1,3 +1,4 @@
+---
 Title: LDAP Authentication for On-premise Sentry Server using freeIPA
 Date: 2017-12-11 23:27
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: SysAdmin, Sentry, LDAP, FreeIPA
 Slug: ldap-authentication-for-on-premise-sentry-server-using-freeipa
 Alias: /blog/2017/12/ldap-authentication-premise-sentry-server-using-freeipa
 Lang: en
+---
 
 Sentry is a fairly popular service for tracking exceptions and errors in production softwares. They also provides a [docker recipe](https://github.com/getsentry/onpremise) for people who want to self host their own sentry server. This post shows how to enable LDAP authentication for such a self hosted sentry server, using freeIPA as the LDAP provider.
 

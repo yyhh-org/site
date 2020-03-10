@@ -1,3 +1,4 @@
+---
 Title: Before and After --- Master Bathroom Remodeling
 Date: 2011-09-04 06:04
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: House
 Slug: before-and-after-master-bathroom-remodeling
 Alias: /blog/2011/09/and-after-master-bathroom-remodeling
 Lang: en
+---
 
 The old master bathroom is dark and ugly, with only one sink and w/o tub.
 

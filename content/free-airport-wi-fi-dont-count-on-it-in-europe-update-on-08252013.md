@@ -1,3 +1,4 @@
+---
 Title: Free Airport Wi-Fi? -- Don't Count on It in Europe (Update on 08/25/2013)
 Date: 2012-10-26 18:28
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Travel, Technology
 Slug: free-airport-wi-fi-dont-count-on-it-in-europe-update-on-08252013
 Alias: /blog/2012/10/free-airport-wi-fi-dont-count-it-europe-update-08-25-2013
 Lang: en
+---
 
 I was traveling in Europe last week. While I enjoyed the history, culture and food very much, I was not a big fan of the airports. Like many people, I would like to stay connected most of the time, at least be able to access my emails and the Web from time to time (say every 2-3 hours). Unfortunately, passing through the following three airports in Europe is almost like returning back to stone age, in  terms of connectivities.
 

@@ -1,3 +1,4 @@
+---
 Title: Chrismas Vacation --- Mexico Riviera Cruise (Draft)
 Date: 2008-02-10 03:42
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Travel
 Slug: chrismas-vacation-mexico-riviera-cruise-draft
 Alias: /blog/2008/02/chrismas-vacation-mexico-riviera-cruise-draft
 Lang: en
+---
 
 Place Holder for now.
 

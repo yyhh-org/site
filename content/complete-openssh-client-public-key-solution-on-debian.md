@@ -1,3 +1,4 @@
+---
 Title: Complete OpenSSH Client Public Key Solution on Debian
 Date: 2007-11-12 10:14
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Linux
 Slug: complete-openssh-client-public-key-solution-on-debian
 Alias: /blog/2007/11/complete-openssh-client-public-key-solution-debian
 Lang: en
+---
 
 My work requires me to connect to many different SSH servers, and I have different passwords for each server. It's a pain in the neck trying to type in many different passwords everyday. The obvious solution is to use OpenSSH's public key login solution, so passwords are no longer needed to connect to SSH servers from a single client (e.g. my office desktop).
 

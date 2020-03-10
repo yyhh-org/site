@@ -1,3 +1,4 @@
+---
 Title: 唐唐娇娇春游记 (Tom, Mayori Field Trip in a sunny spring day)
 Date: 2008-03-29 17:40
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Travel, Pets
 Slug: tang-tang-jiao-jiao-chun-you-ji-tom-mayori-field-trip-in-a-sunny-spring-day
 Alias: /blog/2008/03/%E5%94%90%E5%94%90%E5%A8%87%E5%A8%87%E6%98%A5%E6%B8%B8%E8%AE%B0-tom-mayori-field-trip-sunny-spring-day
 Lang: zh
+---
 
 春天来到，野花微笑，小鸟欢叫，唐唐娇娇，春游去了！
 

@@ -1,3 +1,4 @@
+---
 Title: Valentine's day with the cats
 Date: 2008-02-16 23:03
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Pets, Family
 Slug: valentines-day-with-the-cats
 Alias: /blog/2008/02/valentines-day-cats
 Lang: zh
+---
 
 Another lonely Valentine's day for me. Fortunately, the cats are with me.
 

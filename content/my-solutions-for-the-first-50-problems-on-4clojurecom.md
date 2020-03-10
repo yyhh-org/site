@@ -1,3 +1,4 @@
+---
 Title: My solutions for the first 50 problems on 4clojure.com
 Date: 2011-05-18 23:13
 Author: Huahai
@@ -7,6 +8,7 @@ Slug: my-solutions-for-the-first-50-problems-on-4clojurecom
 Alias: /blog/2011/05/my-solutions-first-50-problems-4clojure-com
 Series: 4clojure-solutions
 Lang: en
+---
 
 For someone without previous Lisp experience, the hardest part of learning [Clojure](http://clojure.org) programming seems to be the functional way of doing things. It is like math, one really needs to do some exercises in order to master it. At this point, [4clojure.com](http://www.4clojure.com) seems to be the best place for getting such exercises. It has a lot of problems for new clojurians to solve. These problems ask one to fill in the blank \_\_ so the given expressions are true. To give a little challenge, some clojure built-in functions are forbidden to use for some problems. New problems are added from time to time on the site, so it surely can keep me entertained for a while.
 

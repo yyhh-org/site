@@ -1,3 +1,4 @@
+---
 Title: Books Read in 2020
 Date: 2020-01-02 05:29
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Book
 Slug: books-read-in-2020
 Alias: /node/190
 Lang: en
+---
 
 I challenge myself to read or listen to 52 books in 2020. I'm listing them here with a short descriptions about them to keep track of what I've read and key ideas learned.
 

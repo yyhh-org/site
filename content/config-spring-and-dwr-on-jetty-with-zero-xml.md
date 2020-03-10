@@ -1,3 +1,4 @@
+---
 Title: Config Spring and DWR on Jetty with zero XML
 Date: 2009-08-09 10:51
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Programming, Java
 Slug: config-spring-and-dwr-on-jetty-with-zero-xml
 Alias: /blog/2009/08/config-spring-and-dwr-jetty-zero-xml
 Lang: en
+---
 
 I hate xml configuation files. They look awful. As a result, they can be very time-consuming to write, and are very error-prone. There's no type-safty checking whatsoever. I would rather keep configurations within my Java source code. After all, we programmers are the only people looking at these configurations, why create trouble for ourselves? Luckily, with annotation support in Java, we can now completely do away with xml files for developing Web applications. Here is my recent experience integrating Spring framework with DWR on a Jetty sever.
 

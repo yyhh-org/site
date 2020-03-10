@@ -1,3 +1,4 @@
+---
 Title: Use Vim as Info Page Browser
 Date: 2007-11-29 07:56
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Vim, Linux
 Slug: use-vim-as-info-page-browser
 Alias: /blog/2007/11/use-vim-info-page-browser
 Lang: en
+---
 
 In [this post](http://yyhh.org/blog/2007/11/use-vim-read-manual-page), I set up vim as a manual page viewer, using [ManPageView](http://vim.sourceforge.net/scripts/script.php?script_id=489) plugin. It turned out that the same plugin can be used to view info pages as well. All one needs to to is to add ".i" suffix to the command that you are seeking help on. For example, ":Man sed.i" will show the info page for sed. With this information, we can set up vim as info page browser, just add these lines in *~/.bashrc*:
 

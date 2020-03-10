@@ -1,3 +1,4 @@
+---
 Title: Create Multiple Modules Maven Project in Eclipse
 Date: 2008-02-14 04:49
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Programming, Java
 Slug: create-multiple-modules-maven-project-in-eclipse
 Alias: /blog/2008/02/create-multiple-modules-maven-project-eclipse
 Lang: en
+---
 
 Modularized software system design is often a good idea. Maven is the new software build system that is purported to be better than ant. For my new project, I want to create a maven build consisting of multiple modules. To do this, and let Eclipse treats these modules as parts of a single Eclipse project, I used the following procedure.
 

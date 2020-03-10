@@ -1,3 +1,4 @@
+---
 Title: Netflix Is Splitting Into Two!?
 Date: 2011-09-19 23:20
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Technology, Entertainment
 Slug: netflix-is-splitting-into-two
 Alias: /blog/2011/09/netflix-splitting-two
 Lang: en
+---
 
 It has turned out that Netflix has abandoned the plan, finally.
 

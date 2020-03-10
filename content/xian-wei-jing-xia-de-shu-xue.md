@@ -1,3 +1,4 @@
+---
 Title: 显微镜下的数学
 Date: 2008-04-12 05:29
 Author: Huahai
@@ -6,6 +7,7 @@ Tags: Psychology, Math, Philosophy, Book
 Slug: xian-wei-jing-xia-de-shu-xue
 Alias: /blog/2008/04/%E6%98%BE%E5%BE%AE%E9%95%9C%E4%B8%8B%E7%9A%84%E6%95%B0%E5%AD%A6
 Lang: zh
+---
 
 显微镜下的数学 Mathematics under microscope ([电子书下载](http://www.maths.manchester.ac.uk/~avb/micromath))是本数学家写的  
 从认知角度看数学的书，挺有启发性的。

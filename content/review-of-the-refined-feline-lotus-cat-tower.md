@@ -1,3 +1,4 @@
+---
 Title: Review of The Refined Feline Lotus Cat Tower
 Date: 2011-07-04 09:06
 Author: Yunyao
@@ -6,6 +7,7 @@ Tags: Shopping, Pets
 Slug: review-of-the-refined-feline-lotus-cat-tower
 Alias: /blog/2011/07/review-refined-feline-lotus-cat-tower
 Lang: en
+---
 
 The old cat tree of Mayori and Tom were bought nearly 4 years ago and has started to show its age. I have been shopping for a new cat tree for a while now. I need something that is nicer than the typical carpet covered cat tree and goes well with the rest of the house. At the same time, I want to get something that Mayori and Tom can really enjoy. Unfortunately, there is very limited number of such choices on the market. One of them is Refined Feline Lotus Cat Tower
 
