@@ -10,6 +10,8 @@ SITEURL = 'https://yyhh.org'
 SITELOGO = 'images/yyhh.svg'
 SITELOGO_SIZE = 52
 
+READERS = {'html': None}
+
 I18N_SUBSITES = {
     'zh': {
         'SITELOGO': '../images/yyhh.svg',

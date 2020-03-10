@@ -18,7 +18,13 @@ pyenv install 3.6.6
 pyenv global 3.6.6
 ```
 
-Now install needed software:
+Also need node.js for Web editor
+
+```bash
+brew install node
+```
+
+Now install needed libary:
 
 ```bash
 pip install pelican pelican-alias invoke livereload markdown beautifulsoup4

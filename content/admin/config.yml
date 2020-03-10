@@ -18,10 +18,10 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "Title", widget: "string"}
       - {label: "Date", name: "Date", widget: "datetime"}
-      - {label: "Author", name: "Author", widget: "select", options: ["Yunyao", "Huahai"]}
-      - {label: "Category", name: "Category", widget: "select", options: ["experience", "notebook", "opinion"]}
-      - {label: "Tags", name: "Tags", widget: "string", hint: "Enter comma-separated tags"}
-      - {label: "Series", name: "Series", widget: "string", required: false, hint: "Give multiple articles a series name"}
-      - {label: "Language", name: "Lang", widget: "select", options: ["en", "zh"], hint: "Select en for English, zh for 中文"}
-      - {label: "Status", name: "Status", widget: "select", options: ["draft", "published"], hint: "Draft articles appear under /drafts"}
+      - {label: "Author", name: "Author", widget: "select", default: "Yunyao", options: ["Yunyao", "Huahai"]}
+      - {label: "Category", name: "Category", widget: "select", default: "experience", options: ["experience", "notebook", "opinion"], hint: "Select category"}
+      - {label: "Tags", name: "Tags", widget: "string", hint: "Enter comma-separated words"}
+      - {label: "Series", name: "Series", widget: "string", required: false, hint: "Give multiple related articles a series name"}
+      - {label: "Language", name: "Lang", widget: "select", default: "en", options: ["en", "zh"], hint: "Select en for English, zh for 中文"}
+      - {label: "Status", name: "Status", widget: "select", default: "published", options: ["draft", "published"], hint: "Draft does not show on site"}
       - {label: "Body", name: "body", widget: "markdown"}

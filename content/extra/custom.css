@@ -50,7 +50,11 @@ h4 {
 }
 
 .post-info a {
-  margin: 0 5px;
+  margin: 0 2px;
+}
+
+.post-info .fa-tag {
+  margin-left: 5px;
 }
 
 #sidebar {
