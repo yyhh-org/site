@@ -14,7 +14,7 @@ from pelicanconf import *
 SITEURL = 'https://yyhh.org'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_ATOM = '/feeds/all.atom.xml'
 # CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
@@ -24,8 +24,8 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "yyhh-org"
 GOOGLE_ANALYTICS = "UA-110381421-1"
 
-ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{slug}'
-ARTICLE_LANG_URL = '{lang}/blog/{date:%Y}/{date:%m}/{slug}'
+ARTICLE_URL = '/blog/{date:%Y}/{date:%m}/{slug}'
+ARTICLE_LANG_URL = '/{lang}/blog/{date:%Y}/{date:%m}/{slug}'
 
-PAGE_URL = '{slug}'
-PAGE_LANG_URL = '{lang}/{slug}'
+PAGE_URL = '/{slug}'
+PAGE_LANG_URL = '/{lang}/{slug}'
