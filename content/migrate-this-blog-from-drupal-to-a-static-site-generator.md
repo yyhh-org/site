@@ -39,11 +39,11 @@ The lesson seems to be that a feed importer is better than a database importer f
 
 After some minor cleanup of the markdown files generated from the feed importer, I quickly switched the live site to Pelican. I then pushed the whole thing to a github repository and thought I was done. Then Yunyao said she wanted a Web based editor like before, instead of having to write blogs like writing programming code. 
 
-That means we need a headless CMS to pair with Pelican. Again, there are so many options, and I just picked the first one that come into my head, NetlifyCMS. It includes simply two files that you drop into the content directory under \`/admin\`. It provides a react.js app with a nice editor for writing the posts in WYSIWYG fashion. 
+That means we need a headless CMS to pair with Pelican. Again, there are so many options, and I just picked the first one that come into my head, NetlifyCMS. It includes simply two files that you drop into the content directory under `/admin`. It provides a react.js app with a nice editor for writing the posts in WYSIWYG fashion. 
 
 ![netlify screenshot](/images/uploads/screen-shot-2020-03-10-at-1.54.57-pm.png "Screenshot of Netlify CMS")
 
-The form widgets for the frontmatter fields are a big help. Otherwise, I will have to copy an old post as the template to write new ones. The configuration of these widgets in a \`config.yml\` file is quite nice and easy.
+The form widgets for the frontmatter fields are a big help. Otherwise, I will have to copy an old post as the template to write new ones. The configuration of these widgets in a `config.yml` file is quite nice and easy.
 
 ```yml
 backend:
