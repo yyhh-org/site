@@ -125,10 +125,12 @@ echo "Blog published at https://yyhh.org"
 
 ### Good and Bad
 
-This setup works nicely. Obviously, the site loads much faster, as it just serve static files.
+This setup works nicely. Obviously, the site loads much faster, as it just serves static files.
 
 Pelican also gets me some new features that I did not have before. The i18n subsite feature allows us to separate English and Chinese content completely, so people do not have to read things they cannot understand. The translation configuration with gettext and po files works pretty well.  
 
-Pelican is pretty old in term of "the latest and the greatest" technology fad, so there is not a lot of activities going on. There are not many themes that are actively updated. It is however sufficient for a blog.
+Pelican is pretty old in term of "the latest and the greatest" technology fad, so there is not a lot of activities going on. There are not many themes that are actively updated. It is however sufficient for a personal blog.
 
-The main concern is the slowness of the build. It would take about 50 seconds to build this site on my laptop (albeit a very old one). As more content is added, it would get worse. So I will definitely switch again in the near future.
+The main concern is the slowness of the build. It would take about 50 seconds to build this site on my laptop (albeit a very old one). As more content is added, it would get worse. So I will definitely switch again in the future. 
+
+On the other hand, with the help of NetlifyCMS, the writing is not affected too matter by the slow build, because the CMS already gives us immediate feedback on the page we are editing. The build is only kicked off when we hit the publish button. So for now, I am OK with this setup. 
