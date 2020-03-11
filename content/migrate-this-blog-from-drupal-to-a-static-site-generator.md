@@ -133,4 +133,4 @@ Pelican is pretty old in term of "the latest and the greatest" technology fad, s
 
 The main concern is the slowness of the build. It would take about 50 seconds to build this site on my laptop (albeit a very old one). As more content is added, it would get worse. So I will definitely switch again in the future. 
 
-On the other hand, with the help of NetlifyCMS, the writing is not affected too matter by the slow build, because the CMS already gives us immediate feedback on the page we are editing. The build is only kicked off when we hit the publish button. So for now, I am OK with this setup. 
+On the other hand, with the help of NetlifyCMS, the authoring is not affected too much by the slow build, because the CMS already gives us immediate feedback on the page we are editing. The build is only kicked off when we hit the publish button. So for now, I am OK with this setup. 
