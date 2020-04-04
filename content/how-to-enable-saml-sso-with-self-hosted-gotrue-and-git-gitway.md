@@ -1,16 +1,22 @@
 ---
+Status: draft
+Lang: en
 Title: How to enable SAML SSO with self-hosted gotrue and git-gateway
 Date: 2020-04-03T06:18:46.579Z
 Author: Huahai
 Category: notebook
 Tags: 'SAML, keycloak, netlify cms, sysadmin'
-Lang: en
-Status: draft
 ---
 
 Keycloak 3.4.3Final
 
 > {"code":400,"msg":"Unsupported provider: Fetching metadata failed: expected element type \u003cEntityDescriptor\u003e but have \u003cEntitiesDescriptor\u003e"}
+
+| a  | b  |
+|---|---|
+| 1  | a  |
+|  2 | b  |
+| 3  | c  |
 
 Here RedHat did not follow the spec.
 
