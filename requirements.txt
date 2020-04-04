@@ -1,0 +1,6 @@
+pelican 
+pelican-alias 
+invoke 
+livereload 
+markdown 
+beautifulsoup4
