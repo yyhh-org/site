@@ -11,7 +11,7 @@
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>CMS.registerPreviewStyle("/admin/github-markdown.css");</script>
   <script>
-  var ArticlePreview = createClass({
+  var blogPreview = createClass({
     render: function() {
       var entry = this.props.entry;
       return h('div', {"className": "markdown-body"},
@@ -21,7 +21,7 @@
     }
   });
 
-  CMS.registerPreviewTemplate("Article", ArticlePreview);
+  CMS.registerPreviewTemplate("blog", blogPreview);
   <div data-netlify-identity-button>Login</div>
 </body>
 </html>
