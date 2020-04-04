@@ -18,7 +18,7 @@ The first thing came to my mind is to grab the kittens and my purse, hide in the
 I turned on the TV, hoping that there would be broadcast on what has happened and what I should do. However, all the channels were just broadcasting the usual shows. Following Huahai's suggestion, I ran outside to see whether other people were running outside. Nobody was outside. Everything seemed to be back to normal again. So I decided to stay at home, watching TV and waiting for the news update while keeping the kittens in the carrier so that I could run out quickly if needed. In 10 minutes or so, KRON4 started to have news on the earth quake. Then I learned that it was 5.6 degree earth quake and after that much more information about what has happened earlier. It was not until 20 minutes later the kittens started to calm down and are willing eat their favorite treat.  
 
 -------------------------------------------------------------------------  
-Lesson learned: The first thing to do in the weekend--- preparing the emergency kits (one at garage and one at home): <http://www.72hours.org/index.html>  
+Lesson learned: The first thing to do in the weekend--- preparing the emergency kits (one at garage and one at home): <https://www.72hours.org/index.html>  
 --------------------------------------------------------------------------  
 
 Side story: This is the second time I am trying to writing "essentially" the same blog. Last time before I got the chance to hit the submit button, Tom jumped up to the keyboard and hit some magic key and oops .. what I was writing was gone.

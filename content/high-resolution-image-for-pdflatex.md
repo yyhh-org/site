@@ -19,4 +19,4 @@ I searched online to try to find the solutions. After a few trials and errors, a
 
 The above solution basically forces the pdf file generated at a higher resolution (in this case, 300 dpi) so that everything, including the images, looks better.
 
-The original solution comes from [here](http://stackoverflow.com/questions/5041492/latex-how-to-set-the-pdf-dpi-when-using-images).
+The original solution comes from [here](https://stackoverflow.com/questions/5041492/latex-how-to-set-the-pdf-dpi-when-using-images).

@@ -11,4 +11,4 @@ Lang: en
 
 Tom shows off his Samba dance skill.
 
-<img src="http://farm6.static.flickr.com/5280/5899820299_2a6710ec3e.jpg" width="333" height="500" alt="samba dancing cat" />
+<img src="https://farm6.static.flickr.com/5280/5899820299_2a6710ec3e.jpg" width="333" height="500" alt="samba dancing cat" />

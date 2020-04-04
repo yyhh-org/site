@@ -15,4 +15,4 @@ This is what Tofurkey looks like out of the box. Then I cooked it in the oven. I
 
  
 
-<img src="http://farm4.static.flickr.com/3090/3086604265_39fd710dac.jpg?v=0" width="500" height="333" />
+<img src="https://farm4.static.flickr.com/3090/3086604265_39fd710dac.jpg?v=0" width="500" height="333" />

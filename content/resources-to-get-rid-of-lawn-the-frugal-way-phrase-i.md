@@ -21,11 +21,11 @@ Lang: en
 
 <span style="font-size: small;">We need to get rid of some plants and get rid of the lawn. It would cost a fortune to hire professional to do all the work, especially given the size of our front yard. So my current plan is to wait for the rain and then get rid of the lawn via sheet mulch.</span>
 
-<span style="font-size: small;">This video on YouTube explains in details how to do [sheet multch](http://www.youtube.com/watch?v=4PB0Ym_iXmc&feature=player_detailpage). This websites added some more way to [amend soil during sheet multch](http://www.naturalfrontyards.com/faqs/).</span>
+<span style="font-size: small;">This video on YouTube explains in details how to do [sheet multch](https://www.youtube.com/watch?v=4PB0Ym_iXmc&feature=player_detailpage). This websites added some more way to [amend soil during sheet multch](https://www.naturalfrontyards.com/faqs/).</span>
 
-<span style="font-size: small;">Here is a link describing [alterative ways to get rid of the lawn](http://fremontlibraries.wordpress.com/2009/06/05/how-to-remove-your-lawn/).</span>
+<span style="font-size: small;">Here is a link describing [alterative ways to get rid of the lawn](https://fremontlibraries.wordpress.com/2009/06/05/how-to-remove-your-lawn/).</span>
 
-<span style="font-size: small;">There are several ways to [get cheap compost in the Bay area](http://www.examiner.com/gardening-in-san-jose/where-to-get-inexpensive-or-free-compost-santa-clara-county). The ones I am considering  are </span>
+<span style="font-size: small;">There are several ways to [get cheap compost in the Bay area](https://www.examiner.com/gardening-in-san-jose/where-to-get-inexpensive-or-free-compost-santa-clara-county). The ones I am considering  are </span>
 
 <span style="font-size: x-small;">**Guadalupe Landfill “Valley’s Pride” Compost**</span>  
 <span style="font-size: x-small;">999 Guadalupe Mines Road</span>  

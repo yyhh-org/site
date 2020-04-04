@@ -11,7 +11,7 @@ Lang: en
 
 How to display Chinese characters correctly on a Telnet client running on a non-Chinese version of Windows machine? Web browsers today support whatever character encodings, this is not so with Telnet client. If you make a Telnet connection to a Chinese server with Windows telnet client, you will most likely see strange characters on screen.
 
-Solution: [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+Solution: [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/).
 
 Download the PuTTY programs. Better to download the Windows installer, install as usual.  
 

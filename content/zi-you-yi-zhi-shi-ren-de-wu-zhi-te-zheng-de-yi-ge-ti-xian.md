@@ -32,8 +32,8 @@ Lang: zh
 
 一个简单的例子，就是两可图形\[2\], 不可能图形\[3\]. 眼见不能为实，因为知觉的结果不会是100%反映物理现实, 有时甚至是结果不确定的.其他心理过程也一样,本质上是对不确定信号的处理和决断.从信息角度看认知过程基本上上是学界共识了.当然,具体的机制,还很复杂,正在从多方面研究.现在对知觉的研究进展虽然很快，但疑难问题还是很多.
 
-\[1\]道金斯vs奎恩之辩英文视频, <http://origins.swau.edu/misc/Dawkins2.mp3>,  
-英文文字记录及评论, <http://ravingatheist.com/archives/2006/10/embarrassed.php>  
-中文, <http://www.mitbbs.com/article_t/Belief/17896004.html>  
-\[2\] <http://en.wikipedia.org/wiki/Multistable_perception>  
-\[3\] <http://en.wikipedia.org/wiki/Impossible_shape>
+\[1\]道金斯vs奎恩之辩英文视频, <https://origins.swau.edu/misc/Dawkins2.mp3>,  
+英文文字记录及评论, <https://ravingatheist.com/archives/2006/10/embarrassed.php>  
+中文, <https://www.mitbbs.com/article_t/Belief/17896004.html>  
+\[2\] <https://en.wikipedia.org/wiki/Multistable_perception>  
+\[3\] <https://en.wikipedia.org/wiki/Impossible_shape>

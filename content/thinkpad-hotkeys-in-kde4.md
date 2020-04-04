@@ -17,4 +17,4 @@ To set up global hotkeys, we go to **System Settings -&gt; Input Actions**, I ad
 
 Overall, this seems to be easy enough. No scripts, no hacks.
 
-<img src="http://farm6.static.flickr.com/5082/5224299173_5c53303d52.jpg" width="500" height="378" alt="hibernate-snapshot2" />
+<img src="https://farm6.static.flickr.com/5082/5224299173_5c53303d52.jpg" width="500" height="378" alt="hibernate-snapshot2" />

@@ -16,10 +16,10 @@ For some reason, my main working machine, a Windows XP desktop, recently  start
 
 After a few crashes, I realized that the machine crashes whenever I play any video in the web browser ( I am using FireFox). Initially, I didn't bother to look into this problem and simply attempt to solve the problem by avoid playing any video, since I don't really intent to watch any video during my work hours and would rather spend my time doing really work instead of fixing the machine. However, this didn't really help since so many sites now a days include video content .
 
-So today, when the machine crashed again, I decided to fix this issue once and for all. Luckily, one Google search using the error message turned up quite a few answers. Most of the answers tent to be too complicated than what I wanted and involving checking for malware, virus, etc, which is not really my concern. Luckily, I found a very simply solution [here](http://forums.adobe.com/thread/798985).
+So today, when the machine crashed again, I decided to fix this issue once and for all. Luckily, one Google search using the error message turned up quite a few answers. Most of the answers tent to be too complicated than what I wanted and involving checking for malware, virus, etc, which is not really my concern. Luckily, I found a very simply solution [here](https://forums.adobe.com/thread/798985).
 
 Due to changes to the link, the exact solution from the above link no longer work. But **the basic idea is to go to any site with flash content, and then right click on the flash content, select "setting" from the pop-up menu and uncheck** **"Enable hardware acceleration".**
 
-**<img src="http://www.macromedia.com/support/documentation/en/flashplayer/help/images/display_en.gif" width="213" height="136" />**
+**<img src="https://www.macromedia.com/support/documentation/en/flashplayer/help/images/display_en.gif" width="213" height="136" />**
 
-For example, you can go to <http://www.adobe.com/products/flashplatformruntimes/gallery/> or any Youtube page. Just make sure that you don't play the video before you make the change. Otherwise, you will see the blue screen again.
+For example, you can go to <https://www.adobe.com/products/flashplatformruntimes/gallery/> or any Youtube page. Just make sure that you don't play the video before you make the change. Otherwise, you will see the blue screen again.

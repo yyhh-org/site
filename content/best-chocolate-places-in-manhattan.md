@@ -11,9 +11,9 @@ Lang: en
 
 I recently stayed in Manhattan for a few days during a business trip. My colleague and I were looking for places to buy some special chocolate to bring back home. We asked a few locals New Yorker as well as consulted the web for recommendations. Here are the list of stores we collected.
 
--   La Maison Du Chocola ([store website](http://www.lamaisonduchocolat.com/en/boutiques.php?c=newyork))
--   Vosges ([store website](http://www.vosgeschocolate.com/boutiques))
--   Jacques Torres ([store website](http://www.mrchocolate.com))
+-   La Maison Du Chocola ([store website](https://www.lamaisonduchocolat.com/en/boutiques.php?c=newyork))
+-   Vosges ([store website](https://www.vosgeschocolate.com/boutiques))
+-   Jacques Torres ([store website](https://www.mrchocolate.com))
 
 We only have 3 hours to spend in the city. So we went to La Maison Du Chocola store in the Rockefelle Center, the store closest to our hotel.
 

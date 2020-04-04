@@ -25,7 +25,7 @@ However, the news is definitely true, as further confirmed by the following lett
 
   
 
-<img src="http://farm7.static.flickr.com/6166/6163911899_2c0010dbc8_b.jpg" width="484" height="755" alt="netflix letter" />
+<img src="https://farm7.static.flickr.com/6166/6163911899_2c0010dbc8_b.jpg" width="484" height="755" alt="netflix letter" />
 
   
 
@@ -41,6 +41,6 @@ However, I am very excited at the news. It looks like a big move that will be wr
 
   
 
-More on the move can be found on their [blog](http://blog.netflix.com/2011/09/explanation-and-some-reflections.html?lnktrk=EMP&g=935BBD64D88F21C24044EB3702C7EF2A0AC0315E&lkid=netflixBlog).
+More on the move can be found on their [blog](https://blog.netflix.com/2011/09/explanation-and-some-reflections.html?lnktrk=EMP&g=935BBD64D88F21C24044EB3702C7EF2A0AC0315E&lkid=netflixBlog).
 
 </p>

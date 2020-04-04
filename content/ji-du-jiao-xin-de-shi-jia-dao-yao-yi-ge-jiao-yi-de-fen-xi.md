@@ -188,6 +188,6 @@ steal, Do not bear false witness, Defraud not, Honour thy father and mother. 
 Conversations about God, Community, Culture, Zondervan/Youth Specialties,  
 2003. p.55
 
-（３）Wikipedia, [The Bible and history](http://en.wikipedia.org/wiki/The_Bible_and_history#New_Testament.2FGreek_Bible)
+（３）Wikipedia, [The Bible and history](https://en.wikipedia.org/wiki/The_Bible_and_history#New_Testament.2FGreek_Bible)
 
-（４）Wikipedia, [Gospel of Matthew](http://en.wikipedia.org/wiki/Gospel_of_Matthew)
+（４）Wikipedia, [Gospel of Matthew](https://en.wikipedia.org/wiki/Gospel_of_Matthew)

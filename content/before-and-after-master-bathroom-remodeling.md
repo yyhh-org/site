@@ -11,11 +11,11 @@ Lang: en
 
 The old master bathroom is dark and ugly, with only one sink and w/o tub.
 
-                 <img src="http://farm4.static.flickr.com/3576/3510649673_bb7be58ecd.jpg" height="240" alt="master bathroom (before)" /> <img src="http://farm4.static.flickr.com/3643/3511460330_af487bccd5.jpg" height="240" alt="master bathroom (before)" />
+                 <img src="https://farm4.static.flickr.com/3576/3510649673_bb7be58ecd.jpg" height="240" alt="master bathroom (before)" /> <img src="https://farm4.static.flickr.com/3643/3511460330_af487bccd5.jpg" height="240" alt="master bathroom (before)" />
 
 We wanted a master bathroom that is modern and bright, and at the same time with a sense of Zen. We also wanted it to have two sink and separate shower and tub. Three months and a lot of work later, we have what we wanted and it totally worthies it since we are now enjoying it everyday. 
 
-                 <img src="http://farm4.static.flickr.com/3314/3524171411_bc6de3450f.jpg?v=0" height="240" alt="master bathroom (after)" /> <img src="http://farm4.static.flickr.com/3571/3524981104_e4286d9cf8.jpg?v=0" height="240" alt="master bathroom (after)" />
+                 <img src="https://farm4.static.flickr.com/3314/3524171411_bc6de3450f.jpg?v=0" height="240" alt="master bathroom (after)" /> <img src="https://farm4.static.flickr.com/3571/3524981104_e4286d9cf8.jpg?v=0" height="240" alt="master bathroom (after)" />
 
 I love everything about the new bathroom. But the top three on my lists are:
 

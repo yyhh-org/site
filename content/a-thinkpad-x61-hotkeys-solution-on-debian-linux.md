@@ -9,19 +9,19 @@ Alias: /blog/2007/10/thinkpad-x61-hotkeys-solution-debian-linux
 Lang: en
 ---
 
-On my old Thinkpad X31, there is a nice little program called [tpb](http://www.nongnu.org/tpb/) that makes all Thinkpad hotkeys work on Linux. However, that project hasn't been updated for two years, and tpb does not work with the newer Thinkpad models. On my new X61, notably, the sound volume controls are broken: volume UP and volume Down keys produce the same effect - bring the volume to the half level. It seems that piece of hardware called nvram, on which tpb relies, now produces different values than older models. So, I have to ditch tpb. After some trial and errors, I worked out a mixed solution that made all keys work as expected.
+On my old Thinkpad X31, there is a nice little program called [tpb](https://www.nongnu.org/tpb/) that makes all Thinkpad hotkeys work on Linux. However, that project hasn't been updated for two years, and tpb does not work with the newer Thinkpad models. On my new X61, notably, the sound volume controls are broken: volume UP and volume Down keys produce the same effect - bring the volume to the half level. It seems that piece of hardware called nvram, on which tpb relies, now produces different values than older models. So, I have to ditch tpb. After some trial and errors, I worked out a mixed solution that made all keys work as expected.
 
 **What's needed**
 
-\* [Newer kernel](http://www.kernel.org/). At least 2.6.16 or above (not sure exact version number).
+\* [Newer kernel](https://www.kernel.org/). At least 2.6.16 or above (not sure exact version number).
 
-\* [acpid](http://acpid.sourceforge.net/). Newer laptops all support ACPI, so acpid should be used. I believe all linux distribution has it.
+\* [acpid](https://acpid.sourceforge.net/). Newer laptops all support ACPI, so acpid should be used. I believe all linux distribution has it.
 
-\* [thinkpad\_acpi](http://ibm-acpi.sourceforge.net/). This kernel module deals with Thinkpad hardware and generate ACPI events, such as temperature change, function key press, docking, etc. This module is included in the mainline kernel since 2.6.10. The version included in kernel 2.6.22 is thinkpad\_acpi 0.14. The latest version is 0.18. I find 0.14 works fine. Maybe 0.18 is better, I don't know. If this module is loaded, *cat /proc/acpi/ibm/driver* should show its version number. If not, load the module with *modprobe thinkpad\_acpi*. If you want it autoloaded on boot, put a line *thinkpad\_acpi* in */etc/modules*. If your kernel doesn't has this module (unlikely), you will have to download the source and build the module yourself.
+\* [thinkpad\_acpi](https://ibm-acpi.sourceforge.net/). This kernel module deals with Thinkpad hardware and generate ACPI events, such as temperature change, function key press, docking, etc. This module is included in the mainline kernel since 2.6.10. The version included in kernel 2.6.22 is thinkpad\_acpi 0.14. The latest version is 0.18. I find 0.14 works fine. Maybe 0.18 is better, I don't know. If this module is loaded, *cat /proc/acpi/ibm/driver* should show its version number. If not, load the module with *modprobe thinkpad\_acpi*. If you want it autoloaded on boot, put a line *thinkpad\_acpi* in */etc/modules*. If your kernel doesn't has this module (unlikely), you will have to download the source and build the module yourself.
 
-\* [powersaved](http://sourceforge.net/projects/powersave/) This daemon is what actually handles ACPI events. In the past, people put ACPI events handling scripts in */etc/acpi* directory. Now this is not recommended. So you should not install similar packages such as *acpi-support*, *hibernate* scripts, etc. Instead, user space program such as *powersaved* should handle ACPI events. Therefore, all your ACPI customizations should be done under either */usr/lib/powersave/scripts* or */etc/powersave*
+\* [powersaved](https://sourceforge.net/projects/powersave/) This daemon is what actually handles ACPI events. In the past, people put ACPI events handling scripts in */etc/acpi* directory. Now this is not recommended. So you should not install similar packages such as *acpi-support*, *hibernate* scripts, etc. Instead, user space program such as *powersaved* should handle ACPI events. Therefore, all your ACPI customizations should be done under either */usr/lib/powersave/scripts* or */etc/powersave*
 
-\* [uswsusp](http://suspend.sourceforge.net/) This user space software suspend package is called by powersaved to actually do sleeping (i.e. saving state in RAM, so sleep and resume are quick) and hibernation (i.e. save state on disk, so it lasts).
+\* [uswsusp](https://suspend.sourceforge.net/) This user space software suspend package is called by powersaved to actually do sleeping (i.e. saving state in RAM, so sleep and resume are quick) and hibernation (i.e. save state on disk, so it lasts).
 
 All these are already packaged in Debian. Just use apt-get to install them.
 
@@ -29,7 +29,7 @@ All these are already packaged in Debian. Just use apt-get to install them.
 
 Without any software, sound Mute key and Thinklight key always work, they are hardware controlled I think.
 
-With the above package installed, "Fn+F12 hibernate" worked without any problem. "Fn+F4 sleep" may or may not work. Please follow the suggestions in this [s2ram](http://en.opensuse.org/S2ram) documentation, and test the command options in order, until sleep works. My X61 worked with *s2ram -f -a 1*, so I stopped testing other options. Once found a successful combination, edit */usr/lib/powersave/sleep*, so that these two options reads
+With the above package installed, "Fn+F12 hibernate" worked without any problem. "Fn+F4 sleep" may or may not work. Please follow the suggestions in this [s2ram](https://en.opensuse.org/S2ram) documentation, and test the command options in order, until sleep works. My X61 worked with *s2ram -f -a 1*, so I stopped testing other options. Once found a successful combination, edit */usr/lib/powersave/sleep*, so that these two options reads
 
 `SUSPEND2RAM_FORCE="yes" SUSPEND2RAM_ACPI_SLEEP="1" #use your successful -a number here, mine is 1`
 
@@ -325,7 +325,7 @@ EXIT <font color="#40a070">0</font>
 
 </font>
 
-Notice that you need to install *osd\_cat* package to get on-screen display, or you can comments out them. Also, I used *xscreensaver* to lock screen, because KDE screen saver and locker do not support [ThinkFinger](http://thinkfinger.sourceforge.net/). I like the coolness of login and unlocking screen with a finger swipe :) Finally, I use simple scripts to make network connections. Here is *nic.sh*:
+Notice that you need to install *osd\_cat* package to get on-screen display, or you can comments out them. Also, I used *xscreensaver* to lock screen, because KDE screen saver and locker do not support [ThinkFinger](https://thinkfinger.sourceforge.net/). I like the coolness of login and unlocking screen with a finger swipe :) Finally, I use simple scripts to make network connections. Here is *nic.sh*:
 
 <font face="monospace" size="1em">  
 <font color="#a0b0c0">*\#!/bin/sh*</font>
@@ -374,7 +374,7 @@ And here is *wireless.sh*
 
 </font>
 
-[wlan-ui.pl](http://wlan-ui.sourceforge.net/wlan-ui_pod.html) is a GTK-2 based little GUI program that scans the available wireless access points, and allows you to connect to one of them. The only configuration needed is to put the name of your wireless card kernel module name in */etc/wlan-uirc*, mine has a line:* $MODULE='ipw3945'*
+[wlan-ui.pl](https://wlan-ui.sourceforge.net/wlan-ui_pod.html) is a GTK-2 based little GUI program that scans the available wireless access points, and allows you to connect to one of them. The only configuration needed is to put the name of your wireless card kernel module name in */etc/wlan-uirc*, mine has a line:* $MODULE='ipw3945'*
 
 **Configure X hotkeys**
 
@@ -445,4 +445,4 @@ osd\_cat <font color="#70a0d0">*-b*</font> percentage <font color="#70a0d0">*-P
 
 That's all there is to it. Now all hotkeys work as intended, and with nice on-screen user feedback. Please let me know if I missed anything.
 
-**Updated**: I've changed Fn+F8 key to toggle between Clone mode and Xinerama mode of dual head display, please see [this post](http://yyhh.org/blog/2007/11/dual-head-xrandr-1-2-revisited) for details.
+**Updated**: I've changed Fn+F8 key to toggle between Clone mode and Xinerama mode of dual head display, please see [this post](https://yyhh.org/blog/2007/11/dual-head-xrandr-1-2-revisited) for details.

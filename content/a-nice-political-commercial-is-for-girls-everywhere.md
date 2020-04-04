@@ -9,7 +9,7 @@ Alias: /blog/2008/02/nice-political-commercial-girls-everywhere
 Lang: en
 ---
 
-<http://www.youtube.com/watch?v=l9z-Aatd0wA>
+<https://www.youtube.com/watch?v=l9z-Aatd0wA>
 
  
 

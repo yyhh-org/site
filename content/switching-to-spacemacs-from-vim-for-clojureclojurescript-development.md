@@ -13,7 +13,7 @@ Clojure has been my primary programming language for a couple of years now. Duri
 
 1.  [vim-clojure-static](https://github.com/guns/vim-clojure-static)
 2.  [fireplace.vim](https://github.com/tpope/vim-fireplace)
-3.  [paredit.vim](http://www.vim.org/scripts/script.php?script_id=3998)
+3.  [paredit.vim](https://www.vim.org/scripts/script.php?script_id=3998)
 4.  [Rainbow Parentheses Improved](https://github.com/luochen1990/rainbow)
 5.  [vim-clojure-highlight](https://github.com/guns/vim-clojure-highlight)
 6.  [vim-cljfmt](https:://github.com/venantius/vim-cljfmt)

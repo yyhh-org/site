@@ -17,4 +17,4 @@ First, let's test it under natural light setting:
 
 "What's up?"
 
-<img src="http://farm8.staticflickr.com/7194/7034156259_2dee7491ac.jpg" width="375" height="500" alt="Mayori" />
+<img src="https://farm8.staticflickr.com/7194/7034156259_2dee7491ac.jpg" width="375" height="500" alt="Mayori" />

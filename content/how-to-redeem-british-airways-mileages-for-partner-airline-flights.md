@@ -15,9 +15,9 @@ Over the weekend, I have investigated the problem and found out that one of the 
 
 The easiest way I found is the following:
 
-1\. First, check AA's [route map](http://www.aa.com/i18n/aboutUs/whereWeFly/maps/world.jsp) to find out flight routes operated by AA: 
+1\. First, check AA's [route map](https://www.aa.com/i18n/aboutUs/whereWeFly/maps/world.jsp) to find out flight routes operated by AA: 
 
-2\. Once you find a route of interest, go to BA's [website](http://www.britishairways.com/travel/home/public/en_us?link=top_logo)
+2\. Once you find a route of interest, go to BA's [website](https://www.britishairways.com/travel/home/public/en_us?link=top_logo)
 
 3\. Click on the tab "Executive Club", choose "Spending BA miles" on the drop-down menu, then click on "Book with BA miles" on the left-hand side menu.
 
@@ -27,7 +27,7 @@ For instance, I am interested in booking a flight between SFO and HNL, because I
 
 You will see a screen similar to the following:
 
-<img src="http://farm6.static.flickr.com/5108/5835342640_08339d564d.jpg" width="500" height="485" alt="screenshot" />
+<img src="https://farm6.static.flickr.com/5108/5835342640_08339d564d.jpg" width="500" height="485" alt="screenshot" />
 
  
 

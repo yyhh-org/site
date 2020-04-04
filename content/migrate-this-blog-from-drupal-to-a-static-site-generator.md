@@ -94,8 +94,8 @@ echo $! > invoke.pid
 
 echo "------------------------------------------------------------"
 
-echo "Go to http://localhost:8000/admin to edit blog"
-echo "Go to http://localhost:8000 to view blog"
+echo "Go to https://localhost:8000/admin to edit blog"
+echo "Go to https://localhost:8000 to view blog"
 
 echo "Don't forget to run 'publish-blog' to publish the blog to yyhh.org"
 

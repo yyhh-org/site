@@ -9,9 +9,9 @@ Alias: /blog/2011/05/develop-clojure-web-applications-vim
 Lang: en
 ---
 
-I recently started to learn [clojure](http://clojure.org) programming. It is an interesting experience. Ever since I learned computer programming almost 20 years ago, in Pascal, on a VAX minicomputer terminal, I have not experienced this newbie sensation with a computer language. The sense of excitement and novelty is high, and the eagerness to put the language to use is higher still. So for my new project at work, I am doing it with clojure.
+I recently started to learn [clojure](https://clojure.org) programming. It is an interesting experience. Ever since I learned computer programming almost 20 years ago, in Pascal, on a VAX minicomputer terminal, I have not experienced this newbie sensation with a computer language. The sense of excitement and novelty is high, and the eagerness to put the language to use is higher still. So for my new project at work, I am doing it with clojure.
 
-This is a visual analytics project, and the visual part will be on the Web. It amazes me [how much work](http://www.glenstampoultzis.net/blog/clojure-web-infrastructure/) has already been done for the Web using this 3 years old language. So it should be easy for me to get started. Here's what I have so far.
+This is a visual analytics project, and the visual part will be on the Web. It amazes me [how much work](https://www.glenstampoultzis.net/blog/clojure-web-infrastructure/) has already been done for the Web using this 3 years old language. So it should be easy for me to get started. Here's what I have so far.
 
 **  
 Know your lein  
@@ -45,7 +45,7 @@ Now in the "mypoject" directory, there is a "project.clj" file. This file contro
 <font color="#375288">17 </font>  <font color="#1f3f81">**:repositories**</font>   
 <font color="#375288">18 </font>            <font color="#912f11">{</font><font color="#077807">"myrepo"</font>   
 <font color="#375288">19 </font>             <font color="#912f11">{</font><font color="#1f3f81">**:url**</font>   
-<font color="#375288">20 </font>              <font color="#077807">"<http://myrepo.my.com:8080/artifactory/libs-release-local>"</font><font color="#912f11">}}</font>  
+<font color="#375288">20 </font>              <font color="#077807">"<https://myrepo.my.com:8080/artifactory/libs-release-local>"</font><font color="#912f11">}}</font>  
 <font color="#375288">21 </font>  <font color="#1f3f81">**:source-path**</font> <font color="#077807">"src/clojure"</font>  
 <font color="#375288">22 </font>  <font color="#1f3f81">**:java-source-path**</font> <font color="#077807">"src/java"</font>  
 <font color="#375288">23 </font>  <font color="#1f3f81">**:warn-on-reflection**</font> <font color="#077807">true</font>  
@@ -53,11 +53,11 @@ Now in the "mypoject" directory, there is a "project.clj" file. This file contro
 <font color="#375288">25 </font>  <font color="#1f3f81">**:ring**</font> <font color="#912f11">{</font><font color="#1f3f81">**:handler**</font> com.my.myproject.runtime.core/app<font color="#912f11">})</font>  
 </font>
 
-Let me explain line by line. The first line is the project name and the current version number (using the so called [semantic versioning](http://semver.org) scheme).
+Let me explain line by line. The first line is the project name and the current version number (using the so called [semantic versioning](https://semver.org) scheme).
 
 The third line starts the dependencies definition. These dependencies are libraries written in jvm languages such as java or clojure. lein will automatically find and download them from public repositories if they are publicly available. This is the case for libraries referred in line 3 - 10, where the last three libs are open source java libs and the rest are open source clojure libs: [compojure](https://github.com/weavejester/compojure) is a lightweight Web framework, which builds upon [ring](https://github.com/mmcgrana/ring), which abstract HTTP into a simple API, [hiccup](https://github.com/weavejester/hiccup) allows one to write html in clojure syntax.
 
-The lib on line 11 is also open source, however, it has not been packaged by the author and submitted to a pubic repository, so lein will not be able to find it. What I did was to package it as a jar file myself and deploy it to a private repository I setup for my team, so my team members can all access to the same libs without needing to commit the libs to our version control system, which is not suitable for handling binary data. This private repository is defined on line 17 to 20. Here the repository server is a standard installation of [artifactory](http://www.jfrog.com/products.php). The libs on line 12 and 13 are our in-house developed java libraries, which are deployed the same way.
+The lib on line 11 is also open source, however, it has not been packaged by the author and submitted to a pubic repository, so lein will not be able to find it. What I did was to package it as a jar file myself and deploy it to a private repository I setup for my team, so my team members can all access to the same libs without needing to commit the libs to our version control system, which is not suitable for handling binary data. This private repository is defined on line 17 to 20. Here the repository server is a standard installation of [artifactory](https://www.jfrog.com/products.php). The libs on line 12 and 13 are our in-house developed java libraries, which are deployed the same way.
 
 By default, lein expect clojure code in "myproject/src". Since we will be mixing java code and clojure code, we put them in separate folders. These are defined in line 21 and 22.
 
@@ -113,7 +113,7 @@ One very nice thing about lein-ring is that it will automatically pick up any ch
 
 **vimclojure**
 
-I am a vi addict. For my fix, there is a [vimclojure](http://www.vim.org/scripts/script.php?script_id=2501) plugin for clojure development with vim. To have dynamic features such as code snippet evaluation, code completion etc, there is a need to start a nailgun server so vimclojure can contact with a clojure REPL. This script is what I use:
+I am a vi addict. For my fix, there is a [vimclojure](https://www.vim.org/scripts/script.php?script_id=2501) plugin for clojure development with vim. To have dynamic features such as code snippet evaluation, code completion etc, there is a need to start a nailgun server so vimclojure can contact with a clojure REPL. This script is what I use:
 
 <font face="monospace" size="1em">  
 <font color="#375288"> 1 </font><font color="#786000">\# clojure jar is also installed in ~/.vim/lib</font>  
@@ -134,6 +134,6 @@ I am a vi addict. For my fix, there is a [vimclojure](http://www.vim.org/scripts
 
 I normally run this script in the root directory of the project, this allows "lein classpath" to pick up all the classpaths for the REPL session. There's also a lein-vimclojure plungin that will install vimclojure and start a nailgun server for you, but I found it does not load "user.clj", so my convenient functions defined there are not autoloaded. I will stick to my script.
 
-For better navigation of clojure source code, vim users need [TagList](http://www.vim.org/scripts/script.php?script_id=273) plugin. The plugin does not automatically work with clojure though. [This blog post](http://kuriqoo.blogspot.com/2011/02/using-clojure-in-vim.html) has a solution, and it worked for me. Basically, this tells TagList to treat clojure code just like other Lisp code, which it is.
+For better navigation of clojure source code, vim users need [TagList](https://www.vim.org/scripts/script.php?script_id=273) plugin. The plugin does not automatically work with clojure though. [This blog post](https://kuriqoo.blogspot.com/2011/02/using-clojure-in-vim.html) has a solution, and it worked for me. Basically, this tells TagList to treat clojure code just like other Lisp code, which it is.
 
 That's all folks.

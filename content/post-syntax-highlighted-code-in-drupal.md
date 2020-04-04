@@ -122,7 +122,7 @@ This is my *~/.vimrc*, displayed with xterm16 allblue color theme, which I use i
 
 strUserName = <font color="#a8a8a8">'</font><font color="#87afaf">secret</font><font color="#a8a8a8">'</font>  
 strPassword = <font color="#a8a8a8">'</font><font color="#87afaf">secret</font><font color="#a8a8a8">'</font>  
-strDrupal = <font color="#a8a8a8">'</font><font color="#87afaf"><http://yyhh.org></font><font color="#a8a8a8">'</font>
+strDrupal = <font color="#a8a8a8">'</font><font color="#87afaf"><https://yyhh.org></font><font color="#a8a8a8">'</font>
 
 <font color="#8700d7">import</font> vim  
 <font color="#8700d7">import</font> xmlrpclib  
@@ -193,4 +193,4 @@ strDrupal = <font color="#a8a8a8">'</font><font color="#87afaf"><http://yyhh.org
 
 </font>
 
-On Drupal's side, I needed to enable full HTML input format, or these colorful HTML code will be removed by Drupal. Oh, another thing, do not use TinyMCE rich text editor to edit the post, because it will mess up the HTML code. Well, TinyMCE was installed here per Yunyao's request, I don't use it anyway, I [use vim to edit my post](http://yyhh.org/blog/2007/10/posting-blog-entry-drupal-within-vim):-)
+On Drupal's side, I needed to enable full HTML input format, or these colorful HTML code will be removed by Drupal. Oh, another thing, do not use TinyMCE rich text editor to edit the post, because it will mess up the HTML code. Well, TinyMCE was installed here per Yunyao's request, I don't use it anyway, I [use vim to edit my post](https://yyhh.org/blog/2007/10/posting-blog-entry-drupal-within-vim):-)

@@ -13,7 +13,7 @@ Today I have encountered dirty diaper for the very first time in my life and it 
 
 The only plausible explanation is that some guests attended our house party a few days ago left them behind.  I thought that all the books on how to raise kids include education on basic etiquettes when visiting other people's house. But obviously I was wrong! 
 
-Out of curiosity, I searched online to see what is the expected diaper etiquette and found one [here](http://www.nytimes.com/2012/07/29/fashion/the-gravy-train-ends-here-social-qs.html). In summary, 
+Out of curiosity, I searched online to see what is the expected diaper etiquette and found one [here](https://www.nytimes.com/2012/07/29/fashion/the-gravy-train-ends-here-social-qs.html). In summary, 
 
 > No one leaves dirty diapers in a guest bathroom.   
 

@@ -27,12 +27,12 @@ This problem is a known issue of openssh. I remember did this fix for my Linux m
 
 *SSH to Mountain Lion:*
 
-This one took me a lot of googling to find the [cause](http://www.hkwebentrepreneurs.com/2012/08/password-free-ssh-on-os-x-mountain-lion.html). Basically, Mountain Lion changed /etc/sshd\_config file, so that openssh server only checks "~/.ssh/authorized\_keys" now, instead of checking both that and "~/.ssh/authorized\_keys2". To fix this, all we need to do is to rename the later to the former.
+This one took me a lot of googling to find the [cause](https://www.hkwebentrepreneurs.com/2012/08/password-free-ssh-on-os-x-mountain-lion.html). Basically, Mountain Lion changed /etc/sshd\_config file, so that openssh server only checks "~/.ssh/authorized\_keys" now, instead of checking both that and "~/.ssh/authorized\_keys2". To fix this, all we need to do is to rename the later to the former.
 
     :::bash
     $ mv ~/.ssh/authorized_keys2 ~/.ssh/authorized_keys
 
-I find this change rather annoying, as it adds little benefit but creates a lot of troubles. For example, it broke my backup solution. I am using [backuppc](http://backuppc.sourceforge.net/) to backup this Macbook to a central backup server through password-less SSH. It took me a while to debug when backuppc reported the problem.
+I find this change rather annoying, as it adds little benefit but creates a lot of troubles. For example, it broke my backup solution. I am using [backuppc](https://backuppc.sourceforge.net/) to backup this Macbook to a central backup server through password-less SSH. It took me a while to debug when backuppc reported the problem.
 
 ### Homebrew
 

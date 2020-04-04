@@ -9,7 +9,7 @@ Alias: /blog/2008/06/winking-tom-superman
 Lang: en
 ---
 
-<img src="http://farm4.static.flickr.com/3003/2579895048_acecea6edc.jpg?v=0" width="500" height="333" />
+<img src="https://farm4.static.flickr.com/3003/2579895048_acecea6edc.jpg?v=0" width="500" height="333" />
 
  
 

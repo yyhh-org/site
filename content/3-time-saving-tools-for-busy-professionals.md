@@ -11,7 +11,7 @@ Lang: en
 
 As a busy professional, I am consistently looking for ways to save time. Below are 3 time-saving tools that I have found most useful.
 
-1\. [Chore Buster](http://www.chorebuster.net/)
+1\. [Chore Buster](https://www.chorebuster.net/)
 
 With two busy professionals in the same household, dividing chores around the house can be tricky. Dividing chores in a fixed way is one solution. But one can quickly get bored of doing the same thing everyday.
 
@@ -21,7 +21,7 @@ With this neat free online tool, we get automatic daily chore assignment based o
 
 As the CFO of the family, I do need to keep track of our financial situation. However, I don't really have much time to do so. Mint has been a great help in this regards.
 
-3\. [Farm Fresh to You](http://www.farmfreshtoyou.com)
+3\. [Farm Fresh to You](https://www.farmfreshtoyou.com)
 
 Both Huahai and I enjoy cooking. However, weekly grocery shopping can be time-consuming. <span class="st">This service basically gets organic produce delivery directly to my home from a local organic farmers. It costs $31.5 a box for a week of organic vegetable and fruit. </span>
 

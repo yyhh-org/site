@@ -10,8 +10,8 @@ Lang: en
 ---
 
 <span style="font-size: 0.9em; margin-top: 0px;">[  
-](http://www.flickr.com/people/yyhh/) </span>
+](https://www.flickr.com/people/yyhh/) </span>
 
 The most environment friendly SUV - human powered!
 
-![suv](http://farm3.static.flickr.com/2342/1806569403_a3951d73dd.jpg)
+![suv](https://farm3.static.flickr.com/2342/1806569403_a3951d73dd.jpg)

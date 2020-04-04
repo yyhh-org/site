@@ -13,4 +13,4 @@ With only basic cable subscription, I am so sick of all the political news by no
 
  
 
-Edit: Yet another confirmation on the topic [http://www.nytimes.com/2008/02/07/opinion/07kristof.html?em&ex=12026196…](http://www.nytimes.com/2008/02/07/opinion/07kristof.html?em&ex=1202619600&en=0ada286aade52b12&ei=5087%0A) 
+Edit: Yet another confirmation on the topic [https://www.nytimes.com/2008/02/07/opinion/07kristof.html?em&ex=12026196…](https://www.nytimes.com/2008/02/07/opinion/07kristof.html?em&ex=1202619600&en=0ada286aade52b12&ei=5087%0A) 

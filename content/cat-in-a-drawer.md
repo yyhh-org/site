@@ -13,4 +13,4 @@ Mayori loves to play hide-and-seek with us. The top drawer of our dresser is now
 
  
 
-<img src="http://farm6.static.flickr.com/5152/5900257646_9b93849367.jpg" width="500" height="333" alt="cat in a drawer." />
+<img src="https://farm6.static.flickr.com/5152/5900257646_9b93849367.jpg" width="500" height="333" alt="cat in a drawer." />

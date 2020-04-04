@@ -9,7 +9,7 @@ Alias: /blog/2012/07/machine-learning-matters
 Lang: en
 ---
 
-I happen to come across this excellent article from this year's ICML on [Machine Learning that Matters](http://www.wkiri.com/research/papers/wagstaff-MLmatters-12.pdf). I encourage everyone, especially computer science Ph.D students, to read it.
+I happen to come across this excellent article from this year's ICML on [Machine Learning that Matters](https://www.wkiri.com/research/papers/wagstaff-MLmatters-12.pdf). I encourage everyone, especially computer science Ph.D students, to read it.
 
 As an industrial researcher who draws a lot of job satisfaction by making both scientific and practical impact, I completely agree with the author on that we need to work on research "that matters",  not just for machine learning. Many of the challenges outlined by the author are applicable to many other areas in computer science as well. 
 

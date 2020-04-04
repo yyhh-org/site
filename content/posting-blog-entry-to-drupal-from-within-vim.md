@@ -13,9 +13,9 @@ Some people may wonder why would anyone want to do this? Well, there are at leas
 
 One, I can write posts *offline* with my favorite editor, whenever I feel like it. Then post them from within vim once I got an Internet connection. 
 
-Two, I get to use niceties of vim such as spellchecker, autocompletion and syntax highlighting for html code. I found this solution on [Peter Wilkinson's Blog](http://www.petersblog.org/node/876). I did a few minor changes to make [his script](http://www.petersblog.org/node/876) to work with the latest version of python. 
+Two, I get to use niceties of vim such as spellchecker, autocompletion and syntax highlighting for html code. I found this solution on [Peter Wilkinson's Blog](https://www.petersblog.org/node/876). I did a few minor changes to make [his script](https://www.petersblog.org/node/876) to work with the latest version of python. 
 
-A step further, I combined it with [his another post](http://www.petersblog.org/node/907), now I can even use the regular vim syntax to read/post blog entry just like a regular file, e.g. *:e blog/4* to edit blog entry number 4, *:w* to post the edited version. Very cool. See the following *.vimrc* code for details:
+A step further, I combined it with [his another post](https://www.petersblog.org/node/907), now I can even use the regular vim syntax to read/post blog entry just like a regular file, e.g. *:e blog/4* to edit blog entry number 4, *:w* to post the edited version. Very cool. See the following *.vimrc* code for details:
 
 <font face="monospace" size="1.2em">  
 <font color="#786000">" post blog entry to my Drupal site</font>  
@@ -30,7 +30,7 @@ A step further, I combined it with [his another post](http://www.petersblog.org/
 
 strUserName = <font color="#000000">'</font><font color="#077807">your\_username</font><font color="#000000">'</font>  
 strPassword = <font color="#000000">'</font><font color="#077807">your\_password</font><font color="#000000">'</font>  
-strDrupal = <font color="#000000">'</font><font color="#077807"><http://your.domain.name></font><font color="#000000">'</font>
+strDrupal = <font color="#000000">'</font><font color="#077807"><https://your.domain.name></font><font color="#000000">'</font>
 
 <font color="#800090">import</font> vim  
 <font color="#800090">import</font> xmlrpclib  

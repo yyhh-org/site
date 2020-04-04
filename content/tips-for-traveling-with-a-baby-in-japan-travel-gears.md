@@ -90,6 +90,6 @@ Not really a gear, but it is super important. It helps to keep the kid entertain
 
 There is no need to explain why it is critical to have a well-stocked diaper bag for travel, particular on the road in a foreign country.
 
-I will write a separate post soon on the content of the diaper bag for both [air travel](http://yyhh.org/blog/2017/01/tips-traveling-baby-japan-diaper-bag-air-travel) as well as for day trips. Stay tuned.
+I will write a separate post soon on the content of the diaper bag for both [air travel](https://yyhh.org/blog/2017/01/tips-traveling-baby-japan-diaper-bag-air-travel) as well as for day trips. Stay tuned.
 
 </br>

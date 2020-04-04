@@ -11,4 +11,4 @@ Lang: en
 
 Tom shows off his catch and his big paws.
 
-<img src="http://farm6.static.flickr.com/5155/5899746253_57b0eb9cbc.jpg" width="500" height="333" alt="cat with big paws" />
+<img src="https://farm6.static.flickr.com/5155/5899746253_57b0eb9cbc.jpg" width="500" height="333" alt="cat with big paws" />

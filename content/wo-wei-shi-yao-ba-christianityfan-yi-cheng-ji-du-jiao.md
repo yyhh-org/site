@@ -44,4 +44,4 @@ Exodus 6:3 And I appeared unto Abraham, unto Isaac, and unto Jacob, as God Almig
 
 也就是说，JEHOVAH是从对神名避袆的写法Yud-Kay-Vav-Kay中变来的，显然不可能是正确的读音和拼写.。 而Exodus 34:14这一段神自称嫉妒者（Jealous），是确凿无疑的，所有版本都一样。
 
-（注二）嫉妒徒应如何理解嫉妒的神，请参考bible.org的解释：<http://www.bible.org/page.php?page_id=240> 这儿我引用结论："So our God is a jealous God! The truth of His jealousy challenges us to give God His due and to put Him before all else."
+（注二）嫉妒徒应如何理解嫉妒的神，请参考bible.org的解释：<https://www.bible.org/page.php?page_id=240> 这儿我引用结论："So our God is a jealous God! The truth of His jealousy challenges us to give God His due and to put Him before all else."

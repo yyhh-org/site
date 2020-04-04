@@ -9,25 +9,25 @@ Alias: /blog/2007/12/reference-individual-email-message-plain-text-file
 Lang: en
 ---
 
-A lot of people implement [GTD methodology entirely with Gmail](http://saw.themurdaughs.com/gtd-with-gmail-whitepaper). I don't feel comfortable doing that because gmail is not that secure. And I think depending on a network service is a bad idea for a GTD system. So I still download all my emails to my local computers. As [my plain text based GTD implementation](http://yyhh.org/blog/2007/12/simple-gtd-list-solution-desktop-web-and-possibly-mobile) was taking shape, I realized that I needed to refer to individual email messages in my local mail folders, both in the "Projects/Next-Action" list and as reference materials. For example, in my list, there would be an item "think about Johon's request", and it should include a link to the email message containing John's request. Ideally, invoking this link should open up this email message in *kmail*, my email reader. Also, I would like the creation of such a link in my list to be semi-automatic.
+A lot of people implement [GTD methodology entirely with Gmail](https://saw.themurdaughs.com/gtd-with-gmail-whitepaper). I don't feel comfortable doing that because gmail is not that secure. And I think depending on a network service is a bad idea for a GTD system. So I still download all my emails to my local computers. As [my plain text based GTD implementation](https://yyhh.org/blog/2007/12/simple-gtd-list-solution-desktop-web-and-possibly-mobile) was taking shape, I realized that I needed to refer to individual email messages in my local mail folders, both in the "Projects/Next-Action" list and as reference materials. For example, in my list, there would be an item "think about Johon's request", and it should include a link to the email message containing John's request. Ideally, invoking this link should open up this email message in *kmail*, my email reader. Also, I would like the creation of such a link in my list to be semi-automatic.
 
 The first problem is to find the unique id for the email message. Although there's an Message-ID field in standard email format, kmail does not make it easy to use that field. It turns out that just using the unique filename of email messages is sufficient. Kmail by default uses *maildir* format to store emails, and maildir stores each message as an individual file with a unique name. This situation makes linking to email messages as easy as linking to files. Now the question is, how do I know what filename an individual email message is saved as?
 
 The answer is I don't know, kmail does not reveal that information. At least I don't know the filename when the email is first saved in my email folder. But, the good news is, I don't need to know the filename when the email is in my inbox. Because, as GTD methodology decrees, stuff in inbox should not be permanent, but is to be moved into either projects/next-action list or reference collection. Now, when I process my inbox, and move a message into my GTD email folder, I can figure out what name it is saved in. No, I am not suggesting using kmail's "save-as" method. That's still too much work, because I then have to open a file browser, choose a filename for the email to save as, and manually put a link to that file in my list. Besides, kmail can only "save-as" mbox format, and it sucks.
 
-What I now end up with is a neat solution. Basically, all I need to do, is to drag a message into my local GTD mail folder in kmail. And a link to the saved message will be automatically inserted into my plain-text project/next-action list or my reference file, depending on a dialog selection. This screen shot shows an email being dragged into GTD folder in kmail: ![kmail](http://i274.photobucket.com/albums/jj251/huahaiy/kmail-drag-gtd.png)
+What I now end up with is a neat solution. Basically, all I need to do, is to drag a message into my local GTD mail folder in kmail. And a link to the saved message will be automatically inserted into my plain-text project/next-action list or my reference file, depending on a dialog selection. This screen shot shows an email being dragged into GTD folder in kmail: ![kmail](https://i274.photobucket.com/albums/jj251/huahaiy/kmail-drag-gtd.png)
 
-A dialog then shows up:![dialog](http://i274.photobucket.com/albums/jj251/huahaiy/kmail-drag-gtd-dialog.png).
+A dialog then shows up:![dialog](https://i274.photobucket.com/albums/jj251/huahaiy/kmail-drag-gtd-dialog.png).
 
 After making a selection, a reference to the email message is inserted in vim, which looks like this:  
 
 &lt;mail:~/Mail/GTD/cur/1197479411.14855.WSF8K:2,S&gt;
 
-This implementation depends on [inotify-tools](http://inotify-tools.sourceforge.net/), which utilizes newer Linux kernel's *inotify* capability. It watches GTD mail folder. When an email message is moved into this folder, a script records its filename, and inserts a link to the email in my project/next-action list. This solution also depends on *vim* with server mode support, so other program can send commands to it. I always start my projects/next-action editing session in server mode, with special server names, such as "active\_projects":  
+This implementation depends on [inotify-tools](https://inotify-tools.sourceforge.net/), which utilizes newer Linux kernel's *inotify* capability. It watches GTD mail folder. When an email message is moved into this folder, a script records its filename, and inserts a link to the email in my project/next-action list. This solution also depends on *vim* with server mode support, so other program can send commands to it. I always start my projects/next-action editing session in server mode, with special server names, such as "active\_projects":  
 
 gvim --servername "active\_projects" projects.taskpaper
 
-Finally, a vim plug-in [utl.vim](http://www.vim.org/scripts/script.php?script_id=293) is needed to invoke any URL in plain text.
+Finally, a vim plug-in [utl.vim](https://www.vim.org/scripts/script.php?script_id=293) is needed to invoke any URL in plain text.
 
 All these components are glued together with a simple shell script *~/bin/email2gtd.sh*:  
 
@@ -83,4 +83,4 @@ Finally, I set up utl.vim plug-in so that it knows how to invoke a reference to 
 
 Now when cursor is on an email link, hit *\\gu* will open up the message in kmail.
 
-[<img src="http://i274.photobucket.com/albums/jj251/huahaiy/gtd-email-reference.png" width="720" />](http://i274.photobucket.com/albums/jj251/huahaiy/gtd-email-reference.png)
+[<img src="https://i274.photobucket.com/albums/jj251/huahaiy/gtd-email-reference.png" width="720" />](https://i274.photobucket.com/albums/jj251/huahaiy/gtd-email-reference.png)

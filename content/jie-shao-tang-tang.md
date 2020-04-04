@@ -9,7 +9,7 @@ Alias: /blog/2007/10/%E4%BB%8B%E7%BB%8D%E5%94%90%E5%94%90
 Lang: zh
 ---
 
-![tom](http://farm3.static.flickr.com/2194/1971652917_be14af92b9.jpg)
+![tom](https://farm3.static.flickr.com/2194/1971652917_be14af92b9.jpg)
 
 姓名：唐唐
 
