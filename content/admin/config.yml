@@ -16,12 +16,12 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., title.md
     fields: # The fields each document in this collection have
+      - {label: "Status", name: "Status", widget: "select", default: "draft", options: ["draft", "published"], hint: "Draft does not show on site"}
+      - {label: "Language", name: "Lang", widget: "select", default: "en", options: ["en", "zh"], hint: "Select en for English, zh for 中文"}
       - {label: "Title", name: "Title", widget: "string"}
       - {label: "Date", name: "Date", widget: "datetime"}
       - {label: "Author", name: "Author", widget: "select", default: "Yunyao", options: ["Yunyao", "Huahai"]}
       - {label: "Category", name: "Category", widget: "select", default: "experience", options: ["experience", "notebook", "opinion"], hint: "Select category"}
       - {label: "Tags", name: "Tags", widget: "string", hint: "Enter comma-separated words"}
       - {label: "Series", name: "Series", widget: "string", required: false, hint: "Give multiple related articles a series name"}
-      - {label: "Language", name: "Lang", widget: "select", default: "en", options: ["en", "zh"], hint: "Select en for English, zh for 中文"}
-      - {label: "Status", name: "Status", widget: "select", default: "published", options: ["draft", "published"], hint: "Draft does not show on site"}
       - {label: "Body", name: "body", widget: "markdown"}
