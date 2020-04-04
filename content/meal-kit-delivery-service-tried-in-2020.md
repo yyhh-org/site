@@ -1,5 +1,5 @@
 ---
-Status: draft
+Status: published
 Lang: en
 Title: Meal Kit Delivery Service Tried in 2020
 Date: 2020-04-04T17:33:53.775Z
