@@ -10,18 +10,6 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>CMS.registerPreviewStyle("/admin/github-markdown.css");</script>
-  <script>
-  var blogPreview = createClass({
-    render: function() {
-      var entry = this.props.entry;
-      return h('div', {"className": "markdown-body"},
-        h('h1', {}, entry.getIn(['data', 'Title'])),
-        h('div', {}, entry.getIn(['data', 'body']))
-      );
-    }
-  });
-
-  CMS.registerPreviewTemplate("blog", blogPreview);
   <div data-netlify-identity-button>Login</div>
 </body>
 </html>
