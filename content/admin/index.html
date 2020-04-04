@@ -15,8 +15,8 @@
     render: function() {
       var entry = this.props.entry;
       return h('div', {"className": "markdown-body"},
-        h('h1', {}, entry.getIn(['data', 'title'])),
-        h('div', {"className": "text"}, this.props.widgetFor('body'))
+        h('h1', {}, entry.getIn(['data', 'Title'])),
+        h('div', {}, entry.getIn(['data', 'body']))
       );
     }
   });
