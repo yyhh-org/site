@@ -24,8 +24,8 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "yyhh-org"
 GOOGLE_ANALYTICS = "UA-110381421-1"
 
-ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{slug}'
-ARTICLE_LANG_URL = '{lang}/blog/{date:%Y}/{date:%m}/{slug}'
+ARTICLE_URL = '/blog/{date:%Y}/{date:%m}/{slug}'
+ARTICLE_LANG_URL = '/{lang}/blog/{date:%Y}/{date:%m}/{slug}'
 
-PAGE_URL = '{slug}'
-PAGE_LANG_URL = '{lang}/{slug}'
+PAGE_URL = '/{slug}'
+PAGE_LANG_URL = '/{lang}/{slug}'
