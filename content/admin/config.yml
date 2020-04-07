@@ -13,8 +13,8 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: "Title"
     label: "Article" # Used in the UI, ie.: "New Post"
     folder: "content" # The path to the folder where the documents are stored
-    slug: "{{year}}/{{month}}/{{slug}}" # Filename template, e.g., title.md
-    preview_path: blog/{{slug}}
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    preview_path: blog/{{year}}/{{month}}/{{slug}}
     preview_path_date_field: "Date"
     extension: md
     format: frontmatter
