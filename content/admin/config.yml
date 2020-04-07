@@ -13,10 +13,11 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: "Title"
     label: "Article" # Used in the UI, ie.: "New Post"
     folder: "content" # The path to the folder where the documents are stored
+    slug: "{{year}}/{{month}}/{{slug}}" # Filename template, e.g., title.md
+    preivew_path: blog/{{slug}}
     extension: md
     format: frontmatter
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., title.md
     fields: # The fields each document in this collection have
       - {label: "Status", name: "Status", widget: "select", default: "draft", options: ["draft", "published"], hint: "Draft does not show on site"}
       - {label: "Language", name: "Lang", widget: "select", default: "en", options: ["en", "zh"], hint: "Select en for English, zh for 中文"}
