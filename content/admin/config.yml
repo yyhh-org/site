@@ -19,7 +19,6 @@ collections: # A list of collections the CMS should be able to edit
     extension: md
     format: frontmatter
     create: true # Allow users to create new documents in this collection
-    sortableFields: ['Updated On', 'Date', 'Status', 'Title', 'Author']
     fields: # The fields each document in this collection have
       - {label: "Status", name: "Status", widget: "select", default: "draft", options: ["draft", "published"], hint: "Draft does not show on site"}
       - {label: "Language", name: "Lang", widget: "select", default: "en", options: ["en", "zh"], hint: "Select en for English, zh for 中文"}
