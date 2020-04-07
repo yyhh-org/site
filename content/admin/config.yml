@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Article" # Used in the UI, ie.: "New Post"
     folder: "content" # The path to the folder where the documents are stored
     slug: "{{year}}/{{month}}/{{slug}}" # Filename template, e.g., title.md
-    preivew_path: blog/{{slug}}
+    preview_path: blog/{{slug}}
     extension: md
     format: frontmatter
     create: true # Allow users to create new documents in this collection
