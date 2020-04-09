@@ -5,7 +5,7 @@ Title: How to Add a Preview Link to Self-hosted Netlify CMS
 Date: 2020-04-09T21:47:15.849Z
 Author: Huahai
 Category: notebook
-Tags: SSG, Netlify CMS, Jenkins, Github, nginx
+Tags: SSG, Netlify CMS, Jenkins, Github, nginx, SysAdmin
 ---
 If you are using a self-hosted  Netlify CMS as the online editor for your SSG powered Website and you are using the editorial workflow (you have `publish_mode: editorial_workflow` in your config.yml), a pain point is that you do not see a preview of the live page when the page is in draft. Unlike the master branch that you can  see the live page after it is built, the draft is committed to a different git branch so you do not have a link to the built page.
 
@@ -17,9 +17,9 @@ Netlify CMS has a feature to show a preview link for drafts, but one needs to do
 
 Before we begin, here's what we already have. We use a github organization, say example-com to host the repository for the site, so `example-com/site` would be the repo. The site source contains a Jenkinsfile, so when the repo is committed to, Jenkins automatically builds the site using its github integration. 
 
-We also set up nginx to directly point to the built site directory as the root. We are using eleventy as the SSG, so the built site is in `_site` directory. This works well for automatic deployment of the site. Whenever the master branch of the source repository is committed to, after a few seconds, the web server's <jenkins-agent-home>/workspace/<jenkins-job-name>_master/_site directory will contain the updated site content for https://example.com
+We also set up nginx to directly point to the built site directory as the root. We are using eleventy as the SSG, so the built site is in `_site` directory. This works well for automatic deployment of the site. Whenever the master branch of the source repository is committed to, after a few seconds, the web server's `<jenkins-agent-home>/workspace/<jenkins-job-name>_master/_site` directory will contain the updated site content for https://example.com
 
-To add a preview link, we basically need to do the same for the preview branch `cms/blog/your-draft-article-title`, which is also submitted as a pull-request to github by Netlify. There are a few things need to happen.
+To add a preview link, we basically need to do the same for the preview branch, `PR-5`, a pull-request to github sent by Netlify. There are a few things need to happen.
 
 ## DNS
 
@@ -146,4 +146,10 @@ You can see that we are sending build status to slack, but that's not important.
 }
 ```
 
-The `state` is required. The `context` is what I made up, but it is important to have the keyword "deploy" in there, as that's what Netlify CMS is looking for. The `description` can be whatever. The `target_url` is the preview link we are after! Wow, all these, just for this link. Oh well, without this link, your writers and editors will probably be mad at you, so it definitely worth it. 
+The `state` is required. The `context` is what I made up, but it is important to have the keyword "deploy" in there, as that's what Netlify CMS is looking for. The `description` can be whatever. The `target_url` is the preview link we are after!  
+
+## Netlify CMS config.yml
+
+If you want the preview link to point to the draft article itself, you will need to add a `preview_path` in the collection in config.yml. For example, `preview_path: blog/{{slug}}`. 
+
+Wow, all these, just for a link. Oh well, without this link, your writers and editors will probably be mad at you, so it definitely worth it.
