@@ -1,5 +1,5 @@
 ---
-Status: draft
+Status: published
 Lang: en
 Title: How to Add a Preview Link to Self-hosted Netlify CMS
 Date: 2020-04-09T21:47:15.849Z
