@@ -95,7 +95,7 @@ pipeline {
             env.GIT_AUTHOR_NAME = sh (
               script: "git show -s --pretty=%an ${env.GIT_COMMIT}",
               returnStdout: true).trim()
-            env.BUILD_INFO = "<${env.RUN_DISPLAY_URL}|${env.JOB_NAME} [${env.BUILD_NUMBER}]> submitted by ${env.GIT_AUTHOR_NAME} with commit <https://github.com/juji-io/site/commit/${env.GIT_COMMIT}|${env.GIT_COMMIT.take(7)}>: ${env.GIT_COMMIT_MSG}"
+            env.BUILD_INFO = "<${env.RUN_DISPLAY_URL}|${env.JOB_NAME} [${env.BUILD_NUMBER}]> submitted by ${env.GIT_AUTHOR_NAME} with commit <https://github.com/example-com/site/commit/${env.GIT_COMMIT}|${env.GIT_COMMIT.take(7)}>: ${env.GIT_COMMIT_MSG}"
           }
         }
         sh '''
@@ -114,7 +114,7 @@ pipeline {
               curl -X POST -H "Content-Type:application/json" \
               -H "Authorization: token ${GITHUB_ACCESS_TOKEN}" \
               -d '{"state": "success", "context": "netlify-cms/preview/deploy", "description": "Deploy preview ready", "target_url": "https://'"${BRANCH_NAME}"'.example.com/"}' \
-              "https://api.github.com/repos/juji-io/site/statuses/${GIT_PR_COMMIT}"
+              "https://api.github.com/repos/example-com/site/statuses/${GIT_PR_COMMIT}"
           '''
           }
       }
