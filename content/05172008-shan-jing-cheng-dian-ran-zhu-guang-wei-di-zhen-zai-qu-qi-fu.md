@@ -1,10 +1,10 @@
 ---
+Status: published
 Author: Yunyao
 Slug: 05172008-shan-jing-cheng-dian-ran-zhu-guang-wei-di-zhen-zai-qu-qi-fu
 Lang: zh
 Date: 2008-05-19 18:10
 Alias: /blog/2008/05/05-17-2008-%E5%B1%B1%E6%99%AF%E5%9F%8E%E7%82%B9%E7%87%83%E7%83%9B%E5%85%89%E4%B8%BA%E5%9C%B0%E9%9C%87%E7%81%BE%E5%8C%BA%E7%A5%88%E7%A6%8F
-Status: published
 Title: 05.17.2008 山景城点燃烛光为地震灾区祈福
 Category: experience
 Tags: Extraordinary

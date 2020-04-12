@@ -1,10 +1,10 @@
 ---
+Status: published
 Author: Huahai
 Slug: ecobee3-installation-with-k-wire
 Lang: en
 Date: 2017-12-01 06:13
 Alias: /blog/2017/11/ecobee3-installation-k-wire
-Status: published
 Title: Ecobee3 installation with K wire
 Category: experience
 Tags: House, Appliance
