@@ -1,12 +1,13 @@
 ---
-Title: Data-Oriented Programming (DOP)
-Date: 2016-12-03 23:33
 Author: Huahai
+Slug: data-oriented-programming-dop
+Lang: en
+Date: 2016-12-03 23:33
+Alias: /blog/2016/12/data-oriented-programming-dop
+Status: published
+Title: Data-Oriented Programming (DOP)
 Category: opinion
 Tags: Programming, Clojure
-Slug: data-oriented-programming-dop
-Alias: /blog/2016/12/data-oriented-programming-dop
-Lang: en
 ---
 
 JSON is arguably the world's most popular human readable data format today.  It has largely replaced XML as the data exchange format on the Internet. One of the key reasons for the proliferation of JSON is its simplicity.  The data structure are very limited: only arrays, enclosed with []; and objects, enclosed with {}. That's it. It cannot be simpler.
