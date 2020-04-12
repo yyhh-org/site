@@ -106,7 +106,7 @@ DISPLAY_SERIES_ON_SIDEBAR = True
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['pelican_alias', 'i18n_subsites', 'series', 'related_posts',
-           'tipue_search', 'render_math']
+           'tipue_search', 'render_math', 'sitemap']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
 
 PYGMENTS_STYLE = 'default'
