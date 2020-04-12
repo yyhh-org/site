@@ -1,12 +1,13 @@
 ---
-Title: Ecobee3 installation with K wire
-Date: 2017-12-01 06:13
 Author: Huahai
+Slug: ecobee3-installation-with-k-wire
+Lang: en
+Date: 2017-12-01 06:13
+Alias: /blog/2017/11/ecobee3-installation-k-wire
+Status: published
+Title: Ecobee3 installation with K wire
 Category: experience
 Tags: House, Appliance
-Slug: ecobee3-installation-with-k-wire
-Alias: /blog/2017/11/ecobee3-installation-k-wire
-Lang: en
 ---
 
 As part of our house modernization process, we bought an Ecobee3 Wifi enabled smart thermostat. We hope that this small device will help reduce the size of our utility bill.  The product looks very simple, but it comes with three additional sensors that can be placed in different rooms, and these can even detect room occupancy!
@@ -17,7 +18,7 @@ One problem I encountered was how to install this device when the old device use
 
 ![step 1](https://farm5.staticflickr.com/4559/38758945231_bccf06a000.jpg)
 
-My Internet search eventually brought me to a <a href="https://www.youtube.com/watch?v=NTDRQNpGi1c">Youtube video</a>, where someone had a similar problem with installing a Nest thermostat. Basically, the solution was to correct the **K** wire to the **Y1** wire.
+My Internet search eventually brought me to a <a href="https://www.youtube.com/watch?v=NTDRQNpGi1c">Youtube video</a>, where someone had a similar problem with installing a Nest thermostat. Basically, the solution was to connect the **K** wire to the **Y1** wire.
 
 I said to myself, maybe this works for Ecobee3 too. So I did just that:
 
