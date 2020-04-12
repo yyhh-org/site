@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: A Thinkpad X61 Hotkeys Solution on Debian Linux
 Date: 2007-10-28 23:41
 Author: Huahai

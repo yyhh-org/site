@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: an interesting birthday gift
 Date: 2008-03-02 22:34
 Author: Huahai

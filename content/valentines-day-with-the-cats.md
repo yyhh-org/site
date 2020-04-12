@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Valentine's day with the cats
 Date: 2008-02-16 23:03
 Author: Yunyao

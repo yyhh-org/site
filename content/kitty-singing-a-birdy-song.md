@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Kitty Singing a Birdy Song
 Date: 2008-06-03 23:42
 Author: Yunyao

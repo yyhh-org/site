@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Upgrade Drupal from 6 to 8
 Date: 2017-11-21 23:46
 Author: Huahai

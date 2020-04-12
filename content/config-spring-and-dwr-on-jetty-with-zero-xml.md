@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Config Spring and DWR on Jetty with zero XML
 Date: 2009-08-09 10:51
 Author: Huahai

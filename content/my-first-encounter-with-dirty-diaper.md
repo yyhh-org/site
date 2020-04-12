@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: My First Encounter with Dirty Diaper
 Date: 2013-01-20 08:02
 Author: Yunyao

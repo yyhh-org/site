@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 电脑病毒, Linux和中国
 Date: 2007-10-31 01:39
 Author: Huahai

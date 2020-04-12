@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 猫猫时装秀 (Pet Fashion Show)
 Date: 2008-02-10 01:20
 Author: Yunyao

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Post syntax highlighted code in Drupal
 Date: 2007-11-17 10:45
 Author: Huahai

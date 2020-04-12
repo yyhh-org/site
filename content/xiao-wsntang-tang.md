@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 小＂WSN＂唐唐
 Date: 2008-01-01 00:31
 Author: Yunyao

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "Count Number of Maps: First Exercises of Conceptual Mathematics in Clojure"
 Date: 2012-05-16 20:33
 Author: Huahai

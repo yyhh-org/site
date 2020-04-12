@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: How to Share Mouse and Keyboard across Machines
 Date: 2011-07-11 00:45
 Author: Yunyao

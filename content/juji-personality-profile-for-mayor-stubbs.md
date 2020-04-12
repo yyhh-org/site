@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Juji Personality Profile for Mayor Stubbs
 Date: 2015-03-19 04:53
 Author: Yunyao

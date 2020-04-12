@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "Finding happiness: a cat's story"
 Date: 2008-06-06 20:56
 Author: Yunyao

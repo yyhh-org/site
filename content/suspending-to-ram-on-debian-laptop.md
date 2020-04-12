@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Suspending to RAM on Debian laptop
 Date: 2008-04-17 23:39
 Author: Huahai

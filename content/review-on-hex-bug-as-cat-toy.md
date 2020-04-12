@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Review on Hex Bug as Cat Toy
 Date: 2011-07-10 06:04
 Author: Yunyao

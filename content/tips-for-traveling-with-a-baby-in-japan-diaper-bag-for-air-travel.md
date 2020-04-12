@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Tips for Traveling with a Baby in Japan - Diaper Bag for Air Travel
 Date: 2017-01-11 01:09
 Author: Yunyao

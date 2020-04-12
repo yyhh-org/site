@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "Quick Fix: Windows XP Crashes with Blue Screen with Video Content"
 Date: 2011-09-22 00:06
 Author: Yunyao

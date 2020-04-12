@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Museum and Cultural Tour of Bulgaria in 9 Days - Day 1
 Date: 2013-09-08 04:31
 Author: Yunyao

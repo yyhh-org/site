@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "Compiz-Fusion on KDE"
 Date: 2007-10-29 00:39
 Author: Huahai

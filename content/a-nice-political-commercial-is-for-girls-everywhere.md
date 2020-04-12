@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: A nice political commercial is for girls everywhere.
 Date: 2008-02-17 23:22
 Author: Yunyao

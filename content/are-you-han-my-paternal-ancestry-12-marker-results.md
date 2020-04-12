@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Are you Han? My paternal ancestry - 12 Marker Results
 Date: 2012-03-03 01:04
 Author: Huahai

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Museum and Cultural Tour of Bulgaria in 9 Days - Day 2 (Rila Monastery)
 Date: 2013-12-13 22:39
 Author: Yunyao

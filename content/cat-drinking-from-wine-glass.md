@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Cat Drinking from Wine Glass
 Date: 2011-07-04 06:44
 Author: Yunyao

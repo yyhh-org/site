@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 自由意志是人的物质特征的一个体现
 Date: 2007-09-01 04:00
 Author: Huahai

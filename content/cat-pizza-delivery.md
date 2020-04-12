@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Cat Pizza Delivery
 Date: 2011-07-04 06:31
 Author: Yunyao

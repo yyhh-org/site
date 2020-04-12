@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 我为什么把Christianity翻译成嫉妒教
 Date: 2007-09-02 01:24
 Author: Huahai

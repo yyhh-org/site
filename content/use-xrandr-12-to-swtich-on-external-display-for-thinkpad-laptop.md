@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Use XRandR 1.2 to Swtich on External Display for Thinkpad Laptop
 Date: 2007-10-28 15:00
 Author: Huahai

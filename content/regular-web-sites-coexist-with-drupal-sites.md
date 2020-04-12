@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Regular Web sites coexist with Drupal sites
 Date: 2007-11-16 01:31
 Author: Huahai

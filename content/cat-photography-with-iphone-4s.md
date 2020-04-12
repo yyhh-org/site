@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Cat Photography with iPhone 4s
 Date: 2012-05-19 01:19
 Author: Yunyao

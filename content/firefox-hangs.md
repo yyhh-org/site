@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Firefox Hangs
 Date: 2007-12-06 10:52
 Author: Huahai

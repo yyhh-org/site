@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "Women Are Never Front-Runners - From NY Times"
 Date: 2008-01-08 21:36
 Author: Yunyao

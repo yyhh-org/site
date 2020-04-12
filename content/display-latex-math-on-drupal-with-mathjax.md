@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Display LaTeX Math on Drupal with MathJax
 Date: 2011-07-18 20:19
 Author: Huahai

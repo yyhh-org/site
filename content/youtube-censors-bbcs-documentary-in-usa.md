@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: YouTube censors BBC's documentary in USA
 Date: 2008-03-10 15:15
 Author: Huahai

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Fixing Problems after Upgrading from Snow Leopard to Mountain Lion
 Date: 2012-09-24 00:28
 Author: Huahai

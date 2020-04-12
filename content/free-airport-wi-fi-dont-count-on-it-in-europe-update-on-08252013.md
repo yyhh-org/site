@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Free Airport Wi-Fi? -- Don't Count on It in Europe (Update on 08/25/2013)
 Date: 2012-10-26 18:28
 Author: Yunyao

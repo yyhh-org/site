@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 读《概念空间》 － 0
 Date: 2011-02-03 23:28
 Author: Huahai

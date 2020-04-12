@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 一个关于逻辑和概率的简单科普
 Date: 2007-10-30 07:24
 Author: Huahai

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Tips for Traveling with a Baby in Japan  - Travel Gears
 Date: 2017-01-09 06:50
 Author: Yunyao

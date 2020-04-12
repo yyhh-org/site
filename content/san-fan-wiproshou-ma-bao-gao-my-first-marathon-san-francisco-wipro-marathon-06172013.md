@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 三藩Wipro首马报告 --- My First Marathon (San Francisco Wipro Marathon 06/17/2013)
 Date: 2013-07-27 01:40
 Author: Yunyao

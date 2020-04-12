@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Migrate this blog from Drupal to a static site generator
 Date: 2020-03-10T19:34:39.357Z
 Author: Huahai

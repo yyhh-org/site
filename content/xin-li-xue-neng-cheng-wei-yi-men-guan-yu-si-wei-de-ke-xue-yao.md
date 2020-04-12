@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 心理学能成为一门关于思维的科学么？
 Date: 2010-07-29 19:48
 Author: Huahai

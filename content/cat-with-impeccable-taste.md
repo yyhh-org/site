@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Cat with Impeccable Taste
 Date: 2011-07-04 07:17
 Author: Yunyao

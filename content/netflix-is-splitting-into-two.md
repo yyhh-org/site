@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Netflix Is Splitting Into Two!?
 Date: 2011-09-19 23:20
 Author: Yunyao

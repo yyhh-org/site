@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: High Resolution Image for Pdflatex
 Date: 2012-08-09 20:31
 Author: Yunyao

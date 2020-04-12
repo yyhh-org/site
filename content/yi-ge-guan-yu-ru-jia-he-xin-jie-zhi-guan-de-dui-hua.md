@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 一个关于儒家核心价值观的对话
 Date: 2011-02-04 23:57
 Author: Huahai

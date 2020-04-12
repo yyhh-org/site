@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Dual Head with Xorg on Thinkpad X31
 Date: 2005-10-15 04:00
 Author: Huahai

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Running Windows Vista on Debian Linux with VirtualBox
 Date: 2007-11-04 00:26
 Author: Huahai

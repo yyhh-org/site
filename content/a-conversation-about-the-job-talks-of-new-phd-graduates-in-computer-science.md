@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: A conversation about the job talks of new Ph.D. graduates in computer science
 Date: 2011-03-07 20:40
 Author: Huahai

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 略论英美国民宗教观念差异的原因，顺便谈谈中国
 Date: 2007-09-02 01:27
 Author: Huahai

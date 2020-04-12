@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Dual head with xrandr 1.2 revisited
 Date: 2007-11-16 04:04
 Author: Huahai

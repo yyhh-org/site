@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: How to load context of text files into DB2
 Date: 2007-12-29 00:48
 Author: Yunyao

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: How to get a kitty manicure
 Date: 2013-09-04 05:34
 Author: Yunyao

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Tails & No Tales Cat Show
 Date: 2009-01-04 07:37
 Author: Yunyao

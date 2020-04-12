@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: LDAP Authentication for On-premise Sentry Server using freeIPA
 Date: 2017-12-11 23:27
 Author: Huahai

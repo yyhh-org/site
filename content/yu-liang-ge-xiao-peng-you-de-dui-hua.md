@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 与两个小朋友的对话
 Date: 2007-10-02 01:19
 Author: Huahai

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: An Mac Look for my KDE Desktop
 Date: 2007-12-05 10:04
 Author: Huahai

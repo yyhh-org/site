@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Complete OpenSSH Client Public Key Solution on Debian
 Date: 2007-11-12 10:14
 Author: Huahai

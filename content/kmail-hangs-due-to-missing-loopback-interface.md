@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: kmail hangs due to missing loopback interface
 Date: 2007-11-22 01:50
 Author: Huahai

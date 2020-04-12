@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Install MEPIS Linux on X61
 Date: 2007-10-28 00:58
 Author: Huahai

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Chrismas Vacation --- Mexico Riviera Cruise (Draft)
 Date: 2008-02-10 03:42
 Author: Yunyao

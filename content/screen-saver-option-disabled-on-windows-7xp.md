@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Screen Saver Option Disabled on Windows 7/XP
 Date: 2012-08-01 17:07
 Author: Yunyao

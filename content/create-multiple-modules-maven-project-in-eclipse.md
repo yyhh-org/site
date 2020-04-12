@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Create Multiple Modules Maven Project in Eclipse
 Date: 2008-02-14 04:49
 Author: Huahai

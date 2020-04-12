@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Reference to Individual Email Message in Plain Text File
 Date: 2007-12-13 22:40
 Author: Huahai

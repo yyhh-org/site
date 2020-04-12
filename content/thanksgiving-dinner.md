@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Thanksgiving Dinner
 Date: 2008-12-06 18:02
 Author: Yunyao

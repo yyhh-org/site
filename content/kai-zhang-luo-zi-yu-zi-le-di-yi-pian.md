@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 开张啰。自娱自乐第一篇
 Date: 2007-10-27 19:27
 Author: Huahai

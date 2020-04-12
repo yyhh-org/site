@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Review of The Refined Feline Lotus Cat Tower
 Date: 2011-07-04 09:06
 Author: Yunyao

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Before and After --- Master Bathroom Remodeling
 Date: 2011-09-04 06:04
 Author: Yunyao

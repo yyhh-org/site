@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 从变量说开来
 Date: 2015-02-25 22:07
 Author: Huahai

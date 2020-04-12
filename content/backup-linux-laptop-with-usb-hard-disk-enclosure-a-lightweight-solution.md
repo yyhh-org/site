@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "Backup Linux Laptop with USB Hard-disk Enclosure: a Lightweight Solution"
 Date: 2007-11-12 00:00
 Author: Huahai

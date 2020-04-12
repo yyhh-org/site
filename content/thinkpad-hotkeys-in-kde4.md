@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Thinkpad Hotkeys in KDE4
 Date: 2010-12-01 22:00
 Author: Huahai

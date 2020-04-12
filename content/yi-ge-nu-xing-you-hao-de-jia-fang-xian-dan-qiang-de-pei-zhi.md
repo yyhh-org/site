@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 一个女性友好的家防霰弹枪的配置
 Date: 2013-09-02 05:46
 Author: Huahai

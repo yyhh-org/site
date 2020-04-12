@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Living Alarm Clock
 Date: 2007-11-02 19:04
 Author: Yunyao

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Switching to Spacemacs from Vim for Clojure/ClojureScript Development
 Date: 2015-08-13 06:00
 Author: Huahai

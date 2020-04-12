@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Interesting Comments on The Election From New York Times
 Date: 2008-02-07 19:03
 Author: Yunyao

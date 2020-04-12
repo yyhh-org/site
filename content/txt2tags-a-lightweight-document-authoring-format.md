@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "txt2tags: a Lightweight Document Authoring Format"
 Date: 2008-01-04 00:07
 Author: Huahai

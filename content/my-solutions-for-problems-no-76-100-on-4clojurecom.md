@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: My solutions for problems No. 76-100 on 4clojure.com
 Date: 2011-06-05 05:36
 Author: Huahai

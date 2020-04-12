@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Editing Web Textarea with Desktop Editor
 Date: 2007-12-07 07:17
 Author: Huahai

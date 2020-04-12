@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "Centralized authentication with LDAP + NFS + Samba (Part II: NFS)"
 Date: 2005-01-17 05:00
 Author: Huahai

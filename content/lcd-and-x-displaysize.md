@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: LCD and X DisplaySize
 Date: 2005-10-15 04:00
 Author: Huahai

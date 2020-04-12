@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Putty as a Chinese Telnet client
 Date: 2005-11-02 00:42
 Author: Huahai

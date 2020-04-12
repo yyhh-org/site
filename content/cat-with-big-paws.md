@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Cat with Big Paws
 Date: 2011-07-04 06:56
 Author: Yunyao

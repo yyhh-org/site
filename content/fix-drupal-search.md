@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Fix Drupal Search
 Date: 2011-07-10 19:18
 Author: Huahai

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Reverse/Forward Search with Latex-Suite in Vim
 Date: 2007-11-22 17:19
 Author: Huahai

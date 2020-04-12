@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Develop clojure Web applications with vim
 Date: 2011-05-02 23:02
 Author: Huahai

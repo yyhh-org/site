@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Use Vim to read manual page
 Date: 2007-11-09 22:10
 Author: Huahai

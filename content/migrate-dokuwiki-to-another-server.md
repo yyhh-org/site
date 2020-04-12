@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Migrate DokuWiki to another server
 Date: 2018-10-20 04:46
 Author: Huahai

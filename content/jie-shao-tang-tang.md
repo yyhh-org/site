@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 介绍唐唐
 Date: 2007-10-31 04:30
 Author: Huahai

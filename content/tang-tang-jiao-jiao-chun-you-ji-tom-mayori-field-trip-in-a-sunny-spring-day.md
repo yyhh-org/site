@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 唐唐娇娇春游记 (Tom, Mayori Field Trip in a sunny spring day)
 Date: 2008-03-29 17:40
 Author: Yunyao

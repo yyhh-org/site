@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Earth Quake
 Date: 2007-10-31 06:45
 Author: Yunyao

@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Set mailto handler in Firefox
 Date: 2007-11-16 22:25
 Author: Huahai

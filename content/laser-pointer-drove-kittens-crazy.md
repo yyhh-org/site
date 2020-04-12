@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Laser pointer drove kittens crazy
 Date: 2007-11-01 00:46
 Author: Huahai

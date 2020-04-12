@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: "A Simple GTD List Solution: Desktop, Web and Possibly Mobile"
 Date: 2007-12-10 04:25
 Author: Huahai

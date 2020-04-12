@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Use Vim as Info Page Browser
 Date: 2007-11-29 07:56
 Author: Huahai

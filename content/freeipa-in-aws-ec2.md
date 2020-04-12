@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: FreeIPA in AWS EC2
 Date: 2017-12-07 23:34
 Author: Huahai

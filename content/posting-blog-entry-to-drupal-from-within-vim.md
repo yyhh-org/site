@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Posting blog entry to Drupal from within Vim
 Date: 2007-10-27 21:52
 Author: Huahai

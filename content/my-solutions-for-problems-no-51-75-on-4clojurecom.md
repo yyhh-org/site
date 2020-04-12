@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: My solutions for problems No. 51-75 on 4clojure.com
 Date: 2011-05-25 01:59
 Author: Huahai

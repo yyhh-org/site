@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Start learning category theory
 Date: 2012-04-30 07:48
 Author: Huahai

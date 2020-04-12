@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Museum and Cultural Tour of Bulgaria in 9 Days --- Preface (保加利亚文化历史九日游 - 前言）
 Date: 2013-08-25 18:36
 Author: Yunyao

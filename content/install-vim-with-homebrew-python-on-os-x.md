@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Install Vim with Homebrew Python on OS X
 Date: 2012-05-16 04:50
 Author: Huahai

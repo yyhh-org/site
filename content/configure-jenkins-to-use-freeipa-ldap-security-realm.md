@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Configure Jenkins to use FreeIPA LDAP Security Realm
 Date: 2017-12-08 00:02
 Author: Huahai

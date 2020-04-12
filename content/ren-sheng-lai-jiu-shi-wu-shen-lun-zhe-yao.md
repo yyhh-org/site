@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 人生来就是无神论者么？
 Date: 2007-09-12 04:00
 Author: Huahai

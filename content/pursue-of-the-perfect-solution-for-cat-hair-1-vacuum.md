@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Pursue of the Perfect Solution for Cat Hair (1) ---  Vacuum
 Date: 2012-08-27 00:40
 Author: Yunyao

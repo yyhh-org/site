@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 中国的技术引爆文艺复兴？
 Date: 2011-02-02 06:33
 Author: Huahai

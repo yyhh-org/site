@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Easy Tuna Birthday Cake for the Cats
 Date: 2011-09-18 23:25
 Author: Yunyao

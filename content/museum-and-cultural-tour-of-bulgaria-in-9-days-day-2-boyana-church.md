@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Museum and Cultural Tour of Bulgaria in 9 Days - Day 2 (Boyana Church)
 Date: 2014-04-05 05:05
 Author: Yunyao

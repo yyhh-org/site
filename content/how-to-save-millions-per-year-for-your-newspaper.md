@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: How to save millions per year for your newspaper?
 Date: 2008-04-20 07:45
 Author: Yunyao

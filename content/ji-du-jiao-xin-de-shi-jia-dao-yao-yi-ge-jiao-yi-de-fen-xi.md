@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 嫉妒教信的是假道么? 一个教义的分析
 Date: 2008-04-18 02:35
 Author: Huahai

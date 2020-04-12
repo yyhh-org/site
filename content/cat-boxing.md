@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Cat Boxing
 Date: 2011-07-04 07:44
 Author: Yunyao

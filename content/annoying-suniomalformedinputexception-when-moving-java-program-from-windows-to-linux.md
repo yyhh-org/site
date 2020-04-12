@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Annoying sun.io.MalformedInputException when moving Java program from Windows to Linux
 Date: 2007-11-06 20:31
 Author: Yunyao

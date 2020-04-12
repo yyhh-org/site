@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Interesting Comments on The Election From MITBBS
 Date: 2008-03-06 02:41
 Author: Yunyao

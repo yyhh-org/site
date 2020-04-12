@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Upgrade Drupal with Almost Zero Down Time
 Date: 2011-07-16 08:17
 Author: Huahai

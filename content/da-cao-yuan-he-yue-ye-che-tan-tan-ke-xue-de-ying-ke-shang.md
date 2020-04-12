@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 大草原和越野车：谈谈科学的硬壳(上)
 Date: 2008-04-18 03:04
 Author: Huahai

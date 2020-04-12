@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Backup Discourse with External PostgreSQL Server
 Date: 2018-01-21 05:58
 Author: Huahai

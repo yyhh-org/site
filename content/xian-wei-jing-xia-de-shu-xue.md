@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: 显微镜下的数学
 Date: 2008-04-12 05:29
 Author: Huahai

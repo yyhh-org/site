@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: How to redeem British Airways mileages for partner airline flights
 Date: 2011-06-15 05:35
 Author: Yunyao

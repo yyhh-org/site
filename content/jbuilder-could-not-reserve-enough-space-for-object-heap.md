@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: JBuilder "could not reserve enough space for object heap"
 Date: 2005-01-10 05:00
 Author: Huahai

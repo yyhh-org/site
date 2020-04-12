@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: My solutions for the first 50 problems on 4clojure.com
 Date: 2011-05-18 23:13
 Author: Huahai

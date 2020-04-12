@@ -1,4 +1,5 @@
 ---
+Status: published
 Title: Is that a cat?
 Date: 2009-08-08 04:39
 Author: Yunyao
