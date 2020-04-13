@@ -111,6 +111,7 @@ DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'searc
 
 PYGMENTS_STYLE = 'default'
 
+MD_EXTENSIONS = ['codehilite(css_class=highlight, linenums=True)','extra']
 
 IGNORE_FILES = ['.#*', '__pycache__']
 

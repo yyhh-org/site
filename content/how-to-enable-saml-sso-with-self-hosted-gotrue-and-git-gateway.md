@@ -37,7 +37,7 @@ So you will have to fix it yourself. What I did was to manually copy out the cor
 
 #### Gotrue and git-gateway Setup
 
-There is an excellent guide on how to self-host gotrue and git-gateway at https://github.com/hfte/netlify-cms-with-selfhosted-gotrue-and-git-gateway
+There is an excellent guide on how to self-host gotrue and git-gateway at [https://github.com/hfte/netlify-cms-with-selfhosted-gotrue-and-git-gateway](https://github.com/hfte/netlify-cms-with-selfhosted-gotrue-and-git-gateway)
 
 Follow that guide first, and make sure it works. It does email based login, useful for inviting external bloggers or editors to work on the site. For SAML based SSO that is suitable for employees, read on.
 
@@ -57,11 +57,13 @@ The fix should look like this:
                 AudienceURI:                 baseURI.String() + "/saml",
                 IDPCertificateStore:         &certStore,
                 SPKeyStore:                  keyStore,
-                NameIdFormat:                "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+                NameIdFormat:                "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
                 AllowMissingAttributes:      true,
         }
 ```
-Here we used "unspecified" nameid-format, you could also use "emailAddress" instead, depending on if you want your employees to type the whole email address when login. After the patch, compile the code.
+Here we set name id format to be email address, which apparently is the only format that gotrue works with. If you set the format as 'unspecified', users will be able to login, but they cannot edit anything, all the Netlify CMS UI controls will be greyed out. Obviously gotrue is checking that it gets an email address from the IdP.
+
+After the patch, compile the code.
 
 ```
 make deps
@@ -75,6 +77,7 @@ GOTRUE_JWT_SECRET="your-secret-key-shared-between-git-gateway-and-gotrue"
 GOTRUE_JWT_EXP=3600
 GOTRUE_JWT_AUD=localhost
 GOTRUE_DB_DRIVER=mysql
+GOTRUE_JWT_DEFAULT_GROUP_NAME=admin
 DATABASE_URL="gotrue:mysqlpassword@tcp(mysqlipaddress:3306)/gotrue?parseTime=true&multiStatements=true"
 GOTRUE_API_HOST=localhost
 PORT=8081
@@ -91,7 +94,9 @@ GOTRUE_EXTERNAL_SAML_SIGNING_CERT=''
 GOTRUE_EXTERNAL_SAML_SIGNING_KEY=''
 GOTRUE_EXTERNAL_LABELS="{SAML: Example SSO}"
 ```
-The GOTRUE_EXTERNAL_SAML_METADATA_URL value should point to the corrected XML mentioned above.
+The `GOTRUE_EXTERNAL_SAML_METADATA_URL` value should point to the corrected XML mentioned above.
+
+Note, I set the default JWT group name to be "admin", because my IdP is backed by a LDAP server that handles user group membership and permisions already, there's no need to duplicate things here. Your case may be different.
 
 Now the rest of gotrue and git-gateway setup is the same as the guide linked above.
 
@@ -123,8 +128,8 @@ To get a nice login form with a SSO button for Netlify CMS, use netlify-identity
 ```
 You may also want to add this line `<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>` into the `index.html` of your main site. As the email confirmation link is pointed there. 
 
-Again, the rest of the setup should follow https://github.com/hfte/netlify-cms-with-selfhosted-gotrue-and-git-gateway
+Again, the rest of the setup should follow [https://github.com/hfte/netlify-cms-with-selfhosted-gotrue-and-git-gateway](https://github.com/hfte/netlify-cms-with-selfhosted-gotrue-and-git-gateway).
 
-Now your company personnel can use their company SSO credential to login to your SSG site to edit and publish content. No need to create another set of user name and password just for Web editing work. 
+Now your company personnel can use their company SSO credential to login to your SSG site to edit and publish content. No need to create another set of user name and password just for the Web editing work. 
 
 
