@@ -1060,3 +1060,7 @@ blockquote {
 .highlight pre .err {
   border: none;
 }
+
+#sidebar ul.list-group {
+  padding-left: 0;
+}
