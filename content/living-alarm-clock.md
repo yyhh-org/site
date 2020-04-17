@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Pets
 Slug: living-alarm-clock
-Alias: /blog/2007/11/living-alarm-clock
 Lang: en
 ---
 

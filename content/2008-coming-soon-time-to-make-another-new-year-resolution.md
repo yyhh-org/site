@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Extraordinary
 Slug: 2008-coming-soon-time-to-make-another-new-year-resolution
-Alias: /blog/2007/12/2008-coming-soon-time-make-another-new-year-resolution
 Lang: en
 ---
 

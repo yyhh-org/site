@@ -4,7 +4,6 @@ Author: Huahai
 Slug: data-oriented-programming-dop
 Lang: en
 Date: 2016-12-03 23:33
-Alias: /blog/2016/12/data-oriented-programming-dop
 Title: Data-Oriented Programming (DOP)
 Category: opinion
 Tags: Programming, Clojure

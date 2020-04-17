@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Pets, Events
 Slug: tails-no-tales-cat-show
-Alias: /blog/2009/01/tails-no-tales-cat-show
 Lang: en
 ---
 

@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Pets
 Slug: cat-boxing
-Alias: /blog/2011/07/cat-boxing
 Lang: en
 ---
 

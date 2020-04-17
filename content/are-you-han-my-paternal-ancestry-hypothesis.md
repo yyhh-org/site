@@ -6,7 +6,6 @@ Author: Huahai
 Category: opinion
 Tags: Science, DNA
 Slug: are-you-han-my-paternal-ancestry-hypothesis
-Alias: /blog/2011/12/are-you-han-my-paternal-ancestry-hypothesis
 Series: are-you-han
 Lang: en
 ---

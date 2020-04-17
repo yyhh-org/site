@@ -6,7 +6,6 @@ Author: Huahai
 Category: notebook
 Tags: Linux, Xorg
 Slug: lcd-and-x-displaysize
-Alias: /blog/2005/10/lcd-and-x-displaysize
 Lang: en
 ---
 

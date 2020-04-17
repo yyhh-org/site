@@ -6,7 +6,6 @@ Author: Huahai
 Category: notebook
 Tags: Math, CategoryTheory
 Slug: start-learning-category-theory
-Alias: /blog/2012/04/start-learning-category-theory
 Lang: en
 ---
 

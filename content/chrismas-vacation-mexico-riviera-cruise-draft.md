@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Travel
 Slug: chrismas-vacation-mexico-riviera-cruise-draft
-Alias: /blog/2008/02/chrismas-vacation-mexico-riviera-cruise-draft
 Lang: en
 ---
 

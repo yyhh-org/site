@@ -6,7 +6,6 @@ Author: Huahai
 Category: experience
 Tags: Pets
 Slug: laser-pointer-drove-kittens-crazy
-Alias: /blog/2007/10/laser-pointer-drove-kittens-crazy
 Lang: en
 ---
 

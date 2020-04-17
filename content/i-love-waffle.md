@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Pets
 Slug: i-love-waffle
-Alias: /blog/2007/11/i-love-waffle
 Lang: en
 ---
 

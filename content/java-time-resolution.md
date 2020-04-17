@@ -6,7 +6,6 @@ Author: Huahai
 Category: notebook
 Tags: Programming, Java, Vim
 Slug: java-time-resolution
-Alias: /blog/2008/02/java-time-resolution
 Lang: en
 ---
 

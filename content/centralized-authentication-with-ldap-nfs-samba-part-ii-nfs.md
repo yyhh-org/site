@@ -6,7 +6,6 @@ Author: Huahai
 Category: notebook
 Tags: SysAdmin, Linux
 Slug: centralized-authentication-with-ldap-nfs-samba-part-ii-nfs
-Alias: /blog/2005/01/centralized-authentication-ldap-nfs-samba-part-ii-nfs
 Sereis: ldap-nfs-samba
 Lang: en
 ---

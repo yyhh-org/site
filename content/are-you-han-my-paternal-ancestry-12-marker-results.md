@@ -6,7 +6,6 @@ Author: Huahai
 Category: opinion
 Tags: Science, DNA
 Slug: are-you-han-my-paternal-ancestry-12-marker-results
-Alias: /blog/2012/03/are-you-han-my-paternal-ancestry-12-marker-results
 Series: are-you-han
 Lang: en
 ---

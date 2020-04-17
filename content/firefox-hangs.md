@@ -6,7 +6,6 @@ Author: Huahai
 Category: notebook
 Tags: Firefox
 Slug: firefox-hangs
-Alias: /blog/2007/12/firefox-hangs
 Lang: en
 ---
 

@@ -6,7 +6,6 @@ Author: Yunyao
 Category: opinion
 Tags: GTD
 Slug: 3-time-saving-tools-for-busy-professionals
-Alias: /blog/2011/07/3-time-saving-tools-busy-professionals
 Lang: en
 ---
 

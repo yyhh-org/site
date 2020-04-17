@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Childcare, Craft
 Slug: baby-cloth-shoe-first-attempt
-Alias: /blog/2012/05/baby-cloth-shoe-first-attempt
 Lang: en
 ---
 

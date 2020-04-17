@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Pets
 Slug: winking-tom-superman
-Alias: /blog/2008/06/winking-tom-superman
 Lang: en
 ---
 

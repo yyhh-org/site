@@ -68,15 +68,15 @@ AUTHOR_FEED_RSS = None
 YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/index.html'
 
-ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_LANG_URL = '{lang}/blog/{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_LANG_SAVE_AS = '{lang}/blog/{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{slug}'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{slug}/index.html'
+ARTICLE_LANG_URL = '{lang}/blog/{date:%Y}/{date:%m}/{slug}'
+ARTICLE_LANG_SAVE_AS = '{lang}/blog/{date:%Y}/{date:%m}/{slug}/index.html'
 
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
-PAGE_LANG_URL = '{lang}/{slug}.html'
-PAGE_LANG_SAVE_AS = '{lang}/{slug}.html'
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}/index.html'
+PAGE_LANG_URL = '{lang}/{slug}'
+PAGE_LANG_SAVE_AS = '{lang}/{slug}/index..html'
 
 # DISPLAY_ARCHIVE_ON_SIDEBAR = True
 # DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
@@ -109,9 +109,9 @@ PLUGINS = ['pelican_alias', 'i18n_subsites', 'series', 'related_posts',
            'tipue_search', 'render_math', 'sitemap']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
 
-PYGMENTS_STYLE = 'default'
+SITEMAP = {'format': 'xml'}
 
-MD_EXTENSIONS = ['codehilite(css_class=highlight, linenums=True)','extra']
+PYGMENTS_STYLE = 'default'
 
 IGNORE_FILES = ['.#*', '__pycache__']
 

@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Pets
 Slug: samba-cat-dancer
-Alias: /blog/2011/07/samba-cat-dancer
 Lang: en
 ---
 

@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Pets
 Slug: cat-pizza-delivery
-Alias: /blog/2011/07/cat-pizza-delivery
 Lang: en
 ---
 

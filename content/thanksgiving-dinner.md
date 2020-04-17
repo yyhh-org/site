@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Cooking
 Slug: thanksgiving-dinner
-Alias: /blog/2008/12/thanksgiving-dinner
 Lang: en
 ---
 

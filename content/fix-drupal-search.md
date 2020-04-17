@@ -6,7 +6,6 @@ Author: Huahai
 Category: notebook
 Tags: SysAdmin, Drupal
 Slug: fix-drupal-search
-Alias: /blog/2011/07/fix-drupal-search
 Lang: en
 ---
 

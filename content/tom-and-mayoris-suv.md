@@ -6,7 +6,6 @@ Author: Huahai
 Category: experience
 Tags: Pets
 Slug: tom-and-mayoris-suv
-Alias: /blog/2007/10/tom-and-mayoris-suv
 Lang: en
 ---
 

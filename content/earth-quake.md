@@ -6,7 +6,6 @@ Author: Yunyao
 Category: experience
 Tags: Extraordinary, Family, Pets 
 Slug: earth-quake
-Alias: /blog/2007/10/earth-quake
 Lang: en
 ---
 
