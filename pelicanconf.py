@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
@@ -49,6 +50,7 @@ EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/css/custom.css'},
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/_headers': {'path': '_headers'},
 }
 
 
