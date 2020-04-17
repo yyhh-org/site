@@ -6,7 +6,6 @@ Author: Huahai
 Category: notebook
 Tags: 'Drupal, SSG, Pelican, SysAdmin'
 Lang: en
-Status: published
 ---
 This blog has undergone a few migrations over its 15 years life span. 
 
