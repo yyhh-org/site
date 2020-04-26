@@ -64,3 +64,8 @@ N    Haplogroup    Probability
 What a surprise! So I am a typical Han Chinese after all.
 
 On the other hand, the accuracy of this predictor may not be too high for Eastern Asians due to a lack of data. Anyway, looking forward to results from more markers to confirm...
+
+------------------
+
+**UPDATE** (3/7/2013): I paid for the deep-clique analysis to get to the bottom of this, and the results confirmed Vadim Urasin's prediction, that I am indeed O3-M122. So in this ense, I am a typical Han Chinese male. The only thing atypical is that I do not belong to any of the more popular branches under O3-M122.  This result seems to explain a lot, since I am in one of those rare branches under O3. 
+
