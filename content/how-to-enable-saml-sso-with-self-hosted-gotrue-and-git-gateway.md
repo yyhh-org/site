@@ -23,7 +23,7 @@ In the settings, make sure to *uncheck* `Force POST Binding`. Otherwise, gotrue 
  
 > {"code":400,"msg":"Unsupported provider: No valid SSO service found in IDP metadata"}
 
-Turns out that gotrue only supports HTTP-Redirect binding and does not support POST binding as of this writing. I find gotrue's design choice strange, as POST has much less uncertainty to deal with in a complexing environment where a bunch of Web proxying and redirecting are going on. Most SAML SPs I dealt with use POST. Anyway, it is what it is. 
+Turns out that gotrue only supports HTTP-Redirect binding and does not support POST binding as of this writing. I find gotrue's design choice strange, as POST has much less uncertainty to deal with in a complex environment where a bunch of Web proxying and redirecting are going on. Most SAML SPs I dealt with use POST. Anyway, it is what it is. 
 
 Correspondingly, set `Assertion Consumer Service Redirect Binding URL` instead of the POST one. The value should be `https://example.com/.netlify/identity/saml/acs`. 
 
