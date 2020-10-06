@@ -1,5 +1,5 @@
 ---
-Status: draft
+Status: published
 Lang: en
 Title: LDAP Authentication Module for Nginx on Debian
 Date: 2020-10-04T23:33:54.502Z
