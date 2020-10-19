@@ -91,3 +91,8 @@ Some notes:
 -   freeIPA use a flat structure for users:  '<span style="color:#e74c3c;">cn=users,cn=accounts,dc=example,dc=com</span>'
 -   <span style="color:#e74c3c;">AUTH\_LDAP\_DEFAULT\_SENTRY\_ORGANIZATION</span> must be an exact (case sensitive) match with the organization full name, otherwise the logged in user will not have access to anything. The default organization name is "Sentry", but it can be changed in the UI.
 -   Those logging statements are useful for testing and debugging 
+
+Updates [10/19/2020]:
+
+This works up to sentry 9, for new versions of sentry, see [this](https://yyhh.org/blog/2020/10/how-to-setup-saml2-authentication-on-sentry-with-keycloak/)
+
