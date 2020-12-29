@@ -11,7 +11,7 @@ The main product of my startup is written in Clojure, a language that puts enorm
 
 1. Large pages
 
-We followed the suggestion on the [ZGC page](https://wiki.openjdk.java.net/display/zgc/Main#Main-EnablingLargePagesOnLinux to enable large pages) to enable large pages. 
+We followed the suggestion on the [ZGC page](https://wiki.openjdk.java.net/display/zgc/Main#Main-EnablingLargePagesOnLinux) to enable large pages. 
 
 Here is the easiest way to enable large page on Debian Linux: add "hugepages=9216" to `GRUB_CMDLINE_LINUX_DEFAUT` line in the `/etc/default/grub` file, issue `update-grub` as root, then reboot. This creates 9216 huge pages that are 2MB each (default), totaling 18GB.  In the JVM startup options, add `-XX:+UseLargePages` to enable large pages in JVM.
 
