@@ -7,7 +7,7 @@ Author: Huahai
 Category: notebook
 Tags: JVM,Linux,Clojure
 ---
-The main product of my startup is written in Clojure, a language that puts enormous pressure on the memory garbage collector due to the pervasive use of immutable data structures. The new Z garbage collector on JVM has been a blessing for us, as it has largely solved our memory problems. However, there are a few points that one needs to pay attention.
+The main product of [my startup](https://juji.io) is written in Clojure, a language that puts enormous pressure on the memory garbage collector due to the pervasive use of immutable data structures. The new Z garbage collector on JVM has been a blessing for us, as it has largely solved our memory problems. However, there are a few points that one needs to pay attention.
 
 ## Large pages
 
