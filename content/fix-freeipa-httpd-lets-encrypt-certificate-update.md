@@ -39,7 +39,7 @@ What's worse, in my attempt to reran the "renew-le.sh" script to see what's goin
 
 Today, a week has past, and I finally fixed the problem, after almost half a day.
 
-It turned out that Let's Encrypt has been updating their Root and Intermediate certificates. 
+It turned out that Let's Encrypt has been updating their Root and Intermediate certificates.  See details [here](https://letsencrypt.org/certificates/).
 
 The old root certificate, `DSTRootCAX3.pem` is being phased out. In the past, I have been getting certificate from `X3` under it. However, the new certificate that I got is from `R3` under the new root `isrgrootx1.pem`. 
 
