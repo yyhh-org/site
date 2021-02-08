@@ -66,7 +66,7 @@ The `CStruct` annotation tells Java which C struct to import. I gave the Java in
 
 `VoidPointer` is a faithful translation of `void *`.
 
-For an opaque C struct declaration that does not list its fields, one must add an `incomplete` option to the annotation, otherwise compilation will fail with a "sizeOf" error. For example, for a C struct like this:
+For an opaque C struct declaration that does not list its fields, one must add an `isIncomplete` option to the annotation, otherwise compilation will fail with a "sizeOf" related error. For example, for a C struct like this:
 
 ```C
 typedef struct MDB_env MDB_env;
@@ -148,9 +148,9 @@ The full Clojure project for native Datalevin is [here](https://github.com/juji-
 
 ### Memory management and pointer wrangling
 
-The main challenge of building a LMDB wrapper is to find a way to put transaction data into and get retrieved data out of LMDB. As shown above, LMDB use a `MDB_val` struct to represents input/output data. All it contains is a data size and a pointer to the data. LMDBJava uses JNR and `Unsafe` or reflections to manipulate a `java.nio.ByteBuffer` to achieve this. Since we cannot use these in this project, we have to come up with a GraalVM specific solution.
+The main challenge of building a LMDB wrapper is to find a way to put transaction data into and get query data out of LMDB. As shown above, LMDB use a `MDB_val` struct to represents input/output data. All it contains is a data size and a pointer to the data. LMDBJava uses JNR and `Unsafe` or reflections to manipulate a `java.nio.ByteBuffer` to achieve this. Since we cannot use these in this project, we have to come up with a GraalVM specific solution.
 
-It turned out the code to do this is quite pleasant. Instead of allocating the ByteBuffer in Java and presenting it to C, we manage the memory in C and presenting it as a ByteBuffer in Java, without all that `Unsafe` and reflection shenanigans. 
+It turned out the code to do this is quite easy to write. Instead of allocating the ByteBuffer in Java and presenting it to C, we manage the memory in C and presenting it as a ByteBuffer in Java, without all that `Unsafe` and reflection shenanigans. 
 
 ```Java
 /**
@@ -242,8 +242,8 @@ We allocate the memory for the data and the `MDB_val` struct with the `Unmanaged
 
 If the memory is needed only for a short period of time, the other options are `PinnedObject` or `StackValue` classes of the SDK. The former allows creating Java objects and then pinning them down, so that the garbage collector does not move them or delete them, in order to get a stable pointer to work with at the C side. The latter allocates objects from the stack so it is short-lived. These cases do not fit our need for long term pointers to database data structures, so we use `UnmanagedMemory`. 
 
-The SDK utility `CTypeConversion.asByteBuffer` static method is what makes our effort possible. We can simply expose a `MDB_val` as a `ByteBuffer` to Java in the constructor for incoming data, and in `outBuf()` for outgoing data.  The rest of the code is just bookkeeping on the ByteBuffer.
+The SDK utility `CTypeConversion.asByteBuffer` static method is what makes our effort possible. We can simply expose a `MDB_val` as a `ByteBuffer` to Java in the constructor for incoming data, and in `outBuf()` for outgoing data.  The rest of the code is just bookkeeping for the ByteBuffer.
 
 ## Conclusion
 
-I am happy that this effort is turning out well. The GraalVM SDK is quite pleasant to use, once one figures it out. I wish that this API can be available in regular JVM as well, so we can truly write it once, and use it everywhere, regardless the underlying languages and platforms.
+I am happy that this effort is turning out well. The GraalVM SDK is quite pleasant to use, once one figures it out. I wish that this API can be made available in regular JVM as well, so we can truly write it once, and use it everywhere, regardless the underlying languages and platforms.
