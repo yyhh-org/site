@@ -62,7 +62,7 @@ The `CStruct` annotation tells Java which C struct to import. I gave the Java in
 
 `PointerBase` interface indicates a native word type, and is the root of all C pointers being imported into Java. Most things in GraalVM SDK work with these native word types.
 
-`CField` annotation import a C struct field as a Java method. Setters and getters need to be declared separately. Again, I give these methods similar names as C field names, but you may prefer to follow Java name convention instead, e.g. "getMvSize".
+`CField` annotation imports a C struct field as a Java method. Setters and getters need to be declared separately. Again, I give these methods similar names as C field names, but you may prefer to follow Java name convention instead, e.g. "getMvSize".
 
 `VoidPointer` is a faithful translation of `void *`.
 
