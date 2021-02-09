@@ -150,7 +150,7 @@ The full Clojure project for native Datalevin is [here](https://github.com/juji-
 
 The main challenge of building a LMDB wrapper is to find a way to put transaction data into and get query data out of LMDB. As shown above, LMDB use a `MDB_val` struct to represents input/output data. All it contains is a data size and a pointer to the data. LMDBJava uses JNR and `Unsafe` or reflections to manipulate a `java.nio.ByteBuffer` to achieve this. Since we cannot use these in this project, we have to come up with a GraalVM specific solution.
 
-It turned out the code to do this is quite easy to write. Instead of allocating the ByteBuffer in Java and presenting it to C, we manage the memory in C and presenting it as a ByteBuffer in Java, without all that `Unsafe` and reflection shenanigans. 
+It turned out the code to do this is quite easy to write. Instead of allocating the ByteBuffer in Java and presenting it to C, we manage the memory in C and present it as a ByteBuffer in Java, without all that `Unsafe` and reflection shenanigans. 
 
 ```Java
 /**
