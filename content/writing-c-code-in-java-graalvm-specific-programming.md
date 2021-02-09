@@ -159,14 +159,12 @@ It turned out the code to do this is quite easy to write. Instead of allocating 
 @CContext(Lib.Directives.class)
 public class BufVal {
 
-    private int capacity;
     private ByteBuffer inBuf;
 
     private VoidPointer data;
     private Lib.MDB_val ptr;
 
     public BufVal(int size) {
-        capacity = size;
 
         data = UnmanagedMemory.calloc(size);
         ptr = UnmanagedMemory.calloc(SizeOf.get(Lib.MDB_val.class));
