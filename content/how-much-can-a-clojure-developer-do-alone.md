@@ -33,7 +33,7 @@ Please, do yourself a favor, go learn and practice the skills of REPL-driven pro
 
 ## Can I learn Clojure well all by myself?
 
-For this one, my opinion is "probably not".
+For this one, my opinion is "probably no".
 
 As alluded to above, significant amount of "doing Clojure right" is about some tiny bits of seemly unimportant things, but they add up. That's why I hold this unpopular opinion among Clojurians that Clojure is not a particularly good language for self-learning, unless one is very good at self-starting, which is not the case for the vast majority of people.
 
