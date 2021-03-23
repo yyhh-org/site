@@ -13,7 +13,7 @@ Someone [asked on Reddit this question](https://www.reddit.com/r/Clojure/comment
 
 Yes, if you are not using the REPL, you are not doing Clojure right. That's the answer. It may not be what one likes to hear, but it is true.
 
-There are already a lot of blog posts and Youtube videos about what it means to be "using the REPL" in Clojure, or in Lisp in general. None of them articulated the points from a Human-computer Interaction point of view. As someone holds a Ph.D. in that field, I think I am qualified to make this point.  
+There are already a lot of blog posts and Youtube videos about what it means to be "using the REPL" in Clojure, or in Lisp in general. None of them articulated the points from a Human-computer Interaction point of view. As someone who earned a Ph.D. in that field, I think I am qualified to make this point.  
 
 First, "using the REPL" does NOT mean typing your code in REPL. Heck, no, it's the opposite. 
 
@@ -25,7 +25,7 @@ There's a notion of "form" in Lisp, that is the code enclosed between a pair of 
 
 The benefit of a form, is that one no longer needs to use a mouse or some awkward key combinations to painstakingly select a region of code first, before sending it out for evaluation. Instead, one can use a single key stroke that means "evaluate the form under the cursor", or "evaluate the form before the cursor", etc, to precisely define the scope and send the code at the same time. 
 
-As someone who has published papers in human motor controls, I can assure you this simplification makes a huge difference in ergonomics. It reduces the cost of using a REPL significantly, to the extent, I would venture to estimate that half of the productivity gains of the Lisp family of languages come from using the REPL this way.
+As someone who has published papers in human motor controls, I can assure you this simplification makes a huge difference in ergonomics. It reduces the cost of using a REPL significantly, to the extent, I would venture to estimate that half of the potential productivity gains (if any) of the Lisp family of languages come from using the REPL this way.
 
 Psychologically, using REPL this way improves the [flow](https://en.wikipedia.org/wiki/Flow_(psychology)), the complete immersion in one's activity without interruption. No wonder [Clojure programmers is found to the happiest](https://www.computerworld.com/article/2693998/clojure-developers-are-the-happiest-developers.html): a mental state of flow improves well-being and life satisfaction.
 
@@ -37,7 +37,7 @@ For this one, my opinion is "probably not".
 
 As alluded to above, significant amount of "doing Clojure right" is about some tiny bits of seemly unimportant things, but they add up. That's why I hold this unpopular opinion among Clojurians that Clojure is not a particularly good language for self-learning, unless one is very good at self-starting, which is not the case for the vast majority of people.
 
-Most people need some trainings to be able to get into something new. If they have not been taught REPL driven programming, I don't think they can discover it by themselves, despite maybe hearing others talking about it constantly. Heck, if left alone, there are people who would complain about having to count parentheses, while not taking the initiative to find tools to help themselves, for which there are plenty of options, e.g. paredit, smartparens, parinfer, and so on.
+Most people need some trainings to be able to get into something new. If they have not been taught REPL driven programming, I don't think they can discover it by themselves, despite maybe hearing others talking about it constantly. Heck, if left alone, there are people who would complain about having to count parentheses, rather than taking the initiative to find tools to help themselves, for which there are plenty of options, e.g. paredit, smartparens, parinfer, and so on.
 
 On the other hand, I seldom had any problems turning my fresh college graduates new hires into competent Clojure programmers within less than a month. The differences are two fold:
 
