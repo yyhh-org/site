@@ -27,7 +27,7 @@ The benefit of a form, is that one no longer needs to use a mouse or some awkwar
 
 As someone who has published papers in human motor controls, I can assure you this simplification makes a huge difference in ergonomics. It reduces the cost of using a REPL significantly, to the extent, I would venture to estimate that half of the potential productivity gains (if any) of the Lisp family of languages come from using the REPL this way.
 
-Psychologically, using REPL this way improves the [flow](https://en.wikipedia.org/wiki/Flow_(psychology)), the complete immersion in one's activity without interruption. No wonder [Clojure programmers is found to the happiest](https://www.computerworld.com/article/2693998/clojure-developers-are-the-happiest-developers.html): a mental state of flow improves well-being and life satisfaction.
+Psychologically, using REPL this way improves the [flow](https://en.wikipedia.org/wiki/Flow_(psychology)), the complete immersion in one's activity without interruption. No wonder [Clojure programmers are found to the happiest](https://www.computerworld.com/article/2693998/clojure-developers-are-the-happiest-developers.html): a mental state of flow improves well-being and life satisfaction.
 
 Please, do yourself a favor, go learn and practice the skills of REPL-driven programming in Clojure. There are many [videos](https://www.google.com/search?q=repl+driven+programming+video) that show how it is done.
 
