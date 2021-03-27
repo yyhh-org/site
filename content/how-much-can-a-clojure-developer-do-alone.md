@@ -37,7 +37,7 @@ For this one, my opinion is "probably no".
 
 As alluded to above, significant amount of "doing Clojure right" is about some tiny bits of seemly unimportant things, but they add up. That's why I hold this unpopular opinion among Clojurians that Clojure is not a particularly good language for self-learning, unless one is very good at self-starting, which is not the case for the vast majority of people.
 
-Most people need some trainings to be able to get into something new. If they have not been taught REPL driven programming, I don't think they can discover it by themselves, despite maybe hearing others talking about it constantly. Heck, if left alone, there are people who would complain about having to count parentheses, rather than taking the initiative to find tools to help themselves, for which there are plenty of options, e.g. paredit, smartparens, parinfer, and so on.
+Most people need some trainings to be able to get into something new. If they have not been taught REPL driven programming, I don't think they can discover it by themselves, despite maybe hearing others talking about it constantly. Heck, if left alone, there are people who would complain about having to count parentheses, instead of taking the initiative to find tools to help themselves, for which there are plenty of options, e.g. paredit, smartparens, parinfer, and so on.
 
 On the other hand, I seldom had any problems turning my fresh college graduates new hires into competent Clojure programmers within less than a month. The differences are two fold:
 
