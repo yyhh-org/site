@@ -16,7 +16,7 @@ Before we begin, let's set aside the silly notion that "Taiwan is already indepe
 
 Yes, you have an army, your own currency, your own passport, your elections, your government, so on and so forth. But, so do most of the large scale armed insurgences. 
 
-So, if you are serious about Taiwan independence, you will have to come to term with the formality. That is to say, to obtain a formal recognization of your statehood from the international community. Particularly when your statehood is contested by a big country from which you try to depart, that country's consent is pretty much a requirement. Remember, British agreed to USA's independence in the end. You, too, will have to obtain China's consent.
+If you are serious about Taiwan independence, you will have to come to term with the formality. That is to say, to obtain a formal recognization of your statehood from the international community. Particularly when your statehood is contested by a big country from which you try to depart, that country's consent is pretty much a requirement. Remember, British agreed to USA's independence in the end. You, too, will have to obtain China's consent.
 
 How is that even possible, you may ask? Well, that's what I am about to tell you. Read on.
 
@@ -54,7 +54,7 @@ First, it is well documented that Taiwan government is one of the primary fundin
 
 We will not go into the details of Taiwan's funding of Chinese dissidents, such as Wang Dan, who lived in Taiwan for many years. If you are reading this, you probably have also heard about the so called "1450 net army", which is funded by the Taiwan government to wage propaganda war against any Chinese interest on the Internet.
 
-Let's just look at Taiwan influence in USA, for example. Here is [a detailed report](https://prospect.org/world/taiwan-funding-think-tanks-omnipresent-rarely-disclosed/) of Taiwan funding of think tanks in Washington:
+Let's just look at Taiwan influence in USA, for example. Here is [a detailed report](https://prospect.org/world/taiwan-funding-think-tanks-omnipresent-rarely-disclosed/) on Taiwan funding of think tanks in Washington:
 
 > The five think tanks — the Brookings Institution, the Center for American Progress, the Center for a New American Security, the Center for Strategic and International Studies, and the Hudson Institute — all disclose their funding from TECRO but bury it deep on their websites or annual reports.
 
@@ -64,7 +64,7 @@ As a US citizen, I have to say that I find this foreign interference in our poli
 
 So let me get this straight, the Taiwan government uses the tax money you paid to give to people that promote fighting a hot war on your island, so that they can profit from selling arms to you. Is that really to your best interest? 
 
-As we can see, Taiwan government is basically act as the enemy of the Chinese government, perhaps because, officially, there is still in a state of war between them. There is not even a cease-fire declared between the two parties that have engaged in a civil war since 1946. No truce, no cease-fire. That's the reality.
+As we can see, Taiwan government is basically act as an enemy of the Chinese government. Perhaps it is because, officially, there is still in a state of war between them. There is not even a cease-fire declared between the two parties that have engaged in a civil war since 1946. No truce, no cease-fire. That's the reality.
 
 ### Taiwan government still claims ownership of the whole China
 
