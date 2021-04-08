@@ -47,7 +47,7 @@ ss -lnp | grep "123"
 ``` 
 This shows nothing.
 
-To fix, edit `/etc/chrony.conf`, and add 
+To fix, edit `/etc/chrony/chrony.conf`, and add 
 ```
 allow all
 
