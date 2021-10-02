@@ -64,7 +64,7 @@ As a US citizen, I have to say that I find this foreign interference in our poli
 
 So let me get this straight, the Taiwan government uses the tax money you paid to give to people that promote fighting a hot war on your island, so that they can profit from selling arms to you. Is that really to your best interest? 
 
-As we can see, Taiwan government is basically act as an enemy of the Chinese government. Perhaps it is because, officially, there is still in a state of war between them. There is not even a cease-fire declared between the two parties that have engaged in a civil war since 1946. No truce, no cease-fire. That's the reality.
+As we can see, Taiwan government is basically act as an enemy of the Chinese government. Perhaps it is because, officially, there is still a state of war between them. There is not even a cease-fire declared between the two parties that have engaged in a civil war since 1946. No truce, no cease-fire. That's the reality.
 
 ### Taiwan government still claims ownership of the whole China
 
