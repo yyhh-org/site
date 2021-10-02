@@ -84,19 +84,62 @@ Therefore, Chinese government has the full right to pressure any other countries
 
 ## Steps to earn Taiwan independence from China
 
-With all the above established, for a rational person, it should be easy to see how to gain independence. The script is not complicated, and it has been done before, by many people. Some of them are even successful.
+With all the above established, for a rational person, it should be easy to see how to gain independence from China. The steps required are not complicated and easy to implement. Most importantly, it has been done before, by many people. Some of them were even successful.
+
+### Cease hostility again the Chinese government
+
+This is a no-brainer. If you want to be a neighboring country of China, act like one. Unless you want to fight a war with your neighbor, you don't actively fund the forces to sabotage her interests wherever you can, right?  
+
+You can start by stopping writing the checks to all the anti-China individuals or institutions. It is so easy to *not* write the checks. Am I right?
+
+Vietnam earned her independence from China, by agreeing to some concessions, not being act like an enemy of the Chinese government. In the end of the day, it is her consent that you are seeking. 
+
+### Return Chinese cultural treasures
+
+As an additional show of good will, you should offer to return all the cultural treasures that the previous Chinese government brought to your island as they fled from the country. These are Chinese things. You don't want to have anything to do with the Chinese, remember?
+
+You may say, how about the British, the Americans, etc. why don't you ask them to return the Chinese treasures that they looted. Well, they looted. They fought the Chinese government at that time and won, so they took some things they liked.  Did you fight and win again the Chinese government? No, you did not. So what right do you have to keep the treasures? 
 
 ### Abolish Chinese script
 
 First, is to forge an independent sense of identity. You are well on the way there. For example, you insist that people calling you Taiwanese, not Chinese. That's good, but it is far from enough.
 
-You really need to stop using Chinese, if you are truly serious. Invent a script of your own, like how Vietnam and Korea did it. Otherwise, it is only a matter of time, before you are absorbed into the sinosphere culturally and your own identity dissipates. Unlike other cultures, the Chinese culture prizes unity over everything else, so you are not safe! Have you not noticed many of your celebrities make a living in mainland China? That's dangerous.
+You really need to stop using Chinese, if you are truly serious. Invent a script of your own, like how Vietnam and Korea did it. Otherwise, it is only a matter of time, before you are absorbed into the sinosphere culturally and your own identity dissipates. 
 
-You want to insulate your people from Chinese culture. Traditional Chinese is not enough of an insulation. If someone can read simplified Chinese, they can read traditional Chinese as well, and can type traditional Chinese on a computer. There is also a resurgence of use of traditional Chinese in the mainland. 
+Unlike other cultures, the Chinese culture prizes unity over everything else, so you are not safe! Have you not noticed many of your celebrities are making a living in mainland China? That's dangerous.
+
+You want to insulate your people from Chinese culture. Using traditional Chinese is not enough of an insulation. If someone can read simplified Chinese, they can read traditional Chinese as well, and can type traditional Chinese on a computer. There is also a resurgence of use of traditional Chinese in the mainland. It is only a matter of time, before you are fully absorbed. 
+
+Again, it is just too dangerous to continue using Chinese. Invent a script and mandate its use. It has proven to work, like it did in Vietnam, Korean, or more controversially, Japan. 
 
 ### Get ready to fight on your own
 
-Now, once you declare independence, there will be a war. That is inevitable. 
+Now comes the hardest step. Once you declare independence, there will be a war. That is inevitable. No question about it.
+
+However, a war does not mean defeat. You can win. 
+
+I mean, not "win" win, but achieving independence in the end. All you need to have, is a will to fight, on you own.
+
+No, don't even think about it. I know what you are thinking. You think USA and her allies will come to you aid when the war with China broke out. I don't want to argue that USA and her allies will not, but I want to argue from another point of view, that is the pride of a nation. 
+
+Regardless what USA and her allies will do, you must be ready to fight like you want your independence and you are a nation of your own. To put it more bluntly, you have to prove your nationhood with the blood of the young. 
+
+You need to fight hard and drag the war on, so that the cost of keeping the war going outweighs the perceived benefits from your adversary's point of view. That's your goal. 
+
+That's how Vietnam got her independence. She fought, won some battles, lost some too. But she kept fighting, until the Chinese emperor got tired of fighting with her. When the negotiation offer came, she took it. Obviously, she had to make some concessions. But she got her independence in the end.
+
+## Conclusion
+
+There you have it, a simple recipe to achieve independence from China. It has proven to work, and it is not complicated. 
+
+1. Stop hostility against China
+2. Return Chinese treasures
+3. Abolish Chinese Script
+4. Prepare to fight for your nation's independence
+
+What are you waiting for, go for it. Put pressure on your representatives to implement these steps. You are a democracy, ain't you?
+
+
 
 
 
