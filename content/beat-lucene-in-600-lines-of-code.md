@@ -1,7 +1,7 @@
 ---
 Status: draft
 Lang: en
-Title: Beat Lucene in 600 lines of code
+Title: Writing a fast search engine with 500 lines of code
 Date: 2021-11-05T14:49:00.957Z
 Author: Huahai
 Category: experience
