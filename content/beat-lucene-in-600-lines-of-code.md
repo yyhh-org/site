@@ -141,7 +141,7 @@ In Datalevin search engine, we store the primary data structure for searching in
 As long as the data structure to be stored has high (de)serialization
 speed, it is more efficient to store/retrieve them in large aggregates than in
 more granular forms. This does not apply to more complex data structures with
-high construction cost, such as hash maps. We consider these as general advises in how to best use the so called single-level storage, such as LMDB. We earned these
+high construction cost, such as hash maps. We consider these as general advises on how to best use the so called single-level storage, such as LMDB. We earned these
 lessons in our many iterations of trying to find the best performing indexing data structure.
 
 ## Conclusion
