@@ -95,7 +95,13 @@ Here, to establish the maximum and the threshold, a little bit math is involved.
 
 Let us start with a special case. Say, we want to find documents that contain all `n` user query terms, what are those documents?
 
-They must be those documents that contain the rarest term in the user query. Right? regardless how rare a term is, a document must have it to meet our requirement of containing all query terms. In fact, the document must contain any one of the given query terms. In other words, it is necessary and sufficient to use *any* *one* term's set of containing documents as the candidates, and we can then proceed to check these candidates to see if they also contain other query terms. Since picking any one term would be same, we will choose the rarest term, for its containing document list is the shortest. All other documents can be safely skipped. Magic, yes?
+They must be those documents that contain the rarest term in the user query.
+Right? Regardless of how rare a term is, a document must have it to meet our
+requirement of containing all query terms. In fact, the document must contain
+any one of the given query terms. In other words, it is necessary and sufficient
+to use *any* *one* term's set of containing documents as the candidates, and we
+can then proceed to check these candidates to see if they also contain other
+query terms. Since picking any one term would be the same, we will choose the rarest term, for its containing document list is the shortest. All other documents can be safely skipped. Magic, yes?
 
 Generalizing this special case, to find documents containing `n-1` query terms, we only need to pick as candidates those documents containing the rarest OR the second rarest term, i.e. the union of them. All the rest of the documents can be safely ignored.  Isn't this nice?
 
