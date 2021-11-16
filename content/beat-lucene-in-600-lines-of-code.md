@@ -127,7 +127,12 @@ However, I found the opposite to be true. It is easier to translate published im
 
 With a functional programming language, on the other hand, the resulting real code will have a one-to-one correspondence with the pseudo code. If you know Clojure, you can look at my code of *T-Wand*, see the similarity between my function `score-docs` and the pseudo code in [4]. I just gave each code block in the pseudo code a name and turns that into a function, `find-pivot`, `score-pivot`, `next-candidates`, etc. The function realizes the intention and logic of the pseudo code, but not following its style. The code is easy to follow and change, allowing exploration of many ideas.
 
-The current form of *T-Wand* is the result of at least three major iterations of ideas, first the candidate pruning by required overlaps idea, then candidate pre-filtering idea, finally incorporate both into *T-Wand*. All these changes and refactoring are done with great ease, with a sense of adventure and fun. I can not imagine how painful this would be to iterate these ideas on a typed language and an imperative programming style. I probably would just give up.
+The current form of *T-Wand* is the result of at least three major iterations of
+ideas, first the candidate pruning by required overlaps idea, then candidate
+pre-filtering idea, finally incorporated both into *T-Wand*. All these changes
+and refactoring were done with great ease, with a sense of adventure and fun. I
+can not imagine how painful this would be to iterate these ideas on a statically
+typed language and in an imperative programming style. I probably would just give up.
 
 ### Index Storage
 
