@@ -19,7 +19,7 @@ Yes, it is true. The search engine is [less than 600 lines of Clojure code](http
 ## Lucene is Hard to Beat
 
 Lucene has over 20 years of history, with perhaps hundreds of man-year of work
-behind her development. Any search engines coming out with better numbers than
+behind her development. Any search engine coming out with better numbers than
 Lucene is suspicious of dishonesty, incompetence in benchmarking, or both. I
 will not name names, but a Google search should show some samples of these. Obviously, I would not want to add Datalevin to such a hall of shame. Please do report any errors in my [benchmarking](https://github.com/juji-io/datalevin/tree/search/search-bench).
 
