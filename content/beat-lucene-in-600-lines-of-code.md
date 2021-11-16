@@ -67,6 +67,13 @@ The first trick is the most ingenious. I still do not know how my former colleag
 
 As can be seen, the 4 rows are the document ids of 4 query terms, and four iterators are walking the document ids. At each step of the iteration, *Wand* arranges the rows such that the current document ids of the rows are sorted from lower to higher. 
 
+At this point, we achieved about 65%
+overall speed of Lucene, measured 840 queries per seconds in my benchmark vs.
+Lucene's 1300. Our median query speed is actually faster than Lucene, but
+the long tail query time is way slower. That is because Lucene cheats. I am
+joking. Well, all good algorithms look like cheating, if cheating means avoid
+doing unnecessary work. Our algorithm described above certainly does. In this case, Lucene uses an early termination method called WAND, so it's long tail is very short.
+
 The reason to store and access term information in aggregates, instead of
 storing them in inverted lists and accessed piece-meal, is because LMDB is very
 efficient (more efficient than file systems) at reading/writing large binary
@@ -77,13 +84,8 @@ high construction cost, e.g. hash maps. We consider these general advises in how
 to best use the so called single-level storage, such as LMDB. We earned these
 lessons in our many iterations of speeding up the search.
 
-At this point, we achieved about 65%
-overall speed of Lucene, measured 840 queries per seconds in my benchmark vs.
-Lucene's 1300. Our median query speed is actually faster than Lucene, but
-the long tail query time is way slower. That is because Lucene cheats. I am
-joking. Well, all good algorithms look like cheating, if cheating means avoid
-doing unnecessary work. Our algorithm described above certainly does. In this case, Lucene uses an early termination method called WAND, so it's long tail is very short.
+
 
 \[1] Broder, Carmel, Herscovici, Soffer and Zien, Efficient Query Evaluation using a Two-Level Retrieval Process, CIKM'2003.
 
-\[2] Ding and Suel. Faster top-k document retrieval using block-max indexes." SIGIR'2011.
+\[2] Ding and Suel. Faster top-k document retrieval using block-max indexes. SIGIR'2011.
