@@ -71,7 +71,7 @@ Did I say Lucene is fast? Lucene is very fast, because it uses one of the state 
 
 It cheats.
 
-Well, any sufficiently advanced algorithm looks like cheating. *WAND* is no exception. Basically, it skips a large portion of document collection, and it skips them *safely*, meaning the results would be the same if one exhaustively does the full computation without skipping. It was able to *safely* skip documents by using two tricks.
+Well, any sufficiently advanced algorithm looks like cheating. *WAND* is no exception. Basically, it skips a large portion of document collection, and it skips them *safely*, meaning the results would be the same if one exhaustively does the full computation without skipping. It is able to *safely* skip documents by using two tricks.
 
 The first trick is the most ingenious. I still do not know how my former colleagues at IBM Research came up with it. My hat's off to them. Let me steal a picture from a followup article [2] to illustrate this.
 
