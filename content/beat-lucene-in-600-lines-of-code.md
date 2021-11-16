@@ -9,13 +9,13 @@ Tags: Clojure,Datalevin
 ---
 OK, I will admit that this title is rather hyperbole, a click-bait. However, it is also not a lie.
 
-Here is the story. I am adding full-text search capability to [Datalevin](https://github.com/juji-io/datalevin), a Datalog database that we open sourced last year. For this task, I have decided to write a search engine from scratch instead of using an existing search library. [Here](https://github.com/juji-io/datalevin/blob/search/doc/search.md#rationale) are some rationales for this decision. Today I finished the main work of the search engine, and ran some [benchmark](https://github.com/juji-io/datalevin/tree/search/search-bench) comparison with [Apache Lucene](https://lucene.apache.org/), the venerable Java search library, and found that the Datalevin search engine is 75% faster on average than Lucene, while 3 times faster at the median. Since Lucene is such a dominant force in the full text search, I think it might be worth to write about it.
+Here is the story. I am adding full-text search capability to [Datalevin](https://github.com/juji-io/datalevin), a Datalog database that we open sourced last year. For this task, I have decided to write a search engine from scratch instead of using an existing search library. [Here](https://github.com/juji-io/datalevin/blob/search/doc/search.md#rationale) are some rationales for this decision. Today I finished the main work of the search engine, and ran some [benchmark](https://github.com/juji-io/datalevin/tree/search/search-bench) comparison with [Apache Lucene](https://lucene.apache.org/), the venerable Java search library, and found that the Datalevin search engine is 75% faster on average than Lucene, while 3 times faster at the median point. Since Lucene is such a dominant force in the full text search, I think it might be of broad interest to write about it.
 
 Yes, it is true. The search engine is [less than 600 lines of Clojure code](https://github.com/juji-io/datalevin/blob/search/src/datalevin/search.clj).
 
 ## Lucene is Hard to Beat
 
-Lucene has over 20 years of history, with perhaps hundreds of man-year of work behind her development. Any search engines coming out with better numbers than Lucene is suspicious of lying, incompetence in benchmarking, or both. I will not name names, but a Google search should show some examples of those. Obviously, I would not want to add Datalevin to such a hall of shame. Please do report any errors in my [benchmark](https://github.com/juji-io/datalevin/tree/search/search-bench).
+Lucene has over 20 years of history, with perhaps hundreds of man-year of work behind her development. Any search engines coming out with better numbers than Lucene is suspicious of lying, incompetence in benchmarking, or both. I will not name names, but a Google search should show some examples of those. Obviously, I would not want to add Datalevin to such a hall of shame. Please do report any errors in my [benchmarking](https://github.com/juji-io/datalevin/tree/search/search-bench).
 
 ## Better Search Algorithm
 
@@ -23,17 +23,17 @@ To beat Lucene, it is obviously not enough to optimize code, as Lucene is highly
 
 So, to beat Lucene, better algorithm is pretty much a requirement. Luckily, I did come up with a better search algorithm, which I call *T-Wand*.
 
-By "better", I mean two senses.
+By "better", I mean in two senses.
 
 ### Better Relevance
 
-How many time have you frustrated that the search engine gave you results that you know are worse than what you should be getting? 
+How many time have you felt frustrated that the search engine gave you results that you know are worse than what you should be getting? 
 
-> I know there are some documents containing all these search words, why are they not here?  
+> I know there are some documents containing all these words, why are they not here?  
 
 "Here" means the first page, or being in the "top-K" results in research parlance. Full text search engines, like Lucene, are often optimized to return a limited number (K) of good results as quickly as possible. However, what is a "good" result? This is where the ideas get muddier. It is no longer a purely technical problem, but more of a user experience problem. In research parlance, this is called "relevance".
 
-As someone who has a Ph.D. in Human-computer Interaction (;-)), I feel like I am entitled to define what is "good" in search. I hereby declare that:
+As someone who has a Ph.D. in Human-computer Interaction ;-), I feel like I am entitled to define what is "good" in search here. I hereby declare that:
 
 > A good top-K algorithm should rank a document containing more user query terms higher than a document containing less number of user query terms. 
 
@@ -47,7 +47,7 @@ An often used similarity measure, is to treat these numbers as coordinates in so
 
 This is an elegant model. However, as you can see, this vector space model does not explicitly require a higher ranking document to contain more query terms than a lower ranking one. The results often come out violating the above requirement, hence user frustration inducing.
 
-*T-Wand* sets to change that.
+*T-Wand* wants to change that.
 
 ### Better Search Speed
 
@@ -57,15 +57,33 @@ With this division, we no longer need to consider the whole document collection 
 
 ## *T-Wand* Algorithm
 
-Did I say Lucene is very fast? Lucene is very fast, because it uses one of the state of art search algorithms, *Wand* [1]. Here's how *Wand* works. 
+First, let me introduce the *WAND* algorithm.
+
+### *WAND*
+
+Did I say Lucene is fast? Lucene is very fast, because it uses one of the state of art search algorithms, *Wand* [1]. Here's how *Wand* works. 
 
 It cheats.
 
-Well, any good algorithm looks like cheating. *Wand* is no exception. Basically, it skips a large portion of document collection, and it skips them *safely*, meaning the results would be the same if one exhaustively does the full computation. It was able to *safely* skip documents by using two tricks. 
+Well, any sufficiently advanced algorithm looks like cheating. *Wand* is no exception. Basically, it skips a large portion of document collection, and it skips them *safely*, meaning the results would be the same if one exhaustively does the full computation. It was able to *safely* skip documents by using two tricks. 
 
 The first trick is the most ingenious. I still do not know how my former colleagues at IBM Research came up with it. My hat's off to them. Let me steal a picture from a followup article by others [2] to illustrate this.
 
 As can be seen, the 4 rows are the document ids of 4 query terms, and four iterators are walking the document ids. At each step of the iteration, *Wand* arranges the rows such that the current document ids of the rows are sorted from lower to higher. 
+
+Now, starting from the first row, we sum up a maximal "goodness" score of that row's documents, as soon as the "goodness" score pass a certain threshold, we stop at that row. Say, this row is the 3rd one. At this point, we can teleport the first two rows's iterators to point at where the 3rd one is at, skipping every documents in between. This skipping is safe, because, by definition, the document pointed by the 3rd iterator is the first one that pass the threshold. Those before it would not have passed, because the "goodness" scores we use for each row are the maximal of those rows. There could not possibly be anything larger in those skipped documents. 
+
+As we have eluted to, the second trick, is this idea of using a hypothetical maximal possible score to filter out potential candidates without having to fully examine them: "we already gave you all the slack possible, yet you still cannot pass the bar, so we can safely kick you out without having to look at you in details". This is a fairly general idea that is used in many algorithms. For example, I would consider A\* algorithm is in the same spirit. This reminds me also of a Chinese strategic doctrine, "料敌从宽“, it means to estimate the strength of the opponent in the most generous term possible, and to plan accordingly.
+
+In *WAND*, the threshold used to filter out documents are the current lowest score of documents that have made into the top-K. This threshold becomes more difficulty to pass as the algorithm proceeds, filtering out greater proportion of documents as it goes.
+
+### What's New in *T-WAND*
+
+So it seems to be obvious to apply the same *WAND* algorithm in each tier. But that would not be efficient, because now you are going to have multiple passes over the document collections, doing a lot of wasted work. 
+
+Another idea comes into play, which was actually the first idea I tried. This idea was borrowed from another research field, approximate string matching \[3]. In retrospect, this idea is the same "giving your enemy maximal possible slack" idea. 
+
+Here, to establish the maximum, a little bit math is involved. I will spare you any formalism, because the actual idea is very simple, almost trivial. 
 
 At this point, we achieved about 65%
 overall speed of Lucene, measured 840 queries per seconds in my benchmark vs.
@@ -89,3 +107,6 @@ lessons in our many iterations of speeding up the search.
 \[1] Broder, Carmel, Herscovici, Soffer and Zien, Efficient Query Evaluation using a Two-Level Retrieval Process, CIKM'2003.
 
 \[2] Ding and Suel. Faster top-k document retrieval using block-max indexes. SIGIR'2011.
+
+\[3] Okazaki and Tsujii, Simple and Efficient Algorithm for Approximate Dictionary Matching. COLING '10.
+
