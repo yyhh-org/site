@@ -7,7 +7,7 @@ Author: Huahai
 Category: experience
 Tags: Clojure,Datalevin,Full-text Search
 ---
-OK, I will admit that this title is rather hyperbole, a click-bait. However, it is also not a lie.
+OK, I will admit that this title is rather a hyperbole, or a click-bait. However, it is also not a lie.
 
 ![Query Throughput](/images/QueryPerSecond.png)
 
