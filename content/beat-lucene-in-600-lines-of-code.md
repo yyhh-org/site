@@ -45,7 +45,7 @@ Most search engines use something called a vector space model, where both user q
 
 An often used similarity measure, is to treat these numbers as coordinates in some kind of space. Now both a query and a document become vectors (or points) in this space. And if you remember any of the high school math, you will know that one can calculate the angle between a query vector and a document vector. This angle is the similarity search engines use to rank the documents based on the query. The smaller is the angle, the higher ranking is a document.
 
-This is an elegant model. However, as you can see, this vector space model does not explicitly require a higher ranking document to contain more query terms than a lower ranking one. The results often come out violating the above requirement, hence user frustration inducing.
+This is an elegant model. However, as you can see, this vector space model does not explicitly require a higher ranking document to contain more query terms than a lower ranking one. The results often come out violating the above requirement, inducing user frustrations.
 
 *T-Wand* wants to change that.
 
