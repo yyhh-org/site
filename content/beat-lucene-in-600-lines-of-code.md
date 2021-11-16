@@ -5,7 +5,7 @@ Title: Beat Lucene in Less Than 600 Lines of Code
 Date: 2021-11-05T14:49:00.957Z
 Author: Huahai
 Category: experience
-Tags: Clojure,Datalevin
+Tags: Clojure,Datalevin,Full-text Search
 ---
 OK, I will admit that this title is rather hyperbole, a click-bait. However, it is also not a lie.
 
