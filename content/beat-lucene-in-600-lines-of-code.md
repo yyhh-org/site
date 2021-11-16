@@ -1,7 +1,7 @@
 ---
 Status: published
 Lang: en
-Title: "T-Wand: Beat Lucene in Less Than 600 Lines of Code"
+Title: T-Wand: Beat Lucene in Less Than 600 Lines of Code
 Date: 2021-11-05T14:49:00.957Z
 Author: Huahai
 Category: experience
