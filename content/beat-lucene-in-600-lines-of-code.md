@@ -9,7 +9,7 @@ Tags: Clojure,Datalevin,Full-text Search
 ---
 OK, I will admit that this title is rather hyperbole, a click-bait. However, it is also not a lie.
 
-![Query Throughput](images/QueryPerSecond.png)
+![Query Throughput](/images/QueryPerSecond.png)
 
 Here is the story. I am adding full-text search capability to [Datalevin](https://github.com/juji-io/datalevin), a Datalog database that we open sourced last year. For this task, I have decided to write a search engine from scratch instead of using an existing search library. [Here](https://github.com/juji-io/datalevin/blob/search/doc/search.md#rationale) are some rationales for this decision. Today I finished the main work of the search engine, and ran some [benchmark](https://github.com/juji-io/datalevin/tree/search/search-bench) comparison with [Apache Lucene](https://lucene.apache.org/), the venerable Java search library, and found that the Datalevin search engine is 75% faster on average than Lucene, while 3 times faster at the median point. Since Lucene is at such a dominant position in the full-text search, I think it might be of broad interest to write about it.
 
@@ -72,7 +72,7 @@ Well, any sufficiently advanced algorithm looks like cheating. *WAND* is no exce
 
 The first trick is the most ingenious. I still do not know how my former colleagues at IBM Research came up with it. My hat's off to them. Let me steal a picture from a followup article [2] to illustrate this.
 
-![WAND](images/WAND.png)
+![WAND](/images/WAND.png)
 
 As can be seen, the 4 rows are the document ids of 4 query terms, and four iterators are walking the document ids from left to right. At each step of the iteration, *WAND* arranges the rows such that the current document ids of the rows are sorted from lower to higher.
 
