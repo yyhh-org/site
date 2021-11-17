@@ -50,7 +50,14 @@ Most search engines use something called a vector space model, where both user q
 
 An often used similarity measure, is to treat these numbers as coordinates in some kind of space. Now both a query and a document become vectors (or points) in this space. And if you remember any of the high school math, you will know that one can calculate the angle between a query vector and a document vector. This angle is the similarity search engines use to rank the relevance of documents to the query. The smaller is the angle, the higher ranking is a document.
 
-This is an elegant model. However, as you can see, this vector space model does not explicitly require a higher ranking document to contain more query terms than a lower ranking one. The results often come out violating the above requirement, inducing user frustrations.
+This is an elegant model. However, as you can see, this vector space model does
+not explicitly require a higher ranking document to contain more query terms
+than a lower ranking one. The results often come out violating the above
+requirement, inducing user frustrations. This is a well-known problem. For
+example, [Lucene 3.5.0 ](https://lucene.apache.org/core/3_5_0/scoring.html)
+(when they were still humble enough to write this?) introduced its scoring features with this paragraph:
+
+> Lucene scoring is the heart of why we all love Lucene. It is blazingly fast and it hides almost all of the complexity from the user. In a nutshell, it works. At least, that is, until it doesn't work, or doesn't work as one would expect it to work. Then we are left digging into Lucene internals or asking for help on java-user@lucene.apache.org to figure out why a document with five of our query terms scores lower than a different document with only one of the query terms.
 
 *T-Wand* wants to change that.
 
