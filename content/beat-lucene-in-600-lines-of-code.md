@@ -147,6 +147,18 @@ lessons in our many iterations of trying to find the best performing indexing da
 
 I am happy that this exploration turns out well. I would be thrilled to see *T-Wand* algorithm makes into other search engines, as it does improve user experience and it is simple to implement. There are many more ideas of improvement can be further explored, I would be happy to have a collaboration if someone wants to take it further.
 
+## Updates for Hacker News People
+
+For people who are worried, please be assured that T-Wand also uses
+``tf-id`` and the vector space model, so you are not missing anything.
+
+For people who say "Lucene is not properly used", please write the
+proper Lucene code in one of the issues, in Java if you want, I can integrate them into the
+bnechmark. If you know Clojure, just send a PR. I appreciate that.
+
+Better yet, if you know Lucene so well, you can send a PR to Lucene that
+integrates T-Wand into Lucene, that would make the biggest impact.
+
 ## References
 
 \[1] Broder, Carmel, Herscovici, Soffer and Zien, Efficient Query Evaluation using a Two-Level Retrieval Process, CIKM'2003.
