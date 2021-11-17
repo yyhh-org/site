@@ -149,10 +149,10 @@ I am happy that this exploration turns out well. I would be thrilled to see *T-W
 
 ## Updates for Hacker News People
 
-For people who are worried, please be assured that T-Wand also uses
+For people who are worried, please be assured that **T-Wand* also uses
 ``tf-idf`` and the vector space model, so you are not missing anything fundamental.
 
-For people who say "Lucene is not properly used", please write the proper Lucene code in one of the issues, in Java if you want, I can integrate them into the bnechmark. If you know Clojure, just send a PR. I appreciate that. Better yet, if you know Lucene so well, you should send a PR to Lucene that integrates T-Wand into Lucene, that would make the biggest impact.
+For people who say "Lucene is not properly used", please write the proper Lucene code in one of the issues, in Java if you want, I can integrate them into the bnechmark. If you know Clojure, just send a PR. I appreciate that. Better yet, if you know Lucene so well, you should send a PR to Lucene that integrates **T-Wand* into Lucene, that would make the biggest impact.
 
 For people who say "Does yours have all the Lucene features - stemming,
 incremental index, phrase search, range search, arbitrary sortable fields,
