@@ -186,6 +186,6 @@ I am opening up for feature suggestions. Please file issues or send PR. I apprec
 
 \[2] Ding and Suel. Faster top-k document retrieval using block-max indexes. SIGIR'2011.
 
-\[3] Okazaki and Tsujii, Simple and Efficient Algorithm for Approximate Dictionary Matching. COLING '10.
+\[3] Okazaki and Tsujii, Simple and Efficient Algorithm for Approximate Dictionary Matching. COLING '2010.
 
-\[4] Crane, Matt, et al. A comparison of document-at-a-time and score-at-a-time query evaluation. WSDM' 2017.
+\[4] Crane, et al. A comparison of document-at-a-time and score-at-a-time query evaluation. WSDM' 2017.
