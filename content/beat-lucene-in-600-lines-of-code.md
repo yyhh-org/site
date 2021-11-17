@@ -168,6 +168,8 @@ etc?", at the moment, the following features are implemented:
 
 The following are to be implemented in Datalevin 0.6.0 release
 
+* Stemming
+
 * Phrase search
 
 * Boolean operators
