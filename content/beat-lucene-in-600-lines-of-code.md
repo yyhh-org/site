@@ -149,36 +149,36 @@ I am happy that this exploration turns out well. I would be thrilled to see *T-W
 
 ## Updates for Hacker News People
 
-* For people who are worried, please be assured that T-Wand also uses
+For people who are worried, please be assured that T-Wand also uses
 ``tf-id`` and the vector space model, so you are not missing anything.
 
-* For people who say "Lucene is not properly used", please write the proper Lucene code in one of the issues, in Java if you want, I can integrate them into the bnechmark. If you know Clojure, just send a PR. I appreciate that. Better yet, if you know Lucene so well, you should send a PR to Lucene that integrates T-Wand into Lucene, that would make the biggest impact.
+For people who say "Lucene is not properly used", please write the proper Lucene code in one of the issues, in Java if you want, I can integrate them into the bnechmark. If you know Clojure, just send a PR. I appreciate that. Better yet, if you know Lucene so well, you should send a PR to Lucene that integrates T-Wand into Lucene, that would make the biggest impact.
 
-* For people who say "Does yours have all the Lucene features - stemming,
+For people who say "Does yours have all the Lucene features - stemming,
 incremental index, phrase search, range search, arbitrary sortable fields,
 etc?", At the moment, the following features are implemented:
 
-    - Core search capability, tf-idf, vector space model etc.
+* Core search capability
 
-    - English analyzer
+* English analyzer
 
-    - Incremental and bulk indexing
+* Incremental and bulk indexing
 
-    - Fuzzy query matching
+* Fuzzy query matching
 
 The following are to be implemented in Datalevin 0.6.0 release
 
-    - Phrase search
+* Phrase search
 
-    - Boolean operators
+* Boolean operators
 
 The followings are not necessary because Datalevin is a database and it has more powerful features than whatever a search engine can offer:
 
-    - Range query is a foundation of Datalevin database
+* Range query is a foundation of Datalevin database
 
-    - Fields are just watered-down columns in a database. Datalevin is a fully featured database. Whatever you want to do with fields, you can do with Datalog.
+* Fields are just watered-down columns in a database. Datalevin is a fully featured database. Whatever you want to do with fields, you can do with Datalog.
 
-I open up for feature suggestions. Please file issues or send PR. I appreciate them.
+I am opening up for feature suggestions. Please file issues or send PR. I appreciate them.
 
 ## References
 
