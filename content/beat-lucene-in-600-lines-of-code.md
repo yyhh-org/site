@@ -182,6 +182,8 @@ The followings are not necessary because Datalevin is a database and it has more
 
 I am opening up for feature suggestions. Please file issues or send PR. I appreciate them.
 
+Finally, please do not dis-understand what is going on here: I am running a startup, and I am also old enough to not care about publications as much as much as people who are younger or in academia. That's why I chose to reveal this in a blog post instead of hiding it until after my paper is published.
+
 ## References
 
 \[1] Broder, Carmel, Herscovici, Soffer and Zien, Efficient Query Evaluation using a Two-Level Retrieval Process, CIKM'2003.
