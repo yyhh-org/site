@@ -156,7 +156,7 @@ For people who say "Lucene is not properly used", please write the proper Lucene
 
 For people who say "Does yours have all the Lucene features - stemming,
 incremental index, phrase search, range search, arbitrary sortable fields,
-etc?", At the moment, the following features are implemented:
+etc?", at the moment, the following features are implemented:
 
 * Core search capability
 
