@@ -117,7 +117,8 @@ But we can do much better. Because the above mathematical property also allows u
 
 Say we are at a tier that requires `t` overlaps between a document and a query. We are walking a document candidate down the term rows, trying to find out how many terms this candidate hits. If this candidate has already hit `h` terms so far, and is now on row `k`. If we give this candidate maximal slack, meaning that we assume he will hit all the remaining terms, his hypothetical maximal hits would be `h + (n - k - 1)`. If this number is less than `t`, he can be safely kicked out, because he will never make into the exclusive `t` club.
 
-With this pruning condition and candidate pre-filtering, we can already achieve about 65% overall speed of Lucene. Adding the pruning condition of *WAND*, we have the current *T-Wand* performance, which beats Lucene with ease.
+This new pruning condition is the main novelty of T-Wand in term of algorithm,
+as it has not been reported in the literature for search algorithms, as far as I can tell. With this pruning condition and candidate pre-filtering, we can already achieve about 65% overall speed of Lucene. Adding the pruning condition of *WAND*, we have the current *T-Wand* performance, which beats Lucene with ease.
 
 ## Implementation Takeaways
 
@@ -152,7 +153,10 @@ lessons in our many iterations of trying to find the best performing indexing da
 
 ## Conclusion
 
-I am happy that this exploration turns out well. I would be thrilled to see *T-Wand* algorithm makes into other search engines, as it does improve user experience and it is simple to implement. There are many more ideas of improvement can be further explored, I would be happy to have a collaboration if someone wants to take it further.
+I am happy that this exploration turns out well. I would be thrilled to see
+*T-Wand* algorithm makes into other search engines, as it does improve user
+experience, performs well, and it is simple to implement in existing code bases
+that use *WAND*. There are many more ideas of improvement can be further explored, I would be happy to have a collaboration if someone wants to take it further.
 
 ## Updates for Hacker News People
 
@@ -189,7 +193,7 @@ The followings are not necessary because Datalevin is a database and it has more
 
 I am opening up for feature suggestions. Please file issues or send PR. I appreciate them.
 
-Finally, please do not dis-understand what is going on here: I am running a startup, and I am also old enough to not care about publications as much as much as people who are younger or in academia. That's why I chose to reveal this in a blog post instead of hiding it until after my paper is published.
+Finally, please do not misunderstand what is going on here: I am running a startup, and I am also old enough to not care about publications as much as much as people who are younger or in academia. That's why I chose to reveal this in a blog post instead of hiding it until after my paper is published.
 
 ## References
 
