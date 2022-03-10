@@ -175,9 +175,9 @@ etc?", at the moment, the following features are implemented:
 
 * Incremental and bulk indexing
 
-* Fuzzy query matching
+The following are to be implemented in the future:
 
-The following are to be implemented in Datalevin 0.6.0 release
+* Fuzzy query matching
 
 * Stemming
 
@@ -185,7 +185,7 @@ The following are to be implemented in Datalevin 0.6.0 release
 
 * Boolean operators
 
-The followings are not necessary because Datalevin is a database and it has more powerful features than whatever a search engine can offer:
+The followings are not necessary because Datalevin is a real database and it has more powerful database features than whatever a search engine can offer:
 
 * Range query is a foundation of Datalevin database
 
@@ -193,7 +193,7 @@ The followings are not necessary because Datalevin is a database and it has more
 
 I am opening up for feature suggestions. Please file issues or send PR. I appreciate them.
 
-Finally, please do not misunderstand what is going on here: I am running a startup, and I am also old enough to not care about publications as much as much as people who are younger or in academia. That's why I chose to reveal this in a blog post instead of hiding it until after my paper is published.
+Finally, please do not misunderstand what is going on here: I am running a startup, and I am also old enough to not care about publications as much as much as people who are younger or in academia. That's why I chose to reveal this in a blog post instead of hiding it until after my paper is published. A blog post can reach more people then an academic paper can. 
 
 ## References
 
