@@ -18,7 +18,7 @@ A lot of materials here are just our notes for solving some problems. Since it o
 <div class="intro"> 
 <div class="left">
   <img src="/images/yunyao.jpg" alt="Yunyao's photo"/> 
-  Yunyao is a computer scientist working in the Natural Language Processing field. Her work related information can be found on her <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-yunyaoli">professional homepage</a>. She loves all the nice things in life, and likes to share information about all the interesting things she found. Her twitter is <a href="https://twitter.com/yunyao_li">@yunyao_li</a>
+  Yunyao is a computer scientist working in the Natural Language Processing field. Her work related information can be found on her <a href="https://yunyaoli.github.io/">professional homepage</a>. She loves all the nice things in life, and likes to share information about all the interesting things she found. Her twitter is <a href="https://twitter.com/yunyao_li">@yunyao_li</a>
 </div>
 <div class="right">
   <img src="/images/huahai.jpg" alt="Huahai's photo"/>
