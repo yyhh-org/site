@@ -17,7 +17,7 @@ The more insightful question is: "Why and how did a language X become mainstream
 
 From the answers to this flipped question, we may induce some patterns that other languages could try to imitate. 
 
-Let's give it a try.
+Let's give it a try, by looking at the most popular languages as of today:
 
 1. **Python**: Some big corporations adopted it early on, e.g. Google; some well-connected people started to prompt it as the first language, then schools started following the suggestion; now it enjoys dominance in machine learning - the most hyped field.
 2. **C**: A readable assembly, so almost all operating systems are written in it; you must use it if you want to interface with hardware; all students in the last generation learnt it in school.
