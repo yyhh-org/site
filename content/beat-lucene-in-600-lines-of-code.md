@@ -10,7 +10,7 @@ Tags: Clojure,Datalevin,Full-text Search
 
 ![Query Throughput](/images/QueryPerSecond.png)
 
-Here is the story. I am adding full-text search capability to [Datalevin](https://github.com/juji-io/datalevin), a Datalog database that we open sourced last year. For this task, I have decided to write a search engine from scratch instead of using an existing search library. [Here](https://github.com/juji-io/datalevin/blob/master/doc/search.md#rationale) are some rationales for this decision. Today I finished the main work of the search engine, and ran some [benchmark](https://github.com/juji-io/datalevin/tree/search/search-bench) comparison with [Apache Lucene](https://lucene.apache.org/), the venerable Java search library, and found that the Datalevin search engine is 75% faster on average than Lucene, while 3 times faster at the median point. Since Lucene is at such a dominant position in full-text search, I think it might be of broad interest to write about it.
+Here is the story. I am adding full-text search capability to [Datalevin](https://github.com/juji-io/datalevin), a Datalog database that we open sourced last year. For this task, I have decided to write a search engine from scratch instead of using an existing search library. [Here](https://github.com/juji-io/datalevin/blob/master/doc/search.md#rationale) are some rationales for this decision. Today I finished the main work of the search engine, and ran some [benchmark](https://github.com/juji-io/datalevin/tree/master/search-bench) comparison with [Apache Lucene](https://lucene.apache.org/), the venerable Java search library, and found that the Datalevin search engine is 75% faster on average than Lucene, while 3 times faster at the median point. Since Lucene is at such a dominant position in full-text search, I think it might be of broad interest to write about it.
 
 
 Yes, it is true. The search engine is [less than 600 lines of Clojure code](https://github.com/juji-io/datalevin/blob/2711a2ef1c31822bf6c1b974be0ea13a47fe41ca/src/datalevin/search.clj).
@@ -20,7 +20,7 @@ Yes, it is true. The search engine is [less than 600 lines of Clojure code](http
 Lucene has over 20 years of history, with perhaps hundreds of man-year of work
 behind her development. Any search engine coming out with better numbers than
 Lucene is suspicious of dishonesty, incompetence in benchmarking, or both. I
-will not name names, but a Google search should show some samples of these. Obviously, I would not want to add Datalevin to such a hall of shame. Please do report any errors in my [benchmarking](https://github.com/juji-io/datalevin/tree/search/search-bench).
+will not name names, but a Google search should show some samples of these. Obviously, I would not want to add Datalevin to such a hall of shame. Please do report any errors in my [benchmarking](https://github.com/juji-io/datalevin/tree/master/search-bench).
 
 ## Better Search Algorithm
 
