@@ -10,7 +10,7 @@ Tags: Clojure,Datalevin,Full-text Search
 
 ![Query Throughput](/images/QueryPerSecond.png)
 
-Here is the story. I am adding full-text search capability to [Datalevin](https://github.com/juji-io/datalevin), a Datalog database that we open sourced last year. For this task, I have decided to write a search engine from scratch instead of using an existing search library. [Here](https://github.com/juji-io/datalevin/blob/search/doc/search.md#rationale) are some rationales for this decision. Today I finished the main work of the search engine, and ran some [benchmark](https://github.com/juji-io/datalevin/tree/search/search-bench) comparison with [Apache Lucene](https://lucene.apache.org/), the venerable Java search library, and found that the Datalevin search engine is 75% faster on average than Lucene, while 3 times faster at the median point. Since Lucene is at such a dominant position in full-text search, I think it might be of broad interest to write about it.
+Here is the story. I am adding full-text search capability to [Datalevin](https://github.com/juji-io/datalevin), a Datalog database that we open sourced last year. For this task, I have decided to write a search engine from scratch instead of using an existing search library. [Here](https://github.com/juji-io/datalevin/blob/master/doc/search.md#rationale) are some rationales for this decision. Today I finished the main work of the search engine, and ran some [benchmark](https://github.com/juji-io/datalevin/tree/search/search-bench) comparison with [Apache Lucene](https://lucene.apache.org/), the venerable Java search library, and found that the Datalevin search engine is 75% faster on average than Lucene, while 3 times faster at the median point. Since Lucene is at such a dominant position in full-text search, I think it might be of broad interest to write about it.
 
 
 Yes, it is true. The search engine is [less than 600 lines of Clojure code](https://github.com/juji-io/datalevin/blob/2711a2ef1c31822bf6c1b974be0ea13a47fe41ca/src/datalevin/search.clj).
@@ -193,7 +193,7 @@ The followings are not necessary because Datalevin is a real database and it has
 
 I am opening up for feature suggestions. Please file issues or send PR. I appreciate them.
 
-Finally, please do not misunderstand what is going on here: I am running a startup, and I am also old enough to not care about publications as much as much as people who are younger or in academia. That's why I chose to reveal this in a blog post instead of hiding it until after my paper is published. A blog post can reach more people then an academic paper can. 
+Finally, please do not misunderstand what is going on here: I am running a startup, and I am also old enough to not care about publications as much as much as people who are younger or in academia. That's why I chose to reveal this in a blog post instead of hiding it until after my paper is published. A blog post can reach more people then an academic paper can.
 
 ## References
 
