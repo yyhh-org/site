@@ -7,9 +7,9 @@ Author: Huahai
 Category: notebook
 Tags: Clojure, Java, GraalVM
 ---
-One of the latest fashions in the Java world is [GraalVM](https://www.graalvm.org/). For someone who has been around, I still remember the "Write once, run anywhere" slogan of Java virtual machine. Apparently, the wheel has spun back, now people want to write native code in Java, which has to be compiled to different machine codes in different platforms. 
+One of the latest fashions in the Java world is [GraalVM](https://www.graalvm.org/). For someone who has been around, I still remember the "Write once, run anywhere" slogan of Java virtual machine. Apparently, the wheel has spun back, now people want to write native code in Java, which has to be compiled to different machine codes in different platforms.
 
-The driving forces for this change may include the often lamented slow startup time of Java programs. For the brave new world of serverless functions, a quick starting program makes a lot of economic sense. The small but vibrant [Clojure](https://clojure.org/) community, which I consider myself a part of, is particularly excited about this new found capability of JVM, for we now have one more way to write quick starting command line programs using our beloved language. The other way is to use ClojureScript on one of the Javascript engines, but Javascript engines are slower than JVM and are not as nice. For example, [Babashka](https://github.com/babashka/babashka) is one such example that has taken the community by storm. 
+The driving forces for this change may include the often lamented slow startup time of Java programs. For the brave new world of serverless functions, a quick starting program makes a lot of economic sense. The small but vibrant [Clojure](https://clojure.org/) community, which I consider myself a part of, is particularly excited about this new found capability of JVM, for we now have one more way to write quick starting command line programs using our beloved language. The other way is to use ClojureScript on one of the Javascript engines, but Javascript engines are slower than JVM and are not as nice. For example, [Babashka](https://github.com/babashka/babashka) is one such example that has taken the community by storm.
 
 As the author of [Datalevin](https://github.com/juji-io/datalevin), a relatively new open source Datalog database, I have decided to answer the users' call for a native version of Datalevin using GraalVM native image technology. After some trials and errors, I have gotten a native version of Datalevin to pass all the tests. Now I can share some experience.
 
@@ -21,15 +21,15 @@ I am left with two options: one is to use a different LMDB wrapper that does not
 
 ## Writing C code in Java/Clojure
 
-As a native technology, GraalVM obviously has the facility to interface with C code. Not just that, it must also have the facility to write native code on its own. Fortunately, such facility is also packaged as a SDK that is publicly available. To use this SDK, one has to be familiar with not just Java, but also C programming, because effectively, it is writing low level C code in Java syntax. 
+As a native technology, GraalVM obviously has the facility to interface with C code. Not just that, it must also have the facility to write native code on its own. Fortunately, such facility is also packaged as a SDK that is publicly available. To use this SDK, one has to be familiar with not just Java, but also C programming, because effectively, it is writing low level C code in Java syntax.
 
-The only problem is that there isn't an official documentation for this kind of programming, just a [Java doc](https://www.graalvm.org/sdk/javadoc/index.html?org/graalvm/nativeimage/c/package-summary.html) and a [coding example](https://github.com/oracle/graal/blob/master/substratevm/src/com.oracle.svm.tutorial/src/com/oracle/svm/tutorial/CInterfaceTutorial.java). After some research, I also found a few other examples: an [OpenGL demo](https://github.com/praj-foss/opengl-graal-examples), a [neo4j native driver](https://github.com/michael-simons/neo4j-java-driver-native-lib) and an [uname utility](https://github.com/praj-foss/uname-graalvm-demo). I hope that this blog post adds to this growing library of GraalVM specific programming examples.  
+The only problem is that there isn't an official documentation for this kind of programming, just a [Java doc](https://www.graalvm.org/sdk/javadoc/index.html?org/graalvm/nativeimage/c/package-summary.html) and a [coding example](https://github.com/oracle/graal/blob/master/substratevm/src/com.oracle.svm.tutorial/src/com/oracle/svm/tutorial/CInterfaceTutorial.java). After some research, I also found a few other examples: an [OpenGL demo](https://github.com/praj-foss/opengl-graal-examples), a [neo4j native driver](https://github.com/michael-simons/neo4j-java-driver-native-lib) and an [uname utility](https://github.com/praj-foss/uname-graalvm-demo). I hope that this blog post adds to this growing library of GraalVM specific programming examples.
 
 ### Import C data and functions
 
-Our goal is to write a LMDB wrapper with GraalVM SDK without using JNI. 
+Our goal is to write a LMDB wrapper with GraalVM SDK without using JNI.
 
-The first step is to make Java aware of the LMDB C data structures and functions declared in the header file `lmdb.h`, so that our Java code can use them. This step is fairly easy and pleasant, compared with JNI. All one needs to do is to write a Java class to list all those C structs, enums and functions as native interfaces and annotate these with appropriate GraalVM specific annotations. 
+The first step is to make Java aware of the LMDB C data structures and functions declared in the header file `lmdb.h`, so that our Java code can use them. This step is fairly easy and pleasant, compared with JNI. All one needs to do is to write a Java class to list all those C structs, enums and functions as native interfaces and annotate these with appropriate GraalVM specific annotations.
 
 For example, for a C struct definition:
 
@@ -135,7 +135,7 @@ Clojure `deftype` supports Java annotations, so that is what I used to implement
   ...)
 ```
 
-One limitation that one needs to be aware of when writing native image related Clojure code, is that most things in the GraalVM SDK inherit from `org.graalvm.word.WordBase`, not from `java.lang.Object`, which breaks the hidden assumption of a lot of Clojure constructs. For example, one cannot do this: 
+One limitation that one needs to be aware of when writing native image related Clojure code, is that most things in the GraalVM SDK inherit from `org.graalvm.word.WordBase`, not from `java.lang.Object`, which breaks the hidden assumption of a lot of Clojure constructs. For example, one cannot do this:
 ```Clojure
 (let [env ^Lib$MDB_env (Env/create)]
   ...)
@@ -144,13 +144,13 @@ Because `Lib$MDB_env` extends `PointerBase`, but Clojure `let` seems to assume e
 
 Another point of caution is about arrays. GraalVM uses reflection to create array objects, but if these array objects are not declared at build time, the code won't run. For instance, for Clojure `into-array` function, we should not omit the optional first argument for element data type, otherwise, one has to manually specify the array type in the [`reflection.json` file during compilation](https://www.graalvm.org/reference-manual/native-image/Reflection/), or the Graal runtime will complain about "Class such and such is instantiated reflectively but was never registered". For Clojure dynamically generated classes with names such as these, "datalevin.test.query$fn__12734$fn__12739$fn__12740[]", it is impossible to add them manually in `reflection.json`. So the only solution is to specify the element data type in code, e.g. `(into-array Object data)`, instead of `(into-array data)`.
 
-The full Clojure project for native Datalevin is [here](https://github.com/juji-io/datalevin/tree/master/native). 
+The full Clojure project for native Datalevin is [here](https://github.com/juji-io/datalevin/tree/master/native).
 
 ### Memory management and pointer wrangling
 
 The main challenge of building a LMDB wrapper is to find a way to put transaction data into and get query data out of LMDB. As shown above, LMDB use a `MDB_val` struct to represents input/output data. All it contains is a data size and a pointer to the data. LMDBJava uses JNR and `Unsafe` or reflections to manipulate a `java.nio.ByteBuffer` to achieve this. Since we cannot use these in this project, we have to come up with a GraalVM specific solution.
 
-It turned out the code to do this is quite easy to write. Instead of allocating the ByteBuffer in Java and presenting it to C, we manage the memory in C and present it as a ByteBuffer in Java, without all that `Unsafe` and reflection shenanigans. 
+It turned out the code to do this is quite easy to write. Instead of allocating the ByteBuffer in Java and presenting it to C, we manage the memory in C and present it as a ByteBuffer in Java, without all that `Unsafe` and reflection shenanigans.
 
 ```Java
 /**
@@ -236,12 +236,19 @@ public class BufVal {
     }
 }
 ```
-We allocate the memory for the data and the `MDB_val` struct with the `UnmanagedMemory.calloc` static method from the SDK. This allocates memory from the heap just like in C. We will then need to free the memory ourselves. 
+We allocate the memory for the data and the `MDB_val` struct with the `UnmanagedMemory.calloc` static method from the SDK. This allocates memory from the heap just like in C. We will then need to free the memory ourselves.
 
-If the memory is needed only for a short period of time, the other options are `PinnedObject` or `StackValue` classes of the SDK. The former allows creating Java objects and then pinning them down, so that the garbage collector does not move them or delete them, in order to get a stable pointer to work with at the C side. The latter allocates objects from the stack so it is short-lived. These cases do not fit our need for long term pointers to database data structures, so we use `UnmanagedMemory`. 
+If the memory is needed only for a short period of time, the other options are `PinnedObject` or `StackValue` classes of the SDK. The former allows creating Java objects and then pinning them down, so that the garbage collector does not move them or delete them, in order to get a stable pointer to work with at the C side. The latter allocates objects from the stack so it is short-lived. These cases do not fit our need for long term pointers to database data structures, so we use `UnmanagedMemory`.
 
 The SDK utility `CTypeConversion.asByteBuffer` static method is what makes our effort possible. We can simply expose a `MDB_val` as a `ByteBuffer` to Java in the constructor for incoming data, and in `outBuf()` for outgoing data.  The rest of the code is just bookkeeping for the ByteBuffer.
 
 ## Conclusion
 
 I am happy that this effort is turning out well. The GraalVM SDK is quite pleasant to use, once one figures it out. I wish that this API can be made available in regular JVM as well, so we can truly write it once, and use it everywhere, regardless the underlying languages and platforms.
+
+## Important Update (2023-01-06)
+
+For GraalVM versions newer than 21.3.0, those C context annotations in the
+Clojure code shown above should be removed, because `CContext` is now marked as
+`HOST_ONLY`, and is available only during build time. Basically, only those Java
+classes that directly wrap the C code should now add these annotations.
