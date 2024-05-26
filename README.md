@@ -17,6 +17,7 @@ brew install pyenv
 pyenv install 3.8.16
 pyenv global 3.8.16
 ```
+Then follow the instruction in `pyenv init`.
 
 Also need node.js for Web based editor
 
