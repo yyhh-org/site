@@ -8,7 +8,7 @@ Category: experience
 Tags: Datalevin,Database,Clojure,
 ---
 
-<img src="/images/job-means.png" alt="JOB performance" width="400"/>
+<img src="/images/job-means.png" alt="JOB performance" width="450"/>
 
 This is a post about [Datalevin](https://github.com/juji-io/datalevin), an
 open-source database system that I have been building since 2020. Although JOB
