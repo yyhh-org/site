@@ -8,7 +8,7 @@ Category: experience
 Tags: Datalevin,Database,Clojure,
 ---
 
-![JOB performance](/images/job-means.png)
+<img src="/images/job-means.png" alt="JOB performance" width="400"/>
 
 This is a post about [Datalevin](https://github.com/juji-io/datalevin), an
 open-source database system that I have been building since 2020. Although JOB
@@ -502,10 +502,11 @@ more ergonomic.
 ## References
 
 [1] Chamberlin, D. and Boyce, R..  "SEQUEL: A Structured English Query
-Language", Proc. ACM SIGFIDET Workshop on Data Description Access and Control,
-pp. 249-264, 1974.
+Language", Proc. ACM SIGFIDET Workshop on Data Description Access and Control.
+1974.
 
 [2] Leis, V., et al. "Cardinality Estimation Done Right: Index-Based Join
 Sampling." Cidr. 2017.
 
-[3] Leis, V., et al. "How good are query optimizers, really?." VLDB Endowment
+[3] Leis, V., et al. "How good are query optimizers, really?." VLDB
+Endowment. 2015.
