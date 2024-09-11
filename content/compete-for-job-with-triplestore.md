@@ -100,7 +100,7 @@ The first element inside the parentheses is the function name, e.g. `like`,
 `<=`, and so on, and the rest are the function arguments. All the predicates must
 evaluate to be true for the query to return non-empty results.
 
-That's it, the syntax of Datalevin's Datalog. There is neither complex syntactic
+That's it, the syntax of Datalevin's Datalog. There are neither complex syntactic
 rules, nor hundreds of reserved words.
 
 More importantly, Datalog is very high level and truly declarative. It does not
@@ -184,10 +184,9 @@ actually removes it from the storage, instead of setting some values to
 of non-null data in the database.
 
 Another simplification is that the entire database is essentially just one big
-table. `E`, `A` and `V` are all globally scoped. In Datalevin, `E` is
-represented as a 64 bit integer, and `A` a 32 bit integer. Database schema
-specifies only information about each attribute, e.g. its id, data type,
-uniqueness, and so on.
+table. `E` and `A` are all globally scoped. In Datalevin, `E` is represented as
+a 64 bit integer, and `A` a 32 bit integer. Database schema specifies only
+information about each attribute, e.g. its id, data type, uniqueness, and so on.
 
 ```Clojure
 ;; Datalevin schema for the example data above
@@ -390,40 +389,40 @@ result size. Instead, it simply counts or samples to obtain the base selectivity
 ratios. Then, for each pair of base relations, it actually executes the joins
 using the samples, and thus obtains the pair-wise join selectivity ratios. These
 rations are simply used in estimation of join sizes in later joins. The only
-assumption it makes is that the base selectivity ratios are similar to those of
-later joins. If the samples are representative, this assumption would not be too
-off base.
+assumption it makes is that the selectivity ratios of pair-wise joins are
+similar to those of later joins. If the samples are representative, this
+assumption would not be too off base.
 
 For query 20a, the corresponding Datalog query is the following:
 
 ```Clojure
-            ;; query 20a
+;; query 20a
 
-            [:find (min ?t.title)
-             :where
-             [?cct1 :comp-cast-type/kind "cast"]
-             [?cct2 :comp-cast-type/kind ?cct2.kind]
-             [(like ?cct2.kind "%complete%")]
-             [?chn :char-name/name ?chn.name]
-             [(not-like ?chn.name "%Sherlock%")]
-             [(or (like ?chn.name "%Tony%Stark%") (like ?chn.name "%Iron%Man%"))]
-             [?k :keyword/keyword ?k.keyword]
-             [(in ?k.keyword ["superhero", "sequel", "second-part",
-                              "marvel-comics", "based-on-comic",
-                              "tv-special", "fight", "violence"])]
-             [?kt :kind-type/kind "movie"]
-             [?t :title/production-year ?t.production-year]
-             [(< 1950 ?t.production-year)]
-             [?t :title/kind ?kt]
-             [?mk :movie-keyword/movie ?t]
-             [?ci :cast-info/movie ?t]
-             [?cc :complete-cast/movie ?t]
-             [?ci :cast-info/person-role ?chn]
-             [?ci :cast-info/person ?n]
-             [?mk :movie-keyword/keyword ?k]
-             [?cc :complete-cast/subject ?cct1]
-             [?cc :complete-cast/status ?cct2]
-             [?t :title/title ?t.title]]
+ [:find (min ?t.title)
+  :where
+  [?cct1 :comp-cast-type/kind "cast"]
+  [?cct2 :comp-cast-type/kind ?cct2.kind]
+  [(like ?cct2.kind "%complete%")]
+  [?chn :char-name/name ?chn.name]
+  [(not-like ?chn.name "%Sherlock%")]
+  [(or (like ?chn.name "%Tony%Stark%") (like ?chn.name "%Iron%Man%"))]
+  [?k :keyword/keyword ?k.keyword]
+  [(in ?k.keyword ["superhero", "sequel", "second-part",
+                  "marvel-comics", "based-on-comic",
+                  "tv-special", "fight", "violence"])]
+  [?kt :kind-type/kind "movie"]
+  [?t :title/production-year ?t.production-year]
+  [(< 1950 ?t.production-year)]
+  [?t :title/kind ?kt]
+  [?mk :movie-keyword/movie ?t]
+  [?ci :cast-info/movie ?t]
+  [?cc :complete-cast/movie ?t]
+  [?ci :cast-info/person-role ?chn]
+  [?ci :cast-info/person ?n]
+  [?mk :movie-keyword/keyword ?k]
+  [?cc :complete-cast/subject ?cct1]
+  [?cc :complete-cast/status ?cct2]
+  [?t :title/title ?t.title]]
 ```
 
 The `:plan` portion of the `explain` output is the following:
@@ -482,9 +481,9 @@ base relations.
 
 Counting and sampling under query conditions are straightforward in Datalevin,
 thanks to the nested triple storage. Applicable value predicates are translated
-into range queries in AVE ordering of triples. When both `A` and `V` is known,
+into range queries in AVE ordering of triples. When both `A` and `V` are known,
 obtaining the count is a constant time operation. When `V` is a range, the count
-is just the sum of the counts in range; The only missing information is total
+is just the sum of the counts in range; The only missing information is the total
 count of `A`, which is easily maintained during transaction.
 
 More details of the Datalevin query planner and execution engine can be found
