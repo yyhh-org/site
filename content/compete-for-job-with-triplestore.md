@@ -388,7 +388,7 @@ Datalevin does not rely on such strong statistical assumptions to estimate join
 result size. Instead, it simply counts or samples to obtain the base selectivity
 ratios. Then, for each pair of base relations, it actually executes the joins
 using the samples, and thus obtains the pair-wise join selectivity ratios. These
-rations are simply used in estimation of join sizes in later joins. The only
+ratios are simply used in estimation of join sizes in later joins. The only
 assumption it makes is that the selectivity ratios of pair-wise joins are
 similar to those of later joins. If the samples are representative, this
 assumption would not be too off base.
