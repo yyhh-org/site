@@ -22,7 +22,7 @@ A lot of materials here are just our notes for solving some problems. Since it o
 </div>
 <div class="right">
   <img src="/images/huahai.jpg" alt="Huahai's photo"/>
-  Huahai is an entrepreneur. He co-founded <a href="https://juji.io">Juji</a>, a company building and selling an AI chabot platform.  In his previous life, he had been a professor and a research scientist. He likes to dream about things big and small. He sometimes writes about controversial topics. His twitter is <a href="https://twitter.com/huahaiy">@huahaiy</a>. 
+  Huahai is an entrepreneur. He co-founded <a href="https://juji.io">Juji</a>, a company building an AI agent platform.  In his previous life, he had been an assistant professor and a research scientist. His <a href="https://huahaiy.github.io/">professional homepage</a> has more information about his work. His twitter is <a href="https://twitter.com/huahaiy">@huahaiy</a>. 
 </div>
 </div>
 
