@@ -231,8 +231,8 @@ time command.
 The first chart shows wallclock time, while the second shows
 user and system CPU time.
 
-<img src="/images/wallclock-time.png" alt="Mixed Read/Write Wallclock Time" width="400">
-<img src="/images/cpu-time.png" alt="Mixed Read/Write CPU Time" width="400">
+<img src="/images/wallclock-time.png" alt="Mixed Read/Write Wallclock Time" height="300">
+<img src="/images/cpu-time.png" alt="Mixed Read/Write CPU Time" height="300">
 
 For the mixed read/write task, Datalevin Default is much faster than SQLite
 Default, and Datalevin Async is much faster than SQLite WAL, while SQLite WAL
