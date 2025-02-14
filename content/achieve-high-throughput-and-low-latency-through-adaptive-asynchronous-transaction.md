@@ -8,7 +8,7 @@ Category: experience
 Tags: Datalevin,Database,Clojure,
 ---
 
-<img src="/images/effective-throughput.png" alt="Effective Throughput" width="450"/>
+<img src="/images/effective-throughput.png" alt="Effective Throughput" width="800"/>
 
 In my [previous
 post](https://yyhh.org/blog/2024/09/competing-for-the-job-with-a-triplestore/),
@@ -228,13 +228,11 @@ between reading a row and writing a row until one million reads and one million
 writes have been performed. For this task, we report the results using Linux’s
 time command.
 
-The chart on the left shows wallclock time, while the chart on the right shows
+The first chart shows wallclock time, while the second shows
 user and system CPU time.
 
-<p align="center">
-  <img src="/images/wallclock-time.png" alt="Mixed Read/Write Wallclock Time" height="300">
-  <img src="/images/cpu-time.png" alt="Mixed Read/Write CPU Time" height="300">
-</p>
+<img src="/images/wallclock-time.png" alt="Mixed Read/Write Wallclock Time" width="400">
+<img src="/images/cpu-time.png" alt="Mixed Read/Write CPU Time" width="400">
 
 For the mixed read/write task, Datalevin Default is much faster than SQLite
 Default, and Datalevin Async is much faster than SQLite WAL, while SQLite WAL
