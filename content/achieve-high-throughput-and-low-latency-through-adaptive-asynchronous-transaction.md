@@ -1,5 +1,5 @@
 ---
-Status: draft
+Status: published
 Lang: en
 Title: Achieving High Throughput and Low Latency through Adaptive Asynchronous Transaction
 Date: 2025-02-11T16:15:00.000Z
