@@ -15,11 +15,11 @@ post](https://yyhh.org/blog/2024/09/competing-for-the-job-with-a-triplestore/),
 I demonstrated that Datalevin performs complex queries faster than PostgreSQL. A
 common reaction is, "Oh, have you tested writing speed? I imagine that when
 there are indices for everything (as in the case of Datalevin), writing speed
-could be significantly slower." This post aims to address that write-speed
+could be significantly slower." This post aims to address that write speed
 concern.
 
-When discussing database write speed, throughput and latency are the two key
-performance metrics. Throughput is the number of transactions the system can
+When discussing database write speed, **throughput** and **latency** are the two
+key performance metrics. Throughput is the number of transactions the system can
 process in a given amount of time—the higher the throughput, the better the
 system. Latency is the amount of time it takes to process a single transaction
 from start to finish. In durable databases, this refers to the time between when
@@ -52,14 +52,15 @@ throughput. Of course, it is still important to ensure that transactions do not
 wait too long in the queue, which could hurt latency.
 
 Some databases implement asynchronous commit. For example, PostgreSQL’s
-synchronous_commit parameter can be set to off. In this mode, the system returns
-transaction success as soon as the transaction is logically completed—before the
-generated WAL (Write-Ahead Log) records are actually written to disk. However,
-this implementation compromises durability and consistency guarantees. There is
-a short window between reporting transaction completion and when the transaction
-is truly committed. If the system crashes during this risk window, the changes
-made by that transaction may be lost. PostgreSQL allows users to control the
-duration of this risk window by setting wal_writer_delay.
+`synchronous_commit` parameter can be set to `off`. In this mode, the system
+returns transaction success as soon as the transaction is logically
+completed—before the generated WAL (Write-Ahead Log) records are actually
+written to disk. However, this implementation compromises durability and
+consistency guarantees. There is a short window between reporting transaction
+completion and when the transaction is truly committed. If the system crashes
+during this risk window, the changes made by that transaction may be lost.
+PostgreSQL allows users to control the duration of this risk window by setting
+`wal_writer_delay`.
 
 ## Adaptive Asynchronous Transaction
 
@@ -68,13 +69,13 @@ durability guarantees of transactions might seem challenging. In Datalevin, we
 aim to take advantage of asynchronous transactions without compromising
 durability. Moreover, having too many tuning parameters goes against our goal of
 excellent database usability—there is really no good reason for a user to worry
-about low-level implementation details.
+about such low-level implementation details.
 
 To achieve these goals, I have implemented an adaptive asynchronous transaction
 method in Datalevin.
 
 The idea is as follows. First, to maintain transaction durability, the
-asynchronous transaction method returns a Clojure future, which is only realized
+asynchronous transaction method returns a Clojure `future`, which is only realized
 once the transaction is fully committed and the data is flushed to disk. The
 user can dereference the future to determine when the transaction is completed,
 or block until it is. Alternatively, the method optionally accepts a
@@ -125,14 +126,14 @@ number is challenging because they measure different aspects of performance and
 have different units. There may not be a perfect answer, but here are a few
 ideas.
 
-One simple composite is to compute a ratio such as Throughput / Latency. A
+One simple composite is to compute a ratio such as `Throughput / Latency`. A
 higher value implies that the system is processing more transactions quickly
 (i.e., achieving high throughput and low latency). However, if throughput is
 measured in transactions per second and latency in seconds per transaction, the
-ratio has units of transactions squared per second, which makes its
+ratio has units of `transactions squared per second`, which makes its
 interpretation less obvious.
 
-One way to refine this formula is to introduce a target latency required by a
+One way to refine this formula is to introduce a **target latency** required by a
 particular use case. For example, for low-latency applications that expect
 sub-millisecond database transactions, the target latency might be 1
 millisecond. For applications that can tolerate slightly higher latency, the
@@ -149,13 +150,13 @@ This metric rewards systems that process many transactions and keep them within
 acceptable latency boundaries. If the latency exceeds the target, the effective
 throughput metric drops, reflecting a degraded user experience.
 
-Effective Throughput (ET) is a use-case–dependent metric that is simple to
-interpret. The higher the ET, the better the system. It is also easy to
+`Effective Throughput (ET)` is a use-case–dependent metric that is simple to
+interpret. The higher the `ET`, the better the system. It is also easy to
 calculate, as its value is proportional to the target latency. For example, the
-ET for a 10-millisecond target is 10 times that for a 1-millisecond target.
+`ET` for a 10-millisecond target is 10 times that for a 1-millisecond target.
 Thus, we really only need to calculate the ratio of throughput to latency (i.e.,
 for a target latency of 1 unit) and then extrapolate to other target latencies.
-For the analysis below, we will adopt ET.
+For the analysis below, we will adopt `ET`.
 
 ## Benchmark
 
@@ -164,8 +165,8 @@ SQLite—the most widely used embedded database, renowned for its fast writes.
 Although Datalevin can be used in a client/server mode, for this benchmark we
 use it as an embedded database.
 
-Using the same dataset, we compare four transaction conditions: Datalevin
-Default, Datalevin Async, SQLite Default, and SQLite WAL. These are all fully
+Using the same dataset, we compare four transaction conditions: `Datalevin
+Default`, `Datalevin Async`, `SQLite Default`, and `SQLite WAL`. These are all fully
 durable transaction methods—a transaction is considered complete only after its
 data is fully flushed to disk.
 
@@ -189,23 +190,23 @@ we measure the throughput and latency. In addition to individual writes, we also
 measure performance when writing data in batches—testing batch sizes of 10, 100,
 and 1000.
 
-Using the Effective Throughput (ET) metric described above, the bar chart at the
+Using the `Effective Throughput (ET)` metric described above, the bar chart at the
 top of this post shows the pure write task results. (Note: the Y axis is
 logarithmic.)
 
-When the batch size is 1 (i.e., writing a single entity at a time), Datalevin
-Async achieves the best ET. It is several orders of magnitude higher than under
+When the batch size is 1 (i.e., writing a single entity at a time), `Datalevin
+Async` achieves the best `ET`. It is several orders of magnitude higher than under
 other write conditions—not only is the raw throughput high (16,829.2 writes per
 second), the latency is low (0.1 milliseconds) as well. When writes are batched,
-the ET of Datalevin Async slightly decreases due to the latency increasing
+the `ET` of `Datalevin Async` slightly decreases due to the latency increasing
 faster than throughput.
 
-Datalevin Default performance peaks at a batch size of 100; however, at that
+`Datalevin Default` performance peaks at a batch size of 100; however, at that
 batch size, SQLite’s performance outperforms it.
 
-SQLite Default performs very poorly for individual writes, though SQLite WAL is
-much better. Both benefit significantly from increased batch sizes, with SQLite
-Default benefiting the most.
+`SQLite Default` performs very poorly for individual writes, though `SQLite WAL` is
+much better. Both benefit significantly from increased batch sizes, with `SQLite
+Default` benefiting the most.
 
 In general, Datalevin's write performance is more stable and less sensitive to
 variations in batch size compared to SQLite. Because Datalevin performs indexing
@@ -217,8 +218,8 @@ of entities (or rows), as recommended by industry best practices [2]. In these
 online transaction processing (OLTP) workloads, Datalevin is expected to perform
 better than SQLite.
 
-For use cases involving the bulk loading of data, Datalevin provides init-db and
-fill-db functions that bypass the expensive transactional processes and are more
+For use cases involving the bulk loading of data, Datalevin provides `init-db` and
+`fill-db` functions that bypass the expensive transactional processes and are more
 appropriate.
 
 ### Mixed Read/Write
@@ -226,7 +227,7 @@ appropriate.
 After one million entities (rows) have been loaded, the second task alternates
 between reading a row and writing a row until one million reads and one million
 writes have been performed. For this task, we report the results using Linux’s
-time command.
+`time` command.
 
 The first chart shows wallclock time, while the second shows
 user and system CPU time.
@@ -234,17 +235,17 @@ user and system CPU time.
 <img src="/images/wallclock-time.png" alt="Mixed Read/Write Wallclock Time" width="400">
 <img src="/images/cpu-time.png" alt="Mixed Read/Write CPU Time" width="370">
 
-For the mixed read/write task, Datalevin Default is much faster than SQLite
-Default, and Datalevin Async is much faster than SQLite WAL, while SQLite WAL
-outperforms Datalevin Default.
+For the mixed read/write task, `Datalevin Default` is much faster than `SQLite
+Default`, and `Datalevin Async` is much faster than `SQLite WAL`, while `SQLite
+WAL` outperforms `Datalevin Default`.
 
 Regarding CPU time, the differences among the various conditions are small,
 indicating that the underlying amount of work is not hugely different.
 
-Notice that in the three synchronous conditions—Datalevin Default, SQLite
-Default, and SQLite WAL—most of the time is spent waiting for I/O, with CPU
-times being relatively small compared to the wallclock time. Datalevin Async is
-different; its total CPU time (227.89 seconds) is actually greater than its
+Notice that in the three synchronous conditions—`Datalevin Default`, `SQLite
+Default`, and `SQLite WAL`—most of the time is spent waiting for I/O, with CPU
+times being relatively small compared to the wallclock time. `Datalevin Async`
+is different; its total CPU time (227.89 seconds) is actually greater than its
 wallclock time (111.04 seconds), indicating effective utilization of multicore
 processing and an apparent hiding of I/O wait times. This result confirms our
 hypothesized advantage of asynchronous transactions.
