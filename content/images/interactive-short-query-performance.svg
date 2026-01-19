@@ -1,0 +1,88 @@
+<svg width="900" height="550" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="#f9f9f9" />
+<text x="450.0" y="40.0" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="#333">Interactive Short Query Performance</text>
+<line x1="80" y1="490" x2="820" y2="490" stroke="#333" stroke-width="2" />
+<line x1="80" y1="60" x2="80" y2="490" stroke="#333" stroke-width="2" />
+<line x1="75" y1="490.0" x2="80" y2="490.0" stroke="#333" />
+<text x="70" y="495.0" font-family="Arial" font-size="12" text-anchor="end" fill="#333">1</text>
+<line x1="77" y1="457.639275466122" x2="80" y2="457.639275466122" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="438.7094651176363" x2="80" y2="438.7094651176363" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="425.27855093224406" x2="80" y2="425.27855093224406" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="414.86072453387794" x2="80" y2="414.86072453387794" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="406.3487405837583" x2="80" y2="406.3487405837583" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="399.1519606984674" x2="80" y2="399.1519606984674" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="392.91782639836606" x2="80" y2="392.91782639836606" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="387.41893023527257" x2="80" y2="387.41893023527257" stroke="#999" stroke-width="0.5" />
+<line x1="75" y1="382.5" x2="80" y2="382.5" stroke="#333" />
+<text x="70" y="387.5" font-family="Arial" font-size="12" text-anchor="end" fill="#333">10</text>
+<line x1="77" y1="350.139275466122" x2="80" y2="350.139275466122" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="331.2094651176363" x2="80" y2="331.2094651176363" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="317.77855093224406" x2="80" y2="317.77855093224406" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="307.360724533878" x2="80" y2="307.360724533878" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="298.8487405837583" x2="80" y2="298.8487405837583" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="291.6519606984674" x2="80" y2="291.6519606984674" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="285.41782639836606" x2="80" y2="285.41782639836606" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="279.91893023527257" x2="80" y2="279.91893023527257" stroke="#999" stroke-width="0.5" />
+<line x1="75" y1="275.0" x2="80" y2="275.0" stroke="#333" />
+<text x="70" y="280.0" font-family="Arial" font-size="12" text-anchor="end" fill="#333">100</text>
+<line x1="77" y1="242.639275466122" x2="80" y2="242.639275466122" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="223.70946511763628" x2="80" y2="223.70946511763628" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="210.278550932244" x2="80" y2="210.278550932244" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="199.860724533878" x2="80" y2="199.860724533878" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="191.34874058375834" x2="80" y2="191.34874058375834" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="184.1519606984674" x2="80" y2="184.1519606984674" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="177.91782639836606" x2="80" y2="177.91782639836606" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="172.41893023527257" x2="80" y2="172.41893023527257" stroke="#999" stroke-width="0.5" />
+<line x1="75" y1="167.5" x2="80" y2="167.5" stroke="#333" />
+<text x="70" y="172.5" font-family="Arial" font-size="12" text-anchor="end" fill="#333">1000</text>
+<line x1="77" y1="135.139275466122" x2="80" y2="135.139275466122" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="116.20946511763628" x2="80" y2="116.20946511763628" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="102.778550932244" x2="80" y2="102.778550932244" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="92.360724533878" x2="80" y2="92.360724533878" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="83.84874058375834" x2="80" y2="83.84874058375834" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="76.6519606984674" x2="80" y2="76.6519606984674" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="70.41782639836606" x2="80" y2="70.41782639836606" stroke="#999" stroke-width="0.5" />
+<line x1="77" y1="64.91893023527257" x2="80" y2="64.91893023527257" stroke="#999" stroke-width="0.5" />
+<line x1="75" y1="60.0" x2="80" y2="60.0" stroke="#333" />
+<text x="70" y="65.0" font-family="Arial" font-size="12" text-anchor="end" fill="#333">10000</text>
+<text x="25" y="275.0" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90, 25, 275.0)" fill="#333">Execution Time (ms, log scale)</text>
+<rect x="105.0" y="160.21393394691842" width="35" height="329.7860660530816" fill="#4285F4" rx="2" />
+<text x="122.5" y="155.21393394691842" font-family="Arial" font-size="10" text-anchor="middle" fill="#4285F4">1168.9</text>
+<rect x="140.0" y="314.1854972173969" width="35" height="175.81450278260309" fill="#EA4335" rx="2" />
+<text x="157.5" y="309.1854972173969" font-family="Arial" font-size="10" text-anchor="middle" fill="#EA4335">43.2</text>
+<text x="140.0" y="515" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">IS1</text>
+<rect x="225.0" y="160.0425041618347" width="35" height="329.9574958381653" fill="#4285F4" rx="2" />
+<text x="242.5" y="155.0425041618347" font-family="Arial" font-size="10" text-anchor="middle" fill="#4285F4">1173.2</text>
+<rect x="260.0" y="249.3022224874294" width="35" height="240.6977775125706" fill="#EA4335" rx="2" />
+<text x="277.5" y="244.3022224874294" font-family="Arial" font-size="10" text-anchor="middle" fill="#EA4335">173.4</text>
+<text x="260.0" y="515" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">IS2</text>
+<rect x="345.0" y="160.3218985133597" width="35" height="329.6781014866403" fill="#4285F4" rx="2" />
+<text x="362.5" y="155.3218985133597" font-family="Arial" font-size="10" text-anchor="middle" fill="#4285F4">1166.2</text>
+<rect x="380.0" y="330.7449174360022" width="35" height="159.2550825639978" fill="#EA4335" rx="2" />
+<text x="397.5" y="325.7449174360022" font-family="Arial" font-size="10" text-anchor="middle" fill="#EA4335">30.3</text>
+<text x="380.0" y="515" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">IS3</text>
+<rect x="465.0" y="149.048838832937" width="35" height="340.951161167063" fill="#4285F4" rx="2" />
+<text x="482.5" y="144.048838832937" font-family="Arial" font-size="10" text-anchor="middle" fill="#4285F4">1484.7</text>
+<rect x="500.0" y="449.12729151600234" width="35" height="40.872708483997656" fill="#EA4335" rx="2" />
+<text x="517.5" y="444.12729151600234" font-family="Arial" font-size="10" text-anchor="middle" fill="#EA4335">2.4</text>
+<text x="500.0" y="515" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">IS4</text>
+<rect x="585.0" y="150.28513729473434" width="35" height="339.71486270526566" fill="#4285F4" rx="2" />
+<text x="602.5" y="145.28513729473434" font-family="Arial" font-size="10" text-anchor="middle" fill="#4285F4">1445.9</text>
+<rect x="620.0" y="425.27855093224406" width="35" height="64.72144906775594" fill="#EA4335" rx="2" />
+<text x="637.5" y="420.27855093224406" font-family="Arial" font-size="10" text-anchor="middle" fill="#EA4335">4.0</text>
+<text x="620.0" y="515" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">IS5</text>
+<rect x="705.0" y="148.7416886671553" width="35" height="341.2583113328447" fill="#4285F4" rx="2" />
+<text x="722.5" y="143.7416886671553" font-family="Arial" font-size="10" text-anchor="middle" fill="#4285F4">1494.5</text>
+<rect x="740.0" y="428.918314662798" width="35" height="61.081685337201975" fill="#EA4335" rx="2" />
+<text x="757.5" y="423.918314662798" font-family="Arial" font-size="10" text-anchor="middle" fill="#EA4335">3.7</text>
+<text x="740.0" y="515" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">IS6</text>
+<rect x="825.0" y="88.55547014009386" width="35" height="401.44452985990614" fill="#4285F4" rx="2" />
+<text x="842.5" y="83.55547014009386" font-family="Arial" font-size="10" text-anchor="middle" fill="#4285F4">5424.6</text>
+<rect x="860.0" y="351.5613140325007" width="35" height="138.43868596749928" fill="#EA4335" rx="2" />
+<text x="877.5" y="346.5613140325007" font-family="Arial" font-size="10" text-anchor="middle" fill="#EA4335">19.4</text>
+<text x="860.0" y="515" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">IS7</text>
+<rect x="700" y="70" width="18" height="18" fill="#4285F4" rx="2" />
+<text x="725" y="84" font-family="Arial" font-size="14" fill="#333">Neo4j</text>
+<rect x="700" y="100" width="18" height="18" fill="#EA4335" rx="2" />
+<text x="725" y="114" font-family="Arial" font-size="14" fill="#333">Datalevin</text>
+</svg>
