@@ -11,7 +11,7 @@ Tags: Datalevin,Database,Datalog,Triplestore,Graph,Rules
 ![Interactive Short Query Performance](/images/interactive-short-query-performance.svg)
 
 In my previous post, [Competing for the JOB with a
-Triplestore](/compete-for-job-with-triplestore.html), I showed that a triple
+Triplestore](https://yyhh.org/blog/2024/09/competing-for-the-job-with-a-triplestore/), I showed that a triple
 store, such as [Datalevin](https://github.com/juji-io/datalevin), can compete
 with the best row stores on complex relational workloads. Since then, I have
 rewritten Datalevin's rule engine and improved its storage and query engine.
