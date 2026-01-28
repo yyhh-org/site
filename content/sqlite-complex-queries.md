@@ -46,10 +46,11 @@ a system-level limitation: the query optimizer itself. That limitation matters e
 read-heavy, single-node deployments, which is exactly the use case where SQLite
 is supposed to shine.
 
-I have [benchmark evidence](#the-evidence-job-benchmark) showing this
-clearly. This post focuses on join-heavy analytical queries, not on the many
-workloads where SQLite is already the right choice. But first, let me explain
-why this matters more than people think.
+I have [benchmark
+evidence](https://github.com/datalevin/datalevin/tree/master/benchmarks/JOB-bench)
+showing this clearly. This post focuses on join-heavy analytical queries, not on
+the many workloads where SQLite is already the right choice. But first, let me
+explain why this matters more than people think.
 
 ## Multi-join queries are not exotic
 
@@ -138,12 +139,12 @@ with realistic data distributions, making it a much harder test of query
 optimization.
 
 I ran this benchmark comparing three databases: SQLite (via JDBC),
-PostgreSQL 18, and [Datalevin](https://github.com/juji-io/datalevin) (an
+PostgreSQL 18, and [Datalevin](https://github.com/datalevin/datalevin) (an
 open-source database I build). All were tested in default configurations
 with no tuning, on a MacBook Pro M3 Pro with 36GB RAM. This is not a tuning
 shootout, but a look at out-of-the-box optimizer behavior. Details of the
 benchmark methodology can be found
-[here](https://github.com/juji-io/datalevin/tree/master/benchmarks/JOB-bench).
+[here](https://github.com/datalevin/datalevin/tree/master/benchmarks/JOB-bench).
 
 ### Overall wall clock time
 
