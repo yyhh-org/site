@@ -15,10 +15,12 @@ We started Datalevin in 2020 with a deceptively simple question: why should SQL
 databases remain the default center of application state?
 
 Six years of research, engineering, benchmarking, production use, and community
-feedback later, Datalevin 1.0.0 is our answer. It is a durable, high-performance,
-fact-first database that brings relational queries, graph traversal, logical
-reasoning, document access, full-text search, and vector search into one compact
-system.
+feedback later, Datalevin 1.0.0 is our answer. Datalevin is open source under
+the [Eclipse Public License
+2.0](https://github.com/datalevin/datalevin/blob/master/LICENSE). It is a
+durable, high-performance, fact-first database that brings relational queries,
+graph traversal, logical reasoning, document access, full-text search, and
+vector search into one compact system.
 
 The release completes the roadmap we set for 1.0: automatic path indexing for
 documents; write-ahead logging and transaction-log access; read-only replicas
@@ -207,7 +209,7 @@ Datalevin 1.0.0 is available now:
 * Read the new guide at **[datalevin.org](https://datalevin.org)**.
 * Get the complete print or ebook edition of ***[Datalevin: The Definitive
   Guide](https://www.amazon.com/dp/B0H8X1QF2Q/)***.
-* Browse the source and installation options on
+* Explore, use, and contribute to the open-source code on
   **[GitHub](https://github.com/datalevin/datalevin)**.
 * Use Datalevin from
   **[Clojure](https://clojars.org/datalevin)**,
