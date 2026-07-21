@@ -157,32 +157,31 @@ In other words, a context window is temporary attention. Datalevin is memory.
 ## One Database, Almost the Same API Everywhere
 
 Datalevin began as a Clojure library, but 1.0 is not limited to Clojure
-applications. The Clojure, Java, and JavaScript APIs now cover almost the same
-public surface:
+applications. The Clojure, Java, Python, and JavaScript APIs now cover almost
+the same public surface:
 
-| Capability | Clojure | Java | JavaScript |
-| --- | --- | --- | --- |
-| Embedded and remote connections | Yes | Yes | Yes |
-| Datalog query, pull, and explain | Yes | Yes | Yes |
-| Synchronous and asynchronous transactions | Yes | Yes | Yes |
-| Datoms, index reads, bulk loading, and re-indexing | Yes | Yes | Yes |
-| Key-value APIs and explicit KV transactions | Yes | Yes | Yes |
-| Full-text, vector, embedding, and idoc access | Yes | Yes | Yes |
-| Standalone search and vector indexes | Yes | Yes | Yes |
-| UDF registries and query, transaction, and analyzer UDFs | Yes | Yes | Yes |
-| Backup, snapshots, transaction logs, replicas, and HA administration | Yes | Yes | Yes |
+| Capability | Clojure | Java | Python | JavaScript |
+| --- | --- | --- | --- | --- |
+| Embedded and remote connections | Yes | Yes | Yes | Yes |
+| Datalog query, pull, and explain | Yes | Yes | Yes | Yes |
+| Synchronous and asynchronous transactions | Yes | Yes | Yes | Yes |
+| Datoms, index reads, bulk loading, and re-indexing | Yes | Yes | Yes | Yes |
+| Key-value APIs and explicit KV transactions | Yes | Yes | Yes | Yes |
+| Full-text, vector, embedding, and idoc access | Yes | Yes | Yes | Yes |
+| Standalone search and vector indexes | Yes | Yes | Yes | Yes |
+| UDF registries and query, transaction, and analyzer UDFs | Yes | Yes | Yes | Yes |
+| Backup, snapshots, transaction logs, replicas, and HA administration | Yes | Yes | Yes | Yes |
 
 The remaining differences are small and explicit. JavaScript does not expose
 the Datalog transaction callback because callback re-entry through the Node/JVM
 bridge can deadlock. Staged mutation of an existing entity object remains a
-Clojure-only convenience; Java and JavaScript use transaction maps or builders
-instead. The full, current list lives in the
+Clojure-only convenience; Java, Python, and JavaScript use transaction maps or
+builders instead. The full, current list lives in the
 [language compatibility
 matrix](https://github.com/datalevin/datalevin/blob/master/doc/language-compatibility.md).
 
-Python also exposes the same broad Datalog, key-value, search, vector, document,
-and operational surfaces. Whatever language you choose, the important parts do
-not change: the same facts, schema, transactions, Datalog queries, and indexes.
+Whatever language you choose, the important parts do not change: the same
+facts, schema, transactions, Datalog queries, and indexes.
 
 ## Embedded, Server, or Script: Choose at Deployment Time
 
