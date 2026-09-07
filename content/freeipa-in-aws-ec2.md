@@ -8,6 +8,7 @@ Tags: SysAdmin, AWS, DNS, FreeIPA
 Slug: freeipa-in-aws-ec2
 Alias: /blog/2017/12/freeipa-aws-ec2
 Lang: en
+Summary: Configuring FreeIPA on AWS EC2, using Route 53 to handle the internal and public DNS records needed for cloud-hosted identity services.
 ---
 
 FreeIPA is the open source version of RedHat's identity management solution, which nicely integrates several open sources services that are important for managing an intranet: 389 LDAP Directory Server, MIT Kerboros, NTP, DNS, SSSD and others. 

@@ -8,6 +8,7 @@ Tags: Software, OSX
 Slug: fixing-problems-after-upgrading-from-snow-leopard-to-mountain-lion
 Alias: /blog/2012/09/fixing-problems-after-upgrading-snow-leopard-mountain-lion
 Lang: en
+Summary: Fixes for problems encountered when upgrading a MacBook Pro from Snow Leopard to Mountain Lion, including broken SSH public-key access.
 ---
 
 The IT department of my company has been urging us Mac users to upgrade OSX to Lion a long time ago. After getting a few papers submitted last week, I finally got around to upgrade the Snow Leopard for my Macbook Pro work machine. Since I couldn't find Lion on Apple Store any more, I decided to go straight to Mountain Lion. The download and installation went smoothly, and most things seemed to work after the upgrade. Here are a few things that broke and the fixes I found.

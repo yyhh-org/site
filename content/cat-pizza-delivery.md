@@ -7,6 +7,7 @@ Category: experience
 Tags: Pets
 Slug: cat-pizza-delivery
 Lang: en
+Summary: Mayori takes over a pizza box, finding a cozy new bed that comes with the tempting smell of freshly baked pizza.
 ---
 
 Cat in a pizza box?

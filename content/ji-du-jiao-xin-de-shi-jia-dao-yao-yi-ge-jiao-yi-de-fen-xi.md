@@ -8,6 +8,7 @@ Tags: Religion
 Slug: ji-du-jiao-xin-de-shi-jia-dao-yao-yi-ge-jiao-yi-de-fen-xi
 Alias: /blog/2008/04/%E5%AB%89%E5%A6%92%E6%95%99%E4%BF%A1%E7%9A%84%E6%98%AF%E5%81%87%E9%81%93%E4%B9%88-%E4%B8%80%E4%B8%AA%E6%95%99%E4%B9%89%E7%9A%84%E5%88%86%E6%9E%90
 Lang: zh
+Summary: 通过对比福音书中的耶稣言论与保罗书信，探讨基督教教义的形成，以及信徒行为与耶稣教导之间的差异。
 ---
 
 面对嫉妒教徒(1)的所作所为，很多人很疑惑，为什么这些自称以耶酥为楷模的人群，  

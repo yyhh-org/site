@@ -8,6 +8,7 @@ Tags: Programming, Java
 Slug: jbuilder-could-not-reserve-enough-space-for-object-heap
 Alias: /blog/2005/01/jbuilder-could-not-reserve-enough-space-object-heap
 Lang: en
+Summary: Diagnosing JBuilder 2005 Foundation's failure to start on Windows XP after the JVM reports that it cannot reserve enough space for the object heap.
 ---
 
 I have been using Borland programming environment since 1994, beginning with its Turbo C 2.0, then Borland C++, and now JBuilder. This company has always produced programmer friendly products. Comparing with other products, Borland's offering are always the most natural, and the easiest to get the job done. At least to me.  

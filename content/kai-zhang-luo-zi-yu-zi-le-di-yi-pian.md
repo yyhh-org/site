@@ -7,6 +7,7 @@ Category: notebook
 Slug: kai-zhang-luo-zi-yu-zi-le-di-yi-pian
 Alias: /blog/2007/10/%E5%BC%80%E5%BC%A0%E5%95%B0%E3%80%82%E8%87%AA%E5%A8%B1%E8%87%AA%E4%B9%90%E7%AC%AC%E4%B8%80%E7%AF%87
 Lang: zh
+Summary: 博客开张的第一篇短记，打算先把过去写过的一些文字转过来，看看能坚持多久。
 ---
 
 看看能坚持多久，呵呵。先把一些过去写的转过来吧。

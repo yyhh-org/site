@@ -9,6 +9,7 @@ Slug: museum-and-cultural-tour-of-bulgaria-in-9-days-day-1
 Alias: /blog/2013/09/museum-and-cultural-tour-bulgaria-9-days-day-1
 Series: bulgaria-tour-2013
 Lang: en
+Summary: The first day of a nine-day cultural tour of Bulgaria begins with photos from Sofia, the city of lions.
 ---
 
 <span style="font-family: georgia,palatino; font-size: medium;">(1) Sign of Sofia --- City of Lion.</span>

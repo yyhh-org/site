@@ -6,6 +6,7 @@ Date: 2021-11-05T14:49:00.957Z
 Author: Huahai
 Category: experience
 Tags: Clojure,Datalevin,Full-text Search
+Summary: The design of Datalevin's compact Clojure search engine, its T-Wand algorithm, and the full-text search benchmarks comparing it with Apache Lucene.
 ---
 
 ![Query Throughput](/images/QueryPerSecond.png)

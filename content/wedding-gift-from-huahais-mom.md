@@ -8,6 +8,7 @@ Tags: Extraordinary, Family
 Slug: wedding-gift-from-huahais-mom
 Alias: /blog/2008/11/wedding-gift-huahais-mom
 Lang: en
+Summary: A trip to China brings home a wedding gift from Huahai's parents, a special Olympic umbrella.
 ---
 
 <img src="https://farm4.static.flickr.com/3139/3028284061_29fe78f4bd.jpg?v=0" width="230" height="235" />

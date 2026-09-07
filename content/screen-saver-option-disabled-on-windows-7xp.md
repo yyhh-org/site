@@ -8,6 +8,7 @@ Tags: Software, Windows
 Slug: screen-saver-option-disabled-on-windows-7xp
 Alias: /blog/2012/08/screen-saver-option-disabled-windows-7-xp
 Lang: en
+Summary: Recording a registry fix used when Windows 7 or XP grays out the screen saver's logon-on-resume option and triggers workplace security alerts.
 ---
 
 For unknown reason, my machines would suddenly disable their screen saver options (e.g. with the "on resume, display log on screen" check box grayed out). Whenever this happens, it would trigger the security alert and I will get a warning from the IT department to fix the issue.

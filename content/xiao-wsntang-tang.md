@@ -8,6 +8,7 @@ Tags: Pets
 Slug: xiao-wsntang-tang
 Alias: /blog/2007/12/%E5%B0%8F%EF%BC%82wsn%EF%BC%82%E5%94%90%E5%94%90
 Lang: zh
+Summary: 家里暂时寄养美猫Cassandra，唐唐既想亲近又害怕被哈，闹出一连串让巴巴麻麻哭笑不得的故事。
 ---
 
 自从家里来了一位美猫JJ Cassandra之后 （暂时寄养的猫），

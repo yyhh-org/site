@@ -8,6 +8,7 @@ Tags: Linux
 Slug: a-thinkpad-x61-hotkeys-solution-on-debian-linux
 Alias: /blog/2007/10/thinkpad-x61-hotkeys-solution-debian-linux
 Lang: en
+Summary: Getting ThinkPad X61 hotkeys working on Debian Linux with ACPI tools after tpb fails to handle the newer laptop's volume controls.
 ---
 
 On my old Thinkpad X31, there is a nice little program called [tpb](https://www.nongnu.org/tpb/) that makes all Thinkpad hotkeys work on Linux. However, that project hasn't been updated for two years, and tpb does not work with the newer Thinkpad models. On my new X61, notably, the sound volume controls are broken: volume UP and volume Down keys produce the same effect - bring the volume to the half level. It seems that piece of hardware called nvram, on which tpb relies, now produces different values than older models. So, I have to ditch tpb. After some trial and errors, I worked out a mixed solution that made all keys work as expected.

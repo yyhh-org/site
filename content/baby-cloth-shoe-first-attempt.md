@@ -7,6 +7,7 @@ Category: experience
 Tags: Childcare, Craft
 Slug: baby-cloth-shoe-first-attempt
 Lang: en
+Summary: A first attempt at sewing baby cloth shoes as a gift for a niece, finished with handmade pompoms and notes on following the tutorial.
 ---
 
 As a busy computer scientist, I don't really get to exercise my inner Martha too much. But I did somehow manage to make my first ever attempt on sewing projects --- baby cloth shoes (as gift for my niece).

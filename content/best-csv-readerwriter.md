@@ -8,6 +8,7 @@ Tags: Programming
 Slug: best-csv-readerwriter
 Alias: /blog/2011/10/best-csv-reader-writer
 Lang: en
+Summary: A bookmarked CSV reader and writer recommended by a colleague, saved for a future trial and review.
 ---
 
 My colleague has highly recommended to me the following CSV reader/writer: <https://supercsv.sourceforge.net/>

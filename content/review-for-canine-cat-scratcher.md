@@ -8,6 +8,7 @@ Tags: Shopping, Pets
 Slug: review-for-canine-cat-scratcher
 Alias: /blog/2012/01/review-canine-cat-scratcher
 Lang: en
+Summary: A household review of the Canine Cat Scratcher, covering its modern design, ordering experience, and how Tom and Mayori received it.
 ---
 
 **Updated on 09/10/2013**: It's [now only 295 USD](https://thecompanyofpets.com/), with 100 USD discount!

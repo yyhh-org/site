@@ -7,6 +7,7 @@ Category: experience
 Tags: Extraordinary, Family, Pets 
 Slug: earth-quake
 Lang: en
+Summary: An ordinary evening turns frightening when an earthquake shakes the apartment, sending the kittens into hiding and their owner searching for them.
 ---
 
 At 8:03pm, the kittens were feed with their main course (dry food) and dessert (can food and egg). I just finished cooking my own dinner, put the serving tray with my dinner to the coffee table, and was about to enjoy my meal while chatting with Huahai on my cell. It just seem to be a normal weekday night for me these days. 

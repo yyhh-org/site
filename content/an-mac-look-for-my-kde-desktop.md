@@ -8,6 +8,7 @@ Tags: Linux
 Slug: an-mac-look-for-my-kde-desktop
 Alias: /blog/2007/12/mac-look-my-kde-desktop
 Lang: en
+Summary: Giving a Debian KDE desktop the look of Mac OS X Tiger with the Baghira widget theme, coordinated colors, and Compiz window decorations.
 ---
 
 Although I have never laid my hands on an Apple computer, I have seen people going crazy about them. I remember seeing some kids shouting hysterically in front of Apple store on the release day of Tiger a few years ago. The user interface of Apple's OS is said to be one of the selling points. So when I was feeling tired of Mepis Linux's default look last night, I decided to try an OS X look for a change. It turned out to be relatively easy to do.

@@ -8,6 +8,7 @@ Tags: Politics
 Slug: how-to-save-millions-per-year-for-your-newspaper
 Alias: /blog/2008/04/how-save-millions-year-your-newspaper
 Lang: en
+Summary: A satirical proposal for an automatic news writer critiques formulaic coverage of China and the 2008 Olympic torch relay.
 ---
 
 Dear CEO of XXX News:

@@ -6,6 +6,7 @@ Date: 2021-02-08T05:41:23.469Z
 Author: Huahai
 Category: notebook
 Tags: Clojure, Java, GraalVM
+Summary: Working with native C interfaces from Java and Clojure through GraalVM, using Datalevin's native-image development as a practical example.
 ---
 One of the latest fashions in the Java world is [GraalVM](https://www.graalvm.org/). For someone who has been around, I still remember the "Write once, run anywhere" slogan of Java virtual machine. Apparently, the wheel has spun back, now people want to write native code in Java, which has to be compiled to different machine codes in different platforms.
 

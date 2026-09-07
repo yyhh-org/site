@@ -7,6 +7,7 @@ Category: experience
 Tags: Pets
 Slug: winking-tom-superman
 Lang: en
+Summary: A playful pairing of photos featuring a winking Tom and Superman.
 ---
 
 <img src="https://farm4.static.flickr.com/3003/2579895048_acecea6edc.jpg?v=0" width="500" height="333" />

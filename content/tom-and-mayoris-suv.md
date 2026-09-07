@@ -7,6 +7,7 @@ Category: experience
 Tags: Pets
 Slug: tom-and-mayoris-suv
 Lang: en
+Summary: Tom and Mayori show off their human-powered SUV in a lighthearted photo post about getting around together.
 ---
 
 <span style="font-size: 0.9em; margin-top: 0px;">[  

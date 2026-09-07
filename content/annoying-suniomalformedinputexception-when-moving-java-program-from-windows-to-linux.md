@@ -8,6 +8,7 @@ Tags: Programming, Java
 Slug: annoying-suniomalformedinputexception-when-moving-java-program-from-windows-to-linux
 Alias: /blog/2007/11/annoying-sun-io-malformedinputexception-when-moving-java-program-windows-linux
 Lang: en
+Summary: Tracking down a Java MalformedInputException after moving a file-copying program from Windows to Linux, and resolving it with a locale change.
 ---
 
 These day I write Java programs on my local machine and then move them to a Linux server to run experiments. This routine works fine so far. However, when I ran one of the progams, which involves coping one file from one directory to another, I kept on the following error message:

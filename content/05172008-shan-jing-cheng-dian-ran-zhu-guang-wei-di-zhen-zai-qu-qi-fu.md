@@ -8,6 +8,7 @@ Alias: /blog/2008/05/05-17-2008-%E5%B1%B1%E6%99%AF%E5%9F%8E%E7%82%B9%E7%87%83%E7
 Title: 05.17.2008 山景城点燃烛光为地震灾区祈福
 Category: experience
 Tags: Extraordinary
+Summary: 2008年5月17日山景城烛光祈福活动的照片，记录人们为地震灾区点燃烛光、寄托祝愿的夜晚。
 ---
  
 

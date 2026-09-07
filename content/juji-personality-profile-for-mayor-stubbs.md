@@ -8,6 +8,7 @@ Tags: Pets, Juji
 Slug: juji-personality-profile-for-mayor-stubbs
 Alias: /blog/2015/03/juji-personality-profile-mayor-stubbs
 Lang: en
+Summary: Juji builds a personality profile from Mayor Stubbs' tweets, giving the feline mayor a fitting description as a curious investigator.
 ---
 
 What makes Mayor Stubbs special?

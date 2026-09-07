@@ -7,6 +7,7 @@ Category: experience
 Tags: Pets
 Slug: laser-pointer-drove-kittens-crazy
 Lang: en
+Summary: A video of the kittens enthusiastically chasing a laser pointer, with a reminder to keep the light away from their eyes.
 ---
 
 See for yourself. Be careful though, you don't want to hurt their precious eyes.

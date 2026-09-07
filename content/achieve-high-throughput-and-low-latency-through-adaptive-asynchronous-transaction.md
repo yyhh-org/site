@@ -6,6 +6,7 @@ Date: 2025-02-11T16:15:00.000Z
 Author: Huahai
 Category: experience
 Tags: Datalevin,Database,Clojure,
+Summary: How Datalevin uses adaptive batching and asynchronous transactions to improve write throughput and latency, with benchmarks examining the trade-offs.
 ---
 
 <img src="/images/effective-throughput.png" alt="Effective Throughput" width="800"/>

@@ -8,6 +8,7 @@ Tags: Pets
 Slug: jie-shao-jiao-jiao
 Alias: /blog/2007/10/%E4%BB%8B%E7%BB%8D%E5%A8%87%E5%A8%87
 Lang: zh
+Summary: 娇娇的自我介绍：一只感情丰富、喜欢撒娇的小猫，讲述她的饮食偏好、入家经历和与唐唐的相处。
 ---
 
 ![jiaojiao](https://farm3.static.flickr.com/2296/2253399526_058f95350d.jpg)

@@ -8,6 +8,7 @@ Tags: Editor, Spacemacs, Programming, Clojure
 Slug: switching-to-spacemacs-from-vim-for-clojureclojurescript-development
 Alias: /blog/2015/08/switching-spacemacs-vim-clojure-clojurescript-development
 Lang: en
+Summary: Why a longtime Vim user moved to Spacemacs for Clojure and ClojureScript development, seeking more complete debugging and refactoring tools.
 ---
 
 Clojure has been my primary programming language for a couple of years now. During this period, I have relied on my trusty Vim text editor as the development environment. Coding Clojure in Vim had been an enjoyable experience with these excellent Vim plugins:

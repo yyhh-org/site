@@ -8,6 +8,7 @@ Tags: SysAdmin, Linux
 Slug: centralized-authentication-with-ldap-nfs-samba-part-ii-nfs
 Sereis: ldap-nfs-samba
 Lang: en
+Summary: Using NFS and an automounter to give users the same home directory across Linux machines in a centralized authentication setup.
 ---
 
 NFS (Network File System) is an old Unix technology that enables a machine to mount a remote file system. This is desirable for centralized authentication, as the user can access the same home directory no matter which machine he uses.

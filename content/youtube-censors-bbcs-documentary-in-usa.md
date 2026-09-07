@@ -8,6 +8,7 @@ Tags: Politics
 Slug: youtube-censors-bbcs-documentary-in-usa
 Alias: /blog/2008/03/youtube-censors-bbcs-documentary-usa
 Lang: en
+Summary: A reaction to YouTube blocking U.S. access to the BBC documentary A Year in Tibet while viewers in the U.K. could still watch it.
 ---
 
 BBC is broadcasting a documentary series titled "A year in Tibet". From [the program description on BBC Web site,](https://www.bbc.co.uk/bbcfour/listings/programme.shtml?day=today&filename=20080306/20080306_2100_4544_2145_60&service_id=4544) this documentary shows the real life today in Tibet. The first segment was shown on Mar. 6. Not surprisingly, there is a Youtube video of this first show. Surprisingly, if you attempt to access this video in US, Youtube says ["This video is not available in your country."](https://youtube.com/?v=HZ98sP2GSCE) Interestingly, people in UK have confirmed that this video is accessible in UK!

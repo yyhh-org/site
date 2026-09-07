@@ -8,6 +8,7 @@ Tags: Psychology, Science, Book
 Slug: du-gai-nian-kong-jian-0
 Alias: /blog/2011/02/%E8%AF%BB%E3%80%8A%E6%A6%82%E5%BF%B5%E7%A9%BA%E9%97%B4%E3%80%8B-%EF%BC%8D-0
 Lang: zh
+Summary: 初读《概念空间》的笔记：从几何角度理解认知，比较符号、几何和神经网络三条道路，并思考计算机实现的挑战。
 ---
 
 Peter Gardenfors, Conceptual Space: The Geometry of Thought, MIT Press, 2004

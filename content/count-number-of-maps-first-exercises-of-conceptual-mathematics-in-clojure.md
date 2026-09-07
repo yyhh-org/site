@@ -8,6 +8,7 @@ Tags: Math, CategoryTheory, Programming, Clojure
 Slug: count-number-of-maps-first-exercises-of-conceptual-mathematics-in-clojure
 Alias: /blog/2012/05/count-number-maps-first-exercises-conceptual-mathematics-clojure
 Lang: en
+Summary: Using Clojure to count maps between sets while working through early exercises in Lawvere's Conceptual Mathematics and learning category theory.
 ---
 
 As [previously mentioned](https://yyhh.org/blog/2012/04/start-learning-category-theory), I am learning category theory, beginning with [Lawvere](https://en.wikipedia.org/wiki/William_Lawvere)'s [Conceptual Mathematics](https://www.amazon.com/Conceptual-Mathematics-First-Introduction-Categories/dp/052171916X) book. This is a very elementry book that assumes almost nothing as a background. However, it is still a math book, which requires doing some exercises. Since the book provides no answer to exercises, I decide to make my own and post them here as I did them. Hopefully someone will find them useful.

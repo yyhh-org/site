@@ -8,6 +8,7 @@ Tags: Research, MachineLearning
 Slug: machine-learning-that-matters
 Alias: /blog/2012/07/machine-learning-matters
 Lang: en
+Summary: Reflections on Machine Learning That Matters and why computer science research should have practical impact, with encouragement to try industrial internships.
 ---
 
 I happen to come across this excellent article from this year's ICML on [Machine Learning that Matters](https://www.wkiri.com/research/papers/wagstaff-MLmatters-12.pdf). I encourage everyone, especially computer science Ph.D students, to read it.

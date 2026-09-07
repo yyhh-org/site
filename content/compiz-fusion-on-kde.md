@@ -8,6 +8,7 @@ Tags: Linux, Xorg
 Slug: compiz-fusion-on-kde
 Alias: /blog/2007/10/compiz-fusion-kde
 Lang: en
+Summary: Installing and trying Compiz-Fusion on Debian KDE to manage a crowded ThinkPad X61 desktop, with reflections on the usefulness of 3D window effects.
 ---
 
 **Introduction**  

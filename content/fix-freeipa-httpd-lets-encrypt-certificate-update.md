@@ -6,6 +6,7 @@ Date: 2021-01-01T22:58:21.498Z
 Author: Huahai
 Category: notebook
 Tags: FreeIPA,letsencrypt
+Summary: Investigating FreeIPA Web server and login failures after a Let's Encrypt certificate renewal, with steps to repair certificate trust.
 ---
 For a public facing Web interface of FreeIPA server, it is desirable to use a 3rd party SSL certificate issued by a commonly accepted certificate authority, rather than using the server's own. [Let's Encrypt](https://letsencrypt.org/) provides free SSL certificate for this purpose.
 

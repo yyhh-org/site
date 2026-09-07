@@ -7,6 +7,7 @@ Category: experience
 Tags: Pets, Events
 Slug: tails-no-tales-cat-show
 Lang: en
+Summary: Photos and impressions from a first visit to the Tails & No Tales cat show, plus a peacock-feather souvenir for Tom and Mayori at home.
 ---
 
 This is the first time we have even been to a cat show. We have enjoyed it a lot!

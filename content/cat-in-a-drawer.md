@@ -8,6 +8,7 @@ Tags: Pets
 Slug: cat-in-a-drawer
 Alias: /blog/2011/07/cat-drawer
 Lang: en
+Summary: Mayori finds a new place to play hide-and-seek in the top drawer of the bedroom dresser.
 ---
 
 Mayori loves to play hide-and-seek with us. The top drawer of our dresser is now her new hiding place.

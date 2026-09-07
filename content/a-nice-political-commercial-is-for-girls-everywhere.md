@@ -8,6 +8,7 @@ Tags: Politics
 Slug: a-nice-political-commercial-is-for-girls-everywhere
 Alias: /blog/2008/02/nice-political-commercial-girls-everywhere
 Lang: en
+Summary: A Hillary Clinton campaign commercial prompts a reflection on the role models girls see in politics and popular culture.
 ---
 
 <https://www.youtube.com/watch?v=l9z-Aatd0wA>

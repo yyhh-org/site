@@ -8,6 +8,7 @@ Tags: Pets
 Slug: its-official-tom-is-a-nebelung
 Alias: /blog/2012/03/its-official-tom-nebelung
 Lang: en
+Summary: A cat-breed book in the vet's waiting room leads Tom's family to identify him as a Nebelung, comparing his appearance and personality with the breed.
 ---
 
 When [Tom](https://yyhh.org/blog/2011/07/cat-big-paws) (唐唐）was adopted from the animal shelter, his papers listed him as an "American Domestic Long Hair". As new cat parents, we were eager to find out his true breed. We searched and searched online, and identified him as a [Chartreux](https://en.wikipedia.org/wiki/Chartreux), based on his fur color and personality. We knew that Chartreux is a short hair cat but Tom has long hair, but we thought Tom must not have been a pure breed. We always joked about Tom's purpoted French origin and attributed his love of bread and butter to his French ancestry.

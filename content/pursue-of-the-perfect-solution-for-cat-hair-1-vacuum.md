@@ -8,6 +8,7 @@ Tags: House, Pets, Appliance
 Slug: pursue-of-the-perfect-solution-for-cat-hair-1-vacuum
 Alias: /blog/2012/08/pursue-perfect-solution-cat-hair-1-vacuum
 Lang: en
+Summary: Experiences with several vacuum cleaners in a home with two long-haired cats, comparing cleanup on carpet, hardwood, and other surfaces.
 ---
 
 If you have one or more long hair cats at home, like our Mayori and Tom, you probably share the same dream as us --- a house without cat hair, at least a house without having cat hair everywhere.

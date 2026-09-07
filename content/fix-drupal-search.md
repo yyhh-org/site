@@ -7,6 +7,7 @@ Category: notebook
 Tags: SysAdmin, Drupal
 Slug: fix-drupal-search
 Lang: en
+Summary: Restoring Drupal search by reducing the number of items indexed per cron run and clearing the database variables left by a stuck cron job.
 ---
 
 Today I tried to search "clojure" using the search box at the top right corner, but could not find anything. I know I wrote a few posts on Clojure recently, so there must be something wrong with the search functionality here. This is a Drupal site, and this should be an easy fix. Indeed, I quickly figured out the problem and solved it.Here is what Idid.

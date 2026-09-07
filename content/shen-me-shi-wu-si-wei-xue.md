@@ -7,6 +7,7 @@ Author: Huahai
 Category: opinion
 Tags: China,History,Science,Culture,May Fourth Movement,Jesuits
 Slug: shen-me-shi-wu-si-wei-xue
+Summary: 阐释作者所谓“五四伪学”的历史叙事，追溯其与传教活动的联系，并质疑将西方视为科学与理性唯一源头的观念。
 ---
 
 “五四伪学”是我用来描述一种流行历史叙事和世界观的一个名词和概念。

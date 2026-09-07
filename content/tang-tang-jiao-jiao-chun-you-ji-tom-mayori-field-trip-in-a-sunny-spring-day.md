@@ -8,6 +8,7 @@ Tags: Travel, Pets
 Slug: tang-tang-jiao-jiao-chun-you-ji-tom-mayori-field-trip-in-a-sunny-spring-day
 Alias: /blog/2008/03/%E5%94%90%E5%94%90%E5%A8%87%E5%A8%87%E6%98%A5%E6%B8%B8%E8%AE%B0-tom-mayori-field-trip-sunny-spring-day
 Lang: zh
+Summary: 唐唐和娇娇在春日外出踏青，两哩路上闻花草、遇狗狗、认识路人，留下第一次春游的照片与小记。
 ---
 
 春天来到，野花微笑，小鸟欢叫，唐唐娇娇，春游去了！

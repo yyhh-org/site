@@ -6,6 +6,7 @@ Date: 2020-04-09T21:47:15.849Z
 Author: Huahai
 Category: notebook
 Tags: SSG, Netlify CMS, Jenkins, Github, nginx, SysAdmin
+Summary: Adding live draft preview links to self-hosted Netlify CMS through GitHub commit statuses, Jenkins builds, and nginx hosting.
 ---
 If you are using a self-hosted  Netlify CMS as the online editor for your SSG powered Website and you are using the editorial workflow (you have `publish_mode: editorial_workflow` in your config.yml), a pain point is that you do not see a preview of the live page when the page is in draft. Unlike the master branch that you can  see the live page after it is built, the draft is committed to a different git branch so you do not have a link to the built page.
 

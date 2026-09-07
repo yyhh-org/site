@@ -8,6 +8,7 @@ Tags: Philosophy, Religion, China
 Slug: yi-ge-guan-yu-ru-jia-he-xin-jie-zhi-guan-de-dui-hua
 Alias: /blog/2011/02/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E5%84%92%E5%AE%B6%E6%A0%B8%E5%BF%83%E4%BB%B7%E5%80%BC%E8%A7%82%E7%9A%84%E5%AF%B9%E8%AF%9D
 Lang: zh
+Summary: 整理一场关于儒家核心价值观的论坛对话，围绕“己所不欲，勿施于人”、普世价值与中国传统文化展开讨论。
 ---
 
 下面是一个中文BBS上发生的一个关于中国传统文化和价值观的对话，我简单编辑了一下，贴在这儿，也许对某些人有所助益。

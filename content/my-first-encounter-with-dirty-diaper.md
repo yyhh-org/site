@@ -8,6 +8,7 @@ Tags: House, Etiquette
 Slug: my-first-encounter-with-dirty-diaper
 Alias: /blog/2013/01/my-first-encounter-dirty-diaper
 Lang: en
+Summary: Discovering dirty diapers left in the guest bathroom after a party prompts a reflection on considerate disposal when visiting someone else's home.
 ---
 
 Today I have encountered dirty diaper for the very first time in my life and it is not pretty.  While doing routine cleaning of our guest bathroom, I was shocked to discover a stack of dirty diaper deposited in the trash can in our guest bathroom.  I am still struggling on how to get rid of the terrible smell of the trash can after dumping the diapers. We do not have anyone in need of diaper in the house.

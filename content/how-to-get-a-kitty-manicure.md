@@ -8,6 +8,7 @@ Tags: Pets
 Slug: how-to-get-a-kitty-manicure
 Alias: /blog/2013/09/how-get-kitty-manicure
 Lang: en
+Summary: Tom presents a playful photo guide to his weekly kitty manicure and pedicure, with relaxation, paw massages, and a little help from his mom.
 ---
 
 Speaker: Tom

@@ -7,6 +7,7 @@ Category: notebook
 Tags: Linux, Xorg
 Slug: lcd-and-x-displaysize
 Lang: en
+Summary: Adjusting Xorg's DisplaySize setting to match an LCD's physical dimensions while troubleshooting blurry text and unexpected font sizes on Linux.
 ---
 
 Under Linux, have you ever felt that stuff on your brand new LCD display looked blurry, especially with small font sizes, the words start to look fuzzy after a while? Chances are that you did not set the LCD with its optimal resolution. There is an easy fix:  

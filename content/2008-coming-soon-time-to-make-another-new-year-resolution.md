@@ -7,6 +7,7 @@ Category: experience
 Tags: Extraordinary
 Slug: 2008-coming-soon-time-to-make-another-new-year-resolution
 Lang: en
+Summary: Looking back on a year of learning Spanish and setting a goal for a healthier, happier 2008 with better balance between work and home.
 ---
 
 Year 2008 is less than 12 hours away for me. In fact, it is already 2008 in most part of the world. For many people, it is time to make their new year resolution. It is true for me as well.

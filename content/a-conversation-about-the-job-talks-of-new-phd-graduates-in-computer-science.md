@@ -8,6 +8,7 @@ Tags: Research, ComputerScience
 Slug: a-conversation-about-the-job-talks-of-new-phd-graduates-in-computer-science
 Alias: /blog/2011/03/conversation-about-job-talks-new-ph-d-graduates-computer-science
 Lang: en
+Summary: A conversation about common weaknesses in computer science Ph.D. job talks, from missing the big picture to explaining research without concrete examples.
 ---
 
 Yunyao and I work in a research center of a major technology company. At this time of a year, we attend job talks every week. These talks are technical presentations given by candidates for our research or development positions, as part of their two day job interviews here. Not surprisingly, the majority of the talks are given by newly graduated computer science PhDs who have published a lot of technical papers in premier computer science conferences. After a while, we kind of see some common deficiencies of these new graduates. Below is an instant messaging conversation we had right after attending a talk, which I hope would be helpful for some people.

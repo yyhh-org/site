@@ -8,6 +8,7 @@ Tags: House
 Slug: commonly-used-forms-for-home-remodelingrepairs
 Alias: /blog/2012/06/commonly-used-forms-home-remodeling-repairs
 Lang: en
+Summary: A reference list of contract and payment forms gathered while managing home remodeling and repair projects.
 ---
 
 As a new home owner, we have been going through a lot of home remodeling and repair projects. I found myself often search online for the same set of forms again and again. This post is to record all the forms that I often use and sometimes difficult to found.

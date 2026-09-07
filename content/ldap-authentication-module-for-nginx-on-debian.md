@@ -6,6 +6,7 @@ Date: 2020-10-04T23:33:54.502Z
 Author: Huahai
 Category: notebook
 Tags: LDAP, Nginx, Debian
+Summary: Building an nginx Debian package with LDAP authentication and virtual-host traffic statistics modules on Debian 10 Buster.
 ---
 To control access to various internal Web sites of a company, a simple method is to enable LDAP authentication on the Web server, so that the company directory can be brought to bear and there is no need to create individual accounts for employees on different systems.
 

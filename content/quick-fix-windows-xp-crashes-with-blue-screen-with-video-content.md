@@ -8,6 +8,7 @@ Tags: Software, Windows
 Slug: quick-fix-windows-xp-crashes-with-blue-screen-with-video-content
 Alias: /blog/2011/09/quick-fix-windows-xp-crashes-blue-screen-video-content
 Lang: en
+Summary: Troubleshooting Windows XP blue-screen crashes triggered by video in Firefox, after the error report points to watchdog.sys.
 ---
 
 For some reason, my main working machine, a Windows XP desktop, recently  started to crash a lot followed by the blue screen of death. The error message output at the blue screen does not seem to be helpful.  

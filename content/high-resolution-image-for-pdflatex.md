@@ -8,6 +8,7 @@ Tags: LaTeX
 Slug: high-resolution-image-for-pdflatex
 Alias: /blog/2012/08/high-resolution-image-pdflatex
 Lang: en
+Summary: Notes on a pdfLaTeX pixel-dimension setting used while troubleshooting a blurry screenshot in a camera-ready conference paper.
 ---
 
 While preparing the camera-ready version for our CIKM demo, my colleagues and I found that the screenshot included in our paper appeared to be fairly blurry in the pdf version, even though the original .jpg file looks fine.

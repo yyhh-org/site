@@ -7,6 +7,7 @@ Category: opinion
 Tags: GTD
 Slug: 3-time-saving-tools-for-busy-professionals
 Lang: en
+Summary: How Chore Buster, Mint, and Farm Fresh to You help two busy professionals manage household chores, track finances, and save time on grocery shopping.
 ---
 
 As a busy professional, I am consistently looking for ways to save time. Below are 3 time-saving tools that I have found most useful.

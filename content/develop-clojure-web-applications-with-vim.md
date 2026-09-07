@@ -8,6 +8,7 @@ Tags: Programming, Clojure, Editor, Vim
 Slug: develop-clojure-web-applications-with-vim
 Alias: /blog/2011/05/develop-clojure-web-applications-vim
 Lang: en
+Summary: Getting started with Clojure Web development in Vim, including Leiningen project setup and the tools used for a visual analytics application.
 ---
 
 I recently started to learn [clojure](https://clojure.org) programming. It is an interesting experience. Ever since I learned computer programming almost 20 years ago, in Pascal, on a VAX minicomputer terminal, I have not experienced this newbie sensation with a computer language. The sense of excitement and novelty is high, and the eagerness to put the language to use is higher still. So for my new project at work, I am doing it with clojure.

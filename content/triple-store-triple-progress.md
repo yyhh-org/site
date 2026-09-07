@@ -6,6 +6,7 @@ Date: 2026-01-19T16:00:00.000Z
 Author: Huahai
 Category: experience
 Tags: Datalevin,Database,Datalog,Triplestore,Graph,Rules
+Summary: Progress on Datalevin's rule engine, storage, and queries brings relational, graph, and deductive workloads closer together in a single triplestore.
 ---
 
 ![Interactive Short Query Performance](/images/interactive-short-query-performance.svg)

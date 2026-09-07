@@ -8,6 +8,7 @@ Tags: Pets, Family
 Slug: valentines-day-with-the-cats
 Alias: /blog/2008/02/valentines-day-cats
 Lang: zh
+Summary: 情人节有唐唐和娇娇作伴，两只猫对巴巴送给麻麻的礼物各有评价，一边闻香鉴定，一边嫌它不能吃还带刺。
 ---
 
 Another lonely Valentine's day for me. Fortunately, the cats are with me.

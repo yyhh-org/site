@@ -8,6 +8,7 @@ Tags: Extraordinary
 Slug: san-fan-wiproshou-ma-bao-gao-my-first-marathon-san-francisco-wipro-marathon-06172013
 Alias: /blog/2013/07/%E4%B8%89%E8%97%A9wipro%E9%A6%96%E9%A9%AC%E6%8A%A5%E5%91%8A-my-first-marathon-san-francisco-wipro-marathon-06-17-2013
 Lang: zh
+Summary: 从几乎不跑步到参加三藩全马，记录十六周训练、赛前准备与第一次马拉松比赛中的经历和感受。
 ---
 
 \[前序\]  

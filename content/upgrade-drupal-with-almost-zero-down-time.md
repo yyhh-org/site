@@ -8,6 +8,7 @@ Tags: SysAdmin, Drupal
 Slug: upgrade-drupal-with-almost-zero-down-time
 Alias: /blog/2011/07/upgrade-drupal-almost-zero-down-time
 Lang: en
+Summary: Upgrading Drupal 5 to 6 with minimal downtime by preparing and testing a copy of the site before moving it into production.
 ---
 
 This site was setup in 2007 with Drupal 5, and it has not been upgraded until today. I did not feel the need to upgrade since this is just a personal blog. A few days ago I wanted to install a module, but Drupal version 6 is required, so I thought it's finally the time to upgrade Drupal. 

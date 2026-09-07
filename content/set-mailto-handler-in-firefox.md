@@ -8,6 +8,7 @@ Tags: Firefox, Linux
 Slug: set-mailto-handler-in-firefox
 Alias: /blog/2007/11/set-mailto-handler-firefox
 Lang: en
+Summary: Configuring Firefox or Debian's Iceweasel to open mailto links in a chosen desktop email program, using KMail as the example.
 ---
 
 In order to click "mailto:" links on Web pages to launch an email program, Firefox (or Iceweasel on Debian) needs to be told which email program to use. 

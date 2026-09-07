@@ -8,6 +8,7 @@ Tags: Linux
 Slug: kmail-hangs-due-to-missing-loopback-interface
 Alias: /blog/2007/11/kmail-hangs-due-missing-loopback-interface
 Lang: en
+Summary: Restoring a missing loopback interface fixes KMail hangs after removing the mepis-network package deletes the network interfaces configuration.
 ---
 
 My */etc/network/interfaces* got deleted when I removed *mepis-network* package. Everything was fine, except that kmail would hang since IP address 127.0.0.1 doesn't exist. It took me half an hour to figure it out. Had to create the file with these lines in it:

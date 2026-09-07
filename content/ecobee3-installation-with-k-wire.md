@@ -8,6 +8,7 @@ Alias: /blog/2017/11/ecobee3-installation-k-wire
 Title: Ecobee3 installation with K wire
 Category: experience
 Tags: House, Appliance
+Summary: Notes from installing an Ecobee3 smart thermostat in a home where the old thermostat used an undocumented K wire.
 ---
 
 As part of our house modernization process, we bought an Ecobee3 Wifi enabled smart thermostat. We hope that this small device will help reduce the size of our utility bill.  The product looks very simple, but it comes with three additional sensors that can be placed in different rooms, and these can even detect room occupancy!

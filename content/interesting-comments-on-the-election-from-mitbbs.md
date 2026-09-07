@@ -8,6 +8,7 @@ Tags: Politics
 Slug: interesting-comments-on-the-election-from-mitbbs
 Alias: /blog/2008/03/interesting-comments-election-mitbbs
 Lang: zh
+Summary: 收集未名空间论坛上关于2008年美国大选的有趣评论，话题涉及奥巴马、希拉里与媒体报道。
 ---
 
 So funny!

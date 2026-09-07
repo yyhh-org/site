@@ -6,6 +6,7 @@ Date: 2024-09-10T18:49:00.957Z
 Author: Huahai
 Category: experience
 Tags: Datalevin,Database,Clojure,
+Summary: How Datalevin's triplestore became competitive with PostgreSQL on the Join Order Benchmark, with a look at Datalog and complex query optimization.
 ---
 
 <img src="/images/job-means.png" alt="JOB performance" width="450"/>

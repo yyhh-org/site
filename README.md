@@ -37,6 +37,8 @@ Run or click on `write-blog` command
 
 Then point browser to http://localhost:8000/admin to start writing the blog using a Web UI.
 
+Fill in the Description field with one or two short sentences in the post's language. When editing Markdown directly, use a `Summary:` field in the front matter. The theme uses it for article previews and description metadata.
+
 After finish writing and hit publish button, the blog is published locally,  point browser to http://localhost:8000 to view the blog live locally.
 
 The dev-server supports auto-reloading, and will rebuild your documentation whenever anything changes. It's a bit slow, need to wait for 30 seconds or so for the build to finish.

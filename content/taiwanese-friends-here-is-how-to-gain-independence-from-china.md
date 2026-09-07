@@ -6,6 +6,7 @@ Date: 2021-03-31T18:23:22.545Z
 Author: Huahai
 Category: opinion
 Tags: politics
+Summary: An opinion essay on Taiwan's independence, proposing changes to relations with China and cultural identity alongside a willingness to fight for statehood.
 ---
 
 ## Is it possible for Taiwan to gain independence from China?

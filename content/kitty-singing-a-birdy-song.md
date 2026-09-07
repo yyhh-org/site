@@ -8,6 +8,7 @@ Tags: Pets
 Slug: kitty-singing-a-birdy-song
 Alias: /blog/2008/06/kitty-singing-birdy-song
 Lang: en
+Summary: A short video post featuring Mayori, the family's little cat who loves to sing.
 ---
 
 偶家的娇娇爱唱歌

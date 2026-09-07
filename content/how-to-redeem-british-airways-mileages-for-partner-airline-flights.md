@@ -8,6 +8,7 @@ Tags: Travel, Shopping
 Slug: how-to-redeem-british-airways-mileages-for-partner-airline-flights
 Alias: /blog/2011/06/how-redeem-british-airways-mileages-partner-airline-flights
 Lang: en
+Summary: An account of finding British Airways mileage redemptions on partner airlines, using American Airlines routes to locate alternatives to high-fee BA flights.
 ---
 
 I have accumulated over 60,000 miles on British Airlines Executive Club reward account for a while now, but keep on having problem redeeming them. First of all, it is difficult to find any reward flight available; secondly, the fee is extremely high --- for a flight from SFO to LHR, I would have to pay 50000 miles + over $600 fee, while the same flight costs less than $1000 when paying with cash.

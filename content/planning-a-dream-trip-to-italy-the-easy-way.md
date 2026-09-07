@@ -8,6 +8,7 @@ Tags: Travel
 Slug: planning-a-dream-trip-to-italy-the-easy-way
 Alias: /blog/2011/10/planning-dream-trip-italy-easy-way
 Lang: en
+Summary: Lessons from planning an independent trip to Italy, reducing a mountain of travel advice to a practical two-page itinerary.
 ---
 
 Huahai and I have just returned from our first trip together to Italy. The trip itself was wonderful and unforgeable. However, it usually took a lot of planning for such an extensive trip, unless you hire someone else to do it for you or join a tour group.

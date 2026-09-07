@@ -8,6 +8,7 @@ Tags: Programming, DB2
 Slug: how-to-load-context-of-text-files-into-db2
 Alias: /blog/2007/12/how-load-context-text-files-db2
 Lang: en
+Summary: Importing text files into a DB2 CLOB column with a delimited manifest and the lobsinfile option, without writing an external program.
 ---
 
 The task is fairly simply --- I need to load the content of some text files into DB2. There are many ways to do so, but since I only need to this only once (hopefully), I want to find an easy way without writing any external code.

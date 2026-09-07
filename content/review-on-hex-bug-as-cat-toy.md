@@ -8,6 +8,7 @@ Tags: Shopping, Pets
 Slug: review-on-hex-bug-as-cat-toy
 Alias: /blog/2011/07/review-hex-bug-cat-toy
 Lang: en
+Summary: Testing a Hex Ant robot as a cat toy finds Mayori indifferent and Tom quickly bored, while the owner enjoys it more than either cat does.
 ---
 
 I am consistantly looking for new ways to entertain the cats, as they get bored with their toys very quickly. One new toy I have recently bought for them is [Hex Ant](https://www.amazon.com/HEXBUG-Fire-Ant-Colors-vary/dp/B00TV0S746).

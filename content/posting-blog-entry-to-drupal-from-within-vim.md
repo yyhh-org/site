@@ -8,6 +8,7 @@ Tags: Vim, Python, Drupal
 Slug: posting-blog-entry-to-drupal-from-within-vim
 Alias: /blog/2007/10/posting-blog-entry-drupal-within-vim
 Lang: en
+Summary: Editing and publishing Drupal blog entries directly from Vim with Python and XML-RPC, using familiar file commands and offline editing.
 ---
 
 Some people may wonder why would anyone want to do this? Well, there are at least two benefits. 

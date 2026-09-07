@@ -6,6 +6,7 @@ Date: 2022-06-07T06:35:41.880Z
 Author: Huahai
 Category: opinion
 Tags: Clojure, Programming
+Summary: Examining how programming languages become mainstream, and what corporate support, education, and popular use cases imply for Clojure's adoption.
 ---
 Someone asked on Reddit: [Why Clojure is not widely adopted like mainstream languages?](https://www.reddit.com/r/Clojure/comments/v6fzur/why_clojure_is_not_widely_adopted_like_mainstream/)
 

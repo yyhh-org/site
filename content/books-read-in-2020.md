@@ -8,6 +8,7 @@ Status: published
 Title: Books Read in 2020
 Category: experience
 Tags: Book
+Summary: Notes from a challenge to read or listen to 52 books in 2020, with brief reflections on decluttering, motivation, and living wholeheartedly.
 ---
 
 I challenge myself to read or listen to 52 books in 2020. I'm listing them here with a short descriptions about them to keep track of what I've read and key ideas learned.

@@ -8,6 +8,7 @@ Tags: Pets
 Slug: cat-drinking-from-wine-glass
 Alias: /blog/2011/07/cat-drinking-wine-glass
 Lang: en
+Summary: Mayori demonstrates her preferred way to enjoy freshly served water, drinking from a wine glass like a proper cat princess.
 ---
 
 Mayori loves drinking fresh-served water, especially from a wine glass. Obviously she believes that is the right way to drink water for a cat princess.

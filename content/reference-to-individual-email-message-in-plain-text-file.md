@@ -8,6 +8,7 @@ Tags: Editor, Vim, Linux, GTD
 Slug: reference-to-individual-email-message-in-plain-text-file
 Alias: /blog/2007/12/reference-individual-email-message-plain-text-file
 Lang: en
+Summary: Linking plain-text GTD tasks to individual local email messages, using KMail's maildir files to open the relevant message from a task list.
 ---
 
 A lot of people implement [GTD methodology entirely with Gmail](https://saw.themurdaughs.com/gtd-with-gmail-whitepaper). I don't feel comfortable doing that because gmail is not that secure. And I think depending on a network service is a bad idea for a GTD system. So I still download all my emails to my local computers. As [my plain text based GTD implementation](https://yyhh.org/blog/2007/12/simple-gtd-list-solution-desktop-web-and-possibly-mobile) was taking shape, I realized that I needed to refer to individual email messages in my local mail folders, both in the "Projects/Next-Action" list and as reference materials. For example, in my list, there would be an item "think about Johon's request", and it should include a link to the email message containing John's request. Ideally, invoking this link should open up this email message in *kmail*, my email reader. Also, I would like the creation of such a link in my list to be semi-automatic.

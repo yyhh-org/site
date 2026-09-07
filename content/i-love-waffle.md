@@ -7,6 +7,7 @@ Category: experience
 Tags: Pets
 Slug: i-love-waffle
 Lang: en
+Summary: Mayori's unexpected favorite food is waffles. She makes sure to get her share and keeps a suspicious eye on Tom.
 ---
 
 

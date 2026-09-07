@@ -8,6 +8,7 @@ Tags: Pets
 Slug: cat-with-big-paws
 Alias: /blog/2011/07/cat-big-paws
 Lang: en
+Summary: A photo of Tom showing off his latest catch and his impressively big paws.
 ---
 
 Tom shows off his catch and his big paws.

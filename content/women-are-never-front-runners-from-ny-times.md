@@ -8,6 +8,7 @@ Tags: Politics
 Slug: women-are-never-front-runners-from-ny-times
 Alias: /blog/2008/01/women-are-never-front-runners-ny-times
 Lang: en
+Summary: Links to New York Times opinion pieces about women and political leadership, collected during the 2008 election campaign.
 ---
 
 With only basic cable subscription, I am so sick of all the political news by now. But I found this article very interesting.

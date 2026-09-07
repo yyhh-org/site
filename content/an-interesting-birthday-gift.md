@@ -8,6 +8,7 @@ Tags: Extraordinary, Family
 Slug: an-interesting-birthday-gift
 Alias: /blog/2008/03/interesting-birthday-gift
 Lang: en
+Summary: Yunyao surprises Huahai with a scenic flight certificate as an early birthday present, revealed through a few photos of the gift.
 ---
 
 ![gift](https://farm4.static.flickr.com/3269/2305955534_80d0caf8e5.jpg?v=0)

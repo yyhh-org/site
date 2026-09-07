@@ -7,6 +7,7 @@ Category: experience
 Tags: Pets
 Slug: cat-boxing
 Lang: en
+Summary: Tom and Mayori have grown up together, but they still enjoy a good tussle over the best spot for watching the world through the window.
 ---
 
 Mayori and Tom grow up together ever since they were still little kittens in the shelter. However, they still love to fight, especially for the best spot for window-watching the outside.

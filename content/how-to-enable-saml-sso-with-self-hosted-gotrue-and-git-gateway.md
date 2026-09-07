@@ -6,6 +6,7 @@ Date: 2020-04-03T06:18:46.579Z
 Author: Huahai
 Category: notebook
 Tags: 'SAML, Keycloak, SSG, Netlify CMS, gotrue, SysAdmin'
+Summary: Enabling SAML single sign-on for self-hosted Netlify CMS with gotrue and git-gateway so editors can use an existing corporate identity system.
 ---
 Static Site Generator (SSG) is in vogue for building Web sites. Compared with traditional content management system (CMS), SSG is more performant, flexible and easier to maintain for people comfortable with coding . However, for the non-technical crowd, a WYSIWYG online editor is still the way to go. [Netlify CMS](https://www.netlifycms.org/) fills this need nicely by offering a user interface for SSG. This article details how to enable single sign-on (SSO) for Netlify CMS, so it can be used in a business environment, where marketers, copy writers or other non-coding editors can edit and publish content. 
 

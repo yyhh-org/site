@@ -6,6 +6,7 @@ Date: 2021-07-24T00:52:05.379Z
 Author: Huahai
 Category: opinion
 Tags: database, datalevin, sql, datalog
+Summary: Draft reflections on why dissatisfaction with SQL and a preference for Datomic-style Datalog motivated the creation of Datalevin.
 ---
 I used to work at the place where SQL is invented (IBM Research at Almaden, San Jose, CA), so I know some of the people who invented the thing. To them, it was a toy, they did not anticipate its rise, to say the least, i.e. they don’t like it. There are too many problems with it:  it’s not composible, it’s not compact, it’s inconsistent, it does not integrate well with programming languages, it is not declarative enough, so on and so forth…
 

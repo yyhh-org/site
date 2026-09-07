@@ -8,6 +8,7 @@ Tags: Travel, Shopping
 Slug: gift-buying-guide-for-your-family-and-friends-in-china
 Alias: /blog/2011/08/gift-buying-guide-your-family-and-friends-china
 Lang: en
+Summary: Gift ideas gathered for a trip to China, organized around family and friends, with notes on preferences and the pitfalls of buying gifts abroad.
 ---
 
 China is a fast-changing country. Not surprisingly, the list of popular gifts for Chinese family, relatives and friends keeps on changing as well.  When I return to China, I always do some extensive research to gather an updated shopping list of gifts to buy. Here is a summary based on various gift-giving guides and online forum postings for my recent trip to China.  

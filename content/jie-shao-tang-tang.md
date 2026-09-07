@@ -8,6 +8,7 @@ Tags: Pets
 Slug: jie-shao-tang-tang
 Alias: /blog/2007/10/%E4%BB%8B%E7%BB%8D%E5%94%90%E5%94%90
 Lang: zh
+Summary: 唐唐的自我介绍：一只爱跟人、会听指令、能牵绳散步的乖猫，讲述他如何被领养到这个家。
 ---
 
 ![tom](https://farm3.static.flickr.com/2194/1971652917_be14af92b9.jpg)

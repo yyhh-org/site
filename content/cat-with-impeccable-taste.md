@@ -8,6 +8,7 @@ Tags: Pets
 Slug: cat-with-impeccable-taste
 Alias: /blog/2011/07/cat-impeccable-taste
 Lang: en
+Summary: Mayori chooses the Bertoia Diamond Lounge chair as her favorite furniture, appreciating both its comfort and its advantages during play fights with Tom.
 ---
 
 As a cat, Mayori has impeccable taste, as represented by her favorite furniture in the house --- a Bertoia Diamond Lounge chair.

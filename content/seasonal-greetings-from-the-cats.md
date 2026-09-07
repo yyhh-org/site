@@ -8,6 +8,7 @@ Tags: Pets
 Slug: seasonal-greetings-from-the-cats
 Alias: /blog/2008/12/seasonal-greetings-cats
 Lang: en
+Summary: Holiday photos of Tom waiting for Santa and Mayori getting ready to be Santa's little helper.
 ---
 
 <img src="https://farm4.static.flickr.com/3235/3136652664_8ff94c4266.jpg?v=0" width="500" height="333" />

@@ -8,6 +8,7 @@ Tags: House
 Slug: resources-to-get-rid-of-lawn-the-frugal-way-phrase-i
 Alias: /blog/2011/09/resources-get-rid-lawn-frugal-way-phrase-i
 Lang: en
+Summary: Collecting resources for replacing a front lawn with a native-plant garden on a budget, beginning with sheet mulching and demolition planning.
 ---
 
 <span style="font-size: small;"></span><span style="font-size: small;">We are getting rid of our front lawn --- to save water and money!</span>

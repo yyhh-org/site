@@ -8,6 +8,7 @@ Tags: Travel, Shopping
 Slug: best-chocolate-places-in-manhattan
 Alias: /blog/2011/11/best-chocolate-places-manhattan
 Lang: en
+Summary: A Manhattan chocolate-shopping trip, a shortlist of three shops, and a gift from La Maison du Chocolat that proved a hit at home.
 ---
 
 I recently stayed in Manhattan for a few days during a business trip. My colleague and I were looking for places to buy some special chocolate to bring back home. We asked a few locals New Yorker as well as consulted the web for recommendations. Here are the list of stores we collected.

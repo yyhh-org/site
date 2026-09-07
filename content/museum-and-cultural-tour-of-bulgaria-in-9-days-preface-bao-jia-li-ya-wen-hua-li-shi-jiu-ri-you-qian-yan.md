@@ -9,6 +9,7 @@ Slug: museum-and-cultural-tour-of-bulgaria-in-9-days-preface-bao-jia-li-ya-wen-h
 Alias: /blog/2013/08/museum-and-cultural-tour-bulgaria-9-days-preface-%E4%BF%9D%E5%8A%A0%E5%88%A9%E4%BA%9A%E6%96%87%E5%8C%96%E5%8E%86%E5%8F%B2%E4%B9%9D%E6%97%A5%E6%B8%B8-%E5%89%8D%E8%A8%80%EF%BC%89
 Series: bulgaria-tour-2013
 Lang: en
+Summary: Planning a nine-day cultural tour of Bulgaria with a private driver and guide, including the itinerary, hotel arrangements, and useful reading.
 ---
 
 <img src="https://farm6.staticflickr.com/5456/9628131706_89d4e51472.jpg" width="500" height="333" alt="IMGP2315" />

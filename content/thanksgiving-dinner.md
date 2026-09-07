@@ -7,6 +7,7 @@ Category: experience
 Tags: Cooking
 Slug: thanksgiving-dinner
 Lang: en
+Summary: Trying Tofurkey for Thanksgiving, with before-and-after cooking photos and impressions of a holiday meal that was more than enough for two.
 ---
 
 I have been waiting to try the Tofurkey for a few weeks ever since I saw the ad from Trader Joe about it. So I finally tried out on Thanksgiving.

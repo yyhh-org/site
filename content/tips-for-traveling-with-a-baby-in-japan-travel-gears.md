@@ -9,6 +9,7 @@ Slug: tips-for-traveling-with-a-baby-in-japan-travel-gears
 Alias: /blog/2017/01/tips-traveling-baby-japan-travel-gears
 Series: travel-with-baby-japan
 Lang: en
+Summary: What worked on a ten-day trip to Japan with a thirteen-month-old, with travel gear rated by usefulness and detailed notes on a compact stroller.
 ---
 
 We traveled with Boyan, our 13-month son last month to Japan (for those who are wondering, yep, he is the main reason why this blog has been so quiet in the past couple of years. :-)) and spent a unforgettable 10 days there. Before I went there, I searched over the web for tips, but they seemed to scattered around. I therefore decided to share our experience and hope it will be useful for others.

@@ -8,6 +8,7 @@ Tags: Pets
 Slug: mao-mao-shi-zhuang-xiu-pet-fashion-show
 Alias: /blog/2008/02/%E7%8C%AB%E7%8C%AB%E6%97%B6%E8%A3%85%E7%A7%80-pet-fashion-show
 Lang: zh
+Summary: 一场由娇娇担任主要模特、唐唐友情配角的猫猫时装秀，用照片记录两位小朋友的造型。
 ---
 
 主要模特： 娇娇小朋友  

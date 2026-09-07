@@ -8,6 +8,7 @@ Tags: Linux
 Slug: suspending-to-ram-on-debian-laptop
 Alias: /blog/2008/04/suspending-ram-debian-laptop
 Lang: en
+Summary: Fixing a Debian ThinkPad that wakes immediately after suspending to RAM by configuring pm-utils to unload the e1000 Ethernet module.
 ---
 
 I am tracking Debian sid on my Thinkpad laptop, a few months ago it started to use *pm-utils* and broke suspending to RAM (sleep) functionality. Basically, the machine would go to sleep then immediately resume.  

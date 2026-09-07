@@ -8,6 +8,7 @@ Tags: Science, DNA
 Slug: are-you-han-my-paternal-ancestry-hypothesis
 Series: are-you-han
 Lang: en
+Summary: Questions about family origins and Han identity lead to a hypothesis about paternal ancestry and a decision to investigate with a Y-DNA test.
 ---
 
 I was brought up as a [Han Chinese](https://en.wikipedia.org/wiki/Han_Chinese) and I myself have never doubted that identity.  However, I do know that I look slightly different from people around me when I grew up. Darker skin, slightly curly hairs, deeper set eyes and other distinctive facial features. Put it simply, my face does not look like an [average Han male face](https://pmsol3.files.wordpress.com/2009/08/chineseaverageman.jpg?w=490). However, nobody really said anything about my appearance except that my old brother occasionally joked about it (he looks like a normal Han Chinese by the way). After all, I look just like my father. Besides, there are plenty of male relatives in my father's native village (near Chongqing) who look just like me.

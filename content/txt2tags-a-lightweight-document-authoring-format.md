@@ -8,6 +8,7 @@ Tags: GTD, Editor
 Slug: txt2tags-a-lightweight-document-authoring-format
 Alias: /blog/2008/01/txt2tags-lightweight-document-authoring-format
 Lang: en
+Summary: Exploring txt2tags as a portable plain-text authoring format for quickly capturing ideas and turning them into structured documents.
 ---
 
 ![txt2tags](https://txt2tags.sourceforge.net/img/t2tgems.png)

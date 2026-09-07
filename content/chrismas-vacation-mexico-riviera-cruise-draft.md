@@ -7,6 +7,7 @@ Category: experience
 Tags: Travel
 Slug: chrismas-vacation-mexico-riviera-cruise-draft
 Lang: en
+Summary: Early itinerary notes from a December 2007 Mexican Riviera cruise, including shipboard activities and excursions from Acapulco to Zihuatanejo.
 ---
 
 Place Holder for now.

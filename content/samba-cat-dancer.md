@@ -7,6 +7,7 @@ Category: experience
 Tags: Pets
 Slug: samba-cat-dancer
 Lang: en
+Summary: Tom shows off his samba dance moves in a playful cat video.
 ---
 
 Tom shows off his Samba dance skill.

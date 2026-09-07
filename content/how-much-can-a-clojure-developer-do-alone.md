@@ -6,6 +6,7 @@ Date: 2021-03-23T17:45:35.382Z
 Author: Huahai
 Category: opinion
 Tags: Clojure
+Summary: A response to a developer weighing Clojure's benefits, explaining the REPL workflow through human-computer interaction and reflecting on individual productivity.
 ---
 Someone [asked on Reddit this question](https://www.reddit.com/r/Clojure/comments/mbil51/how_much_can_a_clojure_developer_do_alone/), for he's wondering if it is worth the time to learn Clojure well. He has dabbled in Clojure for half a year, but was not convinced of its benefits. He has not used REPL much, and was wondering if he was doing something wrong. He additionally has some related questions about the Clojure and functional programming in general, here are my two cents of an answer.
 

@@ -8,6 +8,7 @@ Tags: Technology, History, China, Book
 Slug: zhong-guo-de-ji-zhu-yin-bao-wen-yi-fu-xing
 Alias: /blog/2011/02/%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%8A%80%E6%9C%AF%E5%BC%95%E7%88%86%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%EF%BC%9F
 Lang: zh
+Summary: 介绍Gavin Menzies的《1434》及其关于中国技术影响文艺复兴的假说，并翻译书中开篇对航海史与旧地图的讨论。
 ---
 
 《1434》是一个英国退役的潜艇舰长Gavin Menzies写的书，是他的《1421》的后续。《1421》主要是说是中国  

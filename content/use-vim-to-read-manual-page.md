@@ -8,6 +8,7 @@ Tags: Editor, Vim, Linux
 Slug: use-vim-to-read-manual-page
 Alias: /blog/2007/11/use-vim-read-manual-page
 Lang: en
+Summary: Replacing the command-line man pager with Vim through ManPageView and a shell wrapper, with a fallback when a manual entry cannot be found.
 ---
 
 Command line manual page is an indispensable tool for working with Linux system.If you forget how to use a command, just type *man* followed by the name of the command. One thing I don't like about the manual system on my Debian sid is that it uses *most* to display the manual. The key bindings of *most* feel awkward for me since I am used to *vim*. Of course, there are many "vimers" like me, and they've found ways to fix this. Actually, there are [many different ways](https://vim.sourceforge.net/tips/tip.php?tip_id=167), but I find the approach below works best for me. Basically, it involves creating a shell alias for *man*, so when *man* is used, shell invokes *vim* instead to read the manual. The following is added in *~/.bashrc*:

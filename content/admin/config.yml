@@ -23,6 +23,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Status", name: "Status", widget: "select", default: "draft", options: ["draft", "published"], hint: "Draft does not show on site"}
       - {label: "Language", name: "Lang", widget: "select", default: "en", options: ["en", "zh"], hint: "Select en for English, zh for 中文"}
       - {label: "Title", name: "Title", widget: "string"}
+      - {label: "Description", name: "Summary", widget: "text", required: true, hint: "Write one or two short sentences in the post's language for article previews, search engines, and social sharing."}
       - {label: "Date", name: "Date", widget: "datetime"}
       - {label: "Author", name: "Author", widget: "select", default: "Yunyao", options: ["Yunyao", "Huahai"]}
       - {label: "Category", name: "Category", widget: "select", default: "experience", options: ["experience", "notebook", "opinion"], hint: "Select category"}

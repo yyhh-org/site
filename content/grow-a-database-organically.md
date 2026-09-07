@@ -6,5 +6,6 @@ Date: 2021-09-11T05:11:06.316Z
 Author: Huahai
 Category: notebook
 Tags: Clojure, Database, Datalog
+Summary: A placeholder for notes on growing a database organically.
 ---
 Grow organically

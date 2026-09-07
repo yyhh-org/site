@@ -6,6 +6,7 @@ Date: 2021-04-08T07:41:14.349Z
 Author: Huahai
 Category: notebook
 Tags: FreeIPA
+Summary: Diagnosing SAML and Google login failures caused by clock drift after a FreeIPA upgrade, with checks of chronyd and NTP synchronization.
 ---
 Recently, I upgraded the FreeIPA server for my network to the latest version (4.8.10). Some strange things related to authentication started to happen with some services on my network. 
 

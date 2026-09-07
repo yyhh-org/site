@@ -8,6 +8,7 @@ Tags: Linux, Xorg
 Slug: dual-head-with-xorg-on-thinkpad-x31
 Alias: /blog/2005/10/dual-head-xorg-thinkpad-x31
 Lang: en
+Summary: Configuring Xorg's Radeon MergedFB support on a ThinkPad X31 so the built-in LCD and an external CRT share one extended desktop.
 ---
 
 My Thinkpad X31 got a small 12.1 inch screen, so I decide to increase the screen real estate by adding an extra monitor. The idea is that the LCD and the CRT monitor will display different part of the same desktop. This dual head solution is sometimes called 'Xinerama' in X terminology.  

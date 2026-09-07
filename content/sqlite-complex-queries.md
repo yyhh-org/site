@@ -6,6 +6,7 @@ Date: 2026-01-27T12:00:00.000Z
 Author: Huahai
 Category: opinion
 Tags: Database,SQLite,Datalevin,PostgreSQL,Datalog,Clojure
+Summary: Examining SQLite's performance on complex queries and why join optimization deserves attention alongside the usual deployment and concurrency trade-offs.
 ---
 
 <img src="/images/datalevin_speedup_vs_sqlite.svg" alt="Datalevin speedup over SQLite on JOB benchmark" width="700"/>

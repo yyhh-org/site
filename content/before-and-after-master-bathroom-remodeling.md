@@ -8,6 +8,7 @@ Tags: House
 Slug: before-and-after-master-bathroom-remodeling
 Alias: /blog/2011/09/and-after-master-bathroom-remodeling
 Lang: en
+Summary: Before-and-after photos of a master bathroom remodel, turning a dark room into a bright retreat with two sinks, a rain shower, and a freestanding tub.
 ---
 
 The old master bathroom is dark and ugly, with only one sink and w/o tub.

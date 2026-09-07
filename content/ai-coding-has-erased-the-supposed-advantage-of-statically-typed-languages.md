@@ -6,6 +6,7 @@ Date: 2026-08-13T12:00:00.000Z
 Author: Huahai
 Category: opinion
 Tags: AI,Programming Languages,Static Typing,Software Development,LLM,Clojure
+Summary: An argument that AI coding shifts the advantage from static typing toward concise languages, where fewer tokens leave less room for misunderstanding.
 ---
 
 For years, advocates of statically typed languages have made the same argument:

@@ -8,6 +8,7 @@ Tags: Psychology, Science, Philosophy
 Slug: xin-li-xue-neng-cheng-wei-yi-men-guan-yu-si-wei-de-ke-xue-yao
 Alias: /blog/2010/07/%E5%BF%83%E7%90%86%E5%AD%A6%E8%83%BD%E6%88%90%E4%B8%BA%E4%B8%80%E9%97%A8%E5%85%B3%E4%BA%8E%E6%80%9D%E7%BB%B4%E7%9A%84%E7%A7%91%E5%AD%A6%E4%B9%88%EF%BC%9F
 Lang: zh
+Summary: 斯金纳关于心理学能否成为思维科学的文章中译，讨论内省、脑科学，以及自然选择、操作条件反射与文化的作用。
 ---
 
 心理学能成为一门关于思维的科学么？

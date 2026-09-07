@@ -6,6 +6,7 @@ Author: Huahai
 Category: notebook
 Tags: 'Drupal, SSG, Pelican, SysAdmin'
 Lang: en
+Summary: Moving this long-running blog from Drupal to Pelican and Netlify CMS after hosting limits made maintenance and publishing increasingly difficult.
 ---
 This blog has undergone a few migrations over its 15 years life span. 
 

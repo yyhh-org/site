@@ -9,6 +9,7 @@ Slug: tips-for-traveling-with-a-baby-in-japan-diaper-bag-for-air-travel
 Alias: /blog/2017/01/tips-traveling-baby-japan-diaper-bag-air-travel
 Series: travel-with-baby-japan
 Lang: en
+Summary: An annotated diaper-bag packing list based on flying to Japan with a baby, highlighting essentials and the value of extra supplies during delays.
 ---
 
 The list of items contained in our diaper bag for air travel, annotated with how essential each item was based on our experience as follows:

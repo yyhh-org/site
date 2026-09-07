@@ -6,6 +6,7 @@ Date: 2026-07-20T16:00:00.000Z
 Author: Huahai
 Category: experience
 Tags: Datalevin,Database,Datalog,AI,Agent Memory
+Summary: Introducing Datalevin 1.0.0 for application state and agent memory, with relational, graph, document, logical, full-text, and vector capabilities.
 ---
 
 Today, after six years of development, I am thrilled to announce the

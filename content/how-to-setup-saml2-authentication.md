@@ -6,6 +6,7 @@ Date: 2020-10-19T18:28:25.187Z
 Author: Huahai
 Category: notebook
 Tags: SAML, Sentry, Keycloak
+Summary: Setting up SAML2 authentication for on-premise Sentry with Keycloak, including client registration and the settings needed to connect the two services.
 ---
 With newer versions of on-premise Sentry (I am using Sentry 20.10.1), the [LDAP authentication](https://yyhh.org/blog/2017/12/ldap-authentication-for-on-premise-sentry-server-using-freeipa/) does not seem to work any more. The code still compiles but the LDAP login UI does not show up. Fortunately, newer versions of Sentry provide built-in support for SAML2 authentication, so we can use that instead. We can do this because our LDAP service is connected with an identity provider, in our case, a Keycloak server. 
 

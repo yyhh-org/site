@@ -8,6 +8,7 @@ Tags: SysAdmin, DokuWiki
 Slug: migrate-dokuwiki-to-another-server
 Alias: /blog/2018/10/migrate-dokuwiki-another-server
 Lang: en
+Summary: Lessons from moving a DokuWiki installation between servers during a migration from AWS to Google Cloud, testing the promise of a simple file-based move.
 ---
 
 [DokuWiki](https://www.dokuwiki.org/dokuwiki) is one of the most easy-to-use open source Wiki software. It is a very good internal documentation tool for small or medium sized organizations.

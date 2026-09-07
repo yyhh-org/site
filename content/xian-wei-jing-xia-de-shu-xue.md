@@ -8,6 +8,7 @@ Tags: Psychology, Math, Philosophy, Book
 Slug: xian-wei-jing-xia-de-shu-xue
 Alias: /blog/2008/04/%E6%98%BE%E5%BE%AE%E9%95%9C%E4%B8%8B%E7%9A%84%E6%95%B0%E5%AD%A6
 Lang: zh
+Summary: 阅读《显微镜下的数学》的随想，从认知角度看数学，讨论数学与心理学的联系及数学解释对心理实验的重要性。
 ---
 
 显微镜下的数学 Mathematics under microscope ([电子书下载](https://www.maths.manchester.ac.uk/~avb/micromath))是本数学家写的  

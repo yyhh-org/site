@@ -8,6 +8,7 @@ Tags: SysAdmin, Drupal
 Slug: upgrade-drupal-from-6-to-8
 Alias: /blog/2017/11/upgrade-drupal-6-8
 Lang: en
+Summary: Migrating this blog from Drupal 6 to Drupal 8 with a separate test site and Drush, including hosting constraints and problems encountered along the way.
 ---
 
 Since [Drupal 6 is no longer supported](https://www.drupal.org/forum/general/news-and-announcements/2015-11-09/drupal-6-end-of-life-announcement), I upgraded this site to the lasted version of Drupal 8.4.2 by following [the guide](https://www.drupal.org/docs/8/upgrade/upgrading-from-drupal-6-or-7-to-drupal-8). As you can see, the upgrade mostly worked. However, there are a few points of caution as well as some unresolved problems.

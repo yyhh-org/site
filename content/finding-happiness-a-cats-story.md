@@ -8,6 +8,7 @@ Tags: Pets
 Slug: finding-happiness-a-cats-story
 Alias: /blog/2008/06/finding-happiness-cats-story
 Lang: en
+Summary: An illustrated story in English and Chinese follows Prince Thomas the cat as he asks where happiness comes from and searches for it himself.
 ---
 
 Long long time ago, there's a prince named Thomas. He's a handsome boy, but often sad, because he's parents passed away when he's very young.

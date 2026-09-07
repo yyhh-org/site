@@ -8,6 +8,7 @@ Tags: Programming, Clojure, Philosophy
 Slug: han-shu-shi-bian-cheng-de-liang-chong-lu-xian
 Alias: /blog/2018/08/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%A4%E7%A7%8D%E8%B7%AF%E7%BA%BF
 Lang: zh
+Summary: 比较以Haskell为代表的类型中心路线与Clojure的数据中心路线，并归纳面向数据编程的主要特征。
 ---
 
 可能很多人没有意识到，函数式编程（FP）有两种非常不同的路线。

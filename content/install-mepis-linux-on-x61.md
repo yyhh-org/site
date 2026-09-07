@@ -8,6 +8,7 @@ Tags: Linux
 Slug: install-mepis-linux-on-x61
 Alias: /blog/2007/10/install-mepis-linux-x61
 Lang: en
+Summary: Installing SimplyMEPIS 7.0 on a ThinkPad X61, with notes on hardware support and replacing the laptop's factory Windows Vista setup.
 ---
 
 I got a brand new Thinkpad X61 laptop last Saturday. Unfortunately, the factory loaded Vista Home Basic was too bloated and ate up 700MB memory from a fresh boot without launching any application! If you know me, you know what I will do - remove Windows and load up Linux!

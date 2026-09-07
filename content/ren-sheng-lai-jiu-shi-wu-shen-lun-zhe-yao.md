@@ -8,6 +8,7 @@ Tags: Psychology, Religion
 Slug: ren-sheng-lai-jiu-shi-wu-shen-lun-zhe-yao
 Alias: /blog/2007/09/%E4%BA%BA%E7%94%9F%E6%9D%A5%E5%B0%B1%E6%98%AF%E6%97%A0%E7%A5%9E%E8%AE%BA%E8%80%85%E4%B9%88%EF%BC%9F
 Lang: zh
+Summary: 从儿童认知发展与后天学习的角度，讨论“人生来就是无神论者”的说法，并分析宗教观念与思维发展的关系。
 ---
 
 有的嫉妒徒总是说人生来就是无神论者。言下之意，就是说有神论者是更高级的，是已  

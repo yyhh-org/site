@@ -8,6 +8,7 @@ Tags: Pets
 Slug: cat-with-evil-eyes
 Alias: /blog/2011/07/cat-evil-eyes
 Lang: en
+Summary: Sweet-natured Mayori reveals her fierce hunting expression while stalking a toy mouse.
 ---
 
 Mayori is mostly a very sweet girl. However, she can have evil eyes as well. Look at the follow photo when she wants to hunt to the toy mouse. She certainly looks more like a leopard than a domestic cat!

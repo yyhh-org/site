@@ -8,6 +8,7 @@ Tags: Pets, Cooking
 Slug: easy-tuna-birthday-cake-for-the-cats
 Alias: /blog/2011/09/easy-tuna-birthday-cake-cats
 Lang: en
+Summary: A homemade tuna birthday cake topped with shrimp and catnip wins over Tom and Mayori, with the simple recipe used for their celebration.
 ---
 
 I was looking for buying birthday cakes for the cats' birthday. Surprisingly, although it is very easy to find dog bakeries, there seems no existence of a single cat bakery. Luckily, a single Google search online brought up many birthday cake recipes for the cats. I picked one simple recipe with my cats' favorite food --- tuna.

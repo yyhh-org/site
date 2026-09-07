@@ -8,6 +8,7 @@ Tags: Technology, Entertainment
 Slug: netflix-is-splitting-into-two
 Alias: /blog/2011/09/netflix-splitting-two
 Lang: en
+Summary: A subscriber's reaction to Netflix's proposed split of streaming and DVD services, updated after the company abandoned the plan.
 ---
 
 It has turned out that Netflix has abandoned the plan, finally.

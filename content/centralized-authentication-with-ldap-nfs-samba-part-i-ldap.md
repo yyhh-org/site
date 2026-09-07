@@ -8,6 +8,7 @@ Tags: SysAdmin, Linux
 Slug: centralized-authentication-with-ldap-nfs-samba-part-i-ldap
 Series: ldap-nfs-samba
 Lang: en
+Summary: Setting up OpenLDAP server and client authentication on Debian as the first step toward shared accounts across a mixed Linux, Solaris, and Windows network.
 ---
 
 Ok, what is centralized authentication? Why bother? Well, if each person in your home or organization uses her/his own computer only, no need for this. However, if you or your organization have a bunch of machines and people need to login to different machines at different times, you've got a problem. Do you want to setup an account for each person on each machine? What about people's files? People would like to have access to their files no matter where they login. For this kind of environment, centralized authentication is the way to go.

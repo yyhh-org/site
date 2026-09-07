@@ -8,6 +8,7 @@ Tags: Science, DNA
 Slug: are-you-han-my-paternal-ancestry-12-marker-results
 Series: are-you-han
 Lang: en
+Summary: The first twelve markers from a paternal ancestry DNA test, with an explanation of Y-STR results, haplotypes, and why SNP testing adds confirmation.
 ---
 
 As [mentioned previously](https://yyhh.org/blog/2011/12/are-you-han-my-paternal-ancestry-hypothesis), I swabbed my cheeks and mailed my Y-DNA test specimen to [FamilyTreeDNA](https://www.familytreedna.com/) a few months ago. Now the first part of the results, consists of twelve markers, are known. These are standard Y-STR results. Before showing the actual numbers, let me briefly explain.

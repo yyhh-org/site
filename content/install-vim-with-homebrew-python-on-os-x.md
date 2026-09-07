@@ -8,6 +8,7 @@ Tags: Editor, Vim, OSX
 Slug: install-vim-with-homebrew-python-on-os-x
 Alias: /blog/2012/05/install-vim-homebrew-python-os-x
 Lang: en
+Summary: Building terminal Vim on OS X with Homebrew's Python support, including formula changes and a check of the Python interpreter Vim actually uses.
 ---
 
 For people that need full features of vim, the default installation of vim on Mac OS X is definitely not enough. For example, I need to [use vim to post to this blog](https://yyhh.org/blog/2007/10/posting-blog-entry-drupal-within-vim), which requires a version of vim with python support. I also prefer terminal version of vim to the GUI version, so [MacVim](https://code.google.com/p/macvim/) is less desirable.
