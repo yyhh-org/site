@@ -1,5 +1,5 @@
 ---
-Status: draft
+Status: published
 Lang: en
 Title: Datalevin 1.1.0: State-of-the-Art Performance Across Data Models
 Slug: datalevin-1-1-0-performance
@@ -285,5 +285,5 @@ opens up a useful design choice: keep application facts together, and use
 relations, graphs, documents, and logic wherever each is most natural.
 
 Get [Datalevin 1.1.0](https://github.com/datalevin/datalevin/releases/tag/1.1.0),
-explore the [guide](https://datalevin.org), and run the benchmark closest to
+explore the [guide](https://datalevin.org/docs), and run the benchmark closest to
 your application. I would love to see what you build with it.
