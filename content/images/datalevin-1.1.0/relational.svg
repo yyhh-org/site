@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="424.8pt" viewBox="0 0 864 424.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Complex joins: 113 queries in 38.1 seconds</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Complex joins: 113 queries in 38.1 seconds</dc:title>
+    <dc:description>Datalevin: September 1, 2026 · SQL baselines: August 23 · one warmup pass + one retained pass
+SQLite: 281.8 s for 104 completed queries, plus nine timeouts counted at 60 s each (hatched area).</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 424.8 
+L 864 424.8 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 155.52 305.856 
+L 786.24 305.856 
+L 786.24 93.456 
+L 155.52 93.456 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 155.52 305.856 
+L 155.52 93.456 
+" clip-path="url(#p5efdb72c57)" style="fill: none; stroke: #e4eaf0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #546577" x="155.52" y="322.973187" transform="rotate(-0 155.52 322.973187)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 281.664 305.856 
+L 281.664 93.456 
+" clip-path="url(#p5efdb72c57)" style="fill: none; stroke: #e4eaf0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #546577" x="281.664" y="322.973187" transform="rotate(-0 281.664 322.973187)">200</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 407.808 305.856 
+L 407.808 93.456 
+" clip-path="url(#p5efdb72c57)" style="fill: none; stroke: #e4eaf0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #546577" x="407.808" y="322.973187" transform="rotate(-0 407.808 322.973187)">400</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 533.952 305.856 
+L 533.952 93.456 
+" clip-path="url(#p5efdb72c57)" style="fill: none; stroke: #e4eaf0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #546577" x="533.952" y="322.973187" transform="rotate(-0 533.952 322.973187)">600</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 660.096 305.856 
+L 660.096 93.456 
+" clip-path="url(#p5efdb72c57)" style="fill: none; stroke: #e4eaf0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #546577" x="660.096" y="322.973187" transform="rotate(-0 660.096 322.973187)">800</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 786.24 305.856 
+L 786.24 93.456 
+" clip-path="url(#p5efdb72c57)" style="fill: none; stroke: #e4eaf0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #546577" x="786.24" y="322.973187" transform="rotate(-0 786.24 322.973187)">1000</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #546577" x="470.88" y="338.974125" transform="rotate(-0 470.88 338.974125)">Seconds for the suite (SQLite is a lower bound)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13"/>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #203246" x="147.52" y="126.978699" transform="rotate(-0 147.52 126.978699)">Datalevin</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_14"/>
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #203246" x="147.52" y="204.214594" transform="rotate(-0 147.52 204.214594)">PostgreSQL</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_15"/>
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #203246" x="147.52" y="281.451426" transform="rotate(-0 147.52 281.451426)">SQLite</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 155.52 103.110545 
+L 179.533493 103.110545 
+L 179.533493 141.728727 
+L 155.52 141.728727 
+z
+" clip-path="url(#p5efdb72c57)" style="fill: #087f75"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 155.52 180.346909 
+L 236.398051 180.346909 
+L 236.398051 218.965091 
+L 155.52 218.965091 
+z
+" clip-path="url(#p5efdb72c57)" style="fill: #356da8"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 155.52 257.583273 
+L 333.287773 257.583273 
+L 333.287773 296.201455 
+L 155.52 296.201455 
+z
+" clip-path="url(#p5efdb72c57)" style="fill: #8997a8"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 333.287773 257.583273 
+L 673.876573 257.583273 
+L 673.876573 296.201455 
+L 333.287773 296.201455 
+z
+" clip-path="url(#p5efdb72c57)" style="fill: url(#h6e9be1bb8c); stroke: #8997a8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #203246" x="187.102133" y="125.796589" transform="rotate(-0 187.102133 125.796589)">38.1 s</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #203246" x="243.966691" y="203.032953" transform="rotate(-0 243.966691 203.032953)">128.2 s</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #203246" x="681.445213" y="280.269317" transform="rotate(-0 681.445213 280.269317)">≥ 821.8 s</text>
+   </g>
+  </g>
+  <g id="text_14">
+   <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #203246" x="30.24" y="30.824719" transform="rotate(-0 30.24 30.824719)">Complex joins: 113 queries in 38.1 seconds</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #546577" x="30.24" y="46.970203" transform="rotate(-0 30.24 46.970203)">Join Order Benchmark · planning + execution · lower elapsed time is better</text>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #203246" x="155.52" y="365.328" transform="rotate(-0 155.52 365.328)">PostgreSQL / Datalevin: 3.37×     SQLite lower bound / Datalevin: 21.59×</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #546577" transform="translate(30.24 398.773945)">Datalevin: September 1, 2026 · SQL baselines: August 23 · one warmup pass + one retained pass</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #546577" transform="translate(30.24 410.77668)">SQLite: 281.8 s for 104 completed queries, plus nine timeouts counted at 60 s each (hatched area).</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5efdb72c57">
+   <rect x="155.52" y="93.456" width="630.72" height="212.4"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <pattern id="h6e9be1bb8c" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="#f0f3f6"/>
+   <path d="M -36 36 
+L 36 -36 
+M -32 40 
+L 40 -32 
+M -28 44 
+L 44 -28 
+M -24 48 
+L 48 -24 
+M -20 52 
+L 52 -20 
+M -16 56 
+L 56 -16 
+M -12 60 
+L 60 -12 
+M -8 64 
+L 64 -8 
+M -4 68 
+L 68 -4 
+M 0 72 
+L 72 0 
+M 4 76 
+L 76 4 
+M 8 80 
+L 80 8 
+M 12 84 
+L 84 12 
+M 16 88 
+L 88 16 
+M 20 92 
+L 92 20 
+M 24 96 
+L 96 24 
+M 28 100 
+L 100 28 
+M 32 104 
+L 104 32 
+M 36 108 
+L 108 36 
+" style="fill: #8997a8; stroke: #8997a8; stroke-width: 1.0; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+ </defs>
+</svg>

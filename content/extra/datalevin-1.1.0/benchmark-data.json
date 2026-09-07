@@ -1,0 +1,6623 @@
+{
+  "description": "Datalevin 1.1.0 article; retained benchmark observations, not new runs.",
+  "source_repository": "https://github.com/datalevin/datalevin",
+  "sources": [
+    {
+      "path": "benchmarks/write-bench/results/2026-08-31-strict-wal.edn",
+      "sha256": "9fefb9231b8c8df729416e8d10502d28d41acfca5b1d08a0d55001d95b944b4b"
+    },
+    {
+      "path": "benchmarks/write-bench/results/2026-08-31-strict-wal-concurrent.edn",
+      "sha256": "ee409324b06b5a626a659c7b64990940bd23ce36fc8feaa4317b06224fc138d3"
+    },
+    {
+      "path": "benchmarks/write-bench/results/2026-08-31-strict-wal-mixed.edn",
+      "sha256": "4d0f22f55af4b4cfa04dbf921c90a47b5607e9b80d83834eb935c047293ca14a"
+    },
+    {
+      "path": "benchmarks/JOB-bench/datalevin_onepass_time.csv",
+      "sha256": "0ffb05971ae88a6365a6e4b4bcb61f8b00463fabb968a9d2550ef18221f36578"
+    },
+    {
+      "path": "benchmarks/JOB-bench/postgres_onepass_time.csv",
+      "sha256": "6da26be4a5f87a26bdb5e37b015a514aae1dc8a0290e6a6de374ee076e0df8a4"
+    },
+    {
+      "path": "benchmarks/JOB-bench/sqlite_onepass_time.csv",
+      "sha256": "66033d9346f5e29cc4403638024be348ee99886857a1246699c4851171ebf113"
+    },
+    {
+      "path": "benchmarks/LDBC-SNB-bench/results/comparison-20260901T235851Z.edn",
+      "sha256": "1983869a9142afe516d2ec480936951f93af11aa8a82bc092fc29ee23fb76e41"
+    },
+    {
+      "path": "benchmarks/idoc-bench/results/2026-09-01-strict-two-pass-summary.edn",
+      "sha256": "3a55cf933645cb96d0f167920b93d63256ef70ca6a76de35b525c890350141bd"
+    },
+    {
+      "path": "benchmarks/openrulebench/results/2026-08-26-representative.edn",
+      "sha256": "db0f1f1f80842064cd1a93a9de523f5c67dcf0b365e590698fcc51d90df841c8"
+    },
+    {
+      "path": "benchmarks/openrulebench/results/2026-09-01-datalevin-rerun.edn",
+      "sha256": "f05c2a45166dfe46c49561758767754b67e97358e970f66529075481678d5e52"
+    }
+  ],
+  "write": {
+    "date": "2026-08-31",
+    "native-artifact-version": "0.19.5",
+    "protocol": {
+      "warmup-passes": 0,
+      "measurement-passes": 1,
+      "fresh-database-per-pass": true,
+      "measurement-writes": 1000000
+    },
+    "environment": {
+      "available-processors": 12,
+      "architecture": "aarch64",
+      "jvm-arguments": [
+        "-XX:-OmitStackTraceInFastThrow",
+        "--add-opens=java.base/java.nio=ALL-UNNAMED",
+        "--enable-native-access=ALL-UNNAMED",
+        "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED",
+        "-Dclojure.compiler.direct-linking=true",
+        "-Dclojure.basis=.cpcache/1527136782.basis"
+      ],
+      "datalevin-version": "1.1.0",
+      "os-version": "26.6.2",
+      "java-version": "21.0.11",
+      "clojure-version": "1.12.5",
+      "os-name": "Mac OS X",
+      "java-vm-name": "OpenJDK 64-Bit Server VM",
+      "native-version": "DLMDB 1.0.0: (October 26, 2025)"
+    },
+    "host-control": {
+      "paused-process": "mediaanalysisd",
+      "scope": "measurement-phases",
+      "resumed-after-each-phase": true
+    },
+    "format": {
+      "transient-fields-omitted": [
+        "target",
+        "report-every"
+      ],
+      "shared-fields-applied-to-every-measurement": true,
+      "storage-selected-by": "system"
+    },
+    "shared-measurement": {
+      "writes": 1000000,
+      "kv-non-durable-profile": null,
+      "seed": 42,
+      "threads": 1,
+      "completion-timeout-ms": 600000,
+      "workload": {
+        "name": "small-person-record",
+        "identity": {
+          "field": "person/id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "fields": [
+          [
+            "person/first-name",
+            "string"
+          ],
+          [
+            "person/last-name",
+            "string"
+          ],
+          [
+            "person/age",
+            "long"
+          ]
+        ]
+      },
+      "durability-profile": "strict"
+    },
+    "storage-by-system": {
+      "datalog": {
+        "engine": "datalevin-datalog",
+        "native-version": "DLMDB 1.0.0: (October 26, 2025)"
+      },
+      "kv": {
+        "engine": "datalevin-kv",
+        "native-version": "DLMDB 1.0.0: (October 26, 2025)",
+        "configuration": {
+          "wal?": true,
+          "env-flags": [
+            "nordahead",
+            "nosync",
+            "notls"
+          ],
+          "wal-durability-profile": "strict"
+        }
+      },
+      "sqlite": {
+        "engine": "sqlite",
+        "sqlite-version": "3.48.0",
+        "jdbc-driver-version": "3.48.0.0",
+        "configuration": {
+          "journal-mode": "wal",
+          "synchronous": "full",
+          "fullfsync": false,
+          "checkpoint-fullfsync": false,
+          "busy-timeout-ms": 3000,
+          "auto-commit": false,
+          "insert-mode": "prepared-jdbc-batch",
+          "secondary-indexes": [
+            {
+              "name": "person_first_name_idx",
+              "column": "first_name"
+            },
+            {
+              "name": "person_last_name_idx",
+              "column": "last_name"
+            },
+            {
+              "name": "person_age_idx",
+              "column": "age"
+            }
+          ]
+        }
+      }
+    },
+    "measurements": [
+      {
+        "system": "datalog",
+        "mode": "sync",
+        "condition": "datalog-strict-wal-sync",
+        "task": "dl-sync-wal",
+        "batch": 1,
+        "requests": 1000000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T19:48:54.261654Z",
+        "finished-at": "2026-08-31T19:51:03.502166Z",
+        "elapsed-seconds": 122.153057958,
+        "call-latency": {
+          "mean-ms": 0.12172275668799999,
+          "p50-ms": 0.10725,
+          "p95-ms": 0.169,
+          "p99-ms": 0.282208
+        },
+        "completion-latency": {
+          "mean-ms": 0.121579431214,
+          "p50-ms": 0.107125,
+          "p95-ms": 0.168791,
+          "p99-ms": 0.281625
+        },
+        "throughput-writes-sec": 8186.450807836763
+      },
+      {
+        "system": "datalog",
+        "mode": "sync",
+        "condition": "datalog-strict-wal-sync",
+        "task": "dl-sync-wal",
+        "batch": 10,
+        "requests": 100000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T19:52:21.278809Z",
+        "finished-at": "2026-08-31T19:53:05.791754Z",
+        "elapsed-seconds": 37.708837458,
+        "call-latency": {
+          "mean-ms": 0.37538900067,
+          "p50-ms": 0.34875,
+          "p95-ms": 0.539417,
+          "p99-ms": 0.862333
+        },
+        "completion-latency": {
+          "mean-ms": 0.37514703181000003,
+          "p50-ms": 0.348583,
+          "p95-ms": 0.538916,
+          "p99-ms": 0.86125
+        },
+        "throughput-writes-sec": 26518.982482920543
+      },
+      {
+        "system": "datalog",
+        "mode": "sync",
+        "condition": "datalog-strict-wal-sync",
+        "task": "dl-sync-wal",
+        "batch": 100,
+        "requests": 10000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T19:53:13.667973Z",
+        "finished-at": "2026-08-31T19:53:42.867407Z",
+        "elapsed-seconds": 22.34786525,
+        "call-latency": {
+          "mean-ms": 2.2169531935999998,
+          "p50-ms": 2.126709,
+          "p95-ms": 3.070792,
+          "p99-ms": 4.196708
+        },
+        "completion-latency": {
+          "mean-ms": 2.2145813068,
+          "p50-ms": 2.124667,
+          "p95-ms": 3.068375,
+          "p99-ms": 4.193458
+        },
+        "throughput-writes-sec": 44747.00329598595
+      },
+      {
+        "system": "datalog",
+        "mode": "sync",
+        "condition": "datalog-strict-wal-sync",
+        "task": "dl-sync-wal",
+        "batch": 1000,
+        "requests": 1000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T19:53:49.470535Z",
+        "finished-at": "2026-08-31T19:54:04.018537Z",
+        "elapsed-seconds": 8.71543825,
+        "call-latency": {
+          "mean-ms": 8.636686115,
+          "p50-ms": 8.647792,
+          "p95-ms": 10.418875,
+          "p99-ms": 13.386042
+        },
+        "completion-latency": {
+          "mean-ms": 8.630315254000001,
+          "p50-ms": 8.643291,
+          "p95-ms": 10.415667,
+          "p99-ms": 13.381209
+        },
+        "throughput-writes-sec": 114738.92319757988
+      },
+      {
+        "system": "datalog",
+        "mode": "async",
+        "condition": "datalog-strict-wal-async",
+        "task": "dl-async-wal",
+        "batch": 1,
+        "requests": 1000000,
+        "in-flight-request-limit": 1000,
+        "in-flight-write-limit": 100000,
+        "in-flight": 1000,
+        "async?": true,
+        "started-at": "2026-08-31T19:54:10.368348Z",
+        "finished-at": "2026-08-31T19:54:26.227810Z",
+        "elapsed-seconds": 9.791184791,
+        "call-latency": {
+          "mean-ms": 0.000138200086,
+          "p50-ms": 8.4e-05,
+          "p95-ms": 0.000209,
+          "p99-ms": 0.000417
+        },
+        "completion-latency": {
+          "mean-ms": 9.657161892334999,
+          "p50-ms": 9.196958,
+          "p95-ms": 14.515125,
+          "p99-ms": 16.11275
+        },
+        "throughput-writes-sec": 102132.68581338535
+      },
+      {
+        "system": "datalog",
+        "mode": "async",
+        "condition": "datalog-strict-wal-async",
+        "task": "dl-async-wal",
+        "batch": 10,
+        "requests": 100000,
+        "in-flight-request-limit": 1000,
+        "in-flight-write-limit": 100000,
+        "in-flight": 1000,
+        "async?": true,
+        "started-at": "2026-08-31T19:54:32.582334Z",
+        "finished-at": "2026-08-31T19:54:43.553601Z",
+        "elapsed-seconds": 5.102660042,
+        "call-latency": {
+          "mean-ms": 0.00022779981,
+          "p50-ms": 0.000125,
+          "p95-ms": 0.000375,
+          "p99-ms": 0.0025
+        },
+        "completion-latency": {
+          "mean-ms": 50.32080533187,
+          "p50-ms": 51.208417,
+          "p95-ms": 70.691166,
+          "p99-ms": 98.602708
+        },
+        "throughput-writes-sec": 195976.2147133062
+      },
+      {
+        "system": "datalog",
+        "mode": "async",
+        "condition": "datalog-strict-wal-async",
+        "task": "dl-async-wal",
+        "batch": 100,
+        "requests": 10000,
+        "in-flight-request-limit": 1000,
+        "in-flight-write-limit": 100000,
+        "in-flight": 1000,
+        "async?": true,
+        "started-at": "2026-08-31T19:54:50.038602Z",
+        "finished-at": "2026-08-31T19:55:00.163086Z",
+        "elapsed-seconds": 4.073562375,
+        "call-latency": {
+          "mean-ms": 0.0011872172,
+          "p50-ms": 0.000333,
+          "p95-ms": 0.004334,
+          "p99-ms": 0.018791
+        },
+        "completion-latency": {
+          "mean-ms": 391.0054552234,
+          "p50-ms": 377.110958,
+          "p95-ms": 754.49175,
+          "p99-ms": 770.061
+        },
+        "throughput-writes-sec": 245485.37813907908
+      },
+      {
+        "system": "datalog",
+        "mode": "async",
+        "condition": "datalog-strict-wal-async",
+        "task": "dl-async-wal",
+        "batch": 1000,
+        "requests": 1000,
+        "in-flight-request-limit": 1000,
+        "in-flight-write-limit": 100000,
+        "in-flight": 100,
+        "async?": true,
+        "started-at": "2026-08-31T19:55:06.589730Z",
+        "finished-at": "2026-08-31T19:55:16.732574Z",
+        "elapsed-seconds": 4.184559333,
+        "call-latency": {
+          "mean-ms": 0.005594584,
+          "p50-ms": 0.002292,
+          "p95-ms": 0.015917,
+          "p99-ms": 0.042833
+        },
+        "completion-latency": {
+          "mean-ms": 404.814811449,
+          "p50-ms": 382.581792,
+          "p95-ms": 653.132334,
+          "p99-ms": 665.570375
+        },
+        "throughput-writes-sec": 238973.78921452133
+      },
+      {
+        "system": "kv",
+        "mode": "sync",
+        "condition": "kv-strict-wal-sync",
+        "task": "kv-sync-wal",
+        "batch": 1,
+        "requests": 1000000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T19:55:23.178861Z",
+        "finished-at": "2026-08-31T19:56:24.703087Z",
+        "elapsed-seconds": 61.392634917,
+        "call-latency": {
+          "mean-ms": 0.061011809247,
+          "p50-ms": 0.055583,
+          "p95-ms": 0.067417,
+          "p99-ms": 0.092375
+        },
+        "completion-latency": {
+          "mean-ms": 0.060906155515,
+          "p50-ms": 0.055459,
+          "p95-ms": 0.067333,
+          "p99-ms": 0.092
+        },
+        "throughput-writes-sec": 16288.598809156076
+      },
+      {
+        "system": "kv",
+        "mode": "sync",
+        "condition": "kv-strict-wal-sync",
+        "task": "kv-sync-wal",
+        "batch": 10,
+        "requests": 100000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T19:56:31.366550Z",
+        "finished-at": "2026-08-31T19:56:44.033916Z",
+        "elapsed-seconds": 12.651152791,
+        "call-latency": {
+          "mean-ms": 0.12502621204,
+          "p50-ms": 0.117542,
+          "p95-ms": 0.138417,
+          "p99-ms": 0.211167
+        },
+        "completion-latency": {
+          "mean-ms": 0.12486194241000001,
+          "p50-ms": 0.117458,
+          "p95-ms": 0.13825,
+          "p99-ms": 0.209292
+        },
+        "throughput-writes-sec": 79044.18012494463
+      },
+      {
+        "system": "kv",
+        "mode": "sync",
+        "condition": "kv-strict-wal-sync",
+        "task": "kv-sync-wal",
+        "batch": 100,
+        "requests": 10000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T19:56:50.307950Z",
+        "finished-at": "2026-08-31T19:56:57.286070Z",
+        "elapsed-seconds": 6.973299708,
+        "call-latency": {
+          "mean-ms": 0.6858766748,
+          "p50-ms": 0.667916,
+          "p95-ms": 0.793041,
+          "p99-ms": 1.173625
+        },
+        "completion-latency": {
+          "mean-ms": 0.6851408235,
+          "p50-ms": 0.6675,
+          "p95-ms": 0.791667,
+          "p99-ms": 1.169333
+        },
+        "throughput-writes-sec": 143404.1331756854
+      },
+      {
+        "system": "kv",
+        "mode": "sync",
+        "condition": "kv-strict-wal-sync",
+        "task": "kv-sync-wal",
+        "batch": 1000,
+        "requests": 1000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T19:57:03.848888Z",
+        "finished-at": "2026-08-31T19:57:09.684329Z",
+        "elapsed-seconds": 5.833596,
+        "call-latency": {
+          "mean-ms": 5.75370722,
+          "p50-ms": 5.864083,
+          "p95-ms": 6.725334,
+          "p99-ms": 8.057792
+        },
+        "completion-latency": {
+          "mean-ms": 5.748437836,
+          "p50-ms": 5.86025,
+          "p95-ms": 6.722917,
+          "p99-ms": 8.051792
+        },
+        "throughput-writes-sec": 171420.8525924661
+      },
+      {
+        "system": "kv",
+        "mode": "async",
+        "condition": "kv-strict-wal-async",
+        "task": "kv-async-wal",
+        "batch": 1,
+        "requests": 1000000,
+        "in-flight-request-limit": 1000,
+        "in-flight-write-limit": 100000,
+        "in-flight": 1000,
+        "async?": true,
+        "started-at": "2026-08-31T19:57:16.105085Z",
+        "finished-at": "2026-08-31T19:57:22.937602Z",
+        "elapsed-seconds": 6.749159959,
+        "call-latency": {
+          "mean-ms": 0.000124814605,
+          "p50-ms": 8.4e-05,
+          "p95-ms": 0.000167,
+          "p99-ms": 0.0005
+        },
+        "completion-latency": {
+          "mean-ms": 6.6275355612030005,
+          "p50-ms": 6.0375,
+          "p95-ms": 10.522625,
+          "p99-ms": 12.301959
+        },
+        "throughput-writes-sec": 148166.5875567967
+      },
+      {
+        "system": "kv",
+        "mode": "async",
+        "condition": "kv-strict-wal-async",
+        "task": "kv-async-wal",
+        "batch": 10,
+        "requests": 100000,
+        "in-flight-request-limit": 1000,
+        "in-flight-write-limit": 100000,
+        "in-flight": 1000,
+        "async?": true,
+        "started-at": "2026-08-31T19:57:29.357051Z",
+        "finished-at": "2026-08-31T19:57:34.015122Z",
+        "elapsed-seconds": 4.64240575,
+        "call-latency": {
+          "mean-ms": 0.00021235938999999998,
+          "p50-ms": 8.4e-05,
+          "p95-ms": 0.000333,
+          "p99-ms": 0.002334
+        },
+        "completion-latency": {
+          "mean-ms": 45.73382483979,
+          "p50-ms": 50.217042,
+          "p95-ms": 61.794166,
+          "p99-ms": 71.32875
+        },
+        "throughput-writes-sec": 215405.55777572867
+      },
+      {
+        "system": "kv",
+        "mode": "async",
+        "condition": "kv-strict-wal-async",
+        "task": "kv-async-wal",
+        "batch": 100,
+        "requests": 10000,
+        "in-flight-request-limit": 1000,
+        "in-flight-write-limit": 100000,
+        "in-flight": 1000,
+        "async?": true,
+        "started-at": "2026-08-31T19:57:40.171034Z",
+        "finished-at": "2026-08-31T19:57:43.572135Z",
+        "elapsed-seconds": 3.395292833,
+        "call-latency": {
+          "mean-ms": 0.0013144304,
+          "p50-ms": 0.000333,
+          "p95-ms": 0.00475,
+          "p99-ms": 0.017125
+        },
+        "completion-latency": {
+          "mean-ms": 321.1810350374,
+          "p50-ms": 340.131959,
+          "p95-ms": 387.477458,
+          "p99-ms": 406.692292
+        },
+        "throughput-writes-sec": 294525.4059622374
+      },
+      {
+        "system": "kv",
+        "mode": "async",
+        "condition": "kv-strict-wal-async",
+        "task": "kv-async-wal",
+        "batch": 1000,
+        "requests": 1000,
+        "in-flight-request-limit": 1000,
+        "in-flight-write-limit": 100000,
+        "in-flight": 100,
+        "async?": true,
+        "started-at": "2026-08-31T19:57:50.084044Z",
+        "finished-at": "2026-08-31T19:57:53.417335Z",
+        "elapsed-seconds": 3.331188458,
+        "call-latency": {
+          "mean-ms": 0.007661037999999999,
+          "p50-ms": 0.002917,
+          "p95-ms": 0.025417,
+          "p99-ms": 0.058791
+        },
+        "completion-latency": {
+          "mean-ms": 317.730033666,
+          "p50-ms": 334.910209,
+          "p95-ms": 368.718125,
+          "p99-ms": 381.933458
+        },
+        "throughput-writes-sec": 300193.1630732133
+      },
+      {
+        "system": "sqlite",
+        "mode": "sync",
+        "condition": "sqlite-strict-wal-sync",
+        "task": "sql-tx-wal",
+        "batch": 1,
+        "requests": 1000000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T22:56:57.118562Z",
+        "finished-at": "2026-08-31T22:58:50.603607Z",
+        "elapsed-seconds": 113.35586975,
+        "call-latency": {
+          "mean-ms": 0.113011277632,
+          "p50-ms": 0.044833,
+          "p95-ms": 0.069541,
+          "p99-ms": 0.089333
+        },
+        "completion-latency": {
+          "mean-ms": 0.112926546004,
+          "p50-ms": 0.04475,
+          "p95-ms": 0.069417,
+          "p99-ms": 0.089208
+        },
+        "throughput-writes-sec": 8821.775195280525
+      },
+      {
+        "system": "sqlite",
+        "mode": "sync",
+        "condition": "sqlite-strict-wal-sync",
+        "task": "sql-tx-wal",
+        "batch": 10,
+        "requests": 100000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T23:08:45.878831Z",
+        "finished-at": "2026-08-31T23:09:42.774255Z",
+        "elapsed-seconds": 56.789138041,
+        "call-latency": {
+          "mean-ms": 0.56621547617,
+          "p50-ms": 0.237167,
+          "p95-ms": 0.655084,
+          "p99-ms": 8.353583
+        },
+        "completion-latency": {
+          "mean-ms": 0.56607379521,
+          "p50-ms": 0.237083,
+          "p95-ms": 0.651875,
+          "p99-ms": 8.3535
+        },
+        "throughput-writes-sec": 17609.001201568353
+      },
+      {
+        "system": "sqlite",
+        "mode": "sync",
+        "condition": "sqlite-strict-wal-sync",
+        "task": "sql-tx-wal",
+        "batch": 100,
+        "requests": 10000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T23:10:04.220685Z",
+        "finished-at": "2026-08-31T23:10:48.050092Z",
+        "elapsed-seconds": 43.783012334,
+        "call-latency": {
+          "mean-ms": 4.3658042899,
+          "p50-ms": 1.695125,
+          "p95-ms": 14.445042,
+          "p99-ms": 17.691291
+        },
+        "completion-latency": {
+          "mean-ms": 4.3648869359999996,
+          "p50-ms": 1.694459,
+          "p95-ms": 14.443917,
+          "p99-ms": 17.690458
+        },
+        "throughput-writes-sec": 22839.908601342242
+      },
+      {
+        "system": "sqlite",
+        "mode": "sync",
+        "condition": "sqlite-strict-wal-sync",
+        "task": "sql-tx-wal",
+        "batch": 1000,
+        "requests": 1000,
+        "in-flight-request-limit": null,
+        "in-flight-write-limit": null,
+        "in-flight": null,
+        "async?": false,
+        "started-at": "2026-08-31T23:16:33.648422Z",
+        "finished-at": "2026-08-31T23:17:04.821361Z",
+        "elapsed-seconds": 31.14741675,
+        "call-latency": {
+          "mean-ms": 31.056927148,
+          "p50-ms": 33.581042,
+          "p95-ms": 40.195208,
+          "p99-ms": 44.039208
+        },
+        "completion-latency": {
+          "mean-ms": 31.049907243,
+          "p50-ms": 33.573,
+          "p95-ms": 40.191084,
+          "p99-ms": 44.035625
+        },
+        "throughput-writes-sec": 32105.39121193734
+      }
+    ]
+  },
+  "concurrent": {
+    "format": {
+      "transient-fields-omitted": [
+        "target",
+        "report-every"
+      ],
+      "shared-fields-applied-to-every-measurement": true,
+      "storage-selected-by": "system"
+    },
+    "date": "2026-08-31",
+    "protocol": {
+      "warmup-passes": 0,
+      "measurement-passes": 1,
+      "fresh-database-per-pass": true,
+      "measurement-writes": 1000000
+    },
+    "measurements": [
+      {
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "started-at": "2026-08-31T23:40:47.545647Z",
+        "requests": 1000000,
+        "mode": "sync",
+        "elapsed-seconds": 75.094324333,
+        "batch": 1,
+        "threads": 2,
+        "condition": "datalog-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 0.14987000890399998,
+          "p50-ms": 0.140708,
+          "p95-ms": 0.172166,
+          "p99-ms": 0.237041
+        },
+        "completion-latency": {
+          "mean-ms": 0.14973586837400002,
+          "p50-ms": 0.140583,
+          "p95-ms": 0.172041,
+          "p99-ms": 0.236667
+        },
+        "finished-at": "2026-08-31T23:42:07.724324Z",
+        "throughput-writes-sec": 13316.585625906653
+      },
+      {
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "started-at": "2026-08-31T23:42:12.866907Z",
+        "requests": 1000000,
+        "mode": "sync",
+        "elapsed-seconds": 52.622913375,
+        "batch": 1,
+        "threads": 4,
+        "condition": "datalog-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 0.210120991993,
+          "p50-ms": 0.204833,
+          "p95-ms": 0.239459,
+          "p99-ms": 0.323125
+        },
+        "completion-latency": {
+          "mean-ms": 0.209936719129,
+          "p50-ms": 0.204625,
+          "p95-ms": 0.239292,
+          "p99-ms": 0.322791
+        },
+        "finished-at": "2026-08-31T23:43:10.634137Z",
+        "throughput-writes-sec": 19003.128786766832
+      },
+      {
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "started-at": "2026-08-31T23:43:15.747756Z",
+        "requests": 100000,
+        "mode": "sync",
+        "elapsed-seconds": 28.434761292,
+        "batch": 10,
+        "threads": 2,
+        "condition": "datalog-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 0.56687800859,
+          "p50-ms": 0.571792,
+          "p95-ms": 0.650917,
+          "p99-ms": 0.785083
+        },
+        "completion-latency": {
+          "mean-ms": 0.56663951896,
+          "p50-ms": 0.571625,
+          "p95-ms": 0.650709,
+          "p99-ms": 0.784084
+        },
+        "finished-at": "2026-08-31T23:43:49.336758Z",
+        "throughput-writes-sec": 35168.2220832058
+      },
+      {
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "started-at": "2026-08-31T23:43:54.504849Z",
+        "requests": 100000,
+        "mode": "sync",
+        "elapsed-seconds": 23.34994925,
+        "batch": 10,
+        "threads": 4,
+        "condition": "datalog-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 0.9315919285,
+          "p50-ms": 0.927459,
+          "p95-ms": 1.079834,
+          "p99-ms": 1.718292
+        },
+        "completion-latency": {
+          "mean-ms": 0.93130316961,
+          "p50-ms": 0.92725,
+          "p95-ms": 1.079458,
+          "p99-ms": 1.717833
+        },
+        "finished-at": "2026-08-31T23:44:23.135759Z",
+        "throughput-writes-sec": 42826.64554399406
+      },
+      {
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "started-at": "2026-08-31T23:44:28.311007Z",
+        "requests": 10000,
+        "mode": "sync",
+        "elapsed-seconds": 13.967612666,
+        "batch": 100,
+        "threads": 2,
+        "condition": "datalog-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 2.7768035343,
+          "p50-ms": 2.7495,
+          "p95-ms": 3.400625,
+          "p99-ms": 4.243167
+        },
+        "completion-latency": {
+          "mean-ms": 2.7755329204000003,
+          "p50-ms": 2.748375,
+          "p95-ms": 3.398125,
+          "p99-ms": 4.241708
+        },
+        "finished-at": "2026-08-31T23:44:47.589227Z",
+        "throughput-writes-sec": 71594.19608149663
+      },
+      {
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "started-at": "2026-08-31T23:44:52.884723Z",
+        "requests": 10000,
+        "mode": "sync",
+        "elapsed-seconds": 12.252132084,
+        "batch": 100,
+        "threads": 4,
+        "condition": "datalog-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 4.8796135098,
+          "p50-ms": 4.694459,
+          "p95-ms": 7.687125,
+          "p99-ms": 8.5255
+        },
+        "completion-latency": {
+          "mean-ms": 4.8780854643,
+          "p50-ms": 4.692416,
+          "p95-ms": 7.685,
+          "p99-ms": 8.521834
+        },
+        "finished-at": "2026-08-31T23:45:10.039171Z",
+        "throughput-writes-sec": 81618.44756031444
+      },
+      {
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "started-at": "2026-08-31T23:45:15.186418Z",
+        "requests": 1000,
+        "mode": "sync",
+        "elapsed-seconds": 7.834672459,
+        "batch": 1000,
+        "threads": 2,
+        "condition": "datalog-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 15.544846179,
+          "p50-ms": 15.607541,
+          "p95-ms": 17.689375,
+          "p99-ms": 21.442083
+        },
+        "completion-latency": {
+          "mean-ms": 15.539935883,
+          "p50-ms": 15.603333,
+          "p95-ms": 17.686791,
+          "p99-ms": 21.440542
+        },
+        "finished-at": "2026-08-31T23:45:28.152633Z",
+        "throughput-writes-sec": 127637.75451151888
+      },
+      {
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "started-at": "2026-08-31T23:45:33.325020Z",
+        "requests": 1000,
+        "mode": "sync",
+        "elapsed-seconds": 6.595368542,
+        "batch": 1000,
+        "threads": 4,
+        "condition": "datalog-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 26.203609352,
+          "p50-ms": 27.111458,
+          "p95-ms": 30.346209,
+          "p99-ms": 33.736875
+        },
+        "completion-latency": {
+          "mean-ms": 26.198632660999998,
+          "p50-ms": 27.085208,
+          "p95-ms": 30.344583,
+          "p99-ms": 33.734416
+        },
+        "finished-at": "2026-08-31T23:45:45.053336Z",
+        "throughput-writes-sec": 151621.54982422816
+      },
+      {
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "started-at": "2026-08-31T23:46:47.616642Z",
+        "requests": 1000000,
+        "mode": "sync",
+        "elapsed-seconds": 122.325252167,
+        "batch": 1,
+        "threads": 2,
+        "condition": "sqlite-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 0.24424743254,
+          "p50-ms": 0.049667,
+          "p95-ms": 0.089875,
+          "p99-ms": 2.590333
+        },
+        "completion-latency": {
+          "mean-ms": 0.244133487421,
+          "p50-ms": 0.049583,
+          "p95-ms": 0.089709,
+          "p99-ms": 2.590208
+        },
+        "finished-at": "2026-08-31T23:48:50.047119Z",
+        "throughput-writes-sec": 8174.926945049639
+      },
+      {
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "started-at": "2026-08-31T23:48:55.299565Z",
+        "requests": 1000000,
+        "mode": "sync",
+        "elapsed-seconds": 132.319106334,
+        "batch": 1,
+        "threads": 4,
+        "condition": "sqlite-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 0.5287926274370001,
+          "p50-ms": 0.050166,
+          "p95-ms": 0.100417,
+          "p99-ms": 3.117
+        },
+        "completion-latency": {
+          "mean-ms": 0.528674287034,
+          "p50-ms": 0.050042,
+          "p95-ms": 0.10025,
+          "p99-ms": 3.116833
+        },
+        "finished-at": "2026-08-31T23:51:07.931428Z",
+        "throughput-writes-sec": 7557.487559474587
+      },
+      {
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "started-at": "2026-08-31T23:51:13.371771Z",
+        "requests": 100000,
+        "mode": "sync",
+        "elapsed-seconds": 42.892422125,
+        "batch": 10,
+        "threads": 2,
+        "condition": "sqlite-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 0.85602099281,
+          "p50-ms": 0.27475,
+          "p95-ms": 2.813292,
+          "p99-ms": 10.854625
+        },
+        "completion-latency": {
+          "mean-ms": 0.85586847319,
+          "p50-ms": 0.274625,
+          "p95-ms": 2.813167,
+          "p99-ms": 10.854375
+        },
+        "finished-at": "2026-08-31T23:51:56.379113Z",
+        "throughput-writes-sec": 23314.141530308832
+      },
+      {
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "started-at": "2026-08-31T23:52:01.969556Z",
+        "requests": 100000,
+        "mode": "sync",
+        "elapsed-seconds": 39.994549167,
+        "batch": 10,
+        "threads": 4,
+        "condition": "sqlite-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 1.59724789601,
+          "p50-ms": 0.275709,
+          "p95-ms": 3.008833,
+          "p99-ms": 11.698542
+        },
+        "completion-latency": {
+          "mean-ms": 1.59709248422,
+          "p50-ms": 0.275625,
+          "p95-ms": 3.008666,
+          "p99-ms": 11.698417
+        },
+        "finished-at": "2026-08-31T23:52:42.029258Z",
+        "throughput-writes-sec": 25003.407234931714
+      },
+      {
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "started-at": "2026-08-31T23:52:47.409750Z",
+        "requests": 10000,
+        "mode": "sync",
+        "elapsed-seconds": 25.19571425,
+        "batch": 100,
+        "threads": 2,
+        "condition": "sqlite-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 5.0213006015,
+          "p50-ms": 2.092625,
+          "p95-ms": 18.005208,
+          "p99-ms": 34.888833
+        },
+        "completion-latency": {
+          "mean-ms": 5.0205749549,
+          "p50-ms": 2.092334,
+          "p95-ms": 18.00475,
+          "p99-ms": 34.888375
+        },
+        "finished-at": "2026-08-31T23:53:12.637982Z",
+        "throughput-writes-sec": 39689.2896179754
+      },
+      {
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "started-at": "2026-08-31T23:53:18.050330Z",
+        "requests": 10000,
+        "mode": "sync",
+        "elapsed-seconds": 23.092260583,
+        "batch": 100,
+        "threads": 4,
+        "condition": "sqlite-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 9.2166118554,
+          "p50-ms": 2.023625,
+          "p95-ms": 19.216917,
+          "p99-ms": 41.803917
+        },
+        "completion-latency": {
+          "mean-ms": 9.215904549900001,
+          "p50-ms": 2.023042,
+          "p95-ms": 19.216541,
+          "p99-ms": 41.803667
+        },
+        "finished-at": "2026-08-31T23:53:41.176979Z",
+        "throughput-writes-sec": 43304.552034034175
+      },
+      {
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "started-at": "2026-08-31T23:53:46.575686Z",
+        "requests": 1000,
+        "mode": "sync",
+        "elapsed-seconds": 21.741115666,
+        "batch": 1000,
+        "threads": 2,
+        "condition": "sqlite-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 43.348507469,
+          "p50-ms": 39.837542,
+          "p95-ms": 83.999125,
+          "p99-ms": 115.573041
+        },
+        "completion-latency": {
+          "mean-ms": 43.341930611,
+          "p50-ms": 39.83025,
+          "p95-ms": 83.995042,
+          "p99-ms": 115.567959
+        },
+        "finished-at": "2026-08-31T23:54:08.375842Z",
+        "throughput-writes-sec": 45995.79963432407
+      },
+      {
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "started-at": "2026-08-31T23:54:14.104270Z",
+        "requests": 1000,
+        "mode": "sync",
+        "elapsed-seconds": 19.710253166,
+        "batch": 1000,
+        "threads": 4,
+        "condition": "sqlite-strict-wal-concurrent",
+        "call-latency": {
+          "mean-ms": 78.31152352699999,
+          "p50-ms": 39.840875,
+          "p95-ms": 164.652,
+          "p99-ms": 1216.318291
+        },
+        "completion-latency": {
+          "mean-ms": 78.30538048999999,
+          "p50-ms": 39.836417,
+          "p95-ms": 164.649708,
+          "p99-ms": 1216.315625
+        },
+        "finished-at": "2026-08-31T23:54:33.862365Z",
+        "throughput-writes-sec": 50735.01550578713
+      }
+    ],
+    "native-artifact-version": "0.19.5",
+    "host-control": {
+      "paused-process": "mediaanalysisd",
+      "scope": "measurement-phases",
+      "resumed-after-each-phase": true
+    },
+    "storage-by-system": {
+      "datalog": {
+        "engine": "datalevin-datalog",
+        "native-version": "DLMDB 1.0.0: (October 26, 2025)"
+      },
+      "sqlite": {
+        "engine": "sqlite",
+        "sqlite-version": "3.48.0",
+        "jdbc-driver-version": "3.48.0.0",
+        "configuration": {
+          "journal-mode": "wal",
+          "synchronous": "full",
+          "fullfsync": false,
+          "checkpoint-fullfsync": false,
+          "busy-timeout-ms": 10000,
+          "auto-commit": false,
+          "insert-mode": "prepared-jdbc-batch",
+          "secondary-indexes": [
+            {
+              "name": "person_first_name_idx",
+              "column": "first_name"
+            },
+            {
+              "name": "person_last_name_idx",
+              "column": "last_name"
+            },
+            {
+              "name": "person_age_idx",
+              "column": "age"
+            }
+          ]
+        }
+      }
+    },
+    "environment": {
+      "available-processors": 12,
+      "architecture": "aarch64",
+      "jvm-arguments": [
+        "-XX:-OmitStackTraceInFastThrow",
+        "--add-opens=java.base/java.nio=ALL-UNNAMED",
+        "--enable-native-access=ALL-UNNAMED",
+        "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED",
+        "-Dclojure.compiler.direct-linking=true",
+        "-Dclojure.basis=.cpcache/1527136782.basis"
+      ],
+      "datalevin-version": "1.1.0",
+      "os-version": "26.6.2",
+      "java-version": "21.0.11",
+      "clojure-version": "1.12.5",
+      "os-name": "Mac OS X",
+      "java-vm-name": "OpenJDK 64-Bit Server VM",
+      "native-version": "DLMDB 1.0.0: (October 26, 2025)"
+    },
+    "shared-measurement": {
+      "writes": 1000000,
+      "in-flight-request-limit": null,
+      "kv-non-durable-profile": null,
+      "in-flight-write-limit": null,
+      "seed": 42,
+      "completion-timeout-ms": 600000,
+      "workload": {
+        "name": "small-person-record",
+        "identity": {
+          "field": "person/id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "fields": [
+          [
+            "person/first-name",
+            "string"
+          ],
+          [
+            "person/last-name",
+            "string"
+          ],
+          [
+            "person/age",
+            "long"
+          ]
+        ]
+      },
+      "durability-profile": "strict",
+      "async?": false,
+      "in-flight": null
+    }
+  },
+  "mixed": {
+    "date": "2026-08-31",
+    "native-artifact-version": "0.19.5",
+    "protocol": {
+      "initial-records": 1000000,
+      "measurement-read-write-pairs": 1000000,
+      "warmup-passes": 0,
+      "measurement-passes": 1,
+      "fresh-clone-per-measurement": true,
+      "initial-image-write-batch": 1000,
+      "seed": 42
+    },
+    "environment": {
+      "available-processors": 12,
+      "architecture": "aarch64",
+      "jvm-arguments": [
+        "-XX:-OmitStackTraceInFastThrow",
+        "--add-opens=java.base/java.nio=ALL-UNNAMED",
+        "--enable-native-access=ALL-UNNAMED",
+        "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED",
+        "-Dclojure.compiler.direct-linking=true",
+        "-Dclojure.basis=.cpcache/1527136782.basis"
+      ],
+      "datalevin-version": "1.1.0",
+      "os-version": "26.6.2",
+      "java-version": "21.0.11",
+      "clojure-version": "1.12.5",
+      "os-name": "Mac OS X",
+      "java-vm-name": "OpenJDK 64-Bit Server VM",
+      "native-version": "DLMDB 1.0.0: (October 26, 2025)"
+    },
+    "host-control": {
+      "paused-process": "mediaanalysisd",
+      "scope": "measurement-phases",
+      "resumed-after-each-phase": true
+    },
+    "format": {
+      "metrics-source": "benchmark-csv-output",
+      "elapsed-and-throughput-decimal-places": 2,
+      "latency-decimal-places": 4,
+      "csv-writes-field-interpreted-as": "read-write-pairs",
+      "storage-selected-by": "system"
+    },
+    "initial-images": {
+      "datalog": {
+        "task": "dl-sync-wal",
+        "writes": 1000000,
+        "batch": 1000,
+        "seed": 42,
+        "durability-profile": "strict"
+      },
+      "kv": {
+        "task": "kv-sync-wal",
+        "writes": 1000000,
+        "batch": 1000,
+        "seed": 42,
+        "durability-profile": "strict"
+      },
+      "sqlite": {
+        "task": "sql-tx-wal",
+        "writes": 1000000,
+        "batch": 1000,
+        "seed": 42,
+        "durability-profile": "strict"
+      }
+    },
+    "storage-by-system": {
+      "datalog": {
+        "engine": "datalevin-datalog",
+        "native-version": "DLMDB 1.0.0: (October 26, 2025)"
+      },
+      "kv": {
+        "engine": "datalevin-kv",
+        "native-version": "DLMDB 1.0.0: (October 26, 2025)",
+        "configuration": {
+          "wal?": true,
+          "env-flags": [
+            "nordahead",
+            "nosync",
+            "notls"
+          ],
+          "wal-durability-profile": "strict"
+        }
+      },
+      "sqlite": {
+        "engine": "sqlite",
+        "sqlite-version": "3.48.0",
+        "jdbc-driver-version": "3.48.0.0",
+        "configuration": {
+          "busy-timeout-ms": 3000,
+          "checkpoint-fullfsync": false,
+          "auto-commit": true,
+          "upsert-mode": "prepared-jdbc-upsert",
+          "journal-mode": "wal",
+          "fullfsync": false,
+          "secondary-indexes": [
+            {
+              "name": "person_first_name_idx",
+              "column": "first_name"
+            },
+            {
+              "name": "person_last_name_idx",
+              "column": "last_name"
+            },
+            {
+              "name": "person_age_idx",
+              "column": "age"
+            }
+          ],
+          "read-mode": "prepared-jdbc-query",
+          "synchronous": "full"
+        }
+      }
+    },
+    "shared-measurement": {
+      "pairs": 1000000,
+      "requests": 1000000,
+      "batch": 1,
+      "threads": 1,
+      "seed": 42,
+      "durability-profile": "strict"
+    },
+    "measurements": [
+      {
+        "closed-loop?": true,
+        "system": "datalog",
+        "task": "dl-sync-wal",
+        "mode": "sync",
+        "elapsed-seconds": 178.08,
+        "condition": "datalog-strict-wal-mixed",
+        "write-path": "local-wal-identity-upsert-specialization",
+        "call-latency": {
+          "mean-ms": 0.1765
+        },
+        "throughput-pairs-sec": 5615.55,
+        "completion-latency": {
+          "mean-ms": 0.1764,
+          "p50-ms": 0.1675,
+          "p95-ms": 0.2105,
+          "p99-ms": 0.262
+        },
+        "in-flight": null
+      },
+      {
+        "closed-loop?": true,
+        "system": "sqlite",
+        "task": "sql-tx-wal",
+        "mode": "sync",
+        "elapsed-seconds": 198.39,
+        "condition": "sqlite-strict-wal-mixed",
+        "call-latency": {
+          "mean-ms": 0.1968
+        },
+        "throughput-pairs-sec": 5040.51,
+        "completion-latency": {
+          "mean-ms": 0.1967,
+          "p50-ms": 0.0733,
+          "p95-ms": 0.0958,
+          "p99-ms": 0.2497
+        },
+        "in-flight": null
+      },
+      {
+        "closed-loop?": false,
+        "system": "datalog",
+        "task": "dl-async-wal",
+        "mode": "async",
+        "elapsed-seconds": 58.84,
+        "condition": "datalog-strict-wal-mixed",
+        "call-latency": {
+          "mean-ms": 0.0117
+        },
+        "throughput-pairs-sec": 16995.76,
+        "completion-latency": {
+          "mean-ms": 55.1145,
+          "p50-ms": 53.4115,
+          "p95-ms": 65.6132,
+          "p99-ms": 84.1282
+        },
+        "in-flight": 1000
+      },
+      {
+        "closed-loop?": true,
+        "system": "kv",
+        "task": "kv-sync-wal",
+        "mode": "sync",
+        "elapsed-seconds": 78.8,
+        "condition": "kv-strict-wal-mixed",
+        "call-latency": {
+          "mean-ms": 0.0774
+        },
+        "throughput-pairs-sec": 12690.01,
+        "completion-latency": {
+          "mean-ms": 0.0773,
+          "p50-ms": 0.0715,
+          "p95-ms": 0.0845,
+          "p99-ms": 0.1078
+        },
+        "in-flight": null
+      },
+      {
+        "closed-loop?": false,
+        "system": "kv",
+        "task": "kv-async-wal",
+        "mode": "async",
+        "elapsed-seconds": 8.92,
+        "condition": "kv-strict-wal-mixed",
+        "call-latency": {
+          "mean-ms": 0.0022
+        },
+        "throughput-pairs-sec": 112114.48,
+        "completion-latency": {
+          "mean-ms": 8.0376,
+          "p50-ms": 7.9298,
+          "p95-ms": 10.0363,
+          "p99-ms": 13.5458
+        },
+        "in-flight": 1000
+      }
+    ]
+  },
+  "job": {
+    "datalevin": [
+      {
+        "query": "10a",
+        "planning_ms": 98.513,
+        "execution_ms": 209.448
+      },
+      {
+        "query": "10b",
+        "planning_ms": 34.572,
+        "execution_ms": 33.371
+      },
+      {
+        "query": "10c",
+        "planning_ms": 39.16,
+        "execution_ms": 1967.059
+      },
+      {
+        "query": "11a",
+        "planning_ms": 40.042,
+        "execution_ms": 21.656
+      },
+      {
+        "query": "11b",
+        "planning_ms": 20.874,
+        "execution_ms": 2.508
+      },
+      {
+        "query": "11c",
+        "planning_ms": 25.705,
+        "execution_ms": 275.121
+      },
+      {
+        "query": "11d",
+        "planning_ms": 20.792,
+        "execution_ms": 117.292
+      },
+      {
+        "query": "12a",
+        "planning_ms": 31.162,
+        "execution_ms": 119.728
+      },
+      {
+        "query": "12b",
+        "planning_ms": 226.749,
+        "execution_ms": 2.534
+      },
+      {
+        "query": "12c",
+        "planning_ms": 30.268,
+        "execution_ms": 279.945
+      },
+      {
+        "query": "13a",
+        "planning_ms": 28.508,
+        "execution_ms": 890.159
+      },
+      {
+        "query": "13b",
+        "planning_ms": 20.984,
+        "execution_ms": 1018.737
+      },
+      {
+        "query": "13c",
+        "planning_ms": 17.542,
+        "execution_ms": 561.786
+      },
+      {
+        "query": "13d",
+        "planning_ms": 21.322,
+        "execution_ms": 1241.491
+      },
+      {
+        "query": "14a",
+        "planning_ms": 30.009,
+        "execution_ms": 209.305
+      },
+      {
+        "query": "14b",
+        "planning_ms": 23.049,
+        "execution_ms": 19.1
+      },
+      {
+        "query": "14c",
+        "planning_ms": 25.418,
+        "execution_ms": 138.019
+      },
+      {
+        "query": "15a",
+        "planning_ms": 88.799,
+        "execution_ms": 436.944
+      },
+      {
+        "query": "15b",
+        "planning_ms": 22.665,
+        "execution_ms": 6.838
+      },
+      {
+        "query": "15c",
+        "planning_ms": 24.827,
+        "execution_ms": 459.948
+      },
+      {
+        "query": "15d",
+        "planning_ms": 21.328,
+        "execution_ms": 454.152
+      },
+      {
+        "query": "16a",
+        "planning_ms": 41.339,
+        "execution_ms": 14.194
+      },
+      {
+        "query": "16b",
+        "planning_ms": 13.922,
+        "execution_ms": 2314.206
+      },
+      {
+        "query": "16c",
+        "planning_ms": 37.783,
+        "execution_ms": 263.577
+      },
+      {
+        "query": "16d",
+        "planning_ms": 35.732,
+        "execution_ms": 148.22
+      },
+      {
+        "query": "17a",
+        "planning_ms": 61.488,
+        "execution_ms": 588.081
+      },
+      {
+        "query": "17b",
+        "planning_ms": 10.483,
+        "execution_ms": 335.89
+      },
+      {
+        "query": "17c",
+        "planning_ms": 9.734,
+        "execution_ms": 17.258
+      },
+      {
+        "query": "17d",
+        "planning_ms": 9.843,
+        "execution_ms": 224.993
+      },
+      {
+        "query": "17e",
+        "planning_ms": 9.636,
+        "execution_ms": 2106.194
+      },
+      {
+        "query": "17f",
+        "planning_ms": 10.295,
+        "execution_ms": 413.339
+      },
+      {
+        "query": "18a",
+        "planning_ms": 23.714,
+        "execution_ms": 450.497
+      },
+      {
+        "query": "18b",
+        "planning_ms": 73.544,
+        "execution_ms": 343.258
+      },
+      {
+        "query": "18c",
+        "planning_ms": 64.994,
+        "execution_ms": 247.488
+      },
+      {
+        "query": "19a",
+        "planning_ms": 37.072,
+        "execution_ms": 369.079
+      },
+      {
+        "query": "19b",
+        "planning_ms": 15.75,
+        "execution_ms": 66.25
+      },
+      {
+        "query": "19c",
+        "planning_ms": 34.446,
+        "execution_ms": 196.736
+      },
+      {
+        "query": "19d",
+        "planning_ms": 25.823,
+        "execution_ms": 1312.412
+      },
+      {
+        "query": "1a",
+        "planning_ms": 6.167,
+        "execution_ms": 5.692
+      },
+      {
+        "query": "1b",
+        "planning_ms": 8.791,
+        "execution_ms": 0.462
+      },
+      {
+        "query": "1c",
+        "planning_ms": 6.886,
+        "execution_ms": 0.951
+      },
+      {
+        "query": "1d",
+        "planning_ms": 7.826,
+        "execution_ms": 0.423
+      },
+      {
+        "query": "20a",
+        "planning_ms": 33.378,
+        "execution_ms": 214.058
+      },
+      {
+        "query": "20b",
+        "planning_ms": 20.879,
+        "execution_ms": 88.991
+      },
+      {
+        "query": "20c",
+        "planning_ms": 27.8,
+        "execution_ms": 91.787
+      },
+      {
+        "query": "21a",
+        "planning_ms": 33.945,
+        "execution_ms": 16.097
+      },
+      {
+        "query": "21b",
+        "planning_ms": 27.502,
+        "execution_ms": 8.808
+      },
+      {
+        "query": "21c",
+        "planning_ms": 46.849,
+        "execution_ms": 24.15
+      },
+      {
+        "query": "22a",
+        "planning_ms": 132.048,
+        "execution_ms": 161.439
+      },
+      {
+        "query": "22b",
+        "planning_ms": 33.839,
+        "execution_ms": 25.159
+      },
+      {
+        "query": "22c",
+        "planning_ms": 40.959,
+        "execution_ms": 196.711
+      },
+      {
+        "query": "22d",
+        "planning_ms": 39.207,
+        "execution_ms": 165.548
+      },
+      {
+        "query": "23a",
+        "planning_ms": 24.33,
+        "execution_ms": 173.442
+      },
+      {
+        "query": "23b",
+        "planning_ms": 27.088,
+        "execution_ms": 19.972
+      },
+      {
+        "query": "23c",
+        "planning_ms": 24.163,
+        "execution_ms": 440.514
+      },
+      {
+        "query": "24a",
+        "planning_ms": 64.795,
+        "execution_ms": 18.223
+      },
+      {
+        "query": "24b",
+        "planning_ms": 59.718,
+        "execution_ms": 1.749
+      },
+      {
+        "query": "25a",
+        "planning_ms": 33.228,
+        "execution_ms": 475.409
+      },
+      {
+        "query": "25b",
+        "planning_ms": 40.318,
+        "execution_ms": 1.139
+      },
+      {
+        "query": "25c",
+        "planning_ms": 33.633,
+        "execution_ms": 196.002
+      },
+      {
+        "query": "26a",
+        "planning_ms": 60.221,
+        "execution_ms": 214.35
+      },
+      {
+        "query": "26b",
+        "planning_ms": 35.042,
+        "execution_ms": 52.361
+      },
+      {
+        "query": "26c",
+        "planning_ms": 36.147,
+        "execution_ms": 75.735
+      },
+      {
+        "query": "27a",
+        "planning_ms": 79.976,
+        "execution_ms": 10.333
+      },
+      {
+        "query": "27b",
+        "planning_ms": 75.345,
+        "execution_ms": 4.676
+      },
+      {
+        "query": "27c",
+        "planning_ms": 92.247,
+        "execution_ms": 12.023
+      },
+      {
+        "query": "28a",
+        "planning_ms": 123.99,
+        "execution_ms": 206.86
+      },
+      {
+        "query": "28b",
+        "planning_ms": 178.928,
+        "execution_ms": 62.959
+      },
+      {
+        "query": "28c",
+        "planning_ms": 118.101,
+        "execution_ms": 47.386
+      },
+      {
+        "query": "29a",
+        "planning_ms": 818.18,
+        "execution_ms": 9.443
+      },
+      {
+        "query": "29b",
+        "planning_ms": 806.983,
+        "execution_ms": 2.407
+      },
+      {
+        "query": "29c",
+        "planning_ms": 947.912,
+        "execution_ms": 12.989
+      },
+      {
+        "query": "2a",
+        "planning_ms": 6.64,
+        "execution_ms": 42.567
+      },
+      {
+        "query": "2b",
+        "planning_ms": 5.67,
+        "execution_ms": 12.003
+      },
+      {
+        "query": "2c",
+        "planning_ms": 3.596,
+        "execution_ms": 0.223
+      },
+      {
+        "query": "2d",
+        "planning_ms": 3.544,
+        "execution_ms": 18.997
+      },
+      {
+        "query": "30a",
+        "planning_ms": 89.642,
+        "execution_ms": 416.7
+      },
+      {
+        "query": "30b",
+        "planning_ms": 79.309,
+        "execution_ms": 22.523
+      },
+      {
+        "query": "30c",
+        "planning_ms": 90.729,
+        "execution_ms": 143.437
+      },
+      {
+        "query": "31a",
+        "planning_ms": 59.562,
+        "execution_ms": 38.751
+      },
+      {
+        "query": "31b",
+        "planning_ms": 58.051,
+        "execution_ms": 6.782
+      },
+      {
+        "query": "31c",
+        "planning_ms": 64.342,
+        "execution_ms": 172.005
+      },
+      {
+        "query": "32a",
+        "planning_ms": 5.329,
+        "execution_ms": 0.279
+      },
+      {
+        "query": "32b",
+        "planning_ms": 2.523,
+        "execution_ms": 24.728
+      },
+      {
+        "query": "33a",
+        "planning_ms": 92.192,
+        "execution_ms": 5.038
+      },
+      {
+        "query": "33b",
+        "planning_ms": 83.603,
+        "execution_ms": 3.782
+      },
+      {
+        "query": "33c",
+        "planning_ms": 90.399,
+        "execution_ms": 11.955
+      },
+      {
+        "query": "3a",
+        "planning_ms": 10.292,
+        "execution_ms": 77.989
+      },
+      {
+        "query": "3b",
+        "planning_ms": 6.857,
+        "execution_ms": 5.743
+      },
+      {
+        "query": "3c",
+        "planning_ms": 14.593,
+        "execution_ms": 199.952
+      },
+      {
+        "query": "4a",
+        "planning_ms": 7.637,
+        "execution_ms": 347.613
+      },
+      {
+        "query": "4b",
+        "planning_ms": 7.349,
+        "execution_ms": 6.265
+      },
+      {
+        "query": "4c",
+        "planning_ms": 7.437,
+        "execution_ms": 742.472
+      },
+      {
+        "query": "5a",
+        "planning_ms": 9.163,
+        "execution_ms": 44.796
+      },
+      {
+        "query": "5b",
+        "planning_ms": 11.37,
+        "execution_ms": 299.394
+      },
+      {
+        "query": "5c",
+        "planning_ms": 11.616,
+        "execution_ms": 626.161
+      },
+      {
+        "query": "6a",
+        "planning_ms": 9.338,
+        "execution_ms": 3.573
+      },
+      {
+        "query": "6b",
+        "planning_ms": 9.722,
+        "execution_ms": 13.389
+      },
+      {
+        "query": "6c",
+        "planning_ms": 7.072,
+        "execution_ms": 0.421
+      },
+      {
+        "query": "6d",
+        "planning_ms": 6.872,
+        "execution_ms": 300.265
+      },
+      {
+        "query": "6e",
+        "planning_ms": 6.842,
+        "execution_ms": 3.613
+      },
+      {
+        "query": "6f",
+        "planning_ms": 7.803,
+        "execution_ms": 818.388
+      },
+      {
+        "query": "7a",
+        "planning_ms": 81.166,
+        "execution_ms": 4.958
+      },
+      {
+        "query": "7b",
+        "planning_ms": 35.229,
+        "execution_ms": 1.172
+      },
+      {
+        "query": "7c",
+        "planning_ms": 36.993,
+        "execution_ms": 683.021
+      },
+      {
+        "query": "8a",
+        "planning_ms": 11.546,
+        "execution_ms": 33.563
+      },
+      {
+        "query": "8b",
+        "planning_ms": 9.303,
+        "execution_ms": 39.584
+      },
+      {
+        "query": "8c",
+        "planning_ms": 10.163,
+        "execution_ms": 3437.286
+      },
+      {
+        "query": "8d",
+        "planning_ms": 7.717,
+        "execution_ms": 305.876
+      },
+      {
+        "query": "9a",
+        "planning_ms": 25.557,
+        "execution_ms": 345.611
+      },
+      {
+        "query": "9b",
+        "planning_ms": 23.232,
+        "execution_ms": 207.801
+      },
+      {
+        "query": "9c",
+        "planning_ms": 11.724,
+        "execution_ms": 291.041
+      },
+      {
+        "query": "9d",
+        "planning_ms": 12.849,
+        "execution_ms": 709.486
+      }
+    ],
+    "postgres": [
+      {
+        "query": "10a",
+        "planning_ms": 12.828,
+        "execution_ms": 228.051
+      },
+      {
+        "query": "10b",
+        "planning_ms": 1.103,
+        "execution_ms": 103.243
+      },
+      {
+        "query": "10c",
+        "planning_ms": 1.077,
+        "execution_ms": 6989.824
+      },
+      {
+        "query": "11a",
+        "planning_ms": 3.397,
+        "execution_ms": 29.74
+      },
+      {
+        "query": "11b",
+        "planning_ms": 1.95,
+        "execution_ms": 10.394
+      },
+      {
+        "query": "11c",
+        "planning_ms": 2.169,
+        "execution_ms": 586.181
+      },
+      {
+        "query": "11d",
+        "planning_ms": 1.942,
+        "execution_ms": 83.34
+      },
+      {
+        "query": "12a",
+        "planning_ms": 3.239,
+        "execution_ms": 113.768
+      },
+      {
+        "query": "12b",
+        "planning_ms": 2.269,
+        "execution_ms": 32.375
+      },
+      {
+        "query": "12c",
+        "planning_ms": 2.029,
+        "execution_ms": 322.653
+      },
+      {
+        "query": "13a",
+        "planning_ms": 3.68,
+        "execution_ms": 550.644
+      },
+      {
+        "query": "13b",
+        "planning_ms": 3.694,
+        "execution_ms": 229.638
+      },
+      {
+        "query": "13c",
+        "planning_ms": 3.455,
+        "execution_ms": 222.413
+      },
+      {
+        "query": "13d",
+        "planning_ms": 3.49,
+        "execution_ms": 912.143
+      },
+      {
+        "query": "14a",
+        "planning_ms": 2.016,
+        "execution_ms": 224.823
+      },
+      {
+        "query": "14b",
+        "planning_ms": 1.868,
+        "execution_ms": 75.98
+      },
+      {
+        "query": "14c",
+        "planning_ms": 1.827,
+        "execution_ms": 459.17
+      },
+      {
+        "query": "15a",
+        "planning_ms": 5.554,
+        "execution_ms": 120.827
+      },
+      {
+        "query": "15b",
+        "planning_ms": 4.953,
+        "execution_ms": 13.943
+      },
+      {
+        "query": "15c",
+        "planning_ms": 5.267,
+        "execution_ms": 230.744
+      },
+      {
+        "query": "15d",
+        "planning_ms": 5.174,
+        "execution_ms": 281.529
+      },
+      {
+        "query": "16a",
+        "planning_ms": 3.29,
+        "execution_ms": 120.63
+      },
+      {
+        "query": "16b",
+        "planning_ms": 2.217,
+        "execution_ms": 10836.204
+      },
+      {
+        "query": "16c",
+        "planning_ms": 2.521,
+        "execution_ms": 948.865
+      },
+      {
+        "query": "16d",
+        "planning_ms": 2.465,
+        "execution_ms": 758.471
+      },
+      {
+        "query": "17a",
+        "planning_ms": 1.362,
+        "execution_ms": 7458.641
+      },
+      {
+        "query": "17b",
+        "planning_ms": 1.403,
+        "execution_ms": 6350.855
+      },
+      {
+        "query": "17c",
+        "planning_ms": 1.24,
+        "execution_ms": 6187.195
+      },
+      {
+        "query": "17d",
+        "planning_ms": 1.546,
+        "execution_ms": 6174.685
+      },
+      {
+        "query": "17e",
+        "planning_ms": 1.264,
+        "execution_ms": 7845.709
+      },
+      {
+        "query": "17f",
+        "planning_ms": 1.256,
+        "execution_ms": 7422.392
+      },
+      {
+        "query": "18a",
+        "planning_ms": 1.384,
+        "execution_ms": 2578.219
+      },
+      {
+        "query": "18b",
+        "planning_ms": 1.22,
+        "execution_ms": 129.529
+      },
+      {
+        "query": "18c",
+        "planning_ms": 1.211,
+        "execution_ms": 3321.117
+      },
+      {
+        "query": "19a",
+        "planning_ms": 8.559,
+        "execution_ms": 110.674
+      },
+      {
+        "query": "19b",
+        "planning_ms": 7.179,
+        "execution_ms": 50.788
+      },
+      {
+        "query": "19c",
+        "planning_ms": 9.502,
+        "execution_ms": 896.986
+      },
+      {
+        "query": "19d",
+        "planning_ms": 9.478,
+        "execution_ms": 2009.323
+      },
+      {
+        "query": "1a",
+        "planning_ms": 0.424,
+        "execution_ms": 36.341
+      },
+      {
+        "query": "1b",
+        "planning_ms": 0.348,
+        "execution_ms": 30.202
+      },
+      {
+        "query": "1c",
+        "planning_ms": 0.395,
+        "execution_ms": 29.822
+      },
+      {
+        "query": "1d",
+        "planning_ms": 0.356,
+        "execution_ms": 27.982
+      },
+      {
+        "query": "20a",
+        "planning_ms": 5.88,
+        "execution_ms": 2225.229
+      },
+      {
+        "query": "20b",
+        "planning_ms": 4.996,
+        "execution_ms": 1789.541
+      },
+      {
+        "query": "20c",
+        "planning_ms": 5.321,
+        "execution_ms": 960.41
+      },
+      {
+        "query": "21a",
+        "planning_ms": 4.843,
+        "execution_ms": 33.351
+      },
+      {
+        "query": "21b",
+        "planning_ms": 4.879,
+        "execution_ms": 20.949
+      },
+      {
+        "query": "21c",
+        "planning_ms": 4.762,
+        "execution_ms": 23.32
+      },
+      {
+        "query": "22a",
+        "planning_ms": 14.326,
+        "execution_ms": 286.473
+      },
+      {
+        "query": "22b",
+        "planning_ms": 14.01,
+        "execution_ms": 257.018
+      },
+      {
+        "query": "22c",
+        "planning_ms": 14.155,
+        "execution_ms": 969.003
+      },
+      {
+        "query": "22d",
+        "planning_ms": 15.045,
+        "execution_ms": 681.13
+      },
+      {
+        "query": "23a",
+        "planning_ms": 13.156,
+        "execution_ms": 107.765
+      },
+      {
+        "query": "23b",
+        "planning_ms": 12.983,
+        "execution_ms": 27.435
+      },
+      {
+        "query": "23c",
+        "planning_ms": 31.875,
+        "execution_ms": 169.051
+      },
+      {
+        "query": "24a",
+        "planning_ms": 33.193,
+        "execution_ms": 267.524
+      },
+      {
+        "query": "24b",
+        "planning_ms": 29.951,
+        "execution_ms": 13.651
+      },
+      {
+        "query": "25a",
+        "planning_ms": 4.311,
+        "execution_ms": 1672.061
+      },
+      {
+        "query": "25b",
+        "planning_ms": 4.24,
+        "execution_ms": 181.096
+      },
+      {
+        "query": "25c",
+        "planning_ms": 4.415,
+        "execution_ms": 5959.618
+      },
+      {
+        "query": "26a",
+        "planning_ms": 30.031,
+        "execution_ms": 617.092
+      },
+      {
+        "query": "26b",
+        "planning_ms": 29.02,
+        "execution_ms": 130.192
+      },
+      {
+        "query": "26c",
+        "planning_ms": 30.104,
+        "execution_ms": 1173.081
+      },
+      {
+        "query": "27a",
+        "planning_ms": 28.759,
+        "execution_ms": 9.92
+      },
+      {
+        "query": "27b",
+        "planning_ms": 28.563,
+        "execution_ms": 3.684
+      },
+      {
+        "query": "27c",
+        "planning_ms": 30.105,
+        "execution_ms": 13.224
+      },
+      {
+        "query": "28a",
+        "planning_ms": 37.692,
+        "execution_ms": 431.037
+      },
+      {
+        "query": "28b",
+        "planning_ms": 35.168,
+        "execution_ms": 237.636
+      },
+      {
+        "query": "28c",
+        "planning_ms": 36.974,
+        "execution_ms": 294.513
+      },
+      {
+        "query": "29a",
+        "planning_ms": 44.819,
+        "execution_ms": 11.18
+      },
+      {
+        "query": "29b",
+        "planning_ms": 43.102,
+        "execution_ms": 4.991
+      },
+      {
+        "query": "29c",
+        "planning_ms": 49.275,
+        "execution_ms": 64.41
+      },
+      {
+        "query": "2a",
+        "planning_ms": 0.34,
+        "execution_ms": 278.767
+      },
+      {
+        "query": "2b",
+        "planning_ms": 0.414,
+        "execution_ms": 267.529
+      },
+      {
+        "query": "2c",
+        "planning_ms": 0.403,
+        "execution_ms": 252.469
+      },
+      {
+        "query": "2d",
+        "planning_ms": 0.471,
+        "execution_ms": 380.017
+      },
+      {
+        "query": "30a",
+        "planning_ms": 30.444,
+        "execution_ms": 4011.324
+      },
+      {
+        "query": "30b",
+        "planning_ms": 28.484,
+        "execution_ms": 784.435
+      },
+      {
+        "query": "30c",
+        "planning_ms": 31.144,
+        "execution_ms": 6075.272
+      },
+      {
+        "query": "31a",
+        "planning_ms": 19.708,
+        "execution_ms": 783.563
+      },
+      {
+        "query": "31b",
+        "planning_ms": 16.54,
+        "execution_ms": 251.067
+      },
+      {
+        "query": "31c",
+        "planning_ms": 19.14,
+        "execution_ms": 714.472
+      },
+      {
+        "query": "32a",
+        "planning_ms": 0.592,
+        "execution_ms": 3.767
+      },
+      {
+        "query": "32b",
+        "planning_ms": 0.437,
+        "execution_ms": 59.288
+      },
+      {
+        "query": "33a",
+        "planning_ms": 38.464,
+        "execution_ms": 15.364
+      },
+      {
+        "query": "33b",
+        "planning_ms": 36.583,
+        "execution_ms": 19.344
+      },
+      {
+        "query": "33c",
+        "planning_ms": 37.469,
+        "execution_ms": 43.759
+      },
+      {
+        "query": "3a",
+        "planning_ms": 0.277,
+        "execution_ms": 111.161
+      },
+      {
+        "query": "3b",
+        "planning_ms": 0.287,
+        "execution_ms": 63.264
+      },
+      {
+        "query": "3c",
+        "planning_ms": 0.329,
+        "execution_ms": 196.828
+      },
+      {
+        "query": "4a",
+        "planning_ms": 0.429,
+        "execution_ms": 67.464
+      },
+      {
+        "query": "4b",
+        "planning_ms": 0.357,
+        "execution_ms": 62.168
+      },
+      {
+        "query": "4c",
+        "planning_ms": 0.371,
+        "execution_ms": 66.198
+      },
+      {
+        "query": "5a",
+        "planning_ms": 0.466,
+        "execution_ms": 52.354
+      },
+      {
+        "query": "5b",
+        "planning_ms": 0.411,
+        "execution_ms": 48.327
+      },
+      {
+        "query": "5c",
+        "planning_ms": 0.407,
+        "execution_ms": 71.205
+      },
+      {
+        "query": "6a",
+        "planning_ms": 0.409,
+        "execution_ms": 11.736
+      },
+      {
+        "query": "6b",
+        "planning_ms": 0.391,
+        "execution_ms": 156.723
+      },
+      {
+        "query": "6c",
+        "planning_ms": 0.446,
+        "execution_ms": 3.349
+      },
+      {
+        "query": "6d",
+        "planning_ms": 0.328,
+        "execution_ms": 4733.45
+      },
+      {
+        "query": "6e",
+        "planning_ms": 0.441,
+        "execution_ms": 7.785
+      },
+      {
+        "query": "6f",
+        "planning_ms": 0.35,
+        "execution_ms": 5123.983
+      },
+      {
+        "query": "7a",
+        "planning_ms": 2.136,
+        "execution_ms": 643.938
+      },
+      {
+        "query": "7b",
+        "planning_ms": 1.94,
+        "execution_ms": 155.769
+      },
+      {
+        "query": "7c",
+        "planning_ms": 2.087,
+        "execution_ms": 2005.474
+      },
+      {
+        "query": "8a",
+        "planning_ms": 1.181,
+        "execution_ms": 821.23
+      },
+      {
+        "query": "8b",
+        "planning_ms": 1.153,
+        "execution_ms": 64.943
+      },
+      {
+        "query": "8c",
+        "planning_ms": 1.154,
+        "execution_ms": 1794.807
+      },
+      {
+        "query": "8d",
+        "planning_ms": 1.244,
+        "execution_ms": 669.945
+      },
+      {
+        "query": "9a",
+        "planning_ms": 2.367,
+        "execution_ms": 108.849
+      },
+      {
+        "query": "9b",
+        "planning_ms": 2.269,
+        "execution_ms": 104.531
+      },
+      {
+        "query": "9c",
+        "planning_ms": 2.272,
+        "execution_ms": 180.385
+      },
+      {
+        "query": "9d",
+        "planning_ms": 2.423,
+        "execution_ms": 2119.255
+      }
+    ],
+    "sqlite": [
+      {
+        "query": "10a",
+        "planning_ms": 0.0,
+        "execution_ms": 356.087
+      },
+      {
+        "query": "10b",
+        "planning_ms": 0.0,
+        "execution_ms": 119.611
+      },
+      {
+        "query": "10c",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "11a",
+        "planning_ms": 0.0,
+        "execution_ms": 58.277
+      },
+      {
+        "query": "11b",
+        "planning_ms": 0.0,
+        "execution_ms": 17.061
+      },
+      {
+        "query": "11c",
+        "planning_ms": 0.0,
+        "execution_ms": 114.665
+      },
+      {
+        "query": "11d",
+        "planning_ms": 0.0,
+        "execution_ms": 336.872
+      },
+      {
+        "query": "12a",
+        "planning_ms": 0.0,
+        "execution_ms": 1443.979
+      },
+      {
+        "query": "12b",
+        "planning_ms": 0.0,
+        "execution_ms": 1863.307
+      },
+      {
+        "query": "12c",
+        "planning_ms": 0.0,
+        "execution_ms": 1993.996
+      },
+      {
+        "query": "13a",
+        "planning_ms": 0.0,
+        "execution_ms": 408.038
+      },
+      {
+        "query": "13b",
+        "planning_ms": 0.0,
+        "execution_ms": 1246.432
+      },
+      {
+        "query": "13c",
+        "planning_ms": 0.0,
+        "execution_ms": 1216.866
+      },
+      {
+        "query": "13d",
+        "planning_ms": 0.0,
+        "execution_ms": 2822.199
+      },
+      {
+        "query": "14a",
+        "planning_ms": 0.0,
+        "execution_ms": 203.906
+      },
+      {
+        "query": "14b",
+        "planning_ms": 0.0,
+        "execution_ms": 122.148
+      },
+      {
+        "query": "14c",
+        "planning_ms": 0.0,
+        "execution_ms": 373.769
+      },
+      {
+        "query": "15a",
+        "planning_ms": 0.0,
+        "execution_ms": 2616.328
+      },
+      {
+        "query": "15b",
+        "planning_ms": 0.0,
+        "execution_ms": 16.445
+      },
+      {
+        "query": "15c",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "15d",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "16a",
+        "planning_ms": 0.0,
+        "execution_ms": 47.819
+      },
+      {
+        "query": "16b",
+        "planning_ms": 0.0,
+        "execution_ms": 8296.763
+      },
+      {
+        "query": "16c",
+        "planning_ms": 0.0,
+        "execution_ms": 525.396
+      },
+      {
+        "query": "16d",
+        "planning_ms": 0.0,
+        "execution_ms": 408.984
+      },
+      {
+        "query": "17a",
+        "planning_ms": 0.0,
+        "execution_ms": 2392.339
+      },
+      {
+        "query": "17b",
+        "planning_ms": 0.0,
+        "execution_ms": 4310.356
+      },
+      {
+        "query": "17c",
+        "planning_ms": 0.0,
+        "execution_ms": 4287.594
+      },
+      {
+        "query": "17d",
+        "planning_ms": 0.0,
+        "execution_ms": 4432.728
+      },
+      {
+        "query": "17e",
+        "planning_ms": 0.0,
+        "execution_ms": 4304.828
+      },
+      {
+        "query": "17f",
+        "planning_ms": 0.0,
+        "execution_ms": 5688.856
+      },
+      {
+        "query": "18a",
+        "planning_ms": 0.0,
+        "execution_ms": 16852.732
+      },
+      {
+        "query": "18b",
+        "planning_ms": 0.0,
+        "execution_ms": 540.144
+      },
+      {
+        "query": "18c",
+        "planning_ms": 0.0,
+        "execution_ms": 17992.098
+      },
+      {
+        "query": "19a",
+        "planning_ms": 0.0,
+        "execution_ms": 4472.918
+      },
+      {
+        "query": "19b",
+        "planning_ms": 0.0,
+        "execution_ms": 745.509
+      },
+      {
+        "query": "19c",
+        "planning_ms": 0.0,
+        "execution_ms": 19694.425
+      },
+      {
+        "query": "19d",
+        "planning_ms": 0.0,
+        "execution_ms": 20813.284
+      },
+      {
+        "query": "1a",
+        "planning_ms": 0.0,
+        "execution_ms": 138.695
+      },
+      {
+        "query": "1b",
+        "planning_ms": 0.0,
+        "execution_ms": 134.471
+      },
+      {
+        "query": "1c",
+        "planning_ms": 0.0,
+        "execution_ms": 125.071
+      },
+      {
+        "query": "1d",
+        "planning_ms": 0.0,
+        "execution_ms": 141.154
+      },
+      {
+        "query": "20a",
+        "planning_ms": 0.0,
+        "execution_ms": 3596.188
+      },
+      {
+        "query": "20b",
+        "planning_ms": 0.0,
+        "execution_ms": 935.916
+      },
+      {
+        "query": "20c",
+        "planning_ms": 0.0,
+        "execution_ms": 2267.897
+      },
+      {
+        "query": "21a",
+        "planning_ms": 0.0,
+        "execution_ms": 101.97
+      },
+      {
+        "query": "21b",
+        "planning_ms": 0.0,
+        "execution_ms": 88.019
+      },
+      {
+        "query": "21c",
+        "planning_ms": 0.0,
+        "execution_ms": 121.474
+      },
+      {
+        "query": "22a",
+        "planning_ms": 0.0,
+        "execution_ms": 1286.501
+      },
+      {
+        "query": "22b",
+        "planning_ms": 0.0,
+        "execution_ms": 1172.299
+      },
+      {
+        "query": "22c",
+        "planning_ms": 0.0,
+        "execution_ms": 2174.956
+      },
+      {
+        "query": "22d",
+        "planning_ms": 0.0,
+        "execution_ms": 3077.408
+      },
+      {
+        "query": "23a",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "23b",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "23c",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "24a",
+        "planning_ms": 0.0,
+        "execution_ms": 6360.204
+      },
+      {
+        "query": "24b",
+        "planning_ms": 0.0,
+        "execution_ms": 23.825
+      },
+      {
+        "query": "25a",
+        "planning_ms": 0.0,
+        "execution_ms": 1791.796
+      },
+      {
+        "query": "25b",
+        "planning_ms": 0.0,
+        "execution_ms": 806.833
+      },
+      {
+        "query": "25c",
+        "planning_ms": 0.0,
+        "execution_ms": 6082.076
+      },
+      {
+        "query": "26a",
+        "planning_ms": 0.0,
+        "execution_ms": 2335.065
+      },
+      {
+        "query": "26b",
+        "planning_ms": 0.0,
+        "execution_ms": 1299.984
+      },
+      {
+        "query": "26c",
+        "planning_ms": 0.0,
+        "execution_ms": 1417.072
+      },
+      {
+        "query": "27a",
+        "planning_ms": 0.0,
+        "execution_ms": 318.433
+      },
+      {
+        "query": "27b",
+        "planning_ms": 0.0,
+        "execution_ms": 209.059
+      },
+      {
+        "query": "27c",
+        "planning_ms": 0.0,
+        "execution_ms": 252.767
+      },
+      {
+        "query": "28a",
+        "planning_ms": 0.0,
+        "execution_ms": 1325.623
+      },
+      {
+        "query": "28b",
+        "planning_ms": 0.0,
+        "execution_ms": 552.456
+      },
+      {
+        "query": "28c",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "29a",
+        "planning_ms": 0.0,
+        "execution_ms": 9.309
+      },
+      {
+        "query": "29b",
+        "planning_ms": 0.0,
+        "execution_ms": 8.047
+      },
+      {
+        "query": "29c",
+        "planning_ms": 0.0,
+        "execution_ms": 422.191
+      },
+      {
+        "query": "2a",
+        "planning_ms": 0.0,
+        "execution_ms": 91.179
+      },
+      {
+        "query": "2b",
+        "planning_ms": 0.0,
+        "execution_ms": 89.096
+      },
+      {
+        "query": "2c",
+        "planning_ms": 0.0,
+        "execution_ms": 85.974
+      },
+      {
+        "query": "2d",
+        "planning_ms": 0.0,
+        "execution_ms": 113.182
+      },
+      {
+        "query": "30a",
+        "planning_ms": 0.0,
+        "execution_ms": 2450.727
+      },
+      {
+        "query": "30b",
+        "planning_ms": 0.0,
+        "execution_ms": 2396.276
+      },
+      {
+        "query": "30c",
+        "planning_ms": 0.0,
+        "execution_ms": 2111.316
+      },
+      {
+        "query": "31a",
+        "planning_ms": 0.0,
+        "execution_ms": 1082.198
+      },
+      {
+        "query": "31b",
+        "planning_ms": 0.0,
+        "execution_ms": 1001.767
+      },
+      {
+        "query": "31c",
+        "planning_ms": 0.0,
+        "execution_ms": 1430.003
+      },
+      {
+        "query": "32a",
+        "planning_ms": 0.0,
+        "execution_ms": 60.602
+      },
+      {
+        "query": "32b",
+        "planning_ms": 0.0,
+        "execution_ms": 62.833
+      },
+      {
+        "query": "33a",
+        "planning_ms": 0.0,
+        "execution_ms": 27.716
+      },
+      {
+        "query": "33b",
+        "planning_ms": 0.0,
+        "execution_ms": 23.747
+      },
+      {
+        "query": "33c",
+        "planning_ms": 0.0,
+        "execution_ms": 38.752
+      },
+      {
+        "query": "3a",
+        "planning_ms": 0.0,
+        "execution_ms": 143.864
+      },
+      {
+        "query": "3b",
+        "planning_ms": 0.0,
+        "execution_ms": 116.167
+      },
+      {
+        "query": "3c",
+        "planning_ms": 0.0,
+        "execution_ms": 196.093
+      },
+      {
+        "query": "4a",
+        "planning_ms": 0.0,
+        "execution_ms": 232.239
+      },
+      {
+        "query": "4b",
+        "planning_ms": 0.0,
+        "execution_ms": 57.669
+      },
+      {
+        "query": "4c",
+        "planning_ms": 0.0,
+        "execution_ms": 392.004
+      },
+      {
+        "query": "5a",
+        "planning_ms": 0.0,
+        "execution_ms": 77.529
+      },
+      {
+        "query": "5b",
+        "planning_ms": 0.0,
+        "execution_ms": 76.593
+      },
+      {
+        "query": "5c",
+        "planning_ms": 0.0,
+        "execution_ms": 89.908
+      },
+      {
+        "query": "6a",
+        "planning_ms": 0.0,
+        "execution_ms": 277.442
+      },
+      {
+        "query": "6b",
+        "planning_ms": 0.0,
+        "execution_ms": 387.187
+      },
+      {
+        "query": "6c",
+        "planning_ms": 0.0,
+        "execution_ms": 274.503
+      },
+      {
+        "query": "6d",
+        "planning_ms": 0.0,
+        "execution_ms": 1533.011
+      },
+      {
+        "query": "6e",
+        "planning_ms": 0.0,
+        "execution_ms": 280.203
+      },
+      {
+        "query": "6f",
+        "planning_ms": 0.0,
+        "execution_ms": 2319.533
+      },
+      {
+        "query": "7a",
+        "planning_ms": 0.0,
+        "execution_ms": 460.881
+      },
+      {
+        "query": "7b",
+        "planning_ms": 0.0,
+        "execution_ms": 105.796
+      },
+      {
+        "query": "7c",
+        "planning_ms": 0.0,
+        "execution_ms": 4482.182
+      },
+      {
+        "query": "8a",
+        "planning_ms": 0.0,
+        "execution_ms": 2273.538
+      },
+      {
+        "query": "8b",
+        "planning_ms": 0.0,
+        "execution_ms": 350.052
+      },
+      {
+        "query": "8c",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "8d",
+        "planning_ms": 0.0,
+        "execution_ms": null
+      },
+      {
+        "query": "9a",
+        "planning_ms": 0.0,
+        "execution_ms": 6804.264
+      },
+      {
+        "query": "9b",
+        "planning_ms": 0.0,
+        "execution_ms": 2759.054
+      },
+      {
+        "query": "9c",
+        "planning_ms": 0.0,
+        "execution_ms": 38616.993
+      },
+      {
+        "query": "9d",
+        "planning_ms": 0.0,
+        "execution_ms": 38763.364
+      }
+    ]
+  },
+  "graph": {
+    "benchmark-suite": "ldbc-snb-interactive-v1-read-latency",
+    "result-validation": {
+      "result-counts-match?": true,
+      "exact-result-digest-match-count": 17,
+      "query-count": 21,
+      "exact-result-digest-matches": [
+        "IC2",
+        "IC3",
+        "IC4",
+        "IC6",
+        "IC7",
+        "IC8",
+        "IC9",
+        "IC10",
+        "IC11",
+        "IC13",
+        "IS1",
+        "IS2",
+        "IS3",
+        "IS4",
+        "IS5",
+        "IS6",
+        "IS7"
+      ],
+      "different-result-representations": [
+        "IC1",
+        "IC5",
+        "IC12",
+        "IC14"
+      ]
+    },
+    "methodology": {
+      "configuration": {
+        "run-role": "measurement",
+        "query-cache?": false,
+        "verify?": true,
+        "query-names": [],
+        "seed": 42,
+        "iterations": 1,
+        "warmup": 0,
+        "scale-factor": "1",
+        "parameter-count": 10
+      },
+      "timing-boundary": {
+        "included": [
+          "query-execution",
+          "post-processing",
+          "result-realization"
+        ],
+        "excluded": [
+          "database-open",
+          "warmup",
+          "artifact-writing"
+        ],
+        "query-result-cache": false,
+        "measurement-cache-policy": "fresh-parse-and-plan"
+      },
+      "parameter-schedule-sha256": "4d65cafce1512af2db43b6cd28b50fcf5de67a1e3bce88f4d9bb74f46c509d2d"
+    },
+    "official-ldbc-result": false,
+    "aggregates": {
+      "all": {
+        "query-count": 21,
+        "left-sum-of-medians-ms": 4479.657125,
+        "right-sum-of-medians-ms": 38346.297958,
+        "right-over-left-sum-ratio": 8.560096652040084,
+        "geometric-mean-right-over-left-median-ratio": 5.55473885578081,
+        "left-lower-median-count": 20,
+        "right-lower-median-count": 1
+      },
+      "interactive-complex": {
+        "query-count": 14,
+        "left-sum-of-medians-ms": 4381.744126,
+        "right-sum-of-medians-ms": 38057.463376,
+        "right-over-left-sum-ratio": 8.685460008990038,
+        "geometric-mean-right-over-left-median-ratio": 5.7104253787147625,
+        "left-lower-median-count": 13,
+        "right-lower-median-count": 1
+      },
+      "interactive-short": {
+        "query-count": 7,
+        "left-sum-of-medians-ms": 97.912999,
+        "right-sum-of-medians-ms": 288.834582,
+        "right-over-left-sum-ratio": 2.9499104812426387,
+        "geometric-mean-right-over-left-median-ratio": 5.255983794271797,
+        "left-lower-median-count": 7,
+        "right-lower-median-count": 0
+      }
+    },
+    "independent-pass-validation": {
+      "left": {
+        "system": "Datalevin",
+        "warmup-report-path": "/Users/hyang/workspace/datalevin/benchmarks/LDBC-SNB-bench/results/datalevin-warmup-20260901T235851Z.edn",
+        "measurement-report-path": "/Users/hyang/workspace/datalevin/benchmarks/LDBC-SNB-bench/results/datalevin-measurement-20260901T235851Z.edn",
+        "parameter-schedule-sha256": "4d65cafce1512af2db43b6cd28b50fcf5de67a1e3bce88f4d9bb74f46c509d2d",
+        "result-count": 21,
+        "independent-client-processes?": true,
+        "processes": {
+          "warmup": {
+            "process-id": 91420,
+            "jvm-instance-id": "912c3187-c487-40f9-a768-9a4634dd9fd4"
+          },
+          "measurement": {
+            "process-id": 91443,
+            "jvm-instance-id": "e38e8839-3687-4176-b4ae-8a75f4a73dd4"
+          }
+        },
+        "exact-result-digests-match?": true
+      },
+      "right": {
+        "system": "Neo4j Community Embedded",
+        "warmup-report-path": "/Users/hyang/workspace/datalevin/benchmarks/LDBC-SNB-bench/neo4j/results/neo4j-warmup-20260901T235851Z.edn",
+        "measurement-report-path": "/Users/hyang/workspace/datalevin/benchmarks/LDBC-SNB-bench/neo4j/results/neo4j-measurement-20260901T235851Z.edn",
+        "parameter-schedule-sha256": "4d65cafce1512af2db43b6cd28b50fcf5de67a1e3bce88f4d9bb74f46c509d2d",
+        "result-count": 21,
+        "independent-client-processes?": true,
+        "processes": {
+          "warmup": {
+            "process-id": 91467,
+            "jvm-instance-id": "79f4b3b7-24ee-4f51-8907-a732eaea63e8"
+          },
+          "measurement": {
+            "process-id": 91501,
+            "jvm-instance-id": "4d75d47c-7147-4230-993a-596ceffc0b67"
+          }
+        },
+        "exact-result-digests-match?": true
+      }
+    },
+    "rows": [
+      {
+        "right-over-left-median-ratio": 6.936989010720686,
+        "lower-median-factor": 6.936989010720686,
+        "left-p95-ms": 276.439875,
+        "right-median-ms": 1917.660375,
+        "sample-count": 1,
+        "exact-result-digest-match?": false,
+        "result-counts": [
+          20
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 276.439875,
+        "query": "IC1",
+        "right-p95-ms": 1917.660375
+      },
+      {
+        "right-over-left-median-ratio": 7.50426835884968,
+        "lower-median-factor": 7.50426835884968,
+        "left-p95-ms": 160.293458,
+        "right-median-ms": 1202.885125,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          20
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 160.293458,
+        "query": "IC2",
+        "right-p95-ms": 1202.885125
+      },
+      {
+        "right-over-left-median-ratio": 8.717021966343944,
+        "lower-median-factor": 8.717021966343944,
+        "left-p95-ms": 584.320542,
+        "right-median-ms": 5093.535,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          3
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 584.320542,
+        "query": "IC3",
+        "right-p95-ms": 5093.535
+      },
+      {
+        "right-over-left-median-ratio": 10.990670014301843,
+        "lower-median-factor": 10.990670014301843,
+        "left-p95-ms": 134.42325,
+        "right-median-ms": 1477.401583,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          10
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 134.42325,
+        "query": "IC4",
+        "right-p95-ms": 1477.401583
+      },
+      {
+        "right-over-left-median-ratio": 1.6717073030648846,
+        "lower-median-factor": 1.6717073030648846,
+        "left-p95-ms": 1842.428667,
+        "right-median-ms": 3080.001458,
+        "sample-count": 1,
+        "exact-result-digest-match?": false,
+        "result-counts": [
+          20
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 1842.428667,
+        "query": "IC5",
+        "right-p95-ms": 3080.001458
+      },
+      {
+        "right-over-left-median-ratio": 161.66689455633855,
+        "lower-median-factor": 161.66689455633855,
+        "left-p95-ms": 3.296917,
+        "right-median-ms": 533.002333,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          0
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 3.296917,
+        "query": "IC6",
+        "right-p95-ms": 533.002333
+      },
+      {
+        "right-over-left-median-ratio": 3.3057677391912503,
+        "lower-median-factor": 3.3057677391912503,
+        "left-p95-ms": 54.772917,
+        "right-median-ms": 181.066542,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          20
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 54.772917,
+        "query": "IC7",
+        "right-p95-ms": 181.066542
+      },
+      {
+        "right-over-left-median-ratio": 3.820119528709911,
+        "lower-median-factor": 3.820119528709911,
+        "left-p95-ms": 22.183959,
+        "right-median-ms": 84.745375,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          20
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 22.183959,
+        "query": "IC8",
+        "right-p95-ms": 84.745375
+      },
+      {
+        "right-over-left-median-ratio": 8.635892270513606,
+        "lower-median-factor": 8.635892270513606,
+        "left-p95-ms": 141.824792,
+        "right-median-ms": 1224.783625,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          20
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 141.824792,
+        "query": "IC9",
+        "right-p95-ms": 1224.783625
+      },
+      {
+        "right-over-left-median-ratio": 0.9513267202845259,
+        "lower-median-factor": 1.0511635789026474,
+        "left-p95-ms": 230.145083,
+        "right-median-ms": 218.943167,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          10
+        ],
+        "lower-median-system": "Neo4j Community Embedded",
+        "left-median-ms": 230.145083,
+        "query": "IC10",
+        "right-p95-ms": 218.943167
+      },
+      {
+        "right-over-left-median-ratio": 1.2944751485395802,
+        "lower-median-factor": 1.2944751485395802,
+        "left-p95-ms": 73.501958,
+        "right-median-ms": 95.146458,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          10
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 73.501958,
+        "query": "IC11",
+        "right-p95-ms": 95.146458
+      },
+      {
+        "right-over-left-median-ratio": 2.586519876695074,
+        "lower-median-factor": 2.586519876695074,
+        "left-p95-ms": 118.48675,
+        "right-median-ms": 306.468334,
+        "sample-count": 1,
+        "exact-result-digest-match?": false,
+        "result-counts": [
+          20
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 118.48675,
+        "query": "IC12",
+        "right-p95-ms": 306.468334
+      },
+      {
+        "right-over-left-median-ratio": 2.6453404597651193,
+        "lower-median-factor": 2.6453404597651193,
+        "left-p95-ms": 26.553167,
+        "right-median-ms": 70.242167,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          1
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 26.553167,
+        "query": "IC13",
+        "right-p95-ms": 70.242167
+      },
+      {
+        "right-over-left-median-ratio": 31.653965932911326,
+        "lower-median-factor": 31.653965932911326,
+        "left-p95-ms": 713.072791,
+        "right-median-ms": 22571.581834,
+        "sample-count": 1,
+        "exact-result-digest-match?": false,
+        "result-counts": [
+          17
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 713.072791,
+        "query": "IC14",
+        "right-p95-ms": 22571.581834
+      },
+      {
+        "right-over-left-median-ratio": 5.199366481788755,
+        "lower-median-factor": 5.199366481788755,
+        "left-p95-ms": 3.848666,
+        "right-median-ms": 20.010625,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          1
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 3.848666,
+        "query": "IS1",
+        "right-p95-ms": 20.010625
+      },
+      {
+        "right-over-left-median-ratio": 1.2174156973502077,
+        "lower-median-factor": 1.2174156973502077,
+        "left-p95-ms": 57.411333,
+        "right-median-ms": 69.893458,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          10
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 57.411333,
+        "query": "IS2",
+        "right-p95-ms": 69.893458
+      },
+      {
+        "right-over-left-median-ratio": 3.258813318758813,
+        "lower-median-factor": 3.258813318758813,
+        "left-p95-ms": 7.798084,
+        "right-median-ms": 25.4125,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          29
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 7.798084,
+        "query": "IS3",
+        "right-p95-ms": 25.4125
+      },
+      {
+        "right-over-left-median-ratio": 13.531108855977779,
+        "lower-median-factor": 13.531108855977779,
+        "left-p95-ms": 2.698042,
+        "right-median-ms": 36.5075,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          1
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 2.698042,
+        "query": "IS4",
+        "right-p95-ms": 36.5075
+      },
+      {
+        "right-over-left-median-ratio": 13.605711930585683,
+        "lower-median-factor": 13.605711930585683,
+        "left-p95-ms": 2.305,
+        "right-median-ms": 31.361166,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          1
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 2.305,
+        "query": "IS5",
+        "right-p95-ms": 31.361166
+      },
+      {
+        "right-over-left-median-ratio": 10.381288693391857,
+        "lower-median-factor": 10.381288693391857,
+        "left-p95-ms": 5.099708,
+        "right-median-ms": 52.941541,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          1
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 5.099708,
+        "query": "IS6",
+        "right-p95-ms": 52.941541
+      },
+      {
+        "right-over-left-median-ratio": 2.8107575412888304,
+        "lower-median-factor": 2.8107575412888304,
+        "left-p95-ms": 18.752166,
+        "right-median-ms": 52.707792,
+        "sample-count": 1,
+        "exact-result-digest-match?": true,
+        "result-counts": [
+          0
+        ],
+        "lower-median-system": "Datalevin",
+        "left-median-ms": 18.752166,
+        "query": "IS7",
+        "right-p95-ms": 52.707792
+      }
+    ],
+    "format-version": 1,
+    "hosts": {
+      "left": {
+        "datalevin": "1.1.0",
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 9663676416,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "clojure-direct-linking": true,
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "timestamp": "2026-09-02T00:02:11.043129Z",
+        "jvm-instance-id": "e38e8839-3687-4176-b4ae-8a75f4a73dd4",
+        "process-id": 91443
+      },
+      "right": {
+        "datalevin": "1.1.0",
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 9663676416,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "clojure-direct-linking": true,
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "timestamp": "2026-09-02T00:04:06.128576Z",
+        "jvm-instance-id": "4d75d47c-7147-4230-993a-596ceffc0b67",
+        "process-id": 91501
+      }
+    }
+  },
+  "document": {
+    "date": "2026-09-01",
+    "benchmark": "indexed-document",
+    "durability-profile": "strict",
+    "aggregation": "single-retained-measurement-pass",
+    "protocol": {
+      "method": "two-independent-jvm-passes",
+      "order": [
+        "warmup",
+        "measurement"
+      ],
+      "same-process-pass-count": 1,
+      "retained-role": "measurement",
+      "records": 10000,
+      "measurement-operations": 10000,
+      "within-pass-warmup-operations": 1000,
+      "load-batch-size": 1000,
+      "idoc-weight": 30,
+      "hotset": 1.0,
+      "seed": 42,
+      "thread-counts": [
+        1,
+        4
+      ],
+      "workloads": [
+        "A",
+        "C",
+        "F"
+      ],
+      "verification-required": true,
+      "thread-partition": "contiguous-static"
+    },
+    "host": {
+      "os": "Mac OS X",
+      "os-version": "26.6.2",
+      "architecture": "aarch64",
+      "available-processors": 12,
+      "java-version": "21.0.11",
+      "clojure-version": "1.12.4",
+      "datalevin-version": "1.1.0",
+      "native-version": "DLMDB 1.0.0: (October 26, 2025)",
+      "control": "mediaanalysisd paused for all passes and resumed afterward"
+    },
+    "systems": {
+      "datalevin": {
+        "engine": "datalevin-datalog",
+        "configuration": {
+          "document-storage": "db.type/idoc",
+          "wal?": true,
+          "wal-durability-profile": "strict",
+          "env-flags": [
+            "nordahead",
+            "nosync",
+            "notls"
+          ]
+        }
+      },
+      "postgres": {
+        "engine": "postgresql",
+        "server-version": "18.4 (Homebrew)",
+        "jdbc-driver-version": "42.7.5",
+        "configuration": {
+          "document-storage": "jsonb",
+          "synchronous-commit": "on"
+        }
+      },
+      "sqlite": {
+        "engine": "sqlite",
+        "sqlite-version": "3.51.1",
+        "jdbc-driver-version": "3.51.1.0",
+        "configuration": {
+          "document-storage": "json1-text",
+          "journal-mode": "wal",
+          "synchronous": "full",
+          "busy-timeout-ms": 5000
+        }
+      },
+      "mongo": {
+        "engine": "mongodb",
+        "server-version": "7.0.35",
+        "driver-version": "4.11.1",
+        "configuration": {
+          "document-storage": "bson",
+          "write-concern": {
+            "w": 1,
+            "journal": true
+          }
+        }
+      }
+    },
+    "artifacts": {
+      "['A', 1]": {
+        "warmup": "2026-09-01-strict-two-pass-a-t1-warmup.edn",
+        "measurement": "2026-09-01-strict-two-pass-a-t1-measurement.edn"
+      },
+      "['C', 1]": {
+        "warmup": "2026-09-01-strict-two-pass-c-t1-warmup.edn",
+        "measurement": "2026-09-01-strict-two-pass-c-t1-measurement.edn"
+      },
+      "['F', 1]": {
+        "warmup": "2026-09-01-strict-two-pass-f-t1-warmup.edn",
+        "measurement": "2026-09-01-strict-two-pass-f-t1-measurement.edn"
+      },
+      "['A', 4]": {
+        "warmup": "2026-09-01-strict-two-pass-a-t4-warmup.edn",
+        "measurement": "2026-09-01-strict-two-pass-a-t4-measurement.edn"
+      },
+      "['C', 4]": {
+        "warmup": "2026-09-01-strict-two-pass-c-t4-warmup.edn",
+        "measurement": "2026-09-01-strict-two-pass-c-t4-measurement.edn"
+      },
+      "['F', 4]": {
+        "warmup": "2026-09-01-strict-two-pass-f-t4-warmup.edn",
+        "measurement": "2026-09-01-strict-two-pass-f-t4-measurement.edn"
+      }
+    },
+    "schedules": {
+      "dataset-sha256": "56198afdeedea08db945a2146816f8e89f95a2553588630ba25c53d9fed3a3fc",
+      "A": {
+        "warmup-sha256": "b7f422ce6fa9bc77bc1342820a55df39d2ecbb2634994d0ad1be5f107589597b",
+        "measurement-sha256": "ef45cca925249f44e499be4f2fd76d2c0a12c514282abe0258421433b3f45952",
+        "operation-counts": {
+          "idoc": 2308,
+          "update": 3841,
+          "read": 3851
+        },
+        "idoc-shape-counts": {
+          "nested": 439,
+          "array": 472,
+          "range": 467,
+          "wildcard-one": 485,
+          "wildcard-depth": 445
+        }
+      },
+      "C": {
+        "warmup-sha256": "d949f976e964e5b1afab99e4174e37eb8850459672c956c7ef7d747eac244c02",
+        "measurement-sha256": "67873d8e51abe1c5e66be8f06fe9fbd875a62e59e4c72d34d2f5f66679b84014",
+        "operation-counts": {
+          "idoc": 2350,
+          "read": 7650
+        },
+        "idoc-shape-counts": {
+          "nested": 448,
+          "wildcard-one": 476,
+          "range": 474,
+          "array": 481,
+          "wildcard-depth": 471
+        }
+      },
+      "F": {
+        "warmup-sha256": "b2d3686c62efe1310dd6dca37a513a912964b6fcaf823dd366a61969f662d988",
+        "measurement-sha256": "050db941dc88314de18f41916709065a56d13740cdf2bbc1790621abf92a43b8",
+        "operation-counts": {
+          "idoc": 2331,
+          "rmw": 7669
+        },
+        "idoc-shape-counts": {
+          "nested": 488,
+          "wildcard-one": 463,
+          "array": 463,
+          "range": 441,
+          "wildcard-depth": 476
+        }
+      }
+    },
+    "throughput-ops-per-second": {
+      "threads-1": {
+        "A": {
+          "datalevin": 3358.0983764275034,
+          "postgres": 2269.699094358853,
+          "sqlite": 438.37817138092134,
+          "mongo": 309.19882824578605
+        },
+        "C": {
+          "datalevin": 11453.712327129479,
+          "postgres": 2039.0760895261456,
+          "sqlite": 437.1532679074645,
+          "mongo": 2868.4602301142418
+        },
+        "F": {
+          "datalevin": 2679.589194206406,
+          "postgres": 1789.43842149932,
+          "sqlite": 416.07183490747974,
+          "mongo": 191.9119006182996
+        }
+      },
+      "threads-4": {
+        "A": {
+          "datalevin": 8038.574165656552,
+          "postgres": 8881.405811081619,
+          "sqlite": 1523.827722666326,
+          "mongo": 1110.9125354953915
+        },
+        "C": {
+          "datalevin": 32192.075123632534,
+          "postgres": 13256.664158545578,
+          "sqlite": 1603.5582637160205,
+          "mongo": 10252.84103738832
+        },
+        "F": {
+          "datalevin": 5942.982136744159,
+          "postgres": 6256.198688582138,
+          "sqlite": 1429.371663931048,
+          "mongo": 579.2844659820187
+        }
+      }
+    },
+    "workload-leaders": {
+      "threads-1": {
+        "A": {
+          "system": "datalevin",
+          "runner-up": "postgres",
+          "ratio": 1.4795346153037534
+        },
+        "C": {
+          "system": "datalevin",
+          "runner-up": "mongo",
+          "ratio": 3.992982788076972
+        },
+        "F": {
+          "system": "datalevin",
+          "runner-up": "postgres",
+          "ratio": 1.49744699902065
+        }
+      },
+      "threads-4": {
+        "A": {
+          "system": "postgres",
+          "runner-up": "datalevin",
+          "ratio": 1.1048484007308064
+        },
+        "C": {
+          "system": "datalevin",
+          "runner-up": "postgres",
+          "ratio": 2.428369214051539
+        },
+        "F": {
+          "system": "postgres",
+          "runner-up": "datalevin",
+          "ratio": 1.0527035997469065
+        }
+      }
+    },
+    "workload-C-query-shape-p50-ms": {
+      "threads-1": {
+        "datalevin": {
+          "nested": 0.057334,
+          "range": 0.328,
+          "wildcard-one": 0.050875,
+          "wildcard-depth": 0.147041,
+          "array": 0.206834
+        },
+        "postgres": {
+          "nested": 0.80225,
+          "range": 1.551792,
+          "wildcard-one": 0.63475,
+          "wildcard-depth": 2.767458,
+          "array": 3.614542
+        },
+        "sqlite": {
+          "nested": 0.155166,
+          "range": 0.789125,
+          "wildcard-one": 0.136375,
+          "wildcard-depth": 22.719416,
+          "array": 23.924042
+        },
+        "mongo": {
+          "nested": 0.509584,
+          "range": 1.813792,
+          "wildcard-one": 0.501083,
+          "wildcard-depth": 1.111709,
+          "array": 1.458958
+        }
+      }
+    },
+    "validation": {
+      "pair-count": 6,
+      "artifact-count": 12,
+      "retained-artifact-count": 6,
+      "backend-pass-count": 48,
+      "raw-sample-count": 480000,
+      "warmup-measurement-configuration-match": true,
+      "warmup-measurement-schedule-match": true,
+      "warmup-measurement-system-match": true,
+      "warmup-measurement-host-match": true,
+      "distinct-jvm-instance-ids": true,
+      "all-correctness-gates-passed": true,
+      "status": "passed"
+    }
+  },
+  "logic": {
+    "note": "Datalevin rerun: September 1; other engines: August 26. Inputs and answer counts cross-checked. Ten representative tasks, not the full matrix.",
+    "baseline_hosts": {
+      "datalevin": {
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 8589934592,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "direct-linking": "true",
+        "timestamp": "2026-08-27T00:57:06.014397Z"
+      },
+      "sqlite": {
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 8589934592,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "direct-linking": "true",
+        "timestamp": "2026-08-27T01:00:00.663509Z"
+      },
+      "postgresql": {
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 8589934592,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "direct-linking": "true",
+        "timestamp": "2026-08-27T01:01:08.550253Z"
+      },
+      "xsb": {
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 8589934592,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "direct-linking": "true",
+        "timestamp": "2026-08-27T01:38:39.139457Z"
+      },
+      "souffle": {
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 8589934592,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "direct-linking": "true",
+        "timestamp": "2026-08-27T01:03:32.018910Z"
+      },
+      "clara": {
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 8589934592,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "direct-linking": "true",
+        "timestamp": "2026-08-27T01:14:25.698158Z"
+      },
+      "odoyle": {
+        "processors": 12,
+        "clojure": "1.12.5",
+        "max-heap-bytes": 8589934592,
+        "arch": "aarch64",
+        "vm": "OpenJDK 64-Bit Server VM",
+        "os-version": "26.6.2",
+        "java": "21.0.11",
+        "os": "Mac OS X",
+        "direct-linking": "true",
+        "timestamp": "2026-08-27T01:20:29.198882Z"
+      }
+    },
+    "datalevin_host": {
+      "processors": 12,
+      "clojure": "1.12.5",
+      "max-heap-bytes": 8589934592,
+      "arch": "aarch64",
+      "vm": "OpenJDK 64-Bit Server VM",
+      "os-version": "26.6.2",
+      "java": "21.0.11",
+      "os": "Mac OS X",
+      "direct-linking": "true",
+      "timestamp": "2026-09-02T00:05:25.527025Z"
+    },
+    "protocol": {
+      "style": "job-pass",
+      "order": "warmup-passes-then-measurement-passes",
+      "pass-process": "same-child-jvm",
+      "reported-statistic": "single-measurement"
+    },
+    "results": [
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          42093.774583004415
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 42093.774583004415,
+          "median": 42093.774583004415,
+          "p95": 42093.774583004415,
+          "p99": 42093.774583004415,
+          "max": 42093.774583004415,
+          "mean": 42093.774583004415
+        },
+        "benchmark": "tc:50k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 42093.774583004415,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          8906.86641599983
+        ],
+        "input-digest": "66a20b0d374f777c6430e29f9866072a522f893f2010f80f48d0267871a41c0f",
+        "result-count": 473807,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 473807,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 8906.86641599983,
+          "median": 8906.86641599983,
+          "p95": 8906.86641599983,
+          "p99": 8906.86641599983,
+          "max": 8906.86641599983,
+          "mean": 8906.86641599983
+        },
+        "benchmark": "tc:50k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 8906.86641599983,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          7.042625002563
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 7.042625002563,
+          "median": 7.042625002563,
+          "p95": 7.042625002563,
+          "p99": 7.042625002563,
+          "max": 7.042625002563,
+          "mean": 7.042625002563
+        },
+        "benchmark": "tc:50k-cyclic-bf",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 7.042625002563,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          4621.69966699928
+        ],
+        "input-digest": "15b9ff069a981a2a1208e2a00d7561510628adae031039455b705380a721844f",
+        "result-count": 869923,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 869923,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 4621.69966699928,
+          "median": 4621.69966699928,
+          "p95": 4621.69966699928,
+          "p99": 4621.69966699928,
+          "max": 4621.69966699928,
+          "mean": 4621.69966699928
+        },
+        "benchmark": "sg:6k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 4621.69966699928,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          459.55408299714327
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 215263,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 215263,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 459.55408299714327,
+          "median": 459.55408299714327,
+          "p95": 459.55408299714327,
+          "p99": 459.55408299714327,
+          "max": 459.55408299714327,
+          "mean": 459.55408299714327
+        },
+        "benchmark": "sg:6k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 459.55408299714327,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          23.92179100215435
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 533,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 533,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 23.92179100215435,
+          "median": 23.92179100215435,
+          "p95": 23.92179100215435,
+          "p99": 23.92179100215435,
+          "max": 23.92179100215435,
+          "mean": 23.92179100215435
+        },
+        "benchmark": "sg:6k-acyclic-bf",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 23.92179100215435,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          20.308040998876095
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 541,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 541,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "fb",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 20.308040998876095,
+          "median": 20.308040998876095,
+          "p95": 20.308040998876095,
+          "p99": 20.308040998876095,
+          "max": 20.308040998876095,
+          "mean": 20.308040998876095
+        },
+        "benchmark": "sg:6k-acyclic-fb",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 20.308040998876095,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          20282.644124999642
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b1",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 20282.644124999642,
+          "median": 20282.644124999642,
+          "p95": 20282.644124999642,
+          "p99": 20282.644124999642,
+          "max": 20282.644124999642,
+          "mean": 20282.644124999642
+        },
+        "benchmark": "join1:50k-b1-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 20282.644124999642,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          670.3395840004086
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 917680,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 917680,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b2",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 670.3395840004086,
+          "median": 670.3395840004086,
+          "p95": 670.3395840004086,
+          "p99": 670.3395840004086,
+          "max": 670.3395840004086,
+          "mean": 670.3395840004086
+        },
+        "benchmark": "join1:50k-b2-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 670.3395840004086,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          911.2557919993997
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "sqlite",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "a",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 911.2557919993997,
+          "median": 911.2557919993997,
+          "p95": 911.2557919993997,
+          "p99": 911.2557919993997,
+          "max": 911.2557919993997,
+          "mean": 911.2557919993997
+        },
+        "benchmark": "join1:50k-a-bf",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 911.2557919993997,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "3.51.1"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          6518.886749997735
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 6518.886749997735,
+          "median": 6518.886749997735,
+          "p95": 6518.886749997735,
+          "p99": 6518.886749997735,
+          "max": 6518.886749997735,
+          "mean": 6518.886749997735
+        },
+        "benchmark": "tc:50k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 6518.886749997735,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          2380.37383300066
+        ],
+        "input-digest": "66a20b0d374f777c6430e29f9866072a522f893f2010f80f48d0267871a41c0f",
+        "result-count": 473807,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 473807,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 2380.37383300066,
+          "median": 2380.37383300066,
+          "p95": 2380.37383300066,
+          "p99": 2380.37383300066,
+          "max": 2380.37383300066,
+          "mean": 2380.37383300066
+        },
+        "benchmark": "tc:50k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 2380.37383300066,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          7.475166998803616
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 7.475166998803616,
+          "median": 7.475166998803616,
+          "p95": 7.475166998803616,
+          "p99": 7.475166998803616,
+          "max": 7.475166998803616,
+          "mean": 7.475166998803616
+        },
+        "benchmark": "tc:50k-cyclic-bf",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 7.475166998803616,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          2223.4217500016093
+        ],
+        "input-digest": "15b9ff069a981a2a1208e2a00d7561510628adae031039455b705380a721844f",
+        "result-count": 869923,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 869923,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 2223.4217500016093,
+          "median": 2223.4217500016093,
+          "p95": 2223.4217500016093,
+          "p99": 2223.4217500016093,
+          "max": 2223.4217500016093,
+          "mean": 2223.4217500016093
+        },
+        "benchmark": "sg:6k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 2223.4217500016093,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          192.2116670012474
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 215263,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 215263,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 192.2116670012474,
+          "median": 192.2116670012474,
+          "p95": 192.2116670012474,
+          "p99": 192.2116670012474,
+          "max": 192.2116670012474,
+          "mean": 192.2116670012474
+        },
+        "benchmark": "sg:6k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 192.2116670012474,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          7.28116600215435
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 533,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 533,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 7.28116600215435,
+          "median": 7.28116600215435,
+          "p95": 7.28116600215435,
+          "p99": 7.28116600215435,
+          "max": 7.28116600215435,
+          "mean": 7.28116600215435
+        },
+        "benchmark": "sg:6k-acyclic-bf",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 7.28116600215435,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          6.811333999037743
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 541,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 541,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "fb",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 6.811333999037743,
+          "median": 6.811333999037743,
+          "p95": 6.811333999037743,
+          "p99": 6.811333999037743,
+          "max": 6.811333999037743,
+          "mean": 6.811333999037743
+        },
+        "benchmark": "sg:6k-acyclic-fb",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 6.811333999037743,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          10249.662249997258
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b1",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 10249.662249997258,
+          "median": 10249.662249997258,
+          "p95": 10249.662249997258,
+          "p99": 10249.662249997258,
+          "max": 10249.662249997258,
+          "mean": 10249.662249997258
+        },
+        "benchmark": "join1:50k-b1-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 10249.662249997258,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          835.828125
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 917680,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 917680,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b2",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 835.828125,
+          "median": 835.828125,
+          "p95": 835.828125,
+          "p99": 835.828125,
+          "max": 835.828125,
+          "mean": 835.828125
+        },
+        "benchmark": "join1:50k-b2-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 835.828125,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          395.24029099941254
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "postgresql",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "a",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 395.24029099941254,
+          "median": 395.24029099941254,
+          "p95": 395.24029099941254,
+          "p99": 395.24029099941254,
+          "max": 395.24029099941254,
+          "mean": 395.24029099941254
+        },
+        "benchmark": "join1:50k-a-bf",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 395.24029099941254,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "18.4 (Homebrew)"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          3607.0
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 3607.0,
+          "median": 3607.0,
+          "p95": 3607.0,
+          "p99": 3607.0,
+          "max": 3607.0,
+          "mean": 3607.0
+        },
+        "benchmark": "tc:50k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 3607.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          961.0
+        ],
+        "input-digest": "66a20b0d374f777c6430e29f9866072a522f893f2010f80f48d0267871a41c0f",
+        "result-count": 473807,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 473807,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 961.0,
+          "median": 961.0,
+          "p95": 961.0,
+          "p99": 961.0,
+          "max": 961.0,
+          "mean": 961.0
+        },
+        "benchmark": "tc:50k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 961.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          1699.0
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 1699.0,
+          "median": 1699.0,
+          "p95": 1699.0,
+          "p99": 1699.0,
+          "max": 1699.0,
+          "mean": 1699.0
+        },
+        "benchmark": "tc:50k-cyclic-bf",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 1699.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          118252.0
+        ],
+        "input-digest": "15b9ff069a981a2a1208e2a00d7561510628adae031039455b705380a721844f",
+        "result-count": 869923,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 869923,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 118252.0,
+          "median": 118252.0,
+          "p95": 118252.0,
+          "p99": 118252.0,
+          "max": 118252.0,
+          "mean": 118252.0
+        },
+        "benchmark": "sg:6k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 118252.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          14438.0
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 215263,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 215263,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 14438.0,
+          "median": 14438.0,
+          "p95": 14438.0,
+          "p99": 14438.0,
+          "max": 14438.0,
+          "mean": 14438.0
+        },
+        "benchmark": "sg:6k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 14438.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          262.0
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 533,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 533,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 262.0,
+          "median": 262.0,
+          "p95": 262.0,
+          "p99": 262.0,
+          "max": 262.0,
+          "mean": 262.0
+        },
+        "benchmark": "sg:6k-acyclic-bf",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 262.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          5606.0
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 541,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 541,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "fb",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 5606.0,
+          "median": 5606.0,
+          "p95": 5606.0,
+          "p99": 5606.0,
+          "max": 5606.0,
+          "mean": 5606.0
+        },
+        "benchmark": "sg:6k-acyclic-fb",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 5606.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          1795.0
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b1",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 1795.0,
+          "median": 1795.0,
+          "p95": 1795.0,
+          "p99": 1795.0,
+          "max": 1795.0,
+          "mean": 1795.0
+        },
+        "benchmark": "join1:50k-b1-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 1795.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          174.0
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 917680,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 917680,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b2",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 174.0,
+          "median": 174.0,
+          "p95": 174.0,
+          "p99": 174.0,
+          "max": 174.0,
+          "mean": 174.0
+        },
+        "benchmark": "join1:50k-b2-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 174.0,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          119.999999999999
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "xsb",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "a",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 119.999999999999,
+          "median": 119.999999999999,
+          "p95": 119.999999999999,
+          "p99": 119.999999999999,
+          "max": 119.999999999999,
+          "mean": 119.999999999999
+        },
+        "benchmark": "join1:50k-a-bf",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 119.999999999999,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "XSB Version 5.0.0 (Green Tea) of May 15, 2022\n[aarch64-apple-darwin25.5.0 64 bits; mode: optimal; engine: slg-wam; scheduling: local]\n[Build date: 2026-08-23]\n\nXSB is licensed under the GNU Library General Public License.\nYou can change it and/or distribute copies of it under certain conditions.\nYou should have received the License with this distribution of XSB.\nIf not, see:  http://www.gnu.org/copyleft/lgpl.html\nXSB comes without warranty of any kind."
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          1030.357416
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 1030.357416,
+          "median": 1030.357416,
+          "p95": 1030.357416,
+          "p99": 1030.357416,
+          "max": 1030.357416,
+          "mean": 1030.357416
+        },
+        "benchmark": "tc:50k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 1030.357416,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          371.928958
+        ],
+        "input-digest": "66a20b0d374f777c6430e29f9866072a522f893f2010f80f48d0267871a41c0f",
+        "result-count": 473807,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 473807,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 371.928958,
+          "median": 371.928958,
+          "p95": 371.928958,
+          "p99": 371.928958,
+          "max": 371.928958,
+          "mean": 371.928958
+        },
+        "benchmark": "tc:50k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 371.928958,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          1046.778167
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 1046.778167,
+          "median": 1046.778167,
+          "p95": 1046.778167,
+          "p99": 1046.778167,
+          "max": 1046.778167,
+          "mean": 1046.778167
+        },
+        "benchmark": "tc:50k-cyclic-bf",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 1046.778167,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          865.82425
+        ],
+        "input-digest": "15b9ff069a981a2a1208e2a00d7561510628adae031039455b705380a721844f",
+        "result-count": 869923,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 869923,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 865.82425,
+          "median": 865.82425,
+          "p95": 865.82425,
+          "p99": 865.82425,
+          "max": 865.82425,
+          "mean": 865.82425
+        },
+        "benchmark": "sg:6k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 865.82425,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          89.434458
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 215263,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 215263,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 89.434458,
+          "median": 89.434458,
+          "p95": 89.434458,
+          "p99": 89.434458,
+          "max": 89.434458,
+          "mean": 89.434458
+        },
+        "benchmark": "sg:6k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 89.434458,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          86.089209
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 533,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 533,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 86.089209,
+          "median": 86.089209,
+          "p95": 86.089209,
+          "p99": 86.089209,
+          "max": 86.089209,
+          "mean": 86.089209
+        },
+        "benchmark": "sg:6k-acyclic-bf",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 86.089209,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          121.001083
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 541,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 541,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "fb",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 121.001083,
+          "median": 121.001083,
+          "p95": 121.001083,
+          "p99": 121.001083,
+          "max": 121.001083,
+          "mean": 121.001083
+        },
+        "benchmark": "sg:6k-acyclic-fb",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 121.001083,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          2367.175334
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b1",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 2367.175334,
+          "median": 2367.175334,
+          "p95": 2367.175334,
+          "p99": 2367.175334,
+          "max": 2367.175334,
+          "mean": 2367.175334
+        },
+        "benchmark": "join1:50k-b1-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 2367.175334,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          174.94875
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 917680,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 917680,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b2",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 174.94875,
+          "median": 174.94875,
+          "p95": 174.94875,
+          "p99": 174.94875,
+          "max": 174.94875,
+          "mean": 174.94875
+        },
+        "benchmark": "join1:50k-b2-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 174.94875,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          36721.956959
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "souffle",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "a",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 36721.956959,
+          "median": 36721.956959,
+          "p95": 36721.956959,
+          "p99": 36721.956959,
+          "max": 36721.956959,
+          "mean": 36721.956959
+        },
+        "benchmark": "join1:50k-a-bf",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 36721.956959,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "----------------------------------------------------------------------------\nVersion: 2.5\nWord size: 64 bits\nOptions enabled: ffi ncurses sqlite zlib\n----------------------------------------------------------------------------\nCopyright (c) 2016-25 The Souffle Developers.\nCopyright (c) 2013-16 Oracle and/or its affiliates.\nAll rights reserved.\n============================================================================"
+      },
+      {
+        "system": "clara",
+        "benchmark": "tc:50k-cyclic-ff",
+        "status": "oom",
+        "phase": "warmup",
+        "samples-ms": []
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          51376.6524579972
+        ],
+        "input-digest": "66a20b0d374f777c6430e29f9866072a522f893f2010f80f48d0267871a41c0f",
+        "result-count": 473807,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 473807,
+          "input-status": "consistent"
+        },
+        "system": "clara",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 51376.6524579972,
+          "median": 51376.6524579972,
+          "p95": 51376.6524579972,
+          "p99": 51376.6524579972,
+          "max": 51376.6524579972,
+          "mean": 51376.6524579972
+        },
+        "benchmark": "tc:50k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 51376.6524579972,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "0.24.0"
+      },
+      {
+        "system": "clara",
+        "benchmark": "tc:50k-cyclic-bf",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          42834.25058300048
+        ],
+        "input-digest": "15b9ff069a981a2a1208e2a00d7561510628adae031039455b705380a721844f",
+        "result-count": 869923,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 869923,
+          "input-status": "consistent"
+        },
+        "system": "clara",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 42834.25058300048,
+          "median": 42834.25058300048,
+          "p95": 42834.25058300048,
+          "p99": 42834.25058300048,
+          "max": 42834.25058300048,
+          "mean": 42834.25058300048
+        },
+        "benchmark": "sg:6k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 42834.25058300048,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "0.24.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          3391.56608299911
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 215263,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 215263,
+          "input-status": "consistent"
+        },
+        "system": "clara",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 3391.56608299911,
+          "median": 3391.56608299911,
+          "p95": 3391.56608299911,
+          "p99": 3391.56608299911,
+          "max": 3391.56608299911,
+          "mean": 3391.56608299911
+        },
+        "benchmark": "sg:6k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 3391.56608299911,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "0.24.0"
+      },
+      {
+        "system": "clara",
+        "benchmark": "sg:6k-acyclic-bf",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "clara",
+        "benchmark": "sg:6k-acyclic-fb",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "clara",
+        "benchmark": "join1:50k-b1-ff",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "clara",
+        "benchmark": "join1:50k-b2-ff",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "clara",
+        "benchmark": "join1:50k-a-bf",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "tc:50k-cyclic-ff",
+        "base-fact-count": 50000,
+        "timing-scope": "query-and-materialization",
+        "status": "timeout",
+        "phase": "warmup",
+        "samples-ms": []
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "tc:50k-acyclic-ff",
+        "base-fact-count": 50000,
+        "timing-scope": "query-and-materialization",
+        "status": "timeout",
+        "phase": "warmup",
+        "samples-ms": []
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "tc:50k-cyclic-bf",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "sg:6k-cyclic-ff",
+        "base-fact-count": 6000,
+        "timing-scope": "query-and-materialization",
+        "status": "timeout",
+        "phase": "warmup",
+        "samples-ms": []
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "sg:6k-acyclic-ff",
+        "base-fact-count": 6000,
+        "timing-scope": "query-and-materialization",
+        "status": "timeout",
+        "phase": "warmup",
+        "samples-ms": []
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "sg:6k-acyclic-bf",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "sg:6k-acyclic-fb",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "join1:50k-b1-ff",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "join1:50k-b2-ff",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "system": "odoyle",
+        "benchmark": "join1:50k-a-bf",
+        "status": "unsupported",
+        "reason": "task is outside this system's declared benchmark capabilities"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          102.5854160040617
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 102.5854160040617,
+          "median": 102.5854160040617,
+          "p95": 102.5854160040617,
+          "p99": 102.5854160040617,
+          "max": 102.5854160040617,
+          "mean": 102.5854160040617
+        },
+        "benchmark": "tc:50k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 102.5854160040617,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          49.92504200339317
+        ],
+        "input-digest": "66a20b0d374f777c6430e29f9866072a522f893f2010f80f48d0267871a41c0f",
+        "result-count": 473807,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 473807,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 49.92504200339317,
+          "median": 49.92504200339317,
+          "p95": 49.92504200339317,
+          "p99": 49.92504200339317,
+          "max": 49.92504200339317,
+          "mean": 49.92504200339317
+        },
+        "benchmark": "tc:50k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 49.92504200339317,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          4.520083993673325
+        ],
+        "input-digest": "b21df32daf93bfbba2c8a85036a53d96513472bb80b7538de563bf01c344947c",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "tc",
+          "instance": "50k",
+          "shape": "cyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "seed": 42,
+            "nodes": 1000,
+            "edge-facts": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 4.520083993673325,
+          "median": 4.520083993673325,
+          "p95": 4.520083993673325,
+          "p99": 4.520083993673325,
+          "max": 4.520083993673325,
+          "mean": 4.520083993673325
+        },
+        "benchmark": "tc:50k-cyclic-bf",
+        "status": "ok",
+        "base-fact-count": 50000,
+        "time-ms": 4.520083993673325,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          112.71479099988937
+        ],
+        "input-digest": "15b9ff069a981a2a1208e2a00d7561510628adae031039455b705380a721844f",
+        "result-count": 869923,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 869923,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "cyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 112.71479099988937,
+          "median": 112.71479099988937,
+          "p95": 112.71479099988937,
+          "p99": 112.71479099988937,
+          "max": 112.71479099988937,
+          "mean": 112.71479099988937
+        },
+        "benchmark": "sg:6k-cyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 112.71479099988937,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          22.132499992847443
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 215263,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 215263,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 22.132499992847443,
+          "median": 22.132499992847443,
+          "p95": 22.132499992847443,
+          "p99": 22.132499992847443,
+          "max": 22.132499992847443,
+          "mean": 22.132499992847443
+        },
+        "benchmark": "sg:6k-acyclic-ff",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 22.132499992847443,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          6.536750003695488
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 533,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 533,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 6.536750003695488,
+          "median": 6.536750003695488,
+          "p95": 6.536750003695488,
+          "p99": 6.536750003695488,
+          "max": 6.536750003695488,
+          "mean": 6.536750003695488
+        },
+        "benchmark": "sg:6k-acyclic-bf",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 6.536750003695488,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          5.169500008225441
+        ],
+        "input-digest": "e846ed163df4a5282e0b49eb0167f6f5183e623ee67af1bf97a9e1ba619e6553",
+        "result-count": 541,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 541,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "sg",
+          "instance": "6k",
+          "shape": "acyclic",
+          "binding": "fb",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "par-seed": 42,
+            "sib-seed": 43,
+            "nodes": 1000,
+            "par-facts": 3000,
+            "sib-facts": 3000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 5.169500008225441,
+          "median": 5.169500008225441,
+          "p95": 5.169500008225441,
+          "p99": 5.169500008225441,
+          "max": 5.169500008225441,
+          "mean": 5.169500008225441
+        },
+        "benchmark": "sg:6k-acyclic-fb",
+        "status": "ok",
+        "base-fact-count": 6000,
+        "time-ms": 5.169500008225441,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          99.14279200136662
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000000,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b1",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 99.14279200136662,
+          "median": 99.14279200136662,
+          "p95": 99.14279200136662,
+          "p99": 99.14279200136662,
+          "max": 99.14279200136662,
+          "mean": 99.14279200136662
+        },
+        "benchmark": "join1:50k-b1-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 99.14279200136662,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          162.40774999558926
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 917680,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 917680,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "b2",
+          "binding": "ff",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 162.40774999558926,
+          "median": 162.40774999558926,
+          "p95": 162.40774999558926,
+          "p99": 162.40774999558926,
+          "max": 162.40774999558926,
+          "mean": 162.40774999558926
+        },
+        "benchmark": "join1:50k-b2-ff",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 162.40774999558926,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      },
+      {
+        "reported-statistic": "single-measurement",
+        "samples-ms": [
+          12.436208009719849
+        ],
+        "input-digest": "e27a1410cc87817b18d8f4664843b209bae08774412e5c0abedc92655f938608",
+        "result-count": 1000,
+        "correctness": {
+          "status": "passed",
+          "oracle": "independent-reference",
+          "expected-count": 1000,
+          "input-status": "consistent"
+        },
+        "system": "datalevin",
+        "task": {
+          "family": "join1",
+          "instance": "50k",
+          "query": "a",
+          "binding": "bf",
+          "bound-value": 1,
+          "published?": true,
+          "input-profile": {
+            "generator-version": 1,
+            "relation-seeds": {
+              "d1": 1,
+              "d2": 2,
+              "c2": 3,
+              "c3": 4,
+              "c4": 5
+            },
+            "domain": 1000,
+            "facts-per-relation": 50000
+          }
+        },
+        "latency-ms": {
+          "count": 1,
+          "min": 12.436208009719849,
+          "median": 12.436208009719849,
+          "p95": 12.436208009719849,
+          "p99": 12.436208009719849,
+          "max": 12.436208009719849,
+          "mean": 12.436208009719849
+        },
+        "benchmark": "join1:50k-a-bf",
+        "status": "ok",
+        "base-fact-count": 250000,
+        "time-ms": 12.436208009719849,
+        "timing-scope": "query-and-materialization",
+        "engine-version": "1.1.0"
+      }
+    ]
+  }
+}
