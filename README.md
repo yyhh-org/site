@@ -10,12 +10,12 @@ First pull the submodules
 git submodule update --init
 ```
 
-Make sure you have python on your system. It is safer to use the same version of python as we do.
+Use Python 3.11, matching the Netlify build environment in `netlify.toml`.
 
 ```bash
 brew install pyenv
-pyenv install 3.8.16
-pyenv global 3.8.16
+pyenv install 3.11
+pyenv local 3.11
 ```
 Then follow the instruction in `pyenv init`.
 
@@ -28,7 +28,7 @@ brew install node
 Now install needed libary:
 
 ```bash
-pip install pelican pelican-alias invoke livereload markdown beautifulsoup4
+pip install -r requirements.txt
 ```
 
 ## Write and Test Locally
@@ -45,7 +45,9 @@ The dev-server supports auto-reloading, and will rebuild your documentation when
 
 ## Publish to yyhh.org
 
-After the ssh key to the host server has been set, just run or click on `publish-blog`
+Push to the GitHub repository's `master` branch to trigger the automatic Netlify build and deployment. The Python version is configured in `netlify.toml`.
+
+For the legacy SSH deployment, after the ssh key to the host server has been set, run or click on `publish-blog`.
 
 ## Stop Writing without Publish
 
@@ -56,5 +58,5 @@ If you want to stop the local Web server without publishing the changes, run or 
 Just append --upgrade to the install command, eg.
 
 ```bash
-pip install pelican pelican-alias invoke livereload markdown beautifulsoup4 --upgrade
+pip install --upgrade -r requirements.txt
 ```

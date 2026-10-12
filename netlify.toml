@@ -1,0 +1,3 @@
+[build.environment]
+  # Python 3.8 downloads lack the attestations required by Netlify's mise installer.
+  PYTHON_VERSION = "3.11"
