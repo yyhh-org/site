@@ -22,6 +22,11 @@ judgment. Their usefulness depends on the operator's ability to direct them,
 interpret feedback, recognize mistakes, and make corrections. Those
 requirements also apply to LLMs.
 
+One of my colleagues used to say, "AI is a mirror." I find that insightful:
+it reflects who you are, including the curiosity, judgment, and habits you
+bring to it. The questions you ask and the standards you apply to its
+answers matter.
+
 An LLM's unpredictability is a meaningful limitation. But predictability,
 reliability, simplicity, and bounded function are qualities by which we
 evaluate tools, not prerequisites for membership in the category. A tool does
